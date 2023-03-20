@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1229C1A29C7E5BC0066A89C /* RileyLinkBLEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */; };
+		C1229C1B29C7E5BC0066A89C /* RileyLinkBLEKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1229C1C29C7E5BC0066A89C /* RileyLinkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1829C7E5BC0066A89C /* RileyLinkKit.framework */; };
+		C1229C1D29C7E5BC0066A89C /* RileyLinkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1829C7E5BC0066A89C /* RileyLinkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C1229C1E29C7E5BC0066A89C /* RileyLinkKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1929C7E5BC0066A89C /* RileyLinkKitUI.framework */; };
+		C1229C1F29C7E5BC0066A89C /* RileyLinkKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1929C7E5BC0066A89C /* RileyLinkKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C124017029C7D87A00B32844 /* OmniKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C124016F29C7D87A00B32844 /* OmniKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C124017729C7D8CD00B32844 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C124017629C7D8CD00B32844 /* README.md */; };
 		C12401B529C7D8E900B32844 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124017929C7D8E900B32844 /* Notification.swift */; };
@@ -178,6 +184,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C1229C1B29C7E5BC0066A89C /* RileyLinkBLEKit.framework in Embed Frameworks */,
+				C1229C1F29C7E5BC0066A89C /* RileyLinkKitUI.framework in Embed Frameworks */,
+				C1229C1D29C7E5BC0066A89C /* RileyLinkKit.framework in Embed Frameworks */,
 				C12ED9F929C7DCE100435701 /* OmniKitUI.framework in Embed Frameworks */,
 				C12ED9F529C7DCE100435701 /* OmniKit.framework in Embed Frameworks */,
 			);
@@ -187,6 +196,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkBLEKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1229C1829C7E5BC0066A89C /* RileyLinkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1229C1929C7E5BC0066A89C /* RileyLinkKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C124016C29C7D87A00B32844 /* OmniKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OmniKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C124016F29C7D87A00B32844 /* OmniKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OmniKit.h; sourceTree = "<group>"; };
 		C124017629C7D8CD00B32844 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
@@ -393,6 +405,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1229C1A29C7E5BC0066A89C /* RileyLinkBLEKit.framework in Frameworks */,
+				C1229C1E29C7E5BC0066A89C /* RileyLinkKitUI.framework in Frameworks */,
+				C1229C1C29C7E5BC0066A89C /* RileyLinkKit.framework in Frameworks */,
 				C12ED9F829C7DCE100435701 /* OmniKitUI.framework in Frameworks */,
 				C12ED9F429C7DCE100435701 /* OmniKit.framework in Frameworks */,
 			);
@@ -713,6 +728,9 @@
 		C12ED9F329C7DCE100435701 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */,
+				C1229C1829C7E5BC0066A89C /* RileyLinkKit.framework */,
+				C1229C1929C7E5BC0066A89C /* RileyLinkKitUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1224,7 +1242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1281,7 +1299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
