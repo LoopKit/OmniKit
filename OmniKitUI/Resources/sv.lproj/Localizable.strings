@@ -93,7 +93,7 @@
    Button title to deactivate pod */
 "Deactivate Pod" = "Inaktivera podd";
 
-/* Label text showing pod is deactivated */
+/* No comment provided by engineer. */
 "Deactivated" = "Inaktiverad";
 
 /* Button title to delete Omnipod PumpManager */
@@ -105,16 +105,19 @@
 /* The title of the device information section in settings */
 "Device Information" = "Enhetsinformation";
 
-/* Header for devices section of RileyLinkSetupView */
+/* No comment provided by engineer. */
 "Devices" = "Enheter";
 
 /* Title text for button to disable bolus beeps */
 "Disable Bolus Beeps" = "Stäng av bolusljud";
 
+/* No comment provided by engineer. */
+"Done" = "Färdig";
+
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Slå på bolusljud";
 
-/* Accessibility label indicating an error occurred */
+/* No comment provided by engineer. */
 "Error" = "Fel";
 
 /* The alert title for disable bolus beeps error */
@@ -165,8 +168,7 @@
 /* Title of insulin delivery section */
 "Insulin Delivery" = "Insulin Delivery";
 
-/* Text for confidence reminders navigation link
-   Title for insulin type selection screen */
+/* Title for insulin type selection screen */
 "Insulin Type" = "Insulintyp";
 
 /* The error message shown when Loop's basal schedule has an unsupported rate */
@@ -178,8 +180,7 @@
 /* Error message for reservoir view when reservoir empty */
 "No Insulin" = "Inget insulin";
 
-/* Label for pod life state when no pod paired
-   Text shown in insulin remaining space when no pod is paired */
+/* Label for pod life state when no pod paired */
 "No Pod" = "Ingen Podd";
 
 /* The detail text for bolus delivery when no bolus is being delivered */
@@ -191,7 +192,7 @@
 /* The title of the command to pair new pod */
 "Pair New Pod" = "Parkoppla ny podd";
 
-/* Label text indicating pairing finished. */
+/* No comment provided by engineer. */
 "Paired" = "Parkopplad";
 
 /* The text of the loading label when pairing */
@@ -215,8 +216,7 @@
 /* Label for pod life state when within pod expiration window */
 "Pod expired" = "Pod har utgått";
 
-/* Error message for reservoir view when pod expired
-   Label for pod expiration row, past tense */
+/* Error message for reservoir view when pod expired */
 "Pod Expired" = "Poddens utgångsdatum passerat";
 
 /* Title of the pod settings view controller */
@@ -274,7 +274,7 @@
 /* A message indicating a command succeeded */
 "Succeeded" = "Lyckades";
 
-/* Title for suspend duration selection action sheet */
+/* No comment provided by engineer. */
 "Suspend Delivery" = "Pausa insulintillförsel";
 
 /* The detail text of the basal row when pod is suspended */
@@ -300,7 +300,7 @@
 /* The error message shown when Loop's basal schedule has more entries than the pod can support */
 "Too many entries" = "För många inmatningar";
 
-/* Units for showing temp basal rate */
+/* No comment provided by engineer. */
 "U/hr" = "E/timme";
 
 /* Instructions when pod cannot be deactivated */

@@ -34,10 +34,16 @@
    Pod pairing action button text while showing error */
 "Retry" = "أعد المحاولة";
 
+/* Navigation title for RileyLinkSetupView */
+"RileyLink Setup" = "RileyLink Setup";
+
+/* Title for setup complete screen */
+"Setup Complete" = "Setup Complete";
+
 /* The title of the status section in settings */
 "Status" = "الحالة";
 
-/* Units for showing temp basal rate */
+/* No comment provided by engineer. */
 "U/hr" = "وحدة لكل ساعة";
 
 /* The detail text for delivered insulin when no measurement is available */

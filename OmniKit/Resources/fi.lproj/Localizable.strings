@@ -4,9 +4,6 @@
 /* Unit format string for an RSSI value in decibles */
 "%@ dB" = "%@ dB";
 
-/* Unit format string for an value in percent */
-"%@%%" = "%@%%";
-
 /* Format string for activation time exceeded
    Pod state when activation not completed in the time allowed */
 "Activation time exceeded" = "Aktivointiaika ylitetty";
@@ -79,9 +76,6 @@
 
 /* Status highlight that insulin delivery was suspended. */
 "Insulin Suspended" = "Insuliini pysäytetty";
-
-/* The format string for Internal pod fault (1: The fault code value) */
-"Internal pod fault %1$03d" = "Sisäinen pumpun vika %1$03d";
 
 /* The format string describing a bolus that was interrupted. (1: The amount delivered)(2: The amount scheduled)(3: Start time of the dose)(4: duration)(5: scheduled certainty) */
 "InterruptedBolus: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@" = "KeskeytettyBolus: %1$@ U (%2$@ U ohjelmoitu) %3$@ %4$@ %5$@";
@@ -290,9 +284,6 @@
 
 /* Error message shown when empty response from pod was received */
 "Unexpected response from pod" = "Odottamaton vastaus pumpusta";
-
-/* The format string for Unknown pod fault (1: The fault code value) */
-"Unknown pod fault %1$03d" = "Tuntematon pumppuvirhe %1$03d";
 
 /* Format string for description of MessageError unknownValue. (1: value) (2: Type) */
 "Unknown Value (%1$@) for type %2$@" = "Tuntematon arvo (%1$@) tyypille %2$@";

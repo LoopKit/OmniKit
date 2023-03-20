@@ -153,7 +153,7 @@
    Button title to deactivate pod */
 "Deactivate Pod" = "Deaktivovať pod";
 
-/* Label text showing pod is deactivated */
+/* No comment provided by engineer. */
 "Deactivated" = "Deaktivované";
 
 /* Deactivate pod action button accessibility label while deactivating */
@@ -168,27 +168,28 @@
 /* Title text for delivery limits */
 "Delivery Limits" = "Limity podávania";
 
-/* Text for device details disclosure row
-   title for device details page */
+/* title for device details page */
 "Device Details" = "Podrobnosti o zariadení";
 
 /* The title of the device information section in settings */
 "Device Information" = "Informácie o zariadení";
 
-/* Header for devices section of RileyLinkSetupView */
+/* No comment provided by engineer. */
 "Devices" = "Zariadenia";
 
 /* Title text for button to disable bolus beeps */
 "Disable Bolus Beeps" = "Vypnúť pípanie pri boluse";
 
-/* Pairing interface navigation bar button text for discard pod action
-   Text for discard pod button */
+/* Pairing interface navigation bar button text for discard pod action */
 "Discard Pod" = "Zlikvidujte pod";
+
+/* No comment provided by engineer. */
+"Done" = "Hotovo";
 
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Povoliť pípanie pri boluse";
 
-/* Accessibility label indicating an error occurred */
+/* No comment provided by engineer. */
 "Error" = "Chyba";
 
 /* The alert title for disable bolus beeps error */
@@ -287,8 +288,7 @@
 /* Header for insulin remaining on pod settings screen */
 "Insulin Remaining" = "Zostávajúci inzulín";
 
-/* Text for confidence reminders navigation link
-   Title for insulin type selection screen */
+/* Title for insulin type selection screen */
 "Insulin Type" = "Typ inzulínu";
 
 /* The error message shown when Loop's basal schedule has an unsupported rate */
@@ -341,14 +341,10 @@
 /* Button label for user to answer cannula was not properly inserted */
 "No" = "Nie";
 
-/* No comment provided by engineer. */
-"No Error" = "Žiadna chyba";
-
 /* Error message for reservoir view when reservoir empty */
 "No Insulin" = "Žiadny inzulín";
 
-/* Label for pod life state when no pod paired
-   Text shown in insulin remaining space when no pod is paired */
+/* Label for pod life state when no pod paired */
 "No Pod" = "Žiadny pod";
 
 /* Value text for no expiration reminder */
@@ -357,8 +353,7 @@
 /* The detail text for bolus delivery when no bolus is being delivered */
 "None" = "Žiadny";
 
-/* navigation title for notification settings
-   Text for pod details disclosure row */
+/* navigation title for notification settings */
 "Notification Settings" = "Nastavenia oznámení";
 
 /* No comment provided by engineer. */
@@ -382,7 +377,7 @@
 /* Pairing action button accessibility label while ready to pair */
 "Pair pod." = "Párovať pod.";
 
-/* Label text indicating pairing finished. */
+/* No comment provided by engineer. */
 "Paired" = "Spárované";
 
 /* Pairing action button accessibility label while pairing */
@@ -393,9 +388,6 @@
 
 /* The text of the loading label when pairing */
 "Pairing…" = "Párovanie…";
-
-/* No comment provided by engineer. */
-"Percent = %@" = "Percentá = %@";
 
 /* The title of the cell showing the pod pi version */
 "PI Version" = "Verzia PI";
@@ -415,8 +407,7 @@
 /* The title of the cell showing the pod pm version */
 "PM Version" = "Verzia PM";
 
-/* description label for activated at time pod details row
-   Label for pod insertion row */
+/* description label for activated at time pod details row */
 "Pod Activated" = "Pod aktivovaný";
 
 /* Label describing pod age view */
@@ -431,8 +422,7 @@
 /* Label for pod life state when within pod expiration window */
 "Pod expired" = "Pod vypršal";
 
-/* Error message for reservoir view when pod expired
-   Label for pod expiration row, past tense */
+/* Error message for reservoir view when pod expired */
 "Pod Expired" = "Pod expiroval";
 
 /* Label for pod life state when time remaining */
@@ -473,9 +463,6 @@
 
 /* Label text for basal rate summary */
 "Rate" = "Dávka";
-
-/* No comment provided by engineer. */
-"Ref: " = "Ref:";
 
 /* Label describing time remaining view */
 "Remaining" = "Zostáva";
@@ -616,8 +603,7 @@
    Label for scheduled reminder value row */
 "Time" = "Čas";
 
-/* Title for pod sync time action sheet.
-   title for time change detected notice */
+/* title for time change detected notice */
 "Time Change Detected" = "Zistila sa zmena času";
 
 /* No comment provided by engineer. */

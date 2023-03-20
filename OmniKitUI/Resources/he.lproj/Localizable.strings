@@ -96,7 +96,7 @@
    Button title to deactivate pod */
 "Deactivate Pod" = "Deactivate Pod";
 
-/* Label text showing pod is deactivated */
+/* No comment provided by engineer. */
 "Deactivated" = "Deactivated";
 
 /* Button title to delete Omnipod PumpManager */
@@ -108,7 +108,7 @@
 /* The title of the device information section in settings */
 "Device Information" = "Device Information";
 
-/* Header for devices section of RileyLinkSetupView */
+/* No comment provided by engineer. */
 "Devices" = "Devices";
 
 /* Title text for button to disable bolus beeps */
@@ -117,7 +117,7 @@
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Enable Bolus Beeps";
 
-/* Accessibility label indicating an error occurred */
+/* No comment provided by engineer. */
 "Error" = "Error";
 
 /* The alert title for disable bolus beeps error */
@@ -192,7 +192,7 @@
 /* The title of the command to pair new pod */
 "Pair New Pod" = "Pair New Pod";
 
-/* Label text indicating pairing finished. */
+/* No comment provided by engineer. */
 "Paired" = "Paired";
 
 /* The text of the loading label when pairing */
@@ -274,7 +274,7 @@
 /* A message indicating a command succeeded */
 "Succeeded" = "Succeeded";
 
-/* Title for suspend duration selection action sheet */
+/* No comment provided by engineer. */
 "Suspend Delivery" = "Suspend Delivery";
 
 /* The detail text of the basal row when pod is suspended */
@@ -300,7 +300,7 @@
 /* The error message shown when Loop's basal schedule has more entries than the pod can support */
 "Too many entries" = "Too many entries";
 
-/* Units for showing temp basal rate */
+/* No comment provided by engineer. */
 "U/hr" = "U/hr";
 
 /* Instructions when pod cannot be deactivated */
@@ -322,7 +322,7 @@
 "Unfinished Activation" = "הפעלה לא הושלמה";
 
 /* Label for pod life state when pod not fully deactivated */
-"Unfinished deactivation" = "השבתה לא הושלמה";
+"Unfinished deactivation" = "פעולת ביטול הפוד לא הסתיימה";
 
 /* The detail text for delivered insulin when no measurement is available */
 "Unknown" = "Unknown";

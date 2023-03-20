@@ -43,9 +43,6 @@
 /* Pod inititialized */
 "Initialized" = "初始化";
 
-/* The format string for Internal pod fault (1: The fault code value) */
-"Internal pod fault %1$03d" = "Pod内部错误%1$03d";
-
 /* The format string describing a bolus that was interrupted. (1: The amount delivered)(2: The amount scheduled)(3: Start time of the dose)(4: duration)(5: scheduled certainty) */
 "InterruptedBolus: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@" = "大剂量输注终端: %1$@ U (%2$@ U 已输注) %3$@ %4$@ %5$@";
 
@@ -139,7 +136,7 @@
 "Suspend: %1$@ %2$@" = "暂停输注: %1$@ %2$@";
 
 /* Delivery status when insulin delivery is suspended */
-"Suspended" = "已暂停";
+"Suspended" = "暂停";
 
 /* Pod tank fill completed */
 "Tank fill completed" = "已向Pod注入胰岛素";
@@ -164,9 +161,6 @@
 
 /* Error message shown when empty response from pod was received */
 "Unexpected response from pod" = "Pod未知响应";
-
-/* The format string for Unknown pod fault (1: The fault code value) */
-"Unknown pod fault %1$03d" = "Pod未知错误";
 
 /* Recovery suggestion when operation could not be completed due to existing bolus in progress */
 "Wait for existing bolus to finish, or cancel bolus" = "请等待大剂量输注完成,或取消大剂量输注";

@@ -84,7 +84,7 @@
    Button title to deactivate pod */
 "Deactivate Pod" = "Hủy kích hoạt Pod";
 
-/* Label text showing pod is deactivated */
+/* No comment provided by engineer. */
 "Deactivated" = "Đã hủy kích hoạt";
 
 /* Button title to delete Omnipod PumpManager */
@@ -96,7 +96,7 @@
 /* The title of the device information section in settings */
 "Device Information" = "Thông tin thiết bị";
 
-/* Header for devices section of RileyLinkSetupView */
+/* No comment provided by engineer. */
 "Devices" = "Thiết bị";
 
 /* Title text for button to disable bolus beeps */
@@ -105,7 +105,7 @@
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Bật tiếng Beep liều bolus";
 
-/* Accessibility label indicating an error occurred */
+/* No comment provided by engineer. */
 "Error" = "Lỗi";
 
 /* The alert title for disable bolus beeps error */
@@ -168,7 +168,7 @@
 /* The title of the command to pair new pod */
 "Pair New Pod" = "Ghép đôi pod mới";
 
-/* Label text indicating pairing finished. */
+/* No comment provided by engineer. */
 "Paired" = "Đã được ghép đôi";
 
 /* The text of the loading label when pairing */
@@ -244,7 +244,7 @@
 /* A message indicating a command succeeded */
 "Succeeded" = "Đã thành công";
 
-/* Title for suspend duration selection action sheet */
+/* No comment provided by engineer. */
 "Suspend Delivery" = "Tạm ngưng liều insulin";
 
 /* The detail text of the basal row when pod is suspended */
@@ -265,7 +265,7 @@
 /* The error message shown when Loop's basal schedule has more entries than the pod can support */
 "Too many entries" = "Quá nhiều mục";
 
-/* Units for showing temp basal rate */
+/* No comment provided by engineer. */
 "U/hr" = "U/giờ";
 
 /* Instructions when pod cannot be deactivated */

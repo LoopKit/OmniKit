@@ -93,7 +93,7 @@
    Button title to deactivate pod */
 "Deactivate Pod" = "Deaktivoi pumppu";
 
-/* Label text showing pod is deactivated */
+/* No comment provided by engineer. */
 "Deactivated" = "Deaktivoitu";
 
 /* Button title to delete Omnipod PumpManager */
@@ -105,16 +105,19 @@
 /* The title of the device information section in settings */
 "Device Information" = "Laitteen tiedot";
 
-/* Header for devices section of RileyLinkSetupView */
+/* No comment provided by engineer. */
 "Devices" = "Laitteet";
 
 /* Title text for button to disable bolus beeps */
 "Disable Bolus Beeps" = "Laita bolusäänet pois";
 
+/* No comment provided by engineer. */
+"Done" = "Valmis";
+
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Laita bolusäänet päälle";
 
-/* Accessibility label indicating an error occurred */
+/* No comment provided by engineer. */
 "Error" = "Virhe";
 
 /* The alert title for disable bolus beeps error */
@@ -165,8 +168,7 @@
 /* Title of insulin delivery section */
 "Insulin Delivery" = "Insulin Delivery";
 
-/* Text for confidence reminders navigation link
-   Title for insulin type selection screen */
+/* Title for insulin type selection screen */
 "Insulin Type" = "Insuliinityyppi";
 
 /* The error message shown when Loop's basal schedule has an unsupported rate */
@@ -178,8 +180,7 @@
 /* Error message for reservoir view when reservoir empty */
 "No Insulin" = "Ei insuliinia";
 
-/* Label for pod life state when no pod paired
-   Text shown in insulin remaining space when no pod is paired */
+/* Label for pod life state when no pod paired */
 "No Pod" = "Ei pumppua";
 
 /* The detail text for bolus delivery when no bolus is being delivered */
@@ -191,7 +192,7 @@
 /* The title of the command to pair new pod */
 "Pair New Pod" = "Yhdistä uusi pumppu";
 
-/* Label text indicating pairing finished. */
+/* No comment provided by engineer. */
 "Paired" = "Yhdistetty";
 
 /* The text of the loading label when pairing */
@@ -215,8 +216,7 @@
 /* Label for pod life state when within pod expiration window */
 "Pod expired" = "Pumppu vanhentunut";
 
-/* Error message for reservoir view when pod expired
-   Label for pod expiration row, past tense */
+/* Error message for reservoir view when pod expired */
 "Pod Expired" = "Pumppu vanhentunut";
 
 /* Title of the pod settings view controller */
@@ -274,7 +274,7 @@
 /* A message indicating a command succeeded */
 "Succeeded" = "Onnistui";
 
-/* Title for suspend duration selection action sheet */
+/* No comment provided by engineer. */
 "Suspend Delivery" = "Pysäytä annostelu";
 
 /* The detail text of the basal row when pod is suspended */
@@ -300,7 +300,7 @@
 /* The error message shown when Loop's basal schedule has more entries than the pod can support */
 "Too many entries" = "Liian monta basaalitasoa määritetty";
 
-/* Units for showing temp basal rate */
+/* No comment provided by engineer. */
 "U/hr" = "U/h";
 
 /* Instructions when pod cannot be deactivated */

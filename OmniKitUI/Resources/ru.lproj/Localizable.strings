@@ -56,16 +56,16 @@
 /* Format string for total delivery on pod details screen */
 "%g U" = "%g Ед";
 
-/* Button text for 1 hour suspend duration */
+/* No comment provided by engineer. */
 "1 hour" = "1 час";
 
-/* Button text for 1 hour 30 minute suspend duration */
+/* No comment provided by engineer. */
 "1 hour 30 minutes" = "1 час 30 минут";
 
-/* Button text for 2 hour suspend duration */
+/* No comment provided by engineer. */
 "2 hours" = "2 часа";
 
-/* Button text for 30 minute suspend duration */
+/* No comment provided by engineer. */
 "30 minutes" = "30 минут";
 
 /* The title of the cell showing the pod activated at time */
@@ -74,13 +74,13 @@
 /* Section header for activity section */
 "Activity" = "Нагрузка";
 
-/* Text indicating ongoing pump time synchronization */
+/* No comment provided by engineer. */
 "Adjusting Pump Time..." = "Настройка времени помпы...";
 
 /* The title of the cell showing alarm status */
 "Alarms" = "Оповещения";
 
-/* Alert title for cancel pairing modal */
+/* No comment provided by engineer. */
 "Are you sure you want to cancel Pod setup?" = "Вы уверены, что хотите отменить настройку Pod?";
 
 /* Confirmation message for shutting down a pod */
@@ -116,7 +116,7 @@
 /* The title of the cancel action in an action sheet */
 "Cancel" = "Отмена";
 
-/* Button title to cancel manual basal */
+/* No comment provided by engineer. */
 "Cancel Manual Basal" = "Отменить ручную ВБС";
 
 /* Insert cannula action button accessibility label when cannula insertion succeeded */
@@ -149,7 +149,7 @@
 /* Title for uncertainty recovered screen */
 "Comms Recovered" = "Связь восстановлена";
 
-/* Text for confidence reminders navigation link */
+/* No comment provided by engineer. */
 "Confidence Reminders" = "Напоминания об уверенности";
 
 /* Help text for BeepPreferenceSelectionView */
@@ -158,10 +158,10 @@
 /* The title of the configuration section in settings */
 "Configuration" = "Конфигурация";
 
-/* Button title for confirm attachment option */
+/* No comment provided by engineer. */
 "Confirm" = "Подтвердить";
 
-/* Alert title for confirm pod attachment */
+/* No comment provided by engineer. */
 "Confirm Pod Attachment" = "Подтвердите, что под прикреплен к телу";
 
 /* The title of the continue action in an action sheet */
@@ -183,7 +183,7 @@
    Button title to deactivate pod */
 "Deactivate Pod" = "Деактивировать Pod";
 
-/* Label text showing pod is deactivated */
+/* No comment provided by engineer. */
 "Deactivated" = "Не активен";
 
 /* Deactivate pod action button accessibility label while deactivating */
@@ -198,27 +198,28 @@
 /* Title text for delivery limits */
 "Delivery Limits" = "Пределы подачи";
 
-/* Text for device details disclosure row
-   title for device details page */
+/* title for device details page */
 "Device Details" = "Сведения об устройстве";
 
 /* The title of the device information section in settings */
 "Device Information" = "Информация об устройстве";
 
-/* Header for devices section of RileyLinkSetupView */
+/* No comment provided by engineer. */
 "Devices" = "Устройства";
 
 /* Title text for button to disable bolus beeps */
 "Disable Bolus Beeps" = "Отключить звуковой сигнал болюса";
 
-/* Pairing interface navigation bar button text for discard pod action
-   Text for discard pod button */
+/* Pairing interface navigation bar button text for discard pod action */
 "Discard Pod" = "Выбросить под";
+
+/* No comment provided by engineer. */
+"Done" = "Готово";
 
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Включить звуковой сигнал болюса";
 
-/* Accessibility label indicating an error occurred */
+/* No comment provided by engineer. */
 "Error" = "Ошибка";
 
 /* The alert title for disable bolus beeps error */
@@ -290,7 +291,7 @@
 /* Unit for plural hours in pod life remaining */
 "hours" = "часов";
 
-/* Alert message body for confirm pod attachment */
+/* No comment provided by engineer. */
 "If you cancel Pod setup, the current Pod will be deactivated and will be unusable." = "Если вы отмените настройку пода, текущий под будет деактивирован и станет непригодным для использования.";
 
 /* Instructions when deactivating pod that has been paired, but not attached. */
@@ -302,7 +303,7 @@
 /* Button title to insert cannula during setup */
 "Insert Cannula" = "Ввести канюлю";
 
-/* Label text indicating insertion finished. */
+/* No comment provided by engineer. */
 "Inserted" = "Введено";
 
 /* Insert cannula action button accessibility label while pairing */
@@ -311,7 +312,7 @@
 /* Cannula insertion button text while inserting */
 "Inserting..." = "Введение канюли...";
 
-/* Text shown in insulin delivery space when insulin suspended */
+/* No comment provided by engineer. */
 "Insulin\nSuspended" = "Подача инсулина остановлена";
 
 /* The title of the cell showing delivered insulin */
@@ -323,20 +324,19 @@
 /* The action string on pod status page when pod faulted */
 "Insulin delivery stopped. Change Pod now." = "Введение инсулина остановлено. Замените Под.";
 
-/* Message for suspend duration selection action sheet */
+/* No comment provided by engineer. */
 "Insulin delivery will be stopped until you resume manually. When would you like Loop to remind you to resume delivery?" = "Подача инсулина будет прекращена до тех пор, пока вы не возобновите ее вручную. Когда вы хотите, чтобы Loop напомнил вам о необходимости возобновить подачу?";
 
 /* Header for insulin remaining on pod settings screen */
 "Insulin Remaining" = "Остаток инсулина";
 
-/* Text for confidence reminders navigation link
-   Title for insulin type selection screen */
+/* Title for insulin type selection screen */
 "Insulin Type" = "Тип инсулина";
 
 /* The error message shown when Loop's basal schedule has an unsupported rate */
 "Invalid entry" = "Неверная запись";
 
-/* Question to confirm the cannula is inserted properly */
+/* No comment provided by engineer. */
 "Is the cannula inserted properly?" = "Правильно ли введен катетер?";
 
 /* Label text for step 2 of pair pod instructions */
@@ -386,33 +386,28 @@
 /* Button label for user to answer cannula was not properly inserted */
 "No" = "Нет";
 
-/* Text shown in insulin remaining space when no pod is paired */
-"No\nDelivery" = "Нет подачи";
-
 /* No comment provided by engineer. */
-"No Error" = "Нет ошибок";
+"No\nDelivery" = "Нет подачи";
 
 /* Error message for reservoir view when reservoir empty */
 "No Insulin" = "Нет инсулина";
 
-/* Label for pod life state when no pod paired
-   Text shown in insulin remaining space when no pod is paired */
+/* Label for pod life state when no pod paired */
 "No Pod" = "Нет пода";
 
 /* Value text for no expiration reminder */
 "No Reminder" = "Нет напоминаний";
 
-/* Continue pairing button title of in pairing cancel modal */
+/* No comment provided by engineer. */
 "No, Continue With Pod" = "Нет, продолжить с подом";
 
-/* Button text to cancel pump time sync */
+/* No comment provided by engineer. */
 "No, Keep Pump As Is" = "Нет, оставить время в помпе как есть";
 
 /* The detail text for bolus delivery when no bolus is being delivered */
 "None" = "Не подан";
 
-/* navigation title for notification settings
-   Text for pod details disclosure row */
+/* navigation title for notification settings */
 "Notification Settings" = "Настройки уведомлений";
 
 /* No comment provided by engineer. */
@@ -436,7 +431,7 @@
 /* Pairing action button accessibility label while ready to pair */
 "Pair pod." = "Сопрячь под.";
 
-/* Label text indicating pairing finished. */
+/* No comment provided by engineer. */
 "Paired" = "Сопряжен";
 
 /* Pairing action button accessibility label while pairing */
@@ -449,7 +444,7 @@
 "Pairing…" = "Производится Сопряжение";
 
 /* No comment provided by engineer. */
-"Percent = %@" = "Процент = %@";
+"Percent = %lf" = "Процент = %lf";
 
 /* The title of the cell showing the pod pi version */
 "PI Version" = "Версия PI";
@@ -460,7 +455,7 @@
 /* Progress message for play test beeps. */
 "Play Test Beeps…" = "Проверка тест сигнала";
 
-/* Alert message body for confirm pod attachment */
+/* No comment provided by engineer. */
 "Please confirm that the Pod is securely attached to your body.\n\nThe cannula can be inserted only once with each Pod. Tap “Confirm” when Pod is attached." = "Убедитесь, что под надежно приклеен на вашем теле.\n\nКатетер можно ввести только один раз. Нажмите кнопку \"Подтвердить\", когда под приклеен.";
 
 /* Instructions for deactivate pod when pod not on body */
@@ -472,8 +467,7 @@
 /* The title of the cell showing the pod pm version */
 "PM Version" = "Версия PM";
 
-/* description label for activated at time pod details row
-   Label for pod insertion row */
+/* description label for activated at time pod details row */
 "Pod Activated" = "Под активирован";
 
 /* Label describing pod age view */
@@ -488,11 +482,10 @@
 /* Label for pod life state when within pod expiration window */
 "Pod expired" = "Срок работы Omnipod истек";
 
-/* Error message for reservoir view when pod expired
-   Label for pod expiration row, past tense */
+/* Error message for reservoir view when pod expired */
 "Pod Expired" = "Под истек";
 
-/* Label for pod expiration row */
+/* No comment provided by engineer. */
 "Pod Expires" = "Срок действия пода истекает";
 
 /* Label for pod life state when time remaining */
@@ -519,7 +512,7 @@
 /* title for previous pod page */
 "Previous Pod" = "Предыдущий под";
 
-/* Text for previous pod information row */
+/* No comment provided by engineer. */
 "Previous Pod Information" = "Предыдущая информация о поде";
 
 /* The text of the loading label when pod is primed */
@@ -534,22 +527,19 @@
 /* The text of the loading label when priming */
 "Priming…" = "Заправка...";
 
-/* The title of the command to change pump time zone */
+/* No comment provided by engineer. */
 "Pump Time" = "Время в помпе";
 
 /* Label text for basal rate summary */
 "Rate" = "Rate";
 
-/* No comment provided by engineer. */
-"Ref: " = "Ref: ";
-
 /* Label describing time remaining view */
 "Remaining" = "Остается";
 
-/* Title for remove pod modal */
+/* No comment provided by engineer. */
 "Remove Pod from Body" = "Снимите под с тела";
 
-/* Title for Omnipod PumpManager deletion action sheet. */
+/* No comment provided by engineer. */
 "Remove Pump" = "Удалите помпу";
 
 /* Label text for step two of attach pod instructions */
@@ -614,7 +604,7 @@
 /* Button text for setting manual temporary basal rate */
 "Set Temporary Basal" = "Установить ВБС";
 
-/* Button title to set temporary basal rate */
+/* No comment provided by engineer. */
 "Set Temporary Basal Rate" = "Установить ВБС";
 
 /* Title for setup complete screen */
@@ -632,7 +622,7 @@
 /* A message indicating a command succeeded */
 "Succeeded" = "Успешно";
 
-/* Title for suspend duration selection action sheet */
+/* No comment provided by engineer. */
 "Suspend Delivery" = "Остановить подачу";
 
 /* Text for suspend resume button when insulin delivery active */
@@ -641,7 +631,7 @@
 /* The detail text of the basal row when pod is suspended */
 "Suspended" = "Остановлено";
 
-/* Label for suspended at time */
+/* No comment provided by engineer. */
 "Suspended At" = "Приостановлено в";
 
 /* Text for suspend resume button when insulin delivery is suspending */
@@ -650,10 +640,10 @@
 /* Title text for the button to delete Omnipod PumpManager */
 "Switch from Omnipod Pumps" = "Отключиться от помп Omnipod";
 
-/* Label for PumpManager deletion button */
+/* No comment provided by engineer. */
 "Switch to other insulin delivery device" = "Переключиться на другое устройство для введения инсулина";
 
-/* The title of the command to change pump time zone */
+/* No comment provided by engineer. */
 "Sync to Current Time" = "Синхронизация с текущим временем";
 
 /* Title of button to sync basal profile from pod */
@@ -689,13 +679,13 @@
 /* Description text for critical alerts */
 "The reminders above will not sound if your device is in Silent or Do Not Disturb mode.\n\nThere are other critical Pod alerts and alarms that will sound even if your device is set to Silent or Do Not Disturb mode." = "Приведенные выше напоминания не будут звучать, если ваше устройство находится в режиме Тишина или Не беспокоить.\n\nЕсть и другие критические оповещения и сигналы тревоги Pod, которые будут звучать, даже если ваше устройство настроено в режим Тишина или Не беспокоить.";
 
-/* Message for pod sync time action sheet */
+/* No comment provided by engineer. */
 "The time on your pump is different from the current time. Do you want to update the time on your pump to the current time?" = "Время на вашей помпе отличается от текущего времени. Вы хотите обновить время на вашей помпе на текущее?";
 
 /* description for time change detected notice */
 "The time on your pump is different from the current time. Your pump’s time controls your scheduled therapy settings. Scroll down to Pump Time row to review the time difference and configure your pump." = "Время на помпе отличается от текущего времени. Время вашей помпы контролирует ваши запланированные настройки терапии. Прокрутите вниз до строки времени помпы, чтобы просмотреть разницу во времени и настроить помпу.";
 
-/* Description of proper cannula insertion */
+/* No comment provided by engineer. */
 "The window on the top of the Pod should be colored pink when the cannula is properly inserted into the skin." = "Когда канюля правильно введена под кожу, окошко в верхней части пода должно окраситься в розовый цвет.";
 
 /* Format string for recovery suggestion during deactivate pod. */
@@ -712,8 +702,7 @@
    Label for scheduled reminder value row */
 "Time" = "Время";
 
-/* Title for pod sync time action sheet.
-   title for time change detected notice */
+/* title for time change detected notice */
 "Time Change Detected" = "Обнаружено изменение времени";
 
 /* No comment provided by engineer. */
@@ -725,7 +714,7 @@
 /* description label for total delivery pod details row */
 "Total Delivery" = "Подано всего";
 
-/* Units for showing temp basal rate */
+/* No comment provided by engineer. */
 "U/hr" = "U/hr";
 
 /* Instructions when pod cannot be deactivated */
@@ -758,10 +747,10 @@
 /* Button label for user to answer cannula was properly inserted */
 "Yes" = "Да";
 
-/* Button title for confirm deactivation option */
+/* No comment provided by engineer. */
 "Yes, Deactivate Pod" = "Деактивировать Pod";
 
-/* Button text to confirm pump time sync */
+/* No comment provided by engineer. */
 "Yes, Sync to Current Time" = "Да, синхронизировать с текущим временем";
 
 /* bodyText for PodSetupView */
@@ -770,6 +759,6 @@
 /* Format string for instructions for setup complete view. (1: app name) */
 "Your Pod is ready for use.\n\n%1$@ will remind you to change your pod before it expires. You can change this to a time convenient for you." = "Под готов к использованию.\n\n%1$@ напомнит вам о необходимости замены пода до истечения срока его действия. Вы можете изменить это на удобное для вас время.";
 
-/* Alert message body for confirm pod attachment */
+/* No comment provided by engineer. */
 "Your Pod may still be delivering Insulin.\nRemove it from your body, then tap “Continue.“" = "Ваш под может по-прежнему доставлять инсулин.\n Удалите его с тела, затем нажмите «Продолжить».";
 

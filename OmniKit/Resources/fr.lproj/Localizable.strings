@@ -7,9 +7,6 @@
 /* Unit format string for an RSSI value in decibles */
 "%@ dB" = "%@ dB";
 
-/* Unit format string for an value in percent */
-"%@%%" = "%@%%";
-
 /* Format string for alert content body for lowReservoir pod alert. (1: reminder value) */
 "%1$@ insulin or less remaining in Pod. Change Pod soon." = "%1$@ insuline ou moins restant dans le Pod. Remplacer le Pod bientôt.";
 
@@ -142,9 +139,6 @@
 
 /* Error description for OmniBLEPumpManagerError.insulinTypeNotConfigured */
 "Insulin type not configured" = "Type d'insuline non configuré";
-
-/* The format string for Internal pod fault (1: The fault code value) */
-"Internal pod fault %1$03d" = "Code d'erreur interne du Pod %1$03d";
 
 /* The format string describing a bolus that was interrupted. (1: The amount delivered)(2: The amount scheduled)(3: Start time of the dose)(4: duration)(5: scheduled certainty) */
 "InterruptedBolus: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@" = "Bolus interrompu: %1$@ U (%2$@ U programmé) %3$@ %4$@ %5$@";
@@ -457,9 +451,6 @@
 
 /* Error message shown when empty response from pod was received */
 "Unexpected response from pod" = "Reponse inattendue du Pod";
-
-/* The format string for Unknown pod fault (1: The fault code value) */
-"Unknown pod fault %1$03d" = "Erreur de Pod inconnue %1$03d";
 
 /* Format string for description of MessageError unknownValue. (1: value) (2: Type) */
 "Unknown Value (%1$@) for type %2$@" = "Valeur inconnue (%1$@) pour le type %2$@.";

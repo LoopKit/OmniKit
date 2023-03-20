@@ -1,12 +1,6 @@
 /* No comment provided by engineer. */
 "—" = "—";
 
-/* Unit format string for an RSSI value in decibles */
-"%@ dB" = "%@ dB";
-
-/* Format string for bolus percent progress. (1: Percent progress) */
-"%@%%" = "%@ %%";
-
 /* Back button text on DeliveryUncertaintyRecoveryView */
 "Back" = "Zpět";
 
@@ -27,9 +21,6 @@
 
 /* The action string on pod status page when pod expired */
 "Change Pod now. Insulin delivery will stop 8 hours after the Pod has expired or when no more insulin remains." = "Vyměňte pod. Výdej inzulinu se zastaví 8 hodin poté, co pod vypršel, nebo když už v něm nezbývá žádný inzulín.";
-
-/* Format string for the action string on pod status page when pod expired. (1: service time remaining) */
-"Change Pod now. Insulin delivery will stop in %1$@ or when no more insulin remains." = "Vyměňte pod. Výdej inzulínu se zastaví za %1$@ nebo když dojde inzulín.";
 
 /* The title of the command to change pump time zone */
 "Change Time Zone" = "Změnit časové pásmo";
@@ -71,7 +62,7 @@
    Button title to deactivate pod */
 "Deactivate Pod" = "Deaktivovat Pod";
 
-/* Label text showing pod is deactivated */
+/* No comment provided by engineer. */
 "Deactivated" = "Deaktivováno";
 
 /* Deactivate pod action button accessibility label while deactivating */
@@ -86,8 +77,7 @@
 /* Title text for delivery limits */
 "Delivery Limits" = "Limity podávání";
 
-/* Text for device details disclosure row
-   title for device details page */
+/* title for device details page */
 "Device Details" = "Podrobnosti o zařízení";
 
 /* The title of the device information section in settings */
@@ -96,9 +86,11 @@
 /* Title text for button to disable bolus beeps */
 "Disable Bolus Beeps" = "Zakázat pípání bolusu";
 
-/* Pairing interface navigation bar button text for discard pod action
-   Text for discard pod button */
+/* Pairing interface navigation bar button text for discard pod action */
 "Discard Pod" = "Vyřadit pod";
+
+/* No comment provided by engineer. */
+"Done" = "Hotovo";
 
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Povolit pípání bolusu";
@@ -106,8 +98,7 @@
 /* The action string on pod status page when pod faulted */
 "Insulin delivery stopped. Change Pod now." = "Podávání inzulínu bylo zastaveno. Vyměňte pod nyní.";
 
-/* Text for confidence reminders navigation link
-   Title for insulin type selection screen */
+/* Title for insulin type selection screen */
 "Insulin Type" = "Typ inzulínu";
 
 /* The error message shown when Loop's basal schedule has an unsupported rate */
@@ -154,14 +145,10 @@
 /* Button label for user to answer cannula was not properly inserted */
 "No" = "Ne";
 
-/* No comment provided by engineer. */
-"No Error" = "Žádná chyba";
-
 /* Error message for reservoir view when reservoir empty */
 "No Insulin" = "Žádný inzulín";
 
-/* Label for pod life state when no pod paired
-   Text shown in insulin remaining space when no pod is paired */
+/* Label for pod life state when no pod paired */
 "No Pod" = "Žádný pod";
 
 /* Value text for no expiration reminder */
@@ -170,8 +157,7 @@
 /* The detail text for bolus delivery when no bolus is being delivered */
 "None" = "Žádný";
 
-/* navigation title for notification settings
-   Text for pod details disclosure row */
+/* navigation title for notification settings */
 "Notification Settings" = "Nastavení upozornění";
 
 /* No comment provided by engineer. */

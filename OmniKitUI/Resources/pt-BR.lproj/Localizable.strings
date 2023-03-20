@@ -84,7 +84,7 @@
    Button title to deactivate pod */
 "Deactivate Pod" = "Desativar Pod";
 
-/* Label text showing pod is deactivated */
+/* No comment provided by engineer. */
 "Deactivated" = "Desativado";
 
 /* Button title to delete Omnipod PumpManager */
@@ -96,7 +96,7 @@
 /* The title of the device information section in settings */
 "Device Information" = "Informação do Dispositivo";
 
-/* Header for devices section of RileyLinkSetupView */
+/* No comment provided by engineer. */
 "Devices" = "Dispositivos";
 
 /* Title text for button to disable bolus beeps */
@@ -105,7 +105,7 @@
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Ativar bipes de bolus";
 
-/* Accessibility label indicating an error occurred */
+/* No comment provided by engineer. */
 "Error" = "Erro";
 
 /* The alert title for disable bolus beeps error */
@@ -168,7 +168,7 @@
 /* The title of the command to pair new pod */
 "Pair New Pod" = "Emparelhe um Novo Pod";
 
-/* Label text indicating pairing finished. */
+/* No comment provided by engineer. */
 "Paired" = "Emparelhado";
 
 /* The text of the loading label when pairing */
@@ -244,7 +244,7 @@
 /* A message indicating a command succeeded */
 "Succeeded" = "Completo";
 
-/* Title for suspend duration selection action sheet */
+/* No comment provided by engineer. */
 "Suspend Delivery" = "Suspender Entrega";
 
 /* The detail text of the basal row when pod is suspended */
@@ -265,7 +265,7 @@
 /* The error message shown when Loop's basal schedule has more entries than the pod can support */
 "Too many entries" = "Muitas entradas";
 
-/* Units for showing temp basal rate */
+/* No comment provided by engineer. */
 "U/hr" = "U/hr";
 
 /* Instructions when pod cannot be deactivated */

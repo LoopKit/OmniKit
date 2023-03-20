@@ -1,6 +1,3 @@
-/* Unit format string for an value in percent */
-"%@%%" = "%@%%";
-
 /* Description for auto-off alarm */
 "Auto-off alarm" = "Auto-off alarm";
 
@@ -51,9 +48,6 @@
 
 /* Pod inititialized */
 "Initialized" = "Đã được khởi tạo";
-
-/* The format string for Internal pod fault (1: The fault code value) */
-"Internal pod fault %1$03d" = "Lỗi bên trong pod %1$03d";
 
 /* The format string describing a bolus that was interrupted. (1: The amount delivered)(2: The amount scheduled)(3: Start time of the dose)(4: duration)(5: scheduled certainty) */
 "InterruptedBolus: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@" = "InterruptedBolus: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@";
@@ -177,9 +171,6 @@
 
 /* Error message shown when empty response from pod was received */
 "Unexpected response from pod" = "Phản hồi bất thường từ pod";
-
-/* The format string for Unknown pod fault (1: The fault code value) */
-"Unknown pod fault %1$03d" = "Lỗi không xác định của pod %1$03d";
 
 /* Recovery suggestion when operation could not be completed due to existing bolus in progress */
 "Wait for existing bolus to finish, or cancel bolus" = "Chờ đợi liệu bolus hiện tại hoàn tất hoặc hủy liều bolus";

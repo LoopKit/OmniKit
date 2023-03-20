@@ -1,6 +1,3 @@
-/* Unit format string for an value in percent */
-"%@%%" = "%@%%";
-
 /* Description for auto-off alarm */
 "Auto-off alarm" = "アラーム自動オフ";
 
@@ -48,9 +45,6 @@
 
 /* Pod inititialized */
 "Initialized" = "初期化完了";
-
-/* The format string for Internal pod fault (1: The fault code value) */
-"Internal pod fault %1$03d" = "インターナルポッドエラー %1$03d";
 
 /* The format string describing a bolus that was interrupted. (1: The amount delivered)(2: The amount scheduled)(3: Start time of the dose)(4: duration)(5: scheduled certainty) */
 "InterruptedBolus: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@" = "ボーラス中断: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@";
