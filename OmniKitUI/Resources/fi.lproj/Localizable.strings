@@ -111,6 +111,9 @@
 /* Title text for button to disable bolus beeps */
 "Disable Bolus Beeps" = "Laita bolusäänet pois";
 
+/* No comment provided by engineer. */
+"Done" = "Valmis";
+
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Laita bolusäänet päälle";
 

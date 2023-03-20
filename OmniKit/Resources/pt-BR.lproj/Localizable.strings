@@ -1,6 +1,3 @@
-/* Unit format string for an value in percent */
-"%@%%" = "%@%%";
-
 /* Description for auto-off alarm */
 "Auto-off alarm" = "Alarme de desligamento automático";
 

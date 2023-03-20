@@ -215,6 +215,9 @@
    Text for discard pod button */
 "Discard Pod" = "Descartar Pod";
 
+/* No comment provided by engineer. */
+"Done" = "Completado";
+
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Activar Pitidos del Bolo";
 
@@ -389,9 +392,6 @@
 /* Text shown in insulin remaining space when no pod is paired */
 "No\nDelivery" = "No hay administración";
 
-/* No comment provided by engineer. */
-"No Error" = "No hay error";
-
 /* Error message for reservoir view when reservoir empty */
 "No Insulin" = "No hay insulina";
 
@@ -449,7 +449,7 @@
 "Pairing…" = "Emparejando...";
 
 /* No comment provided by engineer. */
-"Percent = %@" = "Porcentaje = %@";
+"Percent = %lf" = "Porcentaje = %lf";
 
 /* The title of the cell showing the pod pi version */
 "PI Version" = "Versión PI del Pod";
@@ -539,9 +539,6 @@
 
 /* Label text for basal rate summary */
 "Rate" = "Tasa";
-
-/* No comment provided by engineer. */
-"Ref: " = "Ref:";
 
 /* Label describing time remaining view */
 "Remaining" = "Restante";

@@ -1,9 +1,3 @@
-/* Unit format string for an RSSI value in decibles */
-"%@ dB" = "%@ dB";
-
-/* Unit format string for an value in percent */
-"%@%%" = "%@ %%";
-
 /* Pod state when basal initialized */
 "Basal initialized" = "Bazál inicializován";
 
@@ -12,9 +6,6 @@
 
 /* Error message shown when operation could not be completed due to existing bolus in progress */
 "Bolus in progress" = "Probíhající bolus";
-
-/* The format string describing a bolus. (1: The amount delivered)(2: Start time of the dose)(3: duration)(4: scheduled certainty) */
-"Bolus: %1$@U %2$@ %3$@ %4$@" = "Bolus: %1$@ U %2$@ %3$@ %4$@";
 
 /* Delivery status when bolusing */
 "Bolusing" = "Bolusování";
@@ -70,12 +61,6 @@
 /* The default notification body for AlarmCodes */
 "Insulin delivery stopped. Change Pod now." = "Podávání inzulínu bylo zastaveno. Vyměňte pod nyní.";
 
-/* The format string for Internal pod fault (1: The fault code value) */
-"Internal pod fault %1$03d" = "Interní chyba podu %1$03d";
-
-/* The format string describing a bolus that was interrupted. (1: The amount delivered)(2: The amount scheduled)(3: Start time of the dose)(4: duration)(5: scheduled certainty) */
-"InterruptedBolus: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@" = "Přerušený bolus: %1$@ U ( %2$@ U naplánované) %3$@ %4$@ %5$@";
-
 /* Alert content title for lowReservoir pod alert */
 "Low Reservoir" = "Poloprázdný zásobník";
 
@@ -115,9 +100,6 @@
 /* Pod pairing reminder initialized */
 "Reminder initialized" = "Upozornění inicializováno";
 
-/* The format string describing a resume. (1: Time)(2: Scheduled certainty */
-"Resume: %1$@ %2$@" = "Pokračovat: %1$@ %2$@";
-
 /* Delivery status when scheduled basal is running */
 "Scheduled basal" = "Plánovaný bazál";
 
@@ -136,9 +118,6 @@
 /* Description for suspend time expired */
 "Suspend time expired" = "Období pozastavení vypršelo";
 
-/* The format string describing a suspend. (1: Time)(2: Scheduled certainty */
-"Suspend: %1$@ %2$@" = "Pozastavit: %1$@ %2$@";
-
 /* Delivery status when insulin delivery is suspended */
 "Suspended" = "Pozastaveno";
 
@@ -154,12 +133,6 @@
 /* Delivery status when temp basal is running */
 "Temp basal running" = "Dočasný bazál v platnosti";
 
-/* The format string describing a temp basal. (1: The rate)(2: Start time)(3: duration)(4: volume)(5: scheduled certainty */
-"TempBasal: %1$@ U/hour %2$@ %3$@ %4$@ U %5$@" = "DočBazál: %1$@ U/hour %2$@ %3$@ %4$@ U %5$@";
-
-/* The format string for pod expiration notification body (1: time until expiration) */
-"Time to replace your pod! Your pod will expire in %1$@" = "Čas vyměnit pod! Platnost vašeho podu vyprší za %1$@";
-
 /* String describing a dose that was possibly scheduled */
 "Uncertain" = "Nejasné";
 
@@ -168,15 +141,6 @@
 
 /* Error message shown when empty response from pod was received */
 "Unexpected response from pod" = "Neočekávaná odpověď od podu";
-
-/* The format string for Unknown pod fault (1: The fault code value) */
-"Unknown pod fault %1$03d" = "Neznámá chyba podu %1$03d";
-
-/* Format string for description of MessageError unknownValue. (1: value) (2: Type) */
-"Unknown Value (%1$@) for type %2$@" = "Neznámá hodnota ( %1$@ ) pro typ %2$@";
-
-/* Format string for description of MessageError validationFailed. (1: description of validation failure) */
-"Validation failed: %1$@" = "Ověření se nezdařilo: %1$@";
 
 /* Recovery suggestion when operation could not be completed due to existing bolus in progress */
 "Wait for existing bolus to finish, or cancel bolus" = "Počkejte na dokončení podávání stávajícího bolusu nebo bolus zrušte";

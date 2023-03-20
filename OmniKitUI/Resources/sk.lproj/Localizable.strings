@@ -185,6 +185,9 @@
    Text for discard pod button */
 "Discard Pod" = "Zlikvidujte pod";
 
+/* No comment provided by engineer. */
+"Done" = "Hotovo";
+
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Povoliť pípanie pri boluse";
 
@@ -341,9 +344,6 @@
 /* Button label for user to answer cannula was not properly inserted */
 "No" = "Nie";
 
-/* No comment provided by engineer. */
-"No Error" = "Žiadna chyba";
-
 /* Error message for reservoir view when reservoir empty */
 "No Insulin" = "Žiadny inzulín";
 
@@ -393,9 +393,6 @@
 
 /* The text of the loading label when pairing */
 "Pairing…" = "Párovanie…";
-
-/* No comment provided by engineer. */
-"Percent = %@" = "Percentá = %@";
 
 /* The title of the cell showing the pod pi version */
 "PI Version" = "Verzia PI";
@@ -473,9 +470,6 @@
 
 /* Label text for basal rate summary */
 "Rate" = "Dávka";
-
-/* No comment provided by engineer. */
-"Ref: " = "Ref:";
 
 /* Label describing time remaining view */
 "Remaining" = "Zostáva";

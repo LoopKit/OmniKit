@@ -7,9 +7,6 @@
 /* Unit format string for an RSSI value in decibles */
 "%@ dB" = "%@ dB";
 
-/* Unit format string for an value in percent */
-"%@%%" = "%@%%";
-
 /* Format string for alert content body for lowReservoir pod alert. (1: reminder value) */
 "%1$@ insulin or less remaining in Pod. Change Pod soon." = "%1$@ insulin eller mindre gjenstår i Pod. Bytt Pod snart.";
 
@@ -132,7 +129,7 @@
 "Initialized" = "Klargjort";
 
 /* Pod state when inserting cannula */
-"Inserting cannula" = "Fører inn kanyle";
+"Inserting cannula" = "Skyter inn kanyle";
 
 /* The default notification body for AlarmCodes */
 "Insulin delivery stopped. Change Pod now." = "Insulintilførselen stoppet. Bytt Pod nå.";

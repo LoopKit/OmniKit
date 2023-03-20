@@ -111,6 +111,9 @@
 /* Title text for button to disable bolus beeps */
 "Disable Bolus Beeps" = "Stäng av bolusljud";
 
+/* No comment provided by engineer. */
+"Done" = "Färdig";
+
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Slå på bolusljud";
 

@@ -1,12 +1,6 @@
 /* No comment provided by engineer. */
 "—" = "—";
 
-/* Unit format string for an RSSI value in decibles */
-"%@ dB" = "%@ dB";
-
-/* Format string for bolus percent progress. (1: Percent progress) */
-"%@%%" = "%@ %%";
-
 /* Back button text on DeliveryUncertaintyRecoveryView */
 "Back" = "Zpět";
 
@@ -27,9 +21,6 @@
 
 /* The action string on pod status page when pod expired */
 "Change Pod now. Insulin delivery will stop 8 hours after the Pod has expired or when no more insulin remains." = "Vyměňte pod. Výdej inzulinu se zastaví 8 hodin poté, co pod vypršel, nebo když už v něm nezbývá žádný inzulín.";
-
-/* Format string for the action string on pod status page when pod expired. (1: service time remaining) */
-"Change Pod now. Insulin delivery will stop in %1$@ or when no more insulin remains." = "Vyměňte pod. Výdej inzulínu se zastaví za %1$@ nebo když dojde inzulín.";
 
 /* The title of the command to change pump time zone */
 "Change Time Zone" = "Změnit časové pásmo";
@@ -100,6 +91,9 @@
    Text for discard pod button */
 "Discard Pod" = "Vyřadit pod";
 
+/* No comment provided by engineer. */
+"Done" = "Hotovo";
+
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Povolit pípání bolusu";
 
@@ -153,9 +147,6 @@
 
 /* Button label for user to answer cannula was not properly inserted */
 "No" = "Ne";
-
-/* No comment provided by engineer. */
-"No Error" = "Žádná chyba";
 
 /* Error message for reservoir view when reservoir empty */
 "No Insulin" = "Žádný inzulín";
