@@ -250,7 +250,7 @@ struct OmnipodSettingsView: View  {
     }
     
     private var doneButton: some View {
-        Button("Done", action: {
+        Button(LocalizedString("Done", comment: "Title of done button on OmnipodSettingsView"), action: {
             self.viewModel.doneTapped()
         })
     }
