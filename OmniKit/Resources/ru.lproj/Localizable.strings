@@ -7,9 +7,6 @@
 /* Unit format string for an RSSI value in decibles */
 "%@ dB" = "%@ дБ";
 
-/* Unit format string for an value in percent */
-"%@%%" = "%@%%";
-
 /* Format string for alert content body for lowReservoir pod alert. (1: reminder value) */
 "%1$@ insulin or less remaining in Pod. Change Pod soon." = "В поде осталось %1$@ инсулина или меньше. Замените под в ближайшее время.";
 

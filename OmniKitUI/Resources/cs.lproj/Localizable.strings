@@ -100,6 +100,9 @@
    Text for discard pod button */
 "Discard Pod" = "Vyřadit pod";
 
+/* No comment provided by engineer. */
+"Done" = "Hotovo";
+
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Povolit pípání bolusu";
 
@@ -153,9 +156,6 @@
 
 /* Button label for user to answer cannula was not properly inserted */
 "No" = "Ne";
-
-/* No comment provided by engineer. */
-"No Error" = "Žádná chyba";
 
 /* Error message for reservoir view when reservoir empty */
 "No Insulin" = "Žádný inzulín";

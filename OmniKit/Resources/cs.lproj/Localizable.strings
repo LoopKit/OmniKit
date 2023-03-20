@@ -1,9 +1,6 @@
 /* Unit format string for an RSSI value in decibles */
 "%@ dB" = "%@ dB";
 
-/* Unit format string for an value in percent */
-"%@%%" = "%@ %%";
-
 /* Pod state when basal initialized */
 "Basal initialized" = "Bazál inicializován";
 

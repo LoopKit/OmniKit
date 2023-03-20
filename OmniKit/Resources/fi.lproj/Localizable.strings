@@ -4,9 +4,6 @@
 /* Unit format string for an RSSI value in decibles */
 "%@ dB" = "%@ dB";
 
-/* Unit format string for an value in percent */
-"%@%%" = "%@%%";
-
 /* Format string for activation time exceeded
    Pod state when activation not completed in the time allowed */
 "Activation time exceeded" = "Aktivointiaika ylitetty";

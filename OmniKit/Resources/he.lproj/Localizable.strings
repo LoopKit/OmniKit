@@ -1,9 +1,6 @@
 /* Unit format string for an RSSI value in decibles */
 "%@ dB" = "%@ dB";
 
-/* Unit format string for an value in percent */
-"%@%%" = "%@%%";
-
 /* Description for auto-off alarm */
 "Auto-off alarm" = "Auto-off alarm";
 

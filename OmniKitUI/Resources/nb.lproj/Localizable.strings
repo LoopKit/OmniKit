@@ -120,7 +120,7 @@
 "Cancel Manual Basal" = "Avbryt manuell basal";
 
 /* Insert cannula action button accessibility label when cannula insertion succeeded */
-"Cannula inserted successfully. Continue." = "Kanyle satt inn vellykket. Fortsette.";
+"Cannula inserted successfully. Continue." = "Kanyle skutt inn vellykket. Fortsett.";
 
 /* The action string on pod status page when pod expired */
 "Change Pod now. Insulin delivery will stop 8 hours after the Pod has expired or when no more insulin remains." = "Bytt Pod nå. Insulintilførselen vil stoppe 8 timer etter at pod har utløpt eller når det ikke er mer insulin igjen.";
@@ -214,6 +214,9 @@
 /* Pairing interface navigation bar button text for discard pod action
    Text for discard pod button */
 "Discard Pod" = "Kast Pod";
+
+/* No comment provided by engineer. */
+"Done" = "Ferdig";
 
 /* Title text for button to enable bolus beeps */
 "Enable Bolus Beeps" = "Slå på lyd ved bolus";
@@ -389,9 +392,6 @@
 /* Text shown in insulin remaining space when no pod is paired */
 "No\nDelivery" = "Ingen Leveranse";
 
-/* No comment provided by engineer. */
-"No Error" = "Ingen feil";
-
 /* Error message for reservoir view when reservoir empty */
 "No Insulin" = "Ingen insulin";
 
@@ -449,7 +449,7 @@
 "Pairing…" = "Kobler sammen...";
 
 /* No comment provided by engineer. */
-"Percent = %@" = "Prosent = %@";
+"Percent = %lf" = "Prosent = %lf";
 
 /* The title of the cell showing the pod pi version */
 "PI Version" = "PI Versjon";
@@ -539,9 +539,6 @@
 
 /* Label text for basal rate summary */
 "Rate" = "Rate";
-
-/* No comment provided by engineer. */
-"Ref: " = "Ref:";
 
 /* Label describing time remaining view */
 "Remaining" = "Gjenstående";
