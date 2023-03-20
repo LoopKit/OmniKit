@@ -14,47 +14,6 @@
 		C1229C1E29C7E5BC0066A89C /* RileyLinkKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1929C7E5BC0066A89C /* RileyLinkKitUI.framework */; };
 		C1229C1F29C7E5BC0066A89C /* RileyLinkKitUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1929C7E5BC0066A89C /* RileyLinkKitUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1229C7229C7F0950066A89C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1229C2B29C7ED840066A89C /* main.swift */; };
-		C1229C7329C7F0BD0066A89C /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401B329C7D8E900B32844 /* Packet.swift */; };
-		C1229C7429C7F0C80066A89C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12ED9FF29C7DD2300435701 /* Data.swift */; };
-		C1229C7529C7F0CC0066A89C /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA0329C7DDC800435701 /* TimeInterval.swift */; };
-		C1229C7629C7F0EC0066A89C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019929C7D8E900B32844 /* Message.swift */; };
-		C1229C7729C7F0F70066A89C /* MessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018529C7D8E900B32844 /* MessageBlock.swift */; };
-		C1229C7829C7F10F0066A89C /* PodInfoPulseLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124017E29C7D8E900B32844 /* PodInfoPulseLog.swift */; };
-		C1229C7929C7F10F0066A89C /* VersionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124017F29C7D8E900B32844 /* VersionResponse.swift */; };
-		C1229C7A29C7F10F0066A89C /* PodInfoActivationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018029C7D8E900B32844 /* PodInfoActivationTime.swift */; };
-		C1229C7B29C7F10F0066A89C /* TempBasalExtraCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018129C7D8E900B32844 /* TempBasalExtraCommand.swift */; };
-		C1229C7C29C7F10F0066A89C /* DeactivatePodCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018229C7D8E900B32844 /* DeactivatePodCommand.swift */; };
-		C1229C7D29C7F10F0066A89C /* AcknowledgeAlertCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018329C7D8E900B32844 /* AcknowledgeAlertCommand.swift */; };
-		C1229C7E29C7F10F0066A89C /* PodInfoConfiguredAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018429C7D8E900B32844 /* PodInfoConfiguredAlerts.swift */; };
-		C1229C7F29C7F10F0066A89C /* PlaceholderMessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018629C7D8E900B32844 /* PlaceholderMessageBlock.swift */; };
-		C1229C8029C7F10F0066A89C /* PodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018729C7D8E900B32844 /* PodInfo.swift */; };
-		C1229C8129C7F10F0066A89C /* BolusExtraCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018829C7D8E900B32844 /* BolusExtraCommand.swift */; };
-		C1229C8229C7F10F0066A89C /* FaultConfigCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018929C7D8E900B32844 /* FaultConfigCommand.swift */; };
-		C1229C8329C7F10F0066A89C /* PodInfoPulseLogPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018A29C7D8E900B32844 /* PodInfoPulseLogPlus.swift */; };
-		C1229C8429C7F10F0066A89C /* StatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018B29C7D8E900B32844 /* StatusResponse.swift */; };
-		C1229C8529C7F10F0066A89C /* GetStatusCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018C29C7D8E900B32844 /* GetStatusCommand.swift */; };
-		C1229C8629C7F10F0066A89C /* BasalScheduleExtraCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018D29C7D8E900B32844 /* BasalScheduleExtraCommand.swift */; };
-		C1229C8729C7F10F0066A89C /* CancelDeliveryCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018E29C7D8E900B32844 /* CancelDeliveryCommand.swift */; };
-		C1229C8829C7F10F0066A89C /* AssignAddressCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018F29C7D8E900B32844 /* AssignAddressCommand.swift */; };
-		C1229C8929C7F10F0066A89C /* BeepConfigCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019029C7D8E900B32844 /* BeepConfigCommand.swift */; };
-		C1229C8A29C7F10F0066A89C /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019129C7D8E900B32844 /* ErrorResponse.swift */; };
-		C1229C8B29C7F10F0066A89C /* SetupPodCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019229C7D8E900B32844 /* SetupPodCommand.swift */; };
-		C1229C8C29C7F10F0066A89C /* DetailedStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019329C7D8E900B32844 /* DetailedStatus.swift */; };
-		C1229C8D29C7F10F0066A89C /* PodInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019429C7D8E900B32844 /* PodInfoResponse.swift */; };
-		C1229C8E29C7F10F0066A89C /* SetInsulinScheduleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019529C7D8E900B32844 /* SetInsulinScheduleCommand.swift */; };
-		C1229C8F29C7F10F0066A89C /* ConfigureAlertsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019629C7D8E900B32844 /* ConfigureAlertsCommand.swift */; };
-		C1229C9029C7F11B0066A89C /* BeepType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124017B29C7D8E900B32844 /* BeepType.swift */; };
-		C1229C9129C7F12D0066A89C /* AlertSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A129C7D8E900B32844 /* AlertSlot.swift */; };
-		C1229C9229C7F1370066A89C /* Pod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019B29C7D8E900B32844 /* Pod.swift */; };
-		C1229C9329C7F1460066A89C /* BasalDeliveryTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019D29C7D8E900B32844 /* BasalDeliveryTable.swift */; };
-		C1229C9429C7F1510066A89C /* PodProgressStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A329C7D8E900B32844 /* PodProgressStatus.swift */; };
-		C1229C9529C7F15C0066A89C /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA0129C7DD4700435701 /* LocalizedString.swift */; };
-		C1229C9629C7F1680066A89C /* InsulinTableEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A229C7D8E900B32844 /* InsulinTableEntry.swift */; };
-		C1229C9729C7F1760066A89C /* BasalSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A529C7D8E900B32844 /* BasalSchedule.swift */; };
-		C1229C9829C7F1860066A89C /* FaultEventCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019829C7D8E900B32844 /* FaultEventCode.swift */; };
-		C1229C9929C7F19A0066A89C /* BolusDeliveryTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A629C7D8E900B32844 /* BolusDeliveryTable.swift */; };
-		C1229C9A29C7F1B10066A89C /* CRC16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A429C7D8E900B32844 /* CRC16.swift */; };
-		C1229C9B29C7F1BF0066A89C /* CRC8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401B229C7D8E900B32844 /* CRC8.swift */; };
 		C124017029C7D87A00B32844 /* OmniKit.h in Headers */ = {isa = PBXBuildFile; fileRef = C124016F29C7D87A00B32844 /* OmniKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C124017729C7D8CD00B32844 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C124017629C7D8CD00B32844 /* README.md */; };
 		C12401B529C7D8E900B32844 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124017929C7D8E900B32844 /* Notification.swift */; };
@@ -1051,48 +1010,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1229C9029C7F11B0066A89C /* BeepType.swift in Sources */,
-				C1229C7829C7F10F0066A89C /* PodInfoPulseLog.swift in Sources */,
-				C1229C7929C7F10F0066A89C /* VersionResponse.swift in Sources */,
-				C1229C9B29C7F1BF0066A89C /* CRC8.swift in Sources */,
-				C1229C7A29C7F10F0066A89C /* PodInfoActivationTime.swift in Sources */,
-				C1229C9129C7F12D0066A89C /* AlertSlot.swift in Sources */,
-				C1229C7B29C7F10F0066A89C /* TempBasalExtraCommand.swift in Sources */,
-				C1229C9229C7F1370066A89C /* Pod.swift in Sources */,
-				C1229C7C29C7F10F0066A89C /* DeactivatePodCommand.swift in Sources */,
-				C1229C7D29C7F10F0066A89C /* AcknowledgeAlertCommand.swift in Sources */,
-				C1229C9A29C7F1B10066A89C /* CRC16.swift in Sources */,
-				C1229C9629C7F1680066A89C /* InsulinTableEntry.swift in Sources */,
-				C1229C7E29C7F10F0066A89C /* PodInfoConfiguredAlerts.swift in Sources */,
-				C1229C7F29C7F10F0066A89C /* PlaceholderMessageBlock.swift in Sources */,
-				C1229C9429C7F1510066A89C /* PodProgressStatus.swift in Sources */,
-				C1229C8029C7F10F0066A89C /* PodInfo.swift in Sources */,
-				C1229C9329C7F1460066A89C /* BasalDeliveryTable.swift in Sources */,
-				C1229C8129C7F10F0066A89C /* BolusExtraCommand.swift in Sources */,
-				C1229C8229C7F10F0066A89C /* FaultConfigCommand.swift in Sources */,
-				C1229C8329C7F10F0066A89C /* PodInfoPulseLogPlus.swift in Sources */,
-				C1229C8429C7F10F0066A89C /* StatusResponse.swift in Sources */,
-				C1229C8529C7F10F0066A89C /* GetStatusCommand.swift in Sources */,
-				C1229C8629C7F10F0066A89C /* BasalScheduleExtraCommand.swift in Sources */,
-				C1229C8729C7F10F0066A89C /* CancelDeliveryCommand.swift in Sources */,
-				C1229C8829C7F10F0066A89C /* AssignAddressCommand.swift in Sources */,
-				C1229C8929C7F10F0066A89C /* BeepConfigCommand.swift in Sources */,
-				C1229C8A29C7F10F0066A89C /* ErrorResponse.swift in Sources */,
-				C1229C8B29C7F10F0066A89C /* SetupPodCommand.swift in Sources */,
-				C1229C8C29C7F10F0066A89C /* DetailedStatus.swift in Sources */,
-				C1229C9529C7F15C0066A89C /* LocalizedString.swift in Sources */,
-				C1229C9929C7F19A0066A89C /* BolusDeliveryTable.swift in Sources */,
-				C1229C8D29C7F10F0066A89C /* PodInfoResponse.swift in Sources */,
-				C1229C8E29C7F10F0066A89C /* SetInsulinScheduleCommand.swift in Sources */,
-				C1229C8F29C7F10F0066A89C /* ConfigureAlertsCommand.swift in Sources */,
 				C1229C7229C7F0950066A89C /* main.swift in Sources */,
-				C1229C9729C7F1760066A89C /* BasalSchedule.swift in Sources */,
-				C1229C7729C7F0F70066A89C /* MessageBlock.swift in Sources */,
-				C1229C7529C7F0CC0066A89C /* TimeInterval.swift in Sources */,
-				C1229C9829C7F1860066A89C /* FaultEventCode.swift in Sources */,
-				C1229C7629C7F0EC0066A89C /* Message.swift in Sources */,
-				C1229C7429C7F0C80066A89C /* Data.swift in Sources */,
-				C1229C7329C7F0BD0066A89C /* Packet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
