@@ -16,7 +16,7 @@ struct UncertaintyRecoveredView: View {
     
     var body: some View {
         GuidePage(content: {
-            Text("\(self.appName) has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use \(self.appName) normally now.")
+            Text(LocalizedString("Loop has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use Loop normally now.", comment: "Text body for page showing insulin uncertainty has been recovered."))
                 .fixedSize(horizontal: false, vertical: true)
                 .padding([.top, .bottom])
         }) {
