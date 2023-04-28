@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1420"
+   LastUpgradeVersion = "1430"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C1229C2829C7ED840066A89C"
+               BlueprintIdentifier = "C1229C6A29C7F0840066A89C"
                BuildableName = "OmniKitPacketParser"
                BlueprintName = "OmniKitPacketParser"
                ReferencedContainer = "container:OmniKit.xcodeproj">
@@ -45,7 +45,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C1229C2829C7ED840066A89C"
+            BlueprintIdentifier = "C1229C6A29C7F0840066A89C"
             BuildableName = "OmniKitPacketParser"
             BlueprintName = "OmniKitPacketParser"
             ReferencedContainer = "container:OmniKit.xcodeproj">
@@ -62,7 +62,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C1229C2829C7ED840066A89C"
+            BlueprintIdentifier = "C1229C6A29C7F0840066A89C"
             BuildableName = "OmniKitPacketParser"
             BlueprintName = "OmniKitPacketParser"
             ReferencedContainer = "container:OmniKit.xcodeproj">
