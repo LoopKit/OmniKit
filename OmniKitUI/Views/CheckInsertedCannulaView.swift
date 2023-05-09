@@ -53,7 +53,6 @@ struct CheckInsertedCannulaView: View {
                 }
             }.padding()
         }
-        .animation(.default)
         .alert(isPresented: $cancelModalIsPresented) { cancelPairingModal }
         .navigationBarTitle("Check Cannula", displayMode: .automatic)
         .navigationBarItems(trailing: cancelButton)

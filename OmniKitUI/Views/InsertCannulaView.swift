@@ -74,14 +74,12 @@ struct InsertCannulaView: View {
                             .actionButtonStyle(.primary)
                     }
                     .disabled(self.viewModel.state.isProcessing)
-                    .animation(nil)
                     .zIndex(1)
                 }
             }
             .transition(AnyTransition.opacity.combined(with: .move(edge: .bottom)))
             .padding()
         }
-        .animation(.default)
         .alert(isPresented: $cancelModalIsPresented) { cancelPairingModal }
         .navigationBarTitle("Insert Cannula", displayMode: .automatic)
         .navigationBarBackButtonHidden(true)

@@ -48,12 +48,10 @@ struct AttachPodView: View {
                     .accessibility(identifier: "button_next_action")
                     .actionButtonStyle(.primary)
             }
-            .animation(nil)
             .padding()
             .background(Color(UIColor.systemBackground))
             .zIndex(1)
         }
-        .animation(.default)
         .alert(item: $activeModal, content: self.alert(for:))
         .navigationBarTitle("Attach Pod", displayMode: .automatic)
         .navigationBarItems(trailing: cancelButton)

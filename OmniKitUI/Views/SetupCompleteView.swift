@@ -83,7 +83,6 @@ struct SetupCompleteView: View {
             .background(Color(UIColor.systemBackground))
             .zIndex(1)
         }
-        .animation(.default)
         .navigationBarTitle("Setup Complete", displayMode: .automatic)
     }
     
