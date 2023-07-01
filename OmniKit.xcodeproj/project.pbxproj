@@ -150,6 +150,47 @@
 		C12EDA1629C7DFF100435701 /* HKUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA1529C7DFF100435701 /* HKUnit.swift */; };
 		C12EDA1829C7E01800435701 /* TimeZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA1729C7E01800435701 /* TimeZone.swift */; };
 		C12EDA1B29C7E06900435701 /* OSLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA1A29C7E06900435701 /* OSLog.swift */; };
+		D80339732A500489004FF953 /* PodInfoPulseLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124017E29C7D8E900B32844 /* PodInfoPulseLog.swift */; };
+		D80339742A50049B004FF953 /* VersionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124017F29C7D8E900B32844 /* VersionResponse.swift */; };
+		D80339752A5004AE004FF953 /* PodInfoActivationTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018029C7D8E900B32844 /* PodInfoActivationTime.swift */; };
+		D80339762A5004B7004FF953 /* TempBasalExtraCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018129C7D8E900B32844 /* TempBasalExtraCommand.swift */; };
+		D80339772A5004C0004FF953 /* DeactivatePodCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018229C7D8E900B32844 /* DeactivatePodCommand.swift */; };
+		D80339782A5004C8004FF953 /* AcknowledgeAlertCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018329C7D8E900B32844 /* AcknowledgeAlertCommand.swift */; };
+		D80339792A5004D1004FF953 /* PodInfoConfiguredAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018429C7D8E900B32844 /* PodInfoConfiguredAlerts.swift */; };
+		D803397A2A5004D9004FF953 /* MessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018529C7D8E900B32844 /* MessageBlock.swift */; };
+		D803397B2A5004E1004FF953 /* PlaceholderMessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018629C7D8E900B32844 /* PlaceholderMessageBlock.swift */; };
+		D803397C2A5004EB004FF953 /* PodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018729C7D8E900B32844 /* PodInfo.swift */; };
+		D803397D2A5004F3004FF953 /* BolusExtraCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018829C7D8E900B32844 /* BolusExtraCommand.swift */; };
+		D803397E2A5004FA004FF953 /* FaultConfigCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018929C7D8E900B32844 /* FaultConfigCommand.swift */; };
+		D803397F2A500501004FF953 /* PodInfoPulseLogPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018A29C7D8E900B32844 /* PodInfoPulseLogPlus.swift */; };
+		D80339802A500509004FF953 /* StatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018B29C7D8E900B32844 /* StatusResponse.swift */; };
+		D80339812A500510004FF953 /* GetStatusCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018C29C7D8E900B32844 /* GetStatusCommand.swift */; };
+		D80339822A500519004FF953 /* BasalScheduleExtraCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018D29C7D8E900B32844 /* BasalScheduleExtraCommand.swift */; };
+		D80339832A500520004FF953 /* CancelDeliveryCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018E29C7D8E900B32844 /* CancelDeliveryCommand.swift */; };
+		D80339842A500528004FF953 /* AssignAddressCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018F29C7D8E900B32844 /* AssignAddressCommand.swift */; };
+		D80339852A50052F004FF953 /* BeepConfigCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019029C7D8E900B32844 /* BeepConfigCommand.swift */; };
+		D80339862A500537004FF953 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019129C7D8E900B32844 /* ErrorResponse.swift */; };
+		D80339872A500540004FF953 /* SetupPodCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019229C7D8E900B32844 /* SetupPodCommand.swift */; };
+		D80339882A500548004FF953 /* DetailedStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019329C7D8E900B32844 /* DetailedStatus.swift */; };
+		D80339892A500553004FF953 /* PodInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019429C7D8E900B32844 /* PodInfoResponse.swift */; };
+		D803398A2A50055B004FF953 /* SetInsulinScheduleCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019529C7D8E900B32844 /* SetInsulinScheduleCommand.swift */; };
+		D803398B2A500563004FF953 /* ConfigureAlertsCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019629C7D8E900B32844 /* ConfigureAlertsCommand.swift */; };
+		D803398C2A500589004FF953 /* AlertSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A129C7D8E900B32844 /* AlertSlot.swift */; };
+		D803398D2A5005FE004FF953 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019929C7D8E900B32844 /* Message.swift */; };
+		D803398E2A500613004FF953 /* CRC16.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A429C7D8E900B32844 /* CRC16.swift */; };
+		D803398F2A500625004FF953 /* BeepType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124017B29C7D8E900B32844 /* BeepType.swift */; };
+		D80339902A500638004FF953 /* Pod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019B29C7D8E900B32844 /* Pod.swift */; };
+		D80339912A500659004FF953 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12ED9FF29C7DD2300435701 /* Data.swift */; };
+		D80339922A500668004FF953 /* FaultEventCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019829C7D8E900B32844 /* FaultEventCode.swift */; };
+		D80339932A500685004FF953 /* InsulinTableEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A229C7D8E900B32844 /* InsulinTableEntry.swift */; };
+		D80339942A500694004FF953 /* BolusDeliveryTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A629C7D8E900B32844 /* BolusDeliveryTable.swift */; };
+		D80339952A5006A7004FF953 /* PodProgressStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A329C7D8E900B32844 /* PodProgressStatus.swift */; };
+		D80339962A5006ED004FF953 /* BasalSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401A529C7D8E900B32844 /* BasalSchedule.swift */; };
+		D80339972A500705004FF953 /* BasalDeliveryTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124019D29C7D8E900B32844 /* BasalDeliveryTable.swift */; };
+		D80339982A50085C004FF953 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA0329C7DDC800435701 /* TimeInterval.swift */; };
+		D803399A2A500D3D004FF953 /* CRC8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401B229C7D8E900B32844 /* CRC8.swift */; };
+		D803399B2A50122F004FF953 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401B329C7D8E900B32844 /* Packet.swift */; };
+		D803399C2A50128D004FF953 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA0129C7DD4700435701 /* LocalizedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1003,6 +1044,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D803399C2A50128D004FF953 /* LocalizedString.swift in Sources */,
+				D803399B2A50122F004FF953 /* Packet.swift in Sources */,
+				D803399A2A500D3D004FF953 /* CRC8.swift in Sources */,
+				D80339982A50085C004FF953 /* TimeInterval.swift in Sources */,
+				D80339972A500705004FF953 /* BasalDeliveryTable.swift in Sources */,
+				D80339962A5006ED004FF953 /* BasalSchedule.swift in Sources */,
+				D80339952A5006A7004FF953 /* PodProgressStatus.swift in Sources */,
+				D80339942A500694004FF953 /* BolusDeliveryTable.swift in Sources */,
+				D80339932A500685004FF953 /* InsulinTableEntry.swift in Sources */,
+				D80339922A500668004FF953 /* FaultEventCode.swift in Sources */,
+				D80339912A500659004FF953 /* Data.swift in Sources */,
+				D80339902A500638004FF953 /* Pod.swift in Sources */,
+				D803398F2A500625004FF953 /* BeepType.swift in Sources */,
+				D803398E2A500613004FF953 /* CRC16.swift in Sources */,
+				D803398D2A5005FE004FF953 /* Message.swift in Sources */,
+				D803398C2A500589004FF953 /* AlertSlot.swift in Sources */,
+				D803398B2A500563004FF953 /* ConfigureAlertsCommand.swift in Sources */,
+				D803398A2A50055B004FF953 /* SetInsulinScheduleCommand.swift in Sources */,
+				D80339892A500553004FF953 /* PodInfoResponse.swift in Sources */,
+				D80339882A500548004FF953 /* DetailedStatus.swift in Sources */,
+				D80339872A500540004FF953 /* SetupPodCommand.swift in Sources */,
+				D80339862A500537004FF953 /* ErrorResponse.swift in Sources */,
+				D80339852A50052F004FF953 /* BeepConfigCommand.swift in Sources */,
+				D80339842A500528004FF953 /* AssignAddressCommand.swift in Sources */,
+				D80339832A500520004FF953 /* CancelDeliveryCommand.swift in Sources */,
+				D80339822A500519004FF953 /* BasalScheduleExtraCommand.swift in Sources */,
+				D80339812A500510004FF953 /* GetStatusCommand.swift in Sources */,
+				D80339802A500509004FF953 /* StatusResponse.swift in Sources */,
+				D803397F2A500501004FF953 /* PodInfoPulseLogPlus.swift in Sources */,
+				D803397E2A5004FA004FF953 /* FaultConfigCommand.swift in Sources */,
+				D803397D2A5004F3004FF953 /* BolusExtraCommand.swift in Sources */,
+				D803397C2A5004EB004FF953 /* PodInfo.swift in Sources */,
+				D803397B2A5004E1004FF953 /* PlaceholderMessageBlock.swift in Sources */,
+				D803397A2A5004D9004FF953 /* MessageBlock.swift in Sources */,
+				D80339792A5004D1004FF953 /* PodInfoConfiguredAlerts.swift in Sources */,
+				D80339782A5004C8004FF953 /* AcknowledgeAlertCommand.swift in Sources */,
+				D80339772A5004C0004FF953 /* DeactivatePodCommand.swift in Sources */,
+				D80339762A5004B7004FF953 /* TempBasalExtraCommand.swift in Sources */,
+				D80339752A5004AE004FF953 /* PodInfoActivationTime.swift in Sources */,
+				D80339742A50049B004FF953 /* VersionResponse.swift in Sources */,
+				D80339732A500489004FF953 /* PodInfoPulseLog.swift in Sources */,
 				C1229C7229C7F0950066A89C /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1244,9 +1326,10 @@
 		C1229C7029C7F0840066A89C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = UY678SP37Q;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1258,9 +1341,10 @@
 		C1229C7129C7F0840066A89C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = UY678SP37Q;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
