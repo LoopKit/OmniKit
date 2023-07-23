@@ -98,7 +98,7 @@ public struct DetailedStatus : PodInfo, Equatable {
             // subsequent returns will be byte swapped data from previous command/response at the same buffer offset.
             self.possibleFaultCallingAddress = encodedData[20...21].toBigEndian(UInt16.self) // only potentially valid for Dash
         }
-        
+
         self.data = Data(encodedData)
     }
 
@@ -118,9 +118,8 @@ extension DetailedStatus: CustomDebugStringConvertible {
             "* bolusNotDelivered: \(bolusNotDelivered.twoDecimals) U",
             "* lastProgrammingMessageSeqNum: \(lastProgrammingMessageSeqNum)",
             "* totalInsulinDelivered: \(totalInsulinDelivered.twoDecimals) U",
-            "* faultEventCode: \(faultEventCode.description)",
-            "* reservoirLevel: \(reservoirLevel > Pod.maximumReservoirReading ? "50+" : reservoirLevel.twoDecimals) U",
-            "* timeActive: \(timeActive.stringValue)",
+            "* reservoirLevel: \(reservoirLevelString(reservoirLevel)) U",
+            "* timeActive: \(timeActive.timeIntervalStr)",
             "* unacknowledgedAlerts: \(unacknowledgedAlerts)",
             "",
             ].joined(separator: "\n")
@@ -133,8 +132,9 @@ extension DetailedStatus: CustomDebugStringConvertible {
         }
         if faultEventCode.faultType != .noFaults {
             result += [
+                "* faultEventCode: \(faultEventCode.description)",
                 "* faultAccessingTables: \(faultAccessingTables)",
-                "* faultEventTimeSinceActivation: \(faultEventTimeSinceActivation?.stringValue ?? "NA")",
+                "* faultEventTimeSinceActivation: \(faultEventTimeSinceActivation?.timeIntervalStr ?? "NA")",
                 "* errorEventInfo: \(errorEventInfo?.description ?? "NA")",
                 "* previousPodProgressStatus: \(previousPodProgressStatus?.description ?? "NA")",
                 "* possibleFaultCallingAddress: \(possibleFaultCallingAddress != nil ? String(format: "0x%04x", possibleFaultCallingAddress!) : "NA")",
@@ -160,21 +160,21 @@ extension DetailedStatus: RawRepresentable {
 }
 
 extension TimeInterval {
-    var stringValue: String {
-        let totalSeconds = self
-        let minutes = Int(totalSeconds / 60) % 60
-        let hours = Int(totalSeconds / 3600) - (Int(self / 3600)/24 * 24)
-        let days = Int((totalSeconds / 3600) / 24)
-        var pluralFormOfDays = "days"
-        if days == 1 {
-            pluralFormOfDays = "day"
+    var timeIntervalStr: String {
+        var str: String = ""
+        let hours = UInt(self / 3600)
+        let minutes = UInt(self / 60) % 60
+        let seconds = UInt(self) % 60
+        if hours != 0 {
+            str += String(format: "%uh", hours)
         }
-        let timeComponent = String(format: "%02d:%02d", hours, minutes)
-        if days > 0 {
-            return String(format: "%d \(pluralFormOfDays) plus %@", days, timeComponent)
-        } else {
-            return timeComponent
+        if minutes != 0 || hours != 0 {
+            str += String(format: "%um", minutes)
         }
+        if seconds != 0 || str.isEmpty {
+            str += String(format: "%us", seconds)
+        }
+        return str
     }
 }
 
@@ -219,4 +219,24 @@ public struct ErrorEventInfo: CustomStringConvertible, Equatable {
         self.immediateBolusInProgress = (rawValue & 0x10) != 0
         self.podProgressStatus = PodProgressStatus(rawValue: rawValue & 0xF)!
     }
+}
+
+//
+// Convenience functions for dealing with ReserviorLevel readings.
+// Historically these were optionals with no reading representing 50+.
+//
+public func isValidReservoirLevelValue(_ reservoirLevel: Double?) -> Bool
+{
+    if let reservoirLevel = reservoirLevel, reservoirLevel <= Pod.maximumReservoirReading {
+        return true
+    }
+    return false
+}
+
+public func reservoirLevelString(_ reservoirLevel: Double?) -> String
+{
+    if isValidReservoirLevelValue(reservoirLevel) {
+        return reservoirLevel!.twoDecimals
+    }
+    return "50+"
 }
