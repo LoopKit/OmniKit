@@ -26,6 +26,9 @@
 /* Title of insulin delivery section */
 "Insulin Delivery" = "توصيل الأنسولين";
 
+/* Text body for page showing insulin uncertainty has been recovered. */
+"Loop has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use Loop normally now." = "نجح تطبيق لووب في إسترجاع التواصل مع المضخة المتصلة بك ";
+
 /* The title of the cell showing reservoir status */
 "Reservoir" = "الخزان";
 

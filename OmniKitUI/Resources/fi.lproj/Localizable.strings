@@ -111,7 +111,7 @@
 /* Title text for button to disable bolus beeps */
 "Disable Bolus Beeps" = "Laita bolusäänet pois";
 
-/* No comment provided by engineer. */
+/* Title of done button on OmnipodSettingsView */
 "Done" = "Valmis";
 
 /* Title text for button to enable bolus beeps */

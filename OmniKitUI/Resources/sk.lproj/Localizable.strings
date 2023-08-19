@@ -7,9 +7,6 @@
 /* Unit format string for an RSSI value in decibles */
 "%@ dB" = "%@ dB";
 
-/* No comment provided by engineer. */
-"%@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %@ normally now." = "%1$@ obnovil komunikáciu s podom na vašom tele. \n\n Záznamy o podávaní inzulínu boli aktualizované a mali by zodpovedať tomu, čo bolo skutočne podané. \n\nTeraz môžete naďalej normálne používať %2$@ .";
-
 /* Format string for delivered insulin. (1: The localized amount)
    Format string for insulin remaining in reservoir. (1: The localized amount) */
 "%@ U" = "%@ j";
@@ -185,7 +182,7 @@
    Text for discard pod button */
 "Discard Pod" = "Zlikvidujte pod";
 
-/* No comment provided by engineer. */
+/* Title of done button on OmnipodSettingsView */
 "Done" = "Hotovo";
 
 /* Title text for button to enable bolus beeps */
