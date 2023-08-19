@@ -7,9 +7,6 @@
 /* Unit format string for an RSSI value in decibles */
 "%@ dB" = "%@ dB";
 
-/* No comment provided by engineer. */
-"%@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %@ normally now." = "%1$@ ha ripristinato la comunicazione con il Pod sul tuo corpo.\n\nI dati di somministrazione d'insulina sono stati aggiornati e dovrebbero corrispondere a quanto è stato effettivamente erogato.\n\nOra è possibile continuare a utilizzare %2$@ normalmente.";
-
 /* Format string for delivered insulin. (1: The localized amount)
    Format string for insulin remaining in reservoir. (1: The localized amount) */
 "%@ U" = "%@ U";
@@ -215,7 +212,7 @@
    Text for discard pod button */
 "Discard Pod" = "Scarta Pod";
 
-/* No comment provided by engineer. */
+/* Title of done button on OmnipodSettingsView */
 "Done" = "Fine";
 
 /* Title text for button to enable bolus beeps */

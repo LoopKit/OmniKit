@@ -111,7 +111,7 @@
 /* Title text for button to disable bolus beeps */
 "Disable Bolus Beeps" = "Stäng av bolusljud";
 
-/* No comment provided by engineer. */
+/* Title of done button on OmnipodSettingsView */
 "Done" = "Färdig";
 
 /* Title text for button to enable bolus beeps */

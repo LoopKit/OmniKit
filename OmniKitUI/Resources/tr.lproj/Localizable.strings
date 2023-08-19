@@ -7,9 +7,6 @@
 /* Unit format string for an RSSI value in decibles */
 "%@ dB" = "%@ dB";
 
-/* No comment provided by engineer. */
-"%@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %@ normally now." = "%1$@ vücudunuzdaki pod ile iletişimi yeniden sağladı.\n\nİnsülin iletim kayıtları güncellendi ve gerçekte iletilenlerle eşleşmelidir.\n\nŞimdi normal şekilde %2$@ kullanmaya devam edebilirsiniz.";
-
 /* Format string for delivered insulin. (1: The localized amount)
    Format string for insulin remaining in reservoir. (1: The localized amount) */
 "%@ U" = "%@ Ü";
@@ -215,7 +212,7 @@
    Text for discard pod button */
 "Discard Pod" = "Podu At";
 
-/* No comment provided by engineer. */
+/* Title of done button on OmnipodSettingsView */
 "Done" = "Tamamlandı";
 
 /* Title text for button to enable bolus beeps */
@@ -347,6 +344,9 @@
 
 /* description label for last status date pod details row */
 "Last Status" = "Son Durum";
+
+/* Text body for page showing insulin uncertainty has been recovered. */
+"Loop has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use Loop normally now." = "Loop, vücudunuzdaki pod ile yeniden iletişim kurdu.\n\nİnsülin iletim kayıtları güncellenmiştir ve gerçekte verilenlerle eşleşmelidir.\n\nArtık Loop'u normal şekilde kullanmaya devam edebilirsiniz.";
 
 /* Description text on manual temp basal action sheet */
 "Loop will not automatically adjust your insulin delivery until the temporary basal rate finishes or is canceled." = "Loop, geçici bazal oran bitene veya iptal edilene kadar insülin iletiminizi otomatik olarak ayarlamaz.";
@@ -591,7 +591,7 @@
 "Saving..." = "Kaydediliyor...";
 
 /* The detail text of the basal row when pod is running scheduled basal */
-"Schedule" = "Çizelge";
+"Schedule" = "Program";
 
 /* Title of insulin delivery section */
 "Scheduled Basal" = "Programlanan Bazal";
@@ -682,6 +682,9 @@
 
 /* Footer text for low reservoir value row */
 "The App notifies you when the amount of insulin in the Pod reaches this level." = "Uygulama, Poddaki insülin miktarı bu seviyeye ulaştığında sizi bilgilendirir.";
+
+/* Description text for critical alerts */
+"The reminders above will not sound if your device is in Silent or Do Not Disturb mode.\n\nThere are other critical Pod alerts and alarms that will sound even if your device is set to Silent or Do Not Disturb mode." = "Cihazınız Sessiz veya Rahatsız Etmeyin modundaysa yukarıdaki hatırlatıcılar çalmaz.\n\nCihazınız Sessiz veya Rahatsız Etmeyin moduna ayarlanmış olsa bile çalacak başka kritik Pod uyarıları ve alarmları da vardır.";
 
 /* Message for pod sync time action sheet */
 "The time on your pump is different from the current time. Do you want to update the time on your pump to the current time?" = "Pompanızdaki saat geçerli saatten farklı. Pompanızdaki saati geçerli saate güncellemek istiyor musunuz?";
