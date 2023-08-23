@@ -342,8 +342,8 @@ class OmnipodUICoordinator: UINavigationController, PumpManagerOnboarding, Compl
         }
     }
 
-    private func hostingController<Content: View>(rootView: Content) -> DismissibleHostingController {
-        return DismissibleHostingController(rootView: rootView, colorPalette: colorPalette)
+    private func hostingController<Content: View>(rootView: Content) -> DismissibleHostingController<some View> {
+        return DismissibleHostingController(content: rootView, colorPalette: colorPalette)
     }
 
     private func stepFinished() {
