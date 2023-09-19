@@ -92,7 +92,7 @@ extension OmnipodPumpManagerError: LocalizedError {
 
 public class OmnipodPumpManager: RileyLinkPumpManager {
     
-    public let managerIdentifier: String = "Omnipod"
+    public static let pluginIdentifier: String = "Omnipod"
     
     public let localizedTitle = LocalizedString("Omnipod", comment: "Generic title of the omnipod pump manager")
     
@@ -269,7 +269,7 @@ public class OmnipodPumpManager: RileyLinkPumpManager {
                 state.lastRileyLinkBatteryAlertDate = Date()
             }
             self.pumpDelegate.notify { delegate in
-                let identifier = Alert.Identifier(managerIdentifier: self.managerIdentifier, alertIdentifier: "lowRLBattery")
+                let identifier = Alert.Identifier(managerIdentifier: self.pluginIdentifier, alertIdentifier: "lowRLBattery")
                 let alertBody = String(format: LocalizedString("\"%1$@\" has a low battery", comment: "Format string for low battery alert body for RileyLink. (1: device name)"), device.name ?? "unnamed")
                 let content = Alert.Content(title: LocalizedString("Low RileyLink Battery", comment: "Title for RileyLink low battery alert"), body: alertBody, acknowledgeActionButtonLabel: LocalizedString("OK", comment: "Acknowledge button label for RileyLink low battery alert"))
                 delegate?.issueAlert(Alert(identifier: identifier, foregroundContent: content, backgroundContent: content, trigger: .immediate))
@@ -452,7 +452,7 @@ extension OmnipodPumpManager {
     private func device(for state: OmnipodPumpManagerState) -> HKDevice {
         if let podState = state.podState {
             return HKDevice(
-                name: managerIdentifier,
+                name: pluginIdentifier,
                 manufacturer: "Insulet",
                 model: "Eros",
                 hardwareVersion: nil,
@@ -463,7 +463,7 @@ extension OmnipodPumpManager {
             )
         } else {
             return HKDevice(
-                name: managerIdentifier,
+                name: pluginIdentifier,
                 manufacturer: "Insulet",
                 model: "Eros",
                 hardwareVersion: nil,
@@ -1452,8 +1452,8 @@ extension OmnipodPumpManager: PumpManager {
 
     fileprivate func clearSuspendReminder() {
         self.pumpDelegate.notify { (delegate) in
-            delegate?.retractAlert(identifier: Alert.Identifier(managerIdentifier: self.managerIdentifier, alertIdentifier: PumpManagerAlert.suspendEnded(triggeringSlot: nil).alertIdentifier))
-            delegate?.retractAlert(identifier: Alert.Identifier(managerIdentifier: self.managerIdentifier, alertIdentifier: PumpManagerAlert.suspendEnded(triggeringSlot: nil).repeatingAlertIdentifier))
+            delegate?.retractAlert(identifier: Alert.Identifier(managerIdentifier: self.pluginIdentifier, alertIdentifier: PumpManagerAlert.suspendEnded(triggeringSlot: nil).alertIdentifier))
+            delegate?.retractAlert(identifier: Alert.Identifier(managerIdentifier: self.pluginIdentifier, alertIdentifier: PumpManagerAlert.suspendEnded(triggeringSlot: nil).repeatingAlertIdentifier))
         }
     }
 
@@ -1894,7 +1894,7 @@ extension OmnipodPumpManager: PumpManager {
     }
 
     func issueAlert(alert: PumpManagerAlert) {
-        let identifier = Alert.Identifier(managerIdentifier: self.managerIdentifier, alertIdentifier: alert.alertIdentifier)
+        let identifier = Alert.Identifier(managerIdentifier: self.pluginIdentifier, alertIdentifier: alert.alertIdentifier)
         let loopAlert = Alert(identifier: identifier, foregroundContent: alert.foregroundContent, backgroundContent: alert.backgroundContent, trigger: .immediate)
         pumpDelegate.notify { (delegate) in
             delegate?.issueAlert(loopAlert)
@@ -1902,7 +1902,7 @@ extension OmnipodPumpManager: PumpManager {
 
         if let repeatInterval = alert.repeatInterval {
             // Schedule an additional repeating 15 minute reminder for suspend period ended.
-            let repeatingIdentifier = Alert.Identifier(managerIdentifier: self.managerIdentifier, alertIdentifier: alert.repeatingAlertIdentifier)
+            let repeatingIdentifier = Alert.Identifier(managerIdentifier: self.pluginIdentifier, alertIdentifier: alert.repeatingAlertIdentifier)
             let loopAlert = Alert(identifier: repeatingIdentifier, foregroundContent: alert.foregroundContent, backgroundContent: alert.backgroundContent, trigger: .repeating(repeatInterval: repeatInterval))
             pumpDelegate.notify { (delegate) in
                 delegate?.issueAlert(loopAlert)
@@ -1915,12 +1915,12 @@ extension OmnipodPumpManager: PumpManager {
     }
 
     func retractAlert(alert: PumpManagerAlert) {
-        let identifier = Alert.Identifier(managerIdentifier: self.managerIdentifier, alertIdentifier: alert.alertIdentifier)
+        let identifier = Alert.Identifier(managerIdentifier: self.pluginIdentifier, alertIdentifier: alert.alertIdentifier)
         pumpDelegate.notify { (delegate) in
             delegate?.retractAlert(identifier: identifier)
         }
         if alert.isRepeating {
-            let repeatingIdentifier = Alert.Identifier(managerIdentifier: self.managerIdentifier, alertIdentifier: alert.repeatingAlertIdentifier)
+            let repeatingIdentifier = Alert.Identifier(managerIdentifier: self.pluginIdentifier, alertIdentifier: alert.repeatingAlertIdentifier)
             pumpDelegate.notify { (delegate) in
                 delegate?.retractAlert(identifier: repeatingIdentifier)
             }
