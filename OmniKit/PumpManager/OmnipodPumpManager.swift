@@ -92,7 +92,7 @@ extension OmnipodPumpManagerError: LocalizedError {
 
 public class OmnipodPumpManager: RileyLinkPumpManager {
     
-    public static let pluginIdentifier: String = "Omnipod"
+    public let pluginIdentifier: String = "Omnipod"
     
     public let localizedTitle = LocalizedString("Omnipod", comment: "Generic title of the omnipod pump manager")
     
