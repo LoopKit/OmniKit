@@ -2,7 +2,7 @@
 " (inactive)" = " (inaktiv)";
 
 /* Format string for low battery alert body for RileyLink. (1: device name) */
-"\"%1$@\" has a low battery" = "\"%1$@\" hat einen niedrigen Akkustand";
+"\"%1$@\" has a low battery" = "„%1$@“ hat einen niedrigen Akkustand";
 
 /* Unit format string for an RSSI value in decibles */
 "%@ dB" = "%@ dB";
@@ -39,7 +39,7 @@
 "Bolusing" = "Bolusabgabe";
 
 /* Delivery status when bolusing and temp basal is running */
-"Bolusing with temp basal" = "Bolus-Abgabe mit temporärer Basalrate";
+"Bolusing with temp basal" = "Bolusabgabe mit temporärer Basalrate";
 
 /* Pod state when inserting cannula */
 "Cannula inserting" = "Einsetzen der Kanüle";
@@ -57,7 +57,7 @@
 "Command error %1$u" = "Befehlsfehler %1$u";
 
 /* Status highlight that delivery is uncertain. */
-"Comms Issue" = "Comms Problem";
+"Comms Issue" = "Kommunikationsproblem";
 
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "Kommunikationsproblem: Unbestätigter Befehl steht noch aus.";
@@ -72,7 +72,7 @@
 "Critical Pod Error" = "Kritischer Pod-Fehler";
 
 /* Recovery suggestion when unexpected address received */
-"Crosstalk possible. Please move to a new location" = "Überlagerungen möglich. Bitte wechseln Sie an einen neuen Standort";
+"Crosstalk possible. Please move to a new location" = "Überlagerungen möglich. Bitte wechseln Sie an einen neuen Standort.";
 
 /* Pod state when pod has been deactivated */
 "Deactivated" = "Deaktiviert";
@@ -147,7 +147,7 @@
 "InterruptedBolus: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@" = "Abgebrochener Bolus: %1$@ IE (%2$@ IE geplant) %3$@ %4$@ %5$@";
 
 /* Error message for when unexpected address is received (1: received address) (2: expected address) */
-"Invalid address 0x%x. Expected 0x%x" = "Ungültige Adresse (%1$x). Adresse %2$x erwartet";
+"Invalid address 0x%x. Expected 0x%x" = "Ungültige Adresse 0x%1$x. Adresse 0x%2$x erwartet.";
 
 /* Description for MessageError invalidAddress */
 "Invalid address: (%1$@)" = "Ungültige Adresse (%1$@)";
@@ -165,7 +165,7 @@
 "Low Reservoir" = "Niedriges Reservoir";
 
 /* Format string for description for low reservoir advisory (1: reminder units) */
-"Low reservoir advisory (%1$gU)" = "Hinweis auf niedriges Reservior (%1$gU)";
+"Low reservoir advisory (%1$gU)" = "Hinweis auf niedriges Reservoir (%1$g IE)";
 
 /* Description for low reservoir alarm */
 "Low reservoir advisory alarm" = "Hinweisalarm für fast leeres Reservoir";
@@ -174,10 +174,10 @@
 "Low RileyLink Battery" = "Niedriger RileyLink Batteriestatus";
 
 /* Recovery suggestion for PodCommsError.noPodsFound */
-"Make sure your pod is filled and nearby." = "Stellen Sie sicher, dass Ihr Pod gefüllt und in der Nähe ist.";
+"Make sure your pod is filled and nearby." = "Stelle sicher, dass Dein Pod gefüllt und in der Nähe ist.";
 
 /* Recovery suggestion when no RileyLink is available */
-"Make sure your RileyLink is nearby and powered on" = "Stellen Sie sicher, dass sich Ihr RileyLink in der Nähe befindet und eingeschaltet ist";
+"Make sure your RileyLink is nearby and powered on" = "Stelle sicher, dass sich Dein RileyLink in der Nähe befindet und eingeschaltet ist";
 
 /* Status highlight when manual temp basal is running. */
 "Manual Basal" = "Manuelle Basalrate";
@@ -259,10 +259,10 @@
 "Please bring only original pod in range or deactivate original pod" = "Bitte nur Original-Pod in Reichweite bringen oder Original-Pod deaktivieren";
 
 /* Recovery suggestion when no response is received from pod */
-"Please bring your pod closer to the RileyLink and try again" = "Bitte bringen Sie Ihren Pod näher an Ihr RileyLink und versuchen Sie es erneut";
+"Please bring your pod closer to the RileyLink and try again" = "Bitte bringe Deinen Pod näher an Dein RileyLink und versuche es erneut";
 
 /* Alert content body for finishSetupReminder pod alert */
-"Please finish pairing your pod." = "Bitte schließen Sie die Kopplung Ihres Pods ab.";
+"Please finish pairing your pod." = "Bitte schließe die Kopplung Deines Pods ab.";
 
 /* Recover suggestion shown when no pod is paired */
 "Please pair a new pod" = "Bitte koppel einen neuen Pod";
@@ -423,7 +423,7 @@
 "The insulin suspension period has ended.\n\nYou can resume delivery from the banner on the home screen or from your pump settings screen. You will be reminded again in 15 minutes." = "Die Insulinabschaltung ist beendet.\n\nSie können die Abgabe über das Banner auf dem Startbildschirm oder über den Bildschirm mit den Pumpeneinstellungen fortsetzen. Sie werden in 15 Minuten erneut erinnert.";
 
 /* Alert content body for timeOffsetChangeDetected pod alert */
-"The time on your pump is different from the current time. You can review the pump time and and sync to current time in settings." = "Die Uhrzeit Ihrer Pumpe weicht von der aktuellen Uhrzeit ab. Sie können die Uhrzeit der Pumpe überprüfen und in den Einstellungen mit der aktuellen Uhrzeit synchronisieren.";
+"The time on your pump is different from the current time. You can review the pump time and and sync to current time in settings." = "Die Uhrzeit Deiner Pumpe weicht von der aktuellen Uhrzeit ab. Du kannst die Uhrzeit der Pumpe überprüfen und in den Einstellungen mit der aktuellen Uhrzeit synchronisieren.";
 
 /* Pod state threeNotUsed */
 "threeNotUsed" = "threeNotUsed";
@@ -432,13 +432,13 @@
 "Time Change Detected" = "Änderung der Uhrzeit erkannt";
 
 /* The format string for pod expiration notification body (1: time until expiration) */
-"Time to replace your pod! Your pod will expire in %1$@" = "Es ist Zeit Ihren Pod zu wechseln! Der Pod läuft ab in %1$@";
+"Time to replace your pod! Your pod will expire in %1$@" = "Es ist Zeit Deinen Pod zu wechseln! Der Pod läuft ab in %1$@";
 
 /* Error message for PodCommsError.tooManyPodsFound */
 "Too many pods found" = "Zu viele Pods in Reichweite";
 
 /* Recovery suggestion when ack received instead of response */
-"Try again" = "Versuchen Sie es erneut";
+"Try again" = "Versuche es erneut";
 
 /* Pod state twoNotUsed */
 "twoNotUsed" = "twoNotUsed";
@@ -459,7 +459,7 @@
 "Unknown pod fault %1$03d" = "Unbekannter Podfehler %1$03d";
 
 /* Format string for description of MessageError unknownValue. (1: value) (2: Type) */
-"Unknown Value (%1$@) for type %2$@" = "Unbekannter Wert ( %1$@ ) für Typ %2$@";
+"Unknown Value (%1$@) for type %2$@" = "Unbekannter Wert (%1$@) für Typ %2$@";
 
 /* Format string for description of MessageError validationFailed. (1: description of validation failure) */
 "Validation failed: %1$@" = "Überprüfung fehlgeschlagen: %1$@";
@@ -468,7 +468,7 @@
 "Wait for existing bolus to finish, or cancel bolus" = "Warte, bis der aktuelle Bolus abgegeben wurde, oder unterbreche diesen.";
 
 /* Recovery suggestion when operation could not be completed due to existing temp basal in progress */
-"Wait for existing temp basal to finish, or suspend to cancel" = "Warten Sie, bis die aktuelle temporäre Basalrate beendet ist, oder unterbrechen Sie diese";
+"Wait for existing temp basal to finish, or suspend to cancel" = "Warte, bis die aktuelle temporäre Basalrate beendet ist, oder unterbreche diese";
 
 /* Description waiting for pairing reminder */
 "Waiting for pairing reminder" = "Warten auf Kopplungserinnerung";
