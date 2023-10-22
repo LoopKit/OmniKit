@@ -300,7 +300,7 @@
 "Incompletely set up pod must be deactivated before pairing with a new one. Please deactivate and remove pod." = "Een gedeeltelijk ingestelde pod moet eerst worden gedeactiveerd voordat er geprobeerd wordt een nieuwe pod te koppelen. Deactiveer pod en gooi weg.";
 
 /* Button title to insert cannula during setup */
-"Insert Cannula" = "Canule Inbrengen";
+"Insert Cannula" = "Breng Canule In";
 
 /* Label text indicating insertion finished. */
 "Inserted" = "Ingebracht";
@@ -486,7 +486,7 @@
 "Pod Error" = "Podfout";
 
 /* Label for pod life state when within pod expiration window */
-"Pod expired" = "Pod is verlopen";
+"Pod expired" = "Pod verlopen";
 
 /* Error message for reservoir view when pod expired
    Label for pod expiration row, past tense */

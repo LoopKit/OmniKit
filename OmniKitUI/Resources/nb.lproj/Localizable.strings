@@ -318,7 +318,7 @@
 "Insulin Delivered" = "Levert insulin";
 
 /* Title of insulin delivery section */
-"Insulin Delivery" = "Insulin Delivery";
+"Insulin Delivery" = "Insulintilførsel";
 
 /* The action string on pod status page when pod faulted */
 "Insulin delivery stopped. Change Pod now." = "Insulintilførselen stoppet. Bytt Pod nå.";
@@ -437,7 +437,7 @@
 "Pair pod." = "Sammenkoble pod.";
 
 /* Label text indicating pairing finished. */
-"Paired" = "Sammenkoblbet";
+"Paired" = "Sammenkoblet";
 
 /* Pairing action button accessibility label while pairing */
 "Pairing." = "Kobler sammen.";
