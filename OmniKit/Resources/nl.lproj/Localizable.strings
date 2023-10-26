@@ -15,10 +15,10 @@
 "Activation time exceeded" = "Activeringstijd overschreden";
 
 /* Description for auto-off */
-"Auto-off" = "Automatische uitschakeling";
+"Auto-off" = "Automatisch uitschakelen";
 
 /* Description for auto-off alarm */
-"Auto-off alarm" = "Auto-uit alarm";
+"Auto-off alarm" = "Alarm automatisch uit";
 
 /* Pod state when basal initialized */
 "Basal initialized" = "Basaal geïnitialiseerd";
@@ -99,7 +99,7 @@
 "Expiration advisory" = "Vervaldatum melding";
 
 /* Description for expiration alert */
-"Expiration alert" = "Alarm vervaltijd";
+"Expiration alert" = "Vervaldatum melding";
 
 /* Title string for BeepPreference.extended */
 "Extended" = "Uitgebreid";
@@ -111,7 +111,7 @@
 "Extended bolus running with temp basal" = "Verlengde bolus met tijdelijk basaal actief";
 
 /* Pod state when fault event has occurred */
-"Fault event occurred" = "Fout is opgetreden";
+"Fault event occurred" = "Fout opgetreden";
 
 /* Status highlight that when pod is deactivating. */
 "Finish Deactivation" = "Voltooi Deactivering";
@@ -123,13 +123,13 @@
 "Finish setup " = "Voltooi installatie";
 
 /* Description for finish setup reminder */
-"Finish setup reminder" = "Voltooi instelling van herinnering";
+"Finish setup reminder" = "Herinnering voor voltooien installatie";
 
 /* Pod inititialized */
 "Initialized" = "Geinitialiseerd";
 
 /* Pod state when inserting cannula */
-"Inserting cannula" = "Canule inbrengen";
+"Inserting cannula" = "Canule aan het inbrengen";
 
 /* The default notification body for AlarmCodes */
 "Insulin delivery stopped. Change Pod now." = "Insulinetoediening gestopt. Vervang Pod nu.";
@@ -165,7 +165,7 @@
 "Low Reservoir" = "Reservoir Bijna Leeg";
 
 /* Format string for description for low reservoir advisory (1: reminder units) */
-"Low reservoir advisory (%1$gU)" = "Reservoir Bijna Leeg Advies (%1$gE)";
+"Low reservoir advisory (%1$gU)" = "Reservoir bijna leeg (%1$gE)";
 
 /* Description for low reservoir alarm */
 "Low reservoir advisory alarm" = "Reservoir bijna leeg alarm";
@@ -295,7 +295,7 @@
 "Pod Expiration Reminder" = "Herinnering Vervaldatum Pod";
 
 /* Description for Pod expired pod fault */
-"Pod expired" = "Pod is verlopen";
+"Pod expired" = "Pod verlopen";
 
 /* Alert content title for podExpireImminent pod alert
    Alert content title for podExpiring pod alert
@@ -341,7 +341,7 @@
 "Priming" = "Voorbereiden";
 
 /* Pod state when priming completed */
-"Priming completed" = "Voorbereiden voltooid";
+"Priming completed" = "Voorbereiding voltooid";
 
 /* Pod state when ready for basal programming */
 "Ready for basal programming" = "Klaar voor programmeren basaal";
