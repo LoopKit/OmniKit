@@ -342,15 +342,19 @@ class OmnipodUICoordinator: UINavigationController, PumpManagerOnboarding, Compl
         }
     }
 
-    private func hostingController<Content: View>(rootView: Content, isIdleTimerDisabled: Bool = false) -> DismissibleHostingController {
-        if isIdleTimerDisabled {
-            return DismissibleHostingController(
-                rootView: rootView.onAppear( perform: { UIApplication.shared.isIdleTimerDisabled = true }),
-                onDisappear: {UIApplication.shared.isIdleTimerDisabled = false},
-                colorPalette: colorPalette
-            )
+    private func hostingController<Content: View>(rootView: Content, isIdleTimerDisabled: Bool = false) -> DismissibleHostingController<some View> {
+        let rootViewWithAppearance = rootView.onAppear {
+            if isIdleTimerDisabled {
+                UIApplication.shared.isIdleTimerDisabled = true
+            }
         }
-        return DismissibleHostingController(rootView: rootView, colorPalette: colorPalette)
+        .onDisappear {
+            if isIdleTimerDisabled {
+                UIApplication.shared.isIdleTimerDisabled = false
+            }
+        }
+        
+        return DismissibleHostingController(content: rootViewWithAppearance, colorPalette: colorPalette)
     }
 
     private func stepFinished() {
