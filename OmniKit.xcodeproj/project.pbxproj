@@ -192,6 +192,8 @@
 		D803399A2A500D3D004FF953 /* CRC8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401B229C7D8E900B32844 /* CRC8.swift */; };
 		D803399B2A50122F004FF953 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401B329C7D8E900B32844 /* Packet.swift */; };
 		D803399C2A50128D004FF953 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA0129C7DD4700435701 /* LocalizedString.swift */; };
+		D89CB6A32B019CC10035C8C5 /* pod_reservoir_swiftui.imageset in Resources */ = {isa = PBXBuildFile; fileRef = D89CB6A12B019CC10035C8C5 /* pod_reservoir_swiftui.imageset */; };
+		D89CB6A42B019CC10035C8C5 /* pod_reservoir_mask_swiftui.imageset in Resources */ = {isa = PBXBuildFile; fileRef = D89CB6A22B019CC10035C8C5 /* pod_reservoir_mask_swiftui.imageset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -435,6 +437,8 @@
 		C12EDA1529C7DFF100435701 /* HKUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKUnit.swift; sourceTree = "<group>"; };
 		C12EDA1729C7E01800435701 /* TimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZone.swift; sourceTree = "<group>"; };
 		C12EDA1A29C7E06900435701 /* OSLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLog.swift; sourceTree = "<group>"; };
+		D89CB6A12B019CC10035C8C5 /* pod_reservoir_swiftui.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pod_reservoir_swiftui.imageset; path = OmniKitUI.xcassets/pod_reservoir_swiftui.imageset; sourceTree = "<group>"; };
+		D89CB6A22B019CC10035C8C5 /* pod_reservoir_mask_swiftui.imageset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pod_reservoir_mask_swiftui.imageset; path = OmniKitUI.xcassets/pod_reservoir_mask_swiftui.imageset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -757,6 +761,8 @@
 				C12ED9C429C7DB7200435701 /* OmnipodReservoirView.xib */,
 				C124023029C7DA9700B32844 /* HUDAssets.xcassets */,
 				C124026729C7DA9700B32844 /* OmniKitUI.xcassets */,
+				D89CB6A22B019CC10035C8C5 /* pod_reservoir_mask_swiftui.imageset */,
+				D89CB6A12B019CC10035C8C5 /* pod_reservoir_swiftui.imageset */,
 				C124024F29C7DA9700B32844 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -1026,7 +1032,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D89CB6A32B019CC10035C8C5 /* pod_reservoir_swiftui.imageset in Resources */,
 				C12ED9C529C7DB7200435701 /* OmnipodReservoirView.xib in Resources */,
+				D89CB6A42B019CC10035C8C5 /* pod_reservoir_mask_swiftui.imageset in Resources */,
 				C124029629C7DA9700B32844 /* OmniKitUI.xcassets in Resources */,
 				C124029529C7DA9700B32844 /* Localizable.strings in Resources */,
 				C124027829C7DA9700B32844 /* HUDAssets.xcassets in Resources */,
