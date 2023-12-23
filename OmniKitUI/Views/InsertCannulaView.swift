@@ -96,7 +96,7 @@ struct InsertCannulaView: View {
                 self.viewModel.continueButtonTapped()
             }) {
                 actionText
-            }
+            }.environment(\.layoutDirection, .leftToRight)
 
         } else {
             Button(action: {
