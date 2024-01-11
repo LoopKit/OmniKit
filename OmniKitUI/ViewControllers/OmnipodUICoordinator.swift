@@ -171,7 +171,7 @@ class OmnipodUICoordinator: UINavigationController, PumpManagerOnboarding, Compl
                 self?.setupCanceled()
             }
             let view = DeactivatePodView(viewModel: viewModel)
-            let hostedView = hostingController(rootView: view)
+            let hostedView = hostingController(rootView: view, isIdleTimerDisabled: true)
             hostedView.navigationItem.title = LocalizedString("Deactivate Pod", comment: "Title for deactivate pod screen")
             return hostedView
         case .settings:
@@ -214,7 +214,7 @@ class OmnipodUICoordinator: UINavigationController, PumpManagerOnboarding, Compl
                 self?.navigateTo(.deactivate)
             }
 
-            let view = hostingController(rootView: PairPodView(viewModel: viewModel))
+            let view = hostingController(rootView: PairPodView(viewModel: viewModel), isIdleTimerDisabled: true)
             view.navigationItem.title = LocalizedString("Pair Pod", comment: "Title for pod pairing screen")
             view.navigationItem.backButtonDisplayMode = .generic
             return view
@@ -228,7 +228,7 @@ class OmnipodUICoordinator: UINavigationController, PumpManagerOnboarding, Compl
                     self?.navigateTo(.deactivate)
                 })
 
-            let vc = hostingController(rootView: view)
+            let vc = hostingController(rootView: view, isIdleTimerDisabled: true)
             vc.navigationItem.title = LocalizedString("Attach Pod", comment: "Title for Attach Pod screen")
             vc.navigationItem.hidesBackButton = true
             return vc
@@ -243,7 +243,7 @@ class OmnipodUICoordinator: UINavigationController, PumpManagerOnboarding, Compl
                 self?.navigateTo(.deactivate)
             }
 
-            let view = hostingController(rootView: InsertCannulaView(viewModel: viewModel))
+            let view = hostingController(rootView: InsertCannulaView(viewModel: viewModel), isIdleTimerDisabled: true)
             view.navigationItem.title = LocalizedString("Insert Cannula", comment: "Title for insert cannula screen")
             view.navigationItem.hidesBackButton = true
             return view
@@ -256,7 +256,7 @@ class OmnipodUICoordinator: UINavigationController, PumpManagerOnboarding, Compl
                     self?.stepFinished()
                 }
             )
-            let hostedView = hostingController(rootView: view)
+            let hostedView = hostingController(rootView: view, isIdleTimerDisabled: true)
             hostedView.navigationItem.title = LocalizedString("Check Cannula", comment: "Title for check cannula screen")
             hostedView.navigationItem.hidesBackButton = true
             return hostedView
@@ -289,7 +289,7 @@ class OmnipodUICoordinator: UINavigationController, PumpManagerOnboarding, Compl
                 }
             )
 
-            let hostedView = hostingController(rootView: view)
+            let hostedView = hostingController(rootView: view, isIdleTimerDisabled: true)
             hostedView.navigationItem.title = LocalizedString("Setup Complete", comment: "Title for setup complete screen")
             return hostedView
         case .pendingCommandRecovery:
@@ -342,8 +342,19 @@ class OmnipodUICoordinator: UINavigationController, PumpManagerOnboarding, Compl
         }
     }
 
-    private func hostingController<Content: View>(rootView: Content) -> DismissibleHostingController<some View> {
-        return DismissibleHostingController(content: rootView, colorPalette: colorPalette)
+    private func hostingController<Content: View>(rootView: Content, isIdleTimerDisabled: Bool = false) -> DismissibleHostingController<some View> {
+        let rootViewWithAppearance = rootView.onAppear {
+            if isIdleTimerDisabled {
+                UIApplication.shared.isIdleTimerDisabled = true
+            }
+        }
+        .onDisappear {
+            if isIdleTimerDisabled {
+                UIApplication.shared.isIdleTimerDisabled = false
+            }
+        }
+        
+        return DismissibleHostingController(content: rootViewWithAppearance, colorPalette: colorPalette)
     }
 
     private func stepFinished() {
