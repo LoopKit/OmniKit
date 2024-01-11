@@ -56,7 +56,7 @@ extension OmnipodPumpManagerError: LocalizedError {
         case .podAlreadyPaired:
             return LocalizedString("Pod already paired", comment: "Error message shown when user cannot pair because pod is already paired")
         case .insulinTypeNotConfigured:
-            return LocalizedString("Insulin type not configured", comment: "Error description for OmniBLEPumpManagerError.insulinTypeNotConfigured")
+            return LocalizedString("Insulin type not configured", comment: "Error description for insulin type not configured")
         case .notReadyForCannulaInsertion:
             return LocalizedString("Pod is not in a state ready for cannula insertion.", comment: "Error message when cannula insertion fails because the pod is in an unexpected state")
         case .communication(let error):
@@ -72,7 +72,7 @@ extension OmnipodPumpManagerError: LocalizedError {
                 return String(describing: error)
             }
         case .invalidSetting:
-            return LocalizedString("Invalid Setting", comment: "Error description for OmniBLEPumpManagerError.invalidSetting")
+            return LocalizedString("Invalid Setting", comment: "Error description for invalid setting")
         }
     }
 
@@ -963,6 +963,12 @@ extension OmnipodPumpManager {
             return
         }
 
+        guard state.podState?.setupProgress == .completed else {
+            // A cancel delivery command before pod setup is complete will fault the pod
+            completion(.state(PodCommsError.setupNotComplete))
+            return
+        }
+
         guard state.podState?.unfinalizedBolus?.isFinished() != false else {
             completion(.state(PodCommsError.unfinalizedBolus))
             return
@@ -995,6 +1001,11 @@ extension OmnipodPumpManager {
                 // If there's no active pod yet, save the basal schedule anyway
                 state.basalSchedule = schedule
                 return .success(false)
+            }
+
+            guard state.podState?.setupProgress == .completed else {
+                // A cancel delivery command before pod setup is complete will fault the pod
+                return .failure(PumpManagerError.deviceState(PodCommsError.setupNotComplete))
             }
 
             guard state.podState?.unfinalizedBolus?.isFinished() != false else {
@@ -1577,6 +1588,12 @@ extension OmnipodPumpManager: PumpManager {
             return
         }
 
+        guard state.podState?.setupProgress == .completed else {
+            // A cancel delivery command before pod setup is complete will fault the pod
+            completion(.failure(PumpManagerError.deviceState(PodCommsError.setupNotComplete)))
+            return
+        }
+
         let rileyLinkSelector = self.rileyLinkDeviceProvider.firstConnectedDevice
         self.podComms.runSession(withName: "Cancel Bolus", using: rileyLinkSelector) { (result) in
 
@@ -1642,6 +1659,12 @@ extension OmnipodPumpManager: PumpManager {
             return
         }
 
+        guard state.podState?.setupProgress == .completed else {
+            // A cancel delivery command before pod setup is complete will fault the pod
+            completion(.deviceState(PodCommsError.setupNotComplete))
+            return
+        }
+
         // Round to nearest supported rate
         let rate = roundToSupportedBasalRate(unitsPerHour: unitsPerHour)
 
@@ -1677,8 +1700,10 @@ extension OmnipodPumpManager: PumpManager {
             }
 
             // Do the cancel temp basal command if currently running a temp basal OR
-            // if resuming scheduled basal delivery.
-            if self.state.podState?.unfinalizedTempBasal != nil || resumingScheduledBasal {
+            // if resuming scheduled basal delivery OR if the delivery status is uncertain.
+            if self.state.podState?.unfinalizedTempBasal != nil || resumingScheduledBasal ||
+                self.state.podState?.deliveryStatusVerified == false
+            {
                 let status: StatusResponse
 
                 // if resuming scheduled basal delivery & an acknowledgement beep is needed, use the cancel TB beep
