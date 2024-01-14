@@ -1700,9 +1700,9 @@ extension OmnipodPumpManager: PumpManager {
             }
 
             // Do the cancel temp basal command if currently running a temp basal OR
-            // if resuming scheduled basal delivery OR if the delivery status is uncertain.
+            // if resuming scheduled basal delivery OR if the delivery state was inconsistent.
             if self.state.podState?.unfinalizedTempBasal != nil || resumingScheduledBasal ||
-                self.state.podState?.deliveryStatusVerified == false
+                self.state.podState?.deliveryStateInconsistencyDetected == true
             {
                 let status: StatusResponse
 
