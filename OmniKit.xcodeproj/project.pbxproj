@@ -26,7 +26,7 @@
 		C12401BB29C7D8E900B32844 /* TempBasalExtraCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018129C7D8E900B32844 /* TempBasalExtraCommand.swift */; };
 		C12401BC29C7D8E900B32844 /* DeactivatePodCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018229C7D8E900B32844 /* DeactivatePodCommand.swift */; };
 		C12401BD29C7D8E900B32844 /* AcknowledgeAlertCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018329C7D8E900B32844 /* AcknowledgeAlertCommand.swift */; };
-		C12401BE29C7D8E900B32844 /* PodInfoConfiguredAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018429C7D8E900B32844 /* PodInfoConfiguredAlerts.swift */; };
+		C12401BE29C7D8E900B32844 /* PodInfoTriggeredAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018429C7D8E900B32844 /* PodInfoTriggeredAlerts.swift */; };
 		C12401BF29C7D8E900B32844 /* MessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018529C7D8E900B32844 /* MessageBlock.swift */; };
 		C12401C029C7D8E900B32844 /* PlaceholderMessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018629C7D8E900B32844 /* PlaceholderMessageBlock.swift */; };
 		C12401C129C7D8E900B32844 /* PodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018729C7D8E900B32844 /* PodInfo.swift */; };
@@ -157,7 +157,7 @@
 		D80339762A5004B7004FF953 /* TempBasalExtraCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018129C7D8E900B32844 /* TempBasalExtraCommand.swift */; };
 		D80339772A5004C0004FF953 /* DeactivatePodCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018229C7D8E900B32844 /* DeactivatePodCommand.swift */; };
 		D80339782A5004C8004FF953 /* AcknowledgeAlertCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018329C7D8E900B32844 /* AcknowledgeAlertCommand.swift */; };
-		D80339792A5004D1004FF953 /* PodInfoConfiguredAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018429C7D8E900B32844 /* PodInfoConfiguredAlerts.swift */; };
+		D80339792A5004D1004FF953 /* PodInfoTriggeredAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018429C7D8E900B32844 /* PodInfoTriggeredAlerts.swift */; };
 		D803397A2A5004D9004FF953 /* MessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018529C7D8E900B32844 /* MessageBlock.swift */; };
 		D803397B2A5004E1004FF953 /* PlaceholderMessageBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018629C7D8E900B32844 /* PlaceholderMessageBlock.swift */; };
 		D803397C2A5004EB004FF953 /* PodInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C124018729C7D8E900B32844 /* PodInfo.swift */; };
@@ -264,7 +264,7 @@
 		C124018129C7D8E900B32844 /* TempBasalExtraCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempBasalExtraCommand.swift; sourceTree = "<group>"; };
 		C124018229C7D8E900B32844 /* DeactivatePodCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeactivatePodCommand.swift; sourceTree = "<group>"; };
 		C124018329C7D8E900B32844 /* AcknowledgeAlertCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcknowledgeAlertCommand.swift; sourceTree = "<group>"; };
-		C124018429C7D8E900B32844 /* PodInfoConfiguredAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodInfoConfiguredAlerts.swift; sourceTree = "<group>"; };
+		C124018429C7D8E900B32844 /* PodInfoTriggeredAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodInfoTriggeredAlerts.swift; sourceTree = "<group>"; };
 		C124018529C7D8E900B32844 /* MessageBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageBlock.swift; sourceTree = "<group>"; };
 		C124018629C7D8E900B32844 /* PlaceholderMessageBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceholderMessageBlock.swift; sourceTree = "<group>"; };
 		C124018729C7D8E900B32844 /* PodInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodInfo.swift; sourceTree = "<group>"; };
@@ -576,31 +576,31 @@
 		C124017D29C7D8E900B32844 /* MessageBlocks */ = {
 			isa = PBXGroup;
 			children = (
-				C124017E29C7D8E900B32844 /* PodInfoPulseLog.swift */,
-				C124017F29C7D8E900B32844 /* VersionResponse.swift */,
-				C124018029C7D8E900B32844 /* PodInfoActivationTime.swift */,
-				C124018129C7D8E900B32844 /* TempBasalExtraCommand.swift */,
-				C124018229C7D8E900B32844 /* DeactivatePodCommand.swift */,
 				C124018329C7D8E900B32844 /* AcknowledgeAlertCommand.swift */,
-				C124018429C7D8E900B32844 /* PodInfoConfiguredAlerts.swift */,
+				C124018F29C7D8E900B32844 /* AssignAddressCommand.swift */,
+				C124018D29C7D8E900B32844 /* BasalScheduleExtraCommand.swift */,
+				C124019029C7D8E900B32844 /* BeepConfigCommand.swift */,
+				C124018829C7D8E900B32844 /* BolusExtraCommand.swift */,
+				C124018E29C7D8E900B32844 /* CancelDeliveryCommand.swift */,
+				C124019629C7D8E900B32844 /* ConfigureAlertsCommand.swift */,
+				C124018229C7D8E900B32844 /* DeactivatePodCommand.swift */,
+				C124019329C7D8E900B32844 /* DetailedStatus.swift */,
+				C124019129C7D8E900B32844 /* ErrorResponse.swift */,
+				C124018929C7D8E900B32844 /* FaultConfigCommand.swift */,
+				C124018C29C7D8E900B32844 /* GetStatusCommand.swift */,
 				C124018529C7D8E900B32844 /* MessageBlock.swift */,
 				C124018629C7D8E900B32844 /* PlaceholderMessageBlock.swift */,
 				C124018729C7D8E900B32844 /* PodInfo.swift */,
-				C124018829C7D8E900B32844 /* BolusExtraCommand.swift */,
-				C124018929C7D8E900B32844 /* FaultConfigCommand.swift */,
+				C124018029C7D8E900B32844 /* PodInfoActivationTime.swift */,
+				C124017E29C7D8E900B32844 /* PodInfoPulseLog.swift */,
 				C124018A29C7D8E900B32844 /* PodInfoPulseLogPlus.swift */,
-				C124018B29C7D8E900B32844 /* StatusResponse.swift */,
-				C124018C29C7D8E900B32844 /* GetStatusCommand.swift */,
-				C124018D29C7D8E900B32844 /* BasalScheduleExtraCommand.swift */,
-				C124018E29C7D8E900B32844 /* CancelDeliveryCommand.swift */,
-				C124018F29C7D8E900B32844 /* AssignAddressCommand.swift */,
-				C124019029C7D8E900B32844 /* BeepConfigCommand.swift */,
-				C124019129C7D8E900B32844 /* ErrorResponse.swift */,
-				C124019229C7D8E900B32844 /* SetupPodCommand.swift */,
-				C124019329C7D8E900B32844 /* DetailedStatus.swift */,
 				C124019429C7D8E900B32844 /* PodInfoResponse.swift */,
+				C124018429C7D8E900B32844 /* PodInfoTriggeredAlerts.swift */,
 				C124019529C7D8E900B32844 /* SetInsulinScheduleCommand.swift */,
-				C124019629C7D8E900B32844 /* ConfigureAlertsCommand.swift */,
+				C124019229C7D8E900B32844 /* SetupPodCommand.swift */,
+				C124018B29C7D8E900B32844 /* StatusResponse.swift */,
+				C124018129C7D8E900B32844 /* TempBasalExtraCommand.swift */,
+				C124017F29C7D8E900B32844 /* VersionResponse.swift */,
 			);
 			path = MessageBlocks;
 			sourceTree = "<group>";
@@ -1095,7 +1095,7 @@
 				D803397C2A5004EB004FF953 /* PodInfo.swift in Sources */,
 				D803397B2A5004E1004FF953 /* PlaceholderMessageBlock.swift in Sources */,
 				D803397A2A5004D9004FF953 /* MessageBlock.swift in Sources */,
-				D80339792A5004D1004FF953 /* PodInfoConfiguredAlerts.swift in Sources */,
+				D80339792A5004D1004FF953 /* PodInfoTriggeredAlerts.swift in Sources */,
 				D80339782A5004C8004FF953 /* AcknowledgeAlertCommand.swift in Sources */,
 				D80339772A5004C0004FF953 /* DeactivatePodCommand.swift in Sources */,
 				D80339762A5004B7004FF953 /* TempBasalExtraCommand.swift in Sources */,
@@ -1136,7 +1136,7 @@
 				C12401E329C7D8E900B32844 /* PodComms.swift in Sources */,
 				C12401D429C7D8E900B32844 /* BeepPreference.swift in Sources */,
 				C12401B829C7D8E900B32844 /* PodInfoPulseLog.swift in Sources */,
-				C12401BE29C7D8E900B32844 /* PodInfoConfiguredAlerts.swift in Sources */,
+				C12401BE29C7D8E900B32844 /* PodInfoTriggeredAlerts.swift in Sources */,
 				C12401E529C7D8E900B32844 /* PodCommsSession.swift in Sources */,
 				C12401DE29C7D8E900B32844 /* CRC16.swift in Sources */,
 				C12401C729C7D8E900B32844 /* BasalScheduleExtraCommand.swift in Sources */,
