@@ -283,9 +283,7 @@ public class PodCommsSession {
 
             let message = Message(address: podState.address, messageBlocks: blocksToSend, sequenceNum: messageNumber, expectFollowOnMessage: expectFollowOnMessage)
 
-            // Reset the lastDeliveryStatusReceived variable here which will be reinitialized with returned delivery status
-            // in updateDeliveryStatus(). This variable can be used to ensure that we never sent a particular nsulin delivery
-            // command unless we received a status response indicating that insulin delivery for that delivery type is off.
+            // Clear the lastDeliveryStatusReceived variable which is used to guard against possible 0x31 pod faults
             podState.lastDeliveryStatusReceived = nil
 
             let response = try transport.sendMessage(message)
@@ -621,6 +619,11 @@ public class PodCommsSession {
             return .certainFailure(error: .unacknowledgedCommandPending)
         }
 
+        guard podState.setupProgress == .completed else {
+            // A cancel delivery command before pod setup is complete will fault the pod
+            return .certainFailure(error: PodCommsError.setupNotComplete)
+        }
+
         do {
             var alertConfigurations: [AlertConfiguration] = []
             var podSuspendedReminderAlert: PodAlert? = nil
@@ -696,6 +699,11 @@ public class PodCommsSession {
 
         guard podState.unacknowledgedCommand == nil else {
             return .certainFailure(error: .unacknowledgedCommandPending)
+        }
+
+        guard podState.setupProgress == .completed else {
+            // A cancel delivery command before pod setup is complete will fault the pod
+            return .certainFailure(error: PodCommsError.setupNotComplete)
         }
 
         do {
