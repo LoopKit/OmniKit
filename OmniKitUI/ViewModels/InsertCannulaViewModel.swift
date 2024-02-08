@@ -15,7 +15,7 @@ public protocol CannulaInserter {
     func checkCannulaInsertionFinished(completion: @escaping (OmnipodPumpManagerError?) -> Void)
 }
 
-extension OmnipodPumpManager: CannulaInserter {}
+extension OmnipodPumpManager: CannulaInserter { }
 
 class InsertCannulaViewModel: ObservableObject, Identifiable {
 
@@ -26,12 +26,13 @@ class InsertCannulaViewModel: ObservableObject, Identifiable {
         case checkingInsertion
         case error(OmnipodPumpManagerError)
         case finished
+        case restarting
         
         var actionButtonAccessibilityLabel: String {
             switch self {
             case .ready, .startingInsertion:
                 return LocalizedString("Slide Button to insert Cannula", comment: "Insert cannula slider button accessibility label while ready to pair")
-            case .inserting:
+            case .inserting, .restarting:
                 return LocalizedString("Inserting. Please wait.", comment: "Insert cannula action button accessibility label while pairing")
             case .checkingInsertion:
                 return LocalizedString("Checking Insertion", comment: "Insert cannula action button accessibility label checking insertion")
@@ -57,7 +58,7 @@ class InsertCannulaViewModel: ObservableObject, Identifiable {
                 return LocalizedString("Slide to Insert Cannula", comment: "Cannula insertion button text while ready to insert")
             case .error:
                 return LocalizedString("Retry", comment: "Cannula insertion button text while showing error")
-            case .inserting, .startingInsertion:
+            case .inserting, .startingInsertion, .restarting:
                 return LocalizedString("Inserting...", comment: "Cannula insertion button text while inserting")
             case .checkingInsertion:
                 return LocalizedString("Checking...", comment: "Cannula insertion button text while checking insertion")
@@ -82,7 +83,7 @@ class InsertCannulaViewModel: ObservableObject, Identifiable {
             switch self {
             case .ready, .error:
                 return .hidden
-            case .startingInsertion, .checkingInsertion:
+            case .startingInsertion, .checkingInsertion, .restarting:
                 return .indeterminantProgress
             case .inserting(let finishTime):
                 return .timedProgress(finishTime: finishTime)
@@ -102,7 +103,7 @@ class InsertCannulaViewModel: ObservableObject, Identifiable {
         
         var isProcessing: Bool {
             switch self {
-            case .startingInsertion, .inserting:
+            case .startingInsertion, .inserting, .restarting:
                 return true
             default:
                 return false
@@ -134,6 +135,13 @@ class InsertCannulaViewModel: ObservableObject, Identifiable {
         }
     }
     
+    var restarting: Bool {
+        if case .restarting = self.state {
+            return true
+        }
+        return false
+    }
+
     var didFinish: (() -> Void)?
     
     var didRequestDeactivation: (() -> Void)?
@@ -157,7 +165,7 @@ class InsertCannulaViewModel: ObservableObject, Identifiable {
 //    }
     
     private func checkCannulaInsertionFinished() {
-        state = .startingInsertion
+        state = .checkingInsertion
         cannulaInserter.checkCannulaInsertionFinished() { (error) in
             DispatchQueue.main.async {
                 if let error = error {
@@ -169,9 +177,8 @@ class InsertCannulaViewModel: ObservableObject, Identifiable {
         }
     }
     
-    private func insertCannula() {
-        state = .startingInsertion
-        
+    private func insertCannula(initState: InsertCannulaViewModelState) {
+        state = initState
         cannulaInserter.insertCannula { (result) in
             DispatchQueue.main.async {
                 switch(result) {
@@ -206,15 +213,21 @@ class InsertCannulaViewModel: ObservableObject, Identifiable {
             didFinish?()
         case .error(let error):
             if error.recoverable {
-                insertCannula()
+                insertCannula(initState: .startingInsertion)
             } else {
                 didRequestDeactivation?()
             }
         default:
-            insertCannula()
+            insertCannula(initState: .startingInsertion)
         }
     }
-    
+
+    func handlePossibleRestart() {
+        // if restarting, start without waiting for a button action
+        if restarting {
+            insertCannula(initState: .restarting)
+        }
+    }
 }
 
 public extension OmnipodPumpManagerError {
