@@ -334,7 +334,7 @@ extension OmnipodPumpManager {
         switch podCommState(for: state) {
         case .activating:
             return PumpStatusHighlight(
-                localizedMessage: LocalizedString("Finish Pairing", comment: "Status highlight that when pod is activating."),
+                localizedMessage: LocalizedString("Finish Setup", comment: "Status highlight that when pod is activating."),
                 imageName: "exclamationmark.circle.fill",
                 state: .warning)
         case .deactivating:
@@ -586,7 +586,7 @@ extension OmnipodPumpManager {
         } else if !podState.isSetupComplete {
             return .activating
         }
-        return .deactivating
+        return .deactivating // Can't be reached and thus will never be returned
     }
 
     public var cannulaInsertionSuccessfullyStarted: Bool {
@@ -702,6 +702,26 @@ extension OmnipodPumpManager {
         }
     }
     
+    // Reset any PumpManager state that is really per pod state
+    private func resetPerPodPumpManagerState() {
+        setState({ (state) in
+            state.podAttachmentConfirmed = false
+
+            // Remove any per pod triggeringSlot based pump manager alerts
+            // that don't span pods (i.e., all but timeOffsetChangeDetected).
+            for alert in state.activeAlerts {
+                if alert != .timeOffsetChangeDetected {
+                    state.activeAlerts.remove(alert)
+                }
+            }
+            for alert in state.alertsWithPendingAcknowledgment {
+                if alert != .timeOffsetChangeDetected {
+                    state.alertsWithPendingAcknowledgment.remove(alert)
+                }
+            }
+        })
+    }
+
     // MARK: Testing
     #if targetEnvironment(simulator)
     private func jumpStartPod(address: UInt32, lot: UInt32, tid: UInt32, fault: DetailedStatus? = nil, startDate: Date? = nil, mockFault: Bool) {
@@ -716,8 +736,14 @@ extension OmnipodPumpManager {
 
         podComms = PodComms(podState: podState)
 
+        self.podComms.delegate = self
+        self.podComms.messageLogger = self
+
+        self.resetPerPodPumpManagerState()
+
         setState({ (state) in
             state.updatePodStateFromPodComms(podState)
+            state.scheduledExpirationReminderOffset = state.defaultExpirationReminderOffset
         })
     }
     #endif
@@ -812,6 +838,8 @@ extension OmnipodPumpManager {
                     }
                 }
                 
+                self.resetPerPodPumpManagerState()
+
                 // Calls completion
                 primeSession(result)
             }
