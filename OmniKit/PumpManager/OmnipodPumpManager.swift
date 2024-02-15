@@ -666,6 +666,25 @@ extension OmnipodPumpManager {
         return date
     }
 
+    // Reset all the per pod state kept in pump manager state which doesn't span pods
+    fileprivate func resetPerPodPumpManagerState() {
+
+        // Reset any residual per pod slot based pump manager alerts
+        // (i.e., all but timeOffsetChangeDetected which isn't actually used)
+        let podAlerts = state.activeAlerts.filter { $0 != .timeOffsetChangeDetected }
+        for alert in podAlerts {
+            self.retractAlert(alert: alert)
+        }
+
+        self.setState { (state) in
+            // Reset alertsWithPendingAcknowledgment which are all pod slot based
+            state.alertsWithPendingAcknowledgment = []
+
+            // Reset other miscellaneous state variables that are actually per pod
+            state.podAttachmentConfirmed = false
+            state.acknowledgedTimeOffsetAlert = false
+        }
+    }
 
     // MARK: - Pod comms
 
@@ -683,13 +702,14 @@ extension OmnipodPumpManager {
 
         podComms.forgetPod()
 
+        self.resetPerPodPumpManagerState()
+
         if let dosesToStore = self.state.podState?.dosesToStore {
             self.store(doses: dosesToStore, completion: { error in
                 self.setState({ (state) in
                     if error != nil {
                         state.unstoredDoses.append(contentsOf: dosesToStore)
                     }
-
                     resetPodState(&state)
                 })
                 completion()
@@ -700,26 +720,6 @@ extension OmnipodPumpManager {
             }
             completion()
         }
-    }
-    
-    // Reset any PumpManager state that is really per pod state
-    private func resetPerPodPumpManagerState() {
-        setState({ (state) in
-            state.podAttachmentConfirmed = false
-
-            // Remove any per pod triggeringSlot based pump manager alerts
-            // that don't span pods (i.e., all but timeOffsetChangeDetected).
-            for alert in state.activeAlerts {
-                if alert != .timeOffsetChangeDetected {
-                    state.activeAlerts.remove(alert)
-                }
-            }
-            for alert in state.alertsWithPendingAcknowledgment {
-                if alert != .timeOffsetChangeDetected {
-                    state.alertsWithPendingAcknowledgment.remove(alert)
-                }
-            }
-        })
     }
 
     // MARK: Testing
