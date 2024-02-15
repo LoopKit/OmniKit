@@ -56,7 +56,7 @@ extension OmnipodPumpManagerError: LocalizedError {
         case .podAlreadyPaired:
             return LocalizedString("Pod already paired", comment: "Error message shown when user cannot pair because pod is already paired")
         case .insulinTypeNotConfigured:
-            return LocalizedString("Insulin type not configured", comment: "Error description for OmniBLEPumpManagerError.insulinTypeNotConfigured")
+            return LocalizedString("Insulin type not configured", comment: "Error description for insulin type not configured")
         case .notReadyForCannulaInsertion:
             return LocalizedString("Pod is not in a state ready for cannula insertion.", comment: "Error message when cannula insertion fails because the pod is in an unexpected state")
         case .communication(let error):
@@ -72,7 +72,7 @@ extension OmnipodPumpManagerError: LocalizedError {
                 return String(describing: error)
             }
         case .invalidSetting:
-            return LocalizedString("Invalid Setting", comment: "Error description for OmniBLEPumpManagerError.invalidSetting")
+            return LocalizedString("Invalid Setting", comment: "Error description for invalid setting")
         }
     }
 
@@ -963,6 +963,12 @@ extension OmnipodPumpManager {
             return
         }
 
+        guard state.podState?.setupProgress == .completed else {
+            // A cancel delivery command before pod setup is complete will fault the pod
+            completion(.state(PodCommsError.setupNotComplete))
+            return
+        }
+
         guard state.podState?.unfinalizedBolus?.isFinished() != false else {
             completion(.state(PodCommsError.unfinalizedBolus))
             return
@@ -995,6 +1001,11 @@ extension OmnipodPumpManager {
                 // If there's no active pod yet, save the basal schedule anyway
                 state.basalSchedule = schedule
                 return .success(false)
+            }
+
+            guard state.podState?.setupProgress == .completed else {
+                // A cancel delivery command before pod setup is complete will fault the pod
+                return .failure(PumpManagerError.deviceState(PodCommsError.setupNotComplete))
             }
 
             guard state.podState?.unfinalizedBolus?.isFinished() != false else {
@@ -1577,6 +1588,12 @@ extension OmnipodPumpManager: PumpManager {
             return
         }
 
+        guard state.podState?.setupProgress == .completed else {
+            // A cancel delivery command before pod setup is complete will fault the pod
+            completion(.failure(PumpManagerError.deviceState(PodCommsError.setupNotComplete)))
+            return
+        }
+
         let rileyLinkSelector = self.rileyLinkDeviceProvider.firstConnectedDevice
         self.podComms.runSession(withName: "Cancel Bolus", using: rileyLinkSelector) { (result) in
 
@@ -1637,11 +1654,17 @@ extension OmnipodPumpManager: PumpManager {
 
     public func runTemporaryBasalProgram(unitsPerHour: Double, for duration: TimeInterval, automatic: Bool, completion: @escaping (PumpManagerError?) -> Void) {
 
-        guard self.hasActivePod else {
+        guard self.hasActivePod, let podState = self.state.podState else {
             completion(.configuration(OmnipodPumpManagerError.noPodPaired))
             return
         }
 
+        guard state.podState?.setupProgress == .completed else {
+            // A cancel delivery command before pod setup is complete will fault the pod
+            completion(.deviceState(PodCommsError.setupNotComplete))
+            return
+        }
+  
         // Legal duration values are [virtual] zero (to cancel current temp basal) or between 30 min and 12 hours
         guard duration < .ulpOfOne || (duration >= .minutes(30) && duration <= .hours(12)) else {
             completion(.deviceState(OmnipodPumpManagerError.invalidSetting))
@@ -1666,7 +1689,7 @@ extension OmnipodPumpManager: PumpManager {
                 return
             }
 
-            if case .some(.suspended) = self.state.podState?.suspendState {
+            if case (.suspended) = podState.suspendState {
                 self.log.info("Not enacting temp basal because podState indicates pod is suspended.")
                 completion(.deviceState(PodCommsError.podSuspended))
                 return
@@ -1676,15 +1699,17 @@ extension OmnipodPumpManager: PumpManager {
             let resumingScheduledBasal = duration < .ulpOfOne
 
             // If a bolus is not finished, fail if not resuming the scheduled basal
-            guard self.state.podState?.unfinalizedBolus?.isFinished() != false || resumingScheduledBasal else {
+            guard podState.unfinalizedBolus?.isFinished() != false || resumingScheduledBasal else {
                 self.log.info("Not enacting temp basal because podState indicates unfinalized bolus in progress.")
                 completion(.deviceState(PodCommsError.unfinalizedBolus))
                 return
             }
 
-            // Do the cancel temp basal command if currently running a temp basal OR
-            // if resuming scheduled basal delivery.
-            if self.state.podState?.unfinalizedTempBasal != nil || resumingScheduledBasal {
+            // Do the safe cancel TB command when resuming scheduled basal delivery OR if unfinalizedTempBasal indicates a
+            // running a temp basal OR if we don't have the last pod delivery status confirming that no temp basal is running.
+            if resumingScheduledBasal || podState.unfinalizedTempBasal != nil ||
+                podState.lastDeliveryStatusReceived == nil || podState.lastDeliveryStatusReceived!.tempBasalRunning
+            {
                 let status: StatusResponse
 
                 // if resuming scheduled basal delivery & an acknowledgement beep is needed, use the cancel TB beep
@@ -1695,7 +1720,6 @@ extension OmnipodPumpManager: PumpManager {
                     completion(.communication(error))
                     return
                 case .unacknowledged(let error):
-                    // TODO: Return PumpManagerError.uncertainDelivery and implement recovery
                     completion(.communication(error))
                     return
                 case .success(let cancelTempStatus, _):
