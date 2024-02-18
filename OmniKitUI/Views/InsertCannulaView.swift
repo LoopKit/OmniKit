@@ -76,9 +76,13 @@ struct InsertCannulaView: View {
             .padding()
         }
         .alert(isPresented: $cancelModalIsPresented) { cancelPairingModal }
-        .navigationBarTitle("Insert Cannula", displayMode: .automatic)
+        .navigationBarTitle(LocalizedString("Insert Cannula", comment: "navigation bar title for insert cannula"), displayMode: .automatic)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(trailing: cancelButton)
+        .onFirstAppear {
+            // handle possible restart without waiting for a button action
+            self.viewModel.handlePossibleRestart()
+        }
     }
     var actionText : some View {
         Text(self.viewModel.state.nextActionButtonDescription)
