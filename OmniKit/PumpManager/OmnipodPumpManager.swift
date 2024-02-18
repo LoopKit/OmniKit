@@ -589,10 +589,6 @@ extension OmnipodPumpManager {
         return .deactivating // Can't be reached and thus will never be returned
     }
 
-    public var cannulaInsertionSuccessfullyStarted: Bool {
-        return state.podState?.setupProgress.cannulaInsertionSuccessfullyStarted == true
-    }
-
     public var podCommState: PodCommState {
         return podCommState(for: state)
     }
