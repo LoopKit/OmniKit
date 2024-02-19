@@ -76,7 +76,7 @@ struct InsertCannulaView: View {
             .padding()
         }
         .alert(isPresented: $cancelModalIsPresented) { cancelPairingModal }
-        .navigationBarTitle("Insert Cannula", displayMode: .automatic)
+        .navigationBarTitle(LocalizedString("Insert Cannula", comment: "navigation bar title for insert cannula"), displayMode: .automatic)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(trailing: cancelButton)
     }
@@ -131,7 +131,7 @@ struct InsertCannulaView: View {
 }
 
 class MockCannulaInserter: CannulaInserter {
-    public func insertCannula(completion: @escaping (Result<TimeInterval,OmnipodPumpManagerError>) -> Void) {
+    func insertCannula(completion: @escaping (Result<TimeInterval,OmnipodPumpManagerError>) -> Void) {
         let mockDelay = TimeInterval(seconds: 3)
         let result :Result<TimeInterval, OmnipodPumpManagerError> = .success(mockDelay)
         completion(result)
@@ -141,15 +141,13 @@ class MockCannulaInserter: CannulaInserter {
         completion(nil)
     }
 
-
+    var cannulaInsertionSuccessfullyStarted: Bool = false
 }
+
 struct InsertCannulaView_Previews: PreviewProvider {
     static var mockInserter = MockCannulaInserter()
     static var model = InsertCannulaViewModel(cannulaInserter: mockInserter)
     static var previews: some View {
         InsertCannulaView(viewModel: model)
-
-
-
     }
 }

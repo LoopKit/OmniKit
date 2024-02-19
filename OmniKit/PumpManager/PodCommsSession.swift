@@ -430,7 +430,6 @@ public class PodCommsSession {
 
     public func insertCannula(optionalAlerts: [PodAlert] = []) throws -> TimeInterval {
         let cannulaInsertionUnits = Pod.cannulaInsertionUnits + Pod.cannulaInsertionUnitsExtra
-        let insertionWait: TimeInterval = .seconds(cannulaInsertionUnits / Pod.primeDeliveryRate)
 
         guard let activatedAt = podState.activatedAt else {
             throw PodCommsError.noPodPaired
@@ -442,7 +441,8 @@ public class PodCommsSession {
             if status.podProgressStatus == .insertingCannula {
                 podState.setupProgress = .cannulaInserting
                 podState.updateFromStatusResponse(status, at: currentDate)
-                return insertionWait // Not sure when it started, wait full time to be sure
+                // return a non-zero wait time based on the bolus not yet delivered
+                return (status.bolusNotDelivered / Pod.primeDeliveryRate) + 1
             }
             if status.podProgressStatus.readyForDelivery {
                 markSetupProgressCompleted(statusResponse: status)
@@ -471,7 +471,7 @@ public class PodCommsSession {
         podState.updateFromStatusResponse(status2, at: currentDate)
 
         podState.setupProgress = .cannulaInserting
-        return insertionWait
+        return status2.bolusNotDelivered / Pod.primeDeliveryRate // seconds for the cannula insert bolus to finish
     }
 
     public func checkInsertionCompleted() throws {
