@@ -192,7 +192,6 @@
 		D803399A2A500D3D004FF953 /* CRC8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401B229C7D8E900B32844 /* CRC8.swift */; };
 		D803399B2A50122F004FF953 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401B329C7D8E900B32844 /* Packet.swift */; };
 		D803399C2A50128D004FF953 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA0129C7DD4700435701 /* LocalizedString.swift */; };
-		D8D9275E2B744A6C00D154B2 /* FirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9275D2B744A6C00D154B2 /* FirstAppear.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -436,7 +435,6 @@
 		C12EDA1529C7DFF100435701 /* HKUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKUnit.swift; sourceTree = "<group>"; };
 		C12EDA1729C7E01800435701 /* TimeZone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeZone.swift; sourceTree = "<group>"; };
 		C12EDA1A29C7E06900435701 /* OSLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSLog.swift; sourceTree = "<group>"; };
-		D8D9275D2B744A6C00D154B2 /* FirstAppear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstAppear.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -723,7 +721,6 @@
 				C124023129C7DA9700B32844 /* DesignElements */,
 				C124023A29C7DA9700B32844 /* ExpirationReminderPickerView.swift */,
 				C124024529C7DA9700B32844 /* ExpirationReminderSetupView.swift */,
-				D8D9275D2B744A6C00D154B2 /* FirstAppear.swift */,
 				C124023629C7DA9700B32844 /* InsertCannulaView.swift */,
 				C124023C29C7DA9700B32844 /* InsulinTypeConfirmation.swift */,
 				C124023529C7DA9700B32844 /* LowReservoirReminderEditView.swift */,
@@ -1217,7 +1214,6 @@
 				C124026E29C7DA9700B32844 /* FrameworkLocalText.swift in Sources */,
 				C124028F29C7DA9700B32844 /* PodDetailsView.swift in Sources */,
 				C124028629C7DA9700B32844 /* NotificationSettingsView.swift in Sources */,
-				D8D9275E2B744A6C00D154B2 /* FirstAppear.swift in Sources */,
 				C124027D29C7DA9700B32844 /* InsertCannulaView.swift in Sources */,
 				C12EDA0C29C7DED000435701 /* LocalizedString.swift in Sources */,
 				C12EDA1629C7DFF100435701 /* HKUnit.swift in Sources */,
