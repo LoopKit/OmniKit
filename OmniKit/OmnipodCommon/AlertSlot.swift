@@ -118,23 +118,23 @@ public enum PodAlert: CustomStringConvertible, RawRepresentable, Equatable {
     public var configuration: AlertConfiguration {
         switch self {
         case .waitingForPairingReminder:
-            return AlertConfiguration(alertType: .slot7, duration: .minutes(110), trigger: .timeUntilAlert(.minutes(10)), beepRepeat: .every5Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
+            return AlertConfiguration(alertType: .slot7Expired, duration: .minutes(110), trigger: .timeUntilAlert(.minutes(10)), beepRepeat: .every5Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
         case .finishSetupReminder:
-            return AlertConfiguration(alertType: .slot7, duration: .minutes(55), trigger: .timeUntilAlert(.minutes(5)), beepRepeat: .every5Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
+            return AlertConfiguration(alertType: .slot7Expired, duration: .minutes(55), trigger: .timeUntilAlert(.minutes(5)), beepRepeat: .every5Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
         case .expirationReminder(let alertTime):
             let active = alertTime != 0 // disable if alertTime is 0
-            return AlertConfiguration(alertType: .slot3, active: active, duration: 0, trigger: .timeUntilAlert(alertTime), beepRepeat: .every1MinuteFor3MinutesAndRepeatEvery15Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
+            return AlertConfiguration(alertType: .slot3ExpirationReminder, active: active, duration: 0, trigger: .timeUntilAlert(alertTime), beepRepeat: .every1MinuteFor3MinutesAndRepeatEvery15Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
         case .expired(let alarmTime, let duration):
             let active = alarmTime != 0 // disable if alarmTime is 0
-            return AlertConfiguration(alertType: .slot7, active: active, duration: duration, trigger: .timeUntilAlert(alarmTime), beepRepeat: .every60Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
+            return AlertConfiguration(alertType: .slot7Expired, active: active, duration: duration, trigger: .timeUntilAlert(alarmTime), beepRepeat: .every60Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
         case .shutdownImminent(let alarmTime):
             let active = alarmTime != 0 // disable if alarmTime is 0
-            return AlertConfiguration(alertType: .slot2, active: active, duration: 0, trigger: .timeUntilAlert(alarmTime), beepRepeat: .every15Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
+            return AlertConfiguration(alertType: .slot2ShutdownImminent, active: active, duration: 0, trigger: .timeUntilAlert(alarmTime), beepRepeat: .every15Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
         case .lowReservoir(let units):
             let active = units != 0 // disable if units is 0
-            return AlertConfiguration(alertType: .slot4, active: active, duration: 0, trigger: .unitsRemaining(units), beepRepeat: .every1MinuteFor3MinutesAndRepeatEvery60Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
+            return AlertConfiguration(alertType: .slot4LowReservoir, active: active, duration: 0, trigger: .unitsRemaining(units), beepRepeat: .every1MinuteFor3MinutesAndRepeatEvery60Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
         case .autoOff(let active, let countdownDuration):
-            return AlertConfiguration(alertType: .slot0, active: active, autoOffModifier: true, duration: .minutes(15), trigger: .timeUntilAlert(countdownDuration), beepRepeat: .every1MinuteFor15Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
+            return AlertConfiguration(alertType: .slot0AutoOff, active: active, autoOffModifier: true, duration: .minutes(15), trigger: .timeUntilAlert(countdownDuration), beepRepeat: .every1MinuteFor15Minutes, beepType: .bipBeepBipBeepBipBeepBipBeep)
         case .podSuspendedReminder(let active, let suspendTime):
             // A suspendTime of 0 is an untimed suspend
             let reminderInterval, duration: TimeInterval
@@ -166,7 +166,7 @@ public enum PodAlert: CustomStringConvertible, RawRepresentable, Equatable {
                 beepRepeat = .once
                 beepType = .noBeepCancel
             }
-            return AlertConfiguration(alertType: .slot5, active: active, duration: duration, trigger: trigger, beepRepeat: beepRepeat, beepType: beepType)
+            return AlertConfiguration(alertType: .slot5SuspendedReminder, active: active, duration: duration, trigger: trigger, beepRepeat: beepRepeat, beepType: beepType)
         case .suspendTimeExpired(let suspendTime):
             let active = suspendTime != 0 // disable if suspendTime is 0
             let trigger: AlertTrigger
@@ -181,7 +181,7 @@ public enum PodAlert: CustomStringConvertible, RawRepresentable, Equatable {
                 beepRepeat = .once
                 beepType = .noBeepCancel
             }
-            return AlertConfiguration(alertType: .slot6, active: active, duration: 0, trigger: trigger, beepRepeat: beepRepeat, beepType: beepType)
+            return AlertConfiguration(alertType: .slot6SuspendTimeExpired, active: active, duration: 0, trigger: trigger, beepRepeat: beepRepeat, beepType: beepType)
         }
     }
 
@@ -301,14 +301,14 @@ public enum PodAlert: CustomStringConvertible, RawRepresentable, Equatable {
 }
 
 public enum AlertSlot: UInt8 {
-    case slot0 = 0x00
-    case slot1 = 0x01
-    case slot2 = 0x02
-    case slot3 = 0x03
-    case slot4 = 0x04
-    case slot5 = 0x05
-    case slot6 = 0x06
-    case slot7 = 0x07
+    case slot0AutoOff = 0x00
+    case slot1NotUsed = 0x01
+    case slot2ShutdownImminent = 0x02
+    case slot3ExpirationReminder = 0x03
+    case slot4LowReservoir = 0x04
+    case slot5SuspendedReminder = 0x05
+    case slot6SuspendTimeExpired = 0x06
+    case slot7Expired = 0x07
 
     public var bitMaskValue: UInt8 {
         return 1<<rawValue
@@ -373,8 +373,8 @@ public struct AlertSet: RawRepresentable, Collection, CustomStringConvertible, E
 
 // Returns true if there are any active suspend related alerts
 public func hasActiveSuspendAlert(configuredAlerts: [AlertSlot : PodAlert]) -> Bool {
-    // slot5 is for podSuspendedReminder and slot6 is for suspendTimeExpired
-    if configuredAlerts.contains(where: { ($0.key == .slot5 || $0.key == .slot6) && $0.value.configuration.active }) {
+    // slot5SuspendedReminder is for podSuspendedReminder and slot6SuspendTimeExpired is for suspendTimeExpired
+    if configuredAlerts.contains(where: { ($0.key == .slot5SuspendedReminder || $0.key == .slot6SuspendTimeExpired) && $0.value.configuration.active }) {
         return true
     }
     return false

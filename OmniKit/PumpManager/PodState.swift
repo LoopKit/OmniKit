@@ -136,7 +136,7 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
         self.messageTransportState = MessageTransportState(packetNumber: packetNumber, messageNumber: messageNumber)
         self.primeFinishTime = nil
         self.setupProgress = .addressAssigned
-        self.configuredAlerts = [.slot7: .waitingForPairingReminder]
+        self.configuredAlerts = [.slot7Expired: .waitingForPairingReminder]
         self.insulinType = insulinType
         self.lastDeliveryStatusReceived = initialDeliveryStatus // can be non-nil when testing
     }
@@ -460,12 +460,12 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
         } else {
             // Assume migration, and set up with alerts that are normally configured
             self.configuredAlerts = [
-                .slot2: .shutdownImminent(0),
-                .slot3: .expirationReminder(0),
-                .slot4: .lowReservoir(0),
-                .slot5: .podSuspendedReminder(active: false, suspendTime: 0),
-                .slot6: .suspendTimeExpired(suspendTime: 0),
-                .slot7: .expired(alertTime: 0, duration: 0)
+                .slot2ShutdownImminent: .shutdownImminent(0),
+                .slot3ExpirationReminder: .expirationReminder(0),
+                .slot4LowReservoir: .lowReservoir(0),
+                .slot5SuspendedReminder: .podSuspendedReminder(active: false, suspendTime: 0),
+                .slot6SuspendTimeExpired: .suspendTimeExpired(suspendTime: 0),
+                .slot7Expired: .expired(alertTime: 0, duration: 0)
             ]
         }
         
