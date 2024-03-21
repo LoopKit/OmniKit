@@ -143,14 +143,6 @@ public class OmnipodPumpManager: RileyLinkPumpManager {
         return setStateWithResult(changes)
     }
 
-    @discardableResult
-    private func mutateState(_ changes: (_ state: inout OmnipodPumpManagerState) -> Void) -> OmnipodPumpManagerState {
-        return setStateWithResult({ (state) -> OmnipodPumpManagerState in
-            changes(&state)
-            return state
-        })
-    }
-
     private func setStateWithResult<ReturnType>(_ changes: (_ state: inout OmnipodPumpManagerState) -> ReturnType) -> ReturnType {
         var oldValue: OmnipodPumpManagerState!
         var returnType: ReturnType!
@@ -1357,7 +1349,7 @@ extension OmnipodPumpManager: PumpManager {
 
     public var defaultExpirationReminderOffset: TimeInterval {
         set {
-            mutateState { (state) in
+            setState { (state) in
                 state.defaultExpirationReminderOffset = newValue
             }
         }
@@ -1368,7 +1360,7 @@ extension OmnipodPumpManager: PumpManager {
 
     public var lowReservoirReminderValue: Double {
         set {
-            mutateState { (state) in
+            setState { (state) in
                 state.lowReservoirReminderValue = newValue
             }
         }
@@ -1379,7 +1371,7 @@ extension OmnipodPumpManager: PumpManager {
 
     public var podAttachmentConfirmed: Bool {
         set {
-            mutateState { (state) in
+            setState { (state) in
                 state.podAttachmentConfirmed = newValue
             }
         }
@@ -1390,7 +1382,7 @@ extension OmnipodPumpManager: PumpManager {
 
     public var initialConfigurationCompleted: Bool {
         set {
-            mutateState { (state) in
+            setState { (state) in
                 state.initialConfigurationCompleted = newValue
             }
         }
@@ -1871,7 +1863,7 @@ extension OmnipodPumpManager: PumpManager {
     }
 
     public func syncDeliveryLimits(limits deliveryLimits: DeliveryLimits, completion: @escaping (Result<DeliveryLimits, Error>) -> Void) {
-        mutateState { state in
+        setState { state in
             if let rate = deliveryLimits.maximumBasalRate?.doubleValue(for: .internationalUnitsPerHour) {
                 state.maximumTempBasalRate = rate
                 completion(.success(deliveryLimits))
@@ -1926,7 +1918,7 @@ extension OmnipodPumpManager: PumpManager {
             do {
                 let beepBlock = self.beepMessageBlock(beepType: .beep)
                 try session.configureAlerts([expirationReminder], beepBlock: beepBlock)
-                self.mutateState({ (state) in
+                self.setState({ (state) in
                     state.scheduledExpirationReminderOffset = intervalBeforeExpiration
                 })
                 completion(nil)
@@ -1985,7 +1977,7 @@ extension OmnipodPumpManager: PumpManager {
             do {
                 let beepBlock = self.beepMessageBlock(beepType: .beep)
                 try session.configureAlerts([lowReservoirReminder], beepBlock: beepBlock)
-                self.mutateState({ (state) in
+                self.setState({ (state) in
                     state.lowReservoirReminderValue = Double(value)
                 })
                 completion(nil)
@@ -2012,7 +2004,7 @@ extension OmnipodPumpManager: PumpManager {
             }
         }
 
-        self.mutateState { (state) in
+        self.setState { (state) in
             state.activeAlerts.insert(alert)
         }
     }
@@ -2028,7 +2020,7 @@ extension OmnipodPumpManager: PumpManager {
                 delegate?.retractAlert(identifier: repeatingIdentifier)
             }
         }
-        self.mutateState { (state) in
+        self.setState { (state) in
             state.activeAlerts.remove(alert)
         }
     }
@@ -2102,7 +2094,7 @@ extension OmnipodPumpManager: PumpManager {
                         } catch {
                             return
                         }
-                        self.mutateState { state in
+                        self.setState { state in
                             state.activeAlerts.remove(alert)
                             state.alertsWithPendingAcknowledgment.remove(alert)
                         }
@@ -2226,7 +2218,7 @@ extension OmnipodPumpManager: PodCommsDelegate {
             }
         } else {
             // Resetting podState
-            mutateState { state in
+            setState { state in
                 state.updatePodStateFromPodComms(podState)
             }
         }
@@ -2253,18 +2245,18 @@ extension OmnipodPumpManager {
                                 let beepBlock = self.beepMessageBlock(beepType: .beep)
                                 let _ = try session.acknowledgeAlerts(alerts: AlertSet(slots: [slot]), beepBlock: beepBlock)
                             } catch {
-                                self.mutateState { state in
+                                self.setState { state in
                                     state.alertsWithPendingAcknowledgment.insert(alert)
                                 }
                                 completion(error)
                                 return
                             }
-                            self.mutateState { state in
+                            self.setState { state in
                                 state.activeAlerts.remove(alert)
                             }
                             completion(nil)
                         case .failure(let error):
-                            self.mutateState { state in
+                            self.setState { state in
                                 state.alertsWithPendingAcknowledgment.insert(alert)
                             }
                             completion(error)
@@ -2273,7 +2265,7 @@ extension OmnipodPumpManager {
                     }
                 } else {
                     // Non-pod alert
-                    self.mutateState { state in
+                    self.setState { state in
                         state.activeAlerts.remove(alert)
                         if alert == .timeOffsetChangeDetected {
                             state.acknowledgedTimeOffsetAlert = true
