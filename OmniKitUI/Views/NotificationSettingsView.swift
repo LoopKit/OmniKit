@@ -42,7 +42,7 @@ struct NotificationSettingsView: View {
 
             if let allowedDates = allowedScheduledReminderDates {
                 RoundedCard(
-                    footer: LocalizedString("This is a reminder that you scheduled when you paired your current Pod.", comment: "Footer text for scheduled reminder area"))
+                    footer: LocalizedString("This is a reminder that you scheduled for your current Pod.", comment: "Footer text for scheduled reminder area"))
                 {
                     Text(LocalizedString("Scheduled Reminder", comment: "Scheduled reminder card title on NotificationSettingsView"))
                     Divider()
