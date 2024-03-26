@@ -66,20 +66,16 @@ struct NotificationSettingsView: View {
     
     private func scheduledReminderRow(scheduledDate: Date?, allowedDates: [Date]) -> some View {
         Group {
-            if let scheduledDate = scheduledDate, scheduledDate <= Date() {
-                scheduledReminderRowContents(disclosure: false)
-            } else {
-                NavigationLink(
-                    destination: ScheduledExpirationReminderEditView(
-                        scheduledExpirationReminderDate: scheduledDate,
-                        allowedDates: allowedDates,
-                        dateFormatter: dateFormatter,
-                        onSave: onSaveScheduledExpirationReminder,
-                        onFinish: { scheduleReminderDateEditViewIsShown = false }),
-                    isActive: $scheduleReminderDateEditViewIsShown)
-                {
-                    scheduledReminderRowContents(disclosure: true)
-                }
+            NavigationLink(
+                destination: ScheduledExpirationReminderEditView(
+                    scheduledExpirationReminderDate: scheduledDate,
+                    allowedDates: allowedDates,
+                    dateFormatter: dateFormatter,
+                    onSave: onSaveScheduledExpirationReminder,
+                    onFinish: { scheduleReminderDateEditViewIsShown = false }),
+                isActive: $scheduleReminderDateEditViewIsShown)
+            {
+                scheduledReminderRowContents(disclosure: true)
             }
         }
     }
