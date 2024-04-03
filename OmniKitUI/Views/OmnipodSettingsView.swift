@@ -38,8 +38,6 @@ struct OmnipodSettingsView: View  {
     @Environment(\.guidanceColors) var guidanceColors
     @Environment(\.insulinTintColor) var insulinTintColor
     
-    let allowDebugFeatures : Bool
-
     private var daysRemaining: Int? {
         if case .timeRemaining(let remaining, _) = viewModel.lifeState, remaining > .days(1) {
             return Int(remaining.days)
@@ -464,15 +462,13 @@ struct OmnipodSettingsView: View  {
                             .foregroundColor(.secondary)
                     }
                 }
-                if  (allowDebugFeatures) {
-                    NavigationLink(destination: SilencePodSelectionView(initialValue: viewModel.silencePodPreference, onSave: viewModel.setSilencePod)) {
-                        HStack {
-                            FrameworkLocalText("Silence Pod", comment: "Text for silence pod navigation link")
-                                .foregroundColor(Color.primary)
-                            Spacer()
-                            Text(viewModel.silencePodPreference.title)
-                                .foregroundColor(.secondary)
-                        }
+                NavigationLink(destination: SilencePodSelectionView(initialValue: viewModel.silencePodPreference, onSave: viewModel.setSilencePod)) {
+                    HStack {
+                        FrameworkLocalText("Silence Pod", comment: "Text for silence pod navigation link")
+                            .foregroundColor(Color.primary)
+                        Spacer()
+                        Text(viewModel.silencePodPreference.title)
+                            .foregroundColor(.secondary)
                     }
                 }
                 NavigationLink(destination: InsulinTypeSetting(initialValue: viewModel.insulinType, supportedInsulinTypes: supportedInsulinTypes, allowUnsetInsulinType: false, didChange: viewModel.didChangeInsulinType)) {
@@ -517,15 +513,13 @@ struct OmnipodSettingsView: View  {
                 }
             }
 
-            if  (allowDebugFeatures) {
-                Section() {
-                    NavigationLink(destination: PodDiagnosticsView(
-                        title: LocalizedString("Pod Diagnostics", comment: "Title for the pod diagnostic view"),
-                        viewModel: viewModel))
-                    {
-                        FrameworkLocalText("Pod Diagnostics", comment: "Text for pod diagnostics row")
-                            .foregroundColor(Color.primary)
-                    }
+            Section() {
+                NavigationLink(destination: PodDiagnosticsView(
+                    title: LocalizedString("Pod Diagnostics", comment: "Title for the pod diagnostic view"),
+                    viewModel: viewModel))
+                {
+                    FrameworkLocalText("Pod Diagnostics", comment: "Text for pod diagnostics row")
+                        .foregroundColor(Color.primary)
                 }
             }
 
@@ -570,7 +564,7 @@ struct OmnipodSettingsView: View  {
     var suspendOptionsActionSheet: ActionSheet {
         ActionSheet(
             title: FrameworkLocalText("Suspend Delivery", comment: "Title for suspend duration selection action sheet"),
-            message: FrameworkLocalText("Insulin delivery will be stopped until you resume manually. When would you like this app to remind you to resume delivery?", comment: "Message for suspend duration selection action sheet"),
+            message: FrameworkLocalText("Insulin delivery will be stopped until you resume manually. When would you like Loop to remind you to resume delivery?", comment: "Message for suspend duration selection action sheet"),
             buttons: [
                 .default(FrameworkLocalText("30 minutes", comment: "Button text for 30 minute suspend duration"), action: { self.viewModel.suspendDelivery(duration: .minutes(30)) }),
                 .default(FrameworkLocalText("1 hour", comment: "Button text for 1 hour suspend duration"), action: { self.viewModel.suspendDelivery(duration: .hours(1)) }),

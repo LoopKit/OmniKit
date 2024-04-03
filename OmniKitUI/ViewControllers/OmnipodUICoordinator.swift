@@ -197,7 +197,7 @@ class OmnipodUICoordinator: UINavigationController, PumpManagerOnboarding, Compl
                 }
             }
 
-            let view = OmnipodSettingsView(viewModel: viewModel, rileyLinkListDataSource: rileyLinkListDataSource, handleRileyLinkSelection: handleRileyLinkSelection, supportedInsulinTypes: allowedInsulinTypes, allowDebugFeatures: allowDebugFeatures)
+            let view = OmnipodSettingsView(viewModel: viewModel, rileyLinkListDataSource: rileyLinkListDataSource, handleRileyLinkSelection: handleRileyLinkSelection, supportedInsulinTypes: allowedInsulinTypes)
             return hostingController(rootView: view)
         case .pairAndPrime:
             pumpManagerOnboardingDelegate?.pumpManagerOnboarding(didCreatePumpManager: pumpManager)
