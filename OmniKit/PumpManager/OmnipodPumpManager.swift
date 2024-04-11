@@ -171,6 +171,14 @@ public class OmnipodPumpManager: RileyLinkPumpManager {
                     })
                 }
             }
+
+            if oldValue.podState?.setupProgress != newValue.podState?.setupProgress, newValue.podState?.setupProgress == .completed {
+                self.pumpDelegate.notify() { (delegate) in
+                    let date = Date()
+                    let event = NewPumpEvent(date: date, dose: nil, raw: "Pod Change \(date)".data(using: .utf8)!, title: "Pod Change", type: .replaceComponent(componentType: .pump))
+                    delegate?.pumpManager(self, hasNewPumpEvents: [event], lastReconciliation: self.lastSync, replacePendingEvents: false) { _ in }
+                }
+            }
         }
 
 
