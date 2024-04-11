@@ -2503,7 +2503,8 @@ extension OmnipodPumpManager: PodCommsDelegate {
 extension OmnipodPumpManager {
     public func acknowledgeAlert(alertIdentifier: Alert.AlertIdentifier, completion: @escaping (Error?) -> Void) {
         guard self.hasActivePod else {
-            completion(OmnipodPumpManagerError.noPodPaired)
+            log.default("Skipping alert acknowledgements with no active pod")
+            completion(nil)
             return
         }
 
