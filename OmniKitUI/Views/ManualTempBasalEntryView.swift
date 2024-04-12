@@ -91,7 +91,7 @@ struct ManualTempBasalEntryView: View {
                     .frame(maxHeight: 162.0)
                     .alert(isPresented: $showingMissingConfigAlert, content: { missingConfigAlert })
                     Section {
-                        Text(LocalizedString("Loop will not automatically adjust your insulin delivery until the temporary basal rate finishes or is canceled.", comment: "Description text on manual temp basal action sheet"))
+                        Text(LocalizedString("Your insulin delivery will not be automatically adjusted until the temporary basal rate finishes or is canceled.", comment: "Description text on manual temp basal action sheet"))
                             .font(.footnote)
                             .foregroundColor(.secondary)
                             .fixedSize(horizontal: false, vertical: true)
@@ -143,10 +143,9 @@ struct ManualTempBasalEntryView: View {
     var missingConfigAlert: SwiftUI.Alert {
         return SwiftUI.Alert(
             title: Text(LocalizedString("Missing Config", comment: "Alert title for missing temp basal configuration")),
-            message: Text(LocalizedString("This Pump has not been configured with a maximum basal rate because it was added before manual temp basal was a feature. Please go to Therapy Settings -> Delivery Limits and set a new Maximum Basal Rate.", comment: "Alert format string for missing temp basal configuration."))
+            message: Text(LocalizedString("This Pump has not been configured with a maximum basal rate because it was added before manual temp basal was a feature. Please set a new Maximum Basal Rate.", comment: "Alert format string for missing temp basal configuration."))
         )
     }
-
 
     var cancelButton: some View {
         Button(LocalizedString("Cancel", comment: "Cancel button text in navigation bar on insert cannula screen")) {
@@ -154,7 +153,6 @@ struct ManualTempBasalEntryView: View {
         }
         .accessibility(identifier: "button_cancel")
     }
-
 }
 
 
