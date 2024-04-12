@@ -66,7 +66,8 @@ struct NotificationSettingsView: View {
     
     private func scheduledReminderRow(scheduledDate: Date?, allowedDates: [Date]) -> some View {
         Group {
-            if let scheduledDate = scheduledDate, scheduledDate <= Date() {
+            // Make the expiration reminder time read-only if there aren't any more available times.
+            if allowedDates.isEmpty {
                 scheduledReminderRowContents(disclosure: false)
             } else {
                 NavigationLink(
