@@ -35,7 +35,7 @@ struct NotificationSettingsView: View {
         RoundedCardScrollView {
             RoundedCard(
                 title: LocalizedString("Omnipod Reminders", comment: "Title for omnipod reminders section"),
-                footer: LocalizedString("A reminder is configured during Pod setup to notify you in advance of its expiration. Set the number of hours advance notice you would like to configure by default when pairing a new Pod.", comment: "Footer text for pod reminders section")
+                footer: LocalizedString("A reminder is configured during Pod setup to notify you in advance of its expiration. Set the number of hours advance notice you would like to configure by default when pairing a new Pod.", comment: "Footer text for omnipod reminders section")
             ) {
                 ExpirationReminderPickerView(expirationReminderDefault: $expirationReminderDefault)
             }
@@ -125,14 +125,15 @@ struct NotificationSettingsView: View {
 struct NotificationSettingsView_Previews: PreviewProvider {
     static var previews: some View {
         return Group {
+            let now = Date()
             NavigationView {
-                NotificationSettingsView(dateFormatter: DateFormatter(), expirationReminderDefault: .constant(2), scheduledReminderDate: Date(), allowedScheduledReminderDates: [Date()], lowReservoirReminderValue: 20)
+                NotificationSettingsView(dateFormatter: DateFormatter(), expirationReminderDefault: .constant(2), scheduledReminderDate: now + TimeInterval(hours: 1), allowedScheduledReminderDates: [now, now - TimeInterval(hours: 2), now - TimeInterval(hours: 3)], lowReservoirReminderValue: 20)
                     .previewDevice(PreviewDevice(rawValue:"iPod touch (7th generation)"))
                     .previewDisplayName("iPod touch (7th generation)")
             }
 
             NavigationView {
-                NotificationSettingsView(dateFormatter: DateFormatter(), expirationReminderDefault: .constant(2), scheduledReminderDate: Date(), allowedScheduledReminderDates: [Date()], lowReservoirReminderValue: 20)
+                NotificationSettingsView(dateFormatter: DateFormatter(), expirationReminderDefault: .constant(2), scheduledReminderDate: now + TimeInterval(hours: 1), allowedScheduledReminderDates: [now, now - TimeInterval(hours: 2), now - TimeInterval(hours: 3)], lowReservoirReminderValue: 20)
                     .colorScheme(.dark)
                     .previewDevice(PreviewDevice(rawValue: "iPhone XS Max"))
                     .previewDisplayName("iPhone XS Max - Dark")
