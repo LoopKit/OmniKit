@@ -35,6 +35,8 @@ class OmnipodSettingsViewModel: ObservableObject {
 
     @Published var beepPreference: BeepPreference
 
+    @Published var silencePodPreference: SilencePodPreference
+
     @Published var rileylinkConnected: Bool
 
     var activatedAtString: String {
@@ -131,7 +133,7 @@ class OmnipodSettingsViewModel: ObservableObject {
 
     var recoveryText: String? {
         if case .fault = podCommState {
-            return LocalizedString("Insulin delivery stopped. Change Pod now.", comment: "The action string on pod status page when pod faulted")
+            return LocalizedString("⚠️ Insulin delivery stopped. Change Pod now.", comment: "The action string on pod status page when pod faulted")
         } else if podOk && isPodDataStale {
             return LocalizedString("Make sure your phone and pod are close to each other. If communication issues persist, move to a new area.", comment: "The action string on pod status page when pod data is stale")
         } else if let serviceTimeRemaining = pumpManager.podServiceTimeRemaining, serviceTimeRemaining <= Pod.serviceDuration - Pod.nominalPodLife {
@@ -230,6 +232,7 @@ class OmnipodSettingsViewModel: ObservableObject {
         lowReservoirAlertValue = Int(self.pumpManager.state.lowReservoirReminderValue)
         podCommState = self.pumpManager.podCommState
         beepPreference = self.pumpManager.beepPreference
+        silencePodPreference = self.pumpManager.silencePod ? .enabled : .disabled
         insulinType = self.pumpManager.insulinType
         podDetails = self.pumpManager.podDetails
         previousPodDetails = self.pumpManager.previousPodDetails
@@ -278,7 +281,7 @@ class OmnipodSettingsViewModel: ObservableObject {
     }
     
     func stopUsingOmnipodTapped() {
-        self.pumpManager.notifyDelegateOfDeactivation {
+        pumpManager.notifyDelegateOfDeactivation {
             DispatchQueue.main.async {
                 self.didFinish?()
             }
@@ -337,8 +340,8 @@ class OmnipodSettingsViewModel: ObservableObject {
         }
     }
 
-    func playTestBeeps(_ completion: @escaping (Error?) -> Void) {
-        pumpManager.playTestBeeps(completion: completion)
+    func playTestBeeps() async throws {
+        try await pumpManager.playTestBeeps()
     }
 
     func setConfirmationBeeps(_ preference: BeepPreference, _ completion: @escaping (_ error: LocalizedError?) -> Void) {
@@ -346,6 +349,17 @@ class OmnipodSettingsViewModel: ObservableObject {
             DispatchQueue.main.async {
                 if error == nil {
                     self.beepPreference = preference
+                }
+                completion(error)
+            }
+        }
+    }
+
+    func setSilencePod(_ silencePodPreference: SilencePodPreference, _ completion: @escaping (_ error: LocalizedError?) -> Void) {
+        pumpManager.setSilencePod(silencePod: silencePodPreference == .enabled) { error in
+            DispatchQueue.main.async {
+                if error == nil {
+                    self.silencePodPreference = silencePodPreference
                 }
                 completion(error)
             }
@@ -367,6 +381,14 @@ class OmnipodSettingsViewModel: ObservableObject {
         }
     }
 
+    var noPod: Bool {
+        return podCommState == .noPod
+    }
+
+    var diagnosticCommands: DiagnosticCommands {
+        return pumpManager
+    }
+
     var podError: String? {
         switch podCommState {
         case .fault(let status):
@@ -378,7 +400,7 @@ class OmnipodSettingsViewModel: ObservableObject {
             case .occluded, .occlusionCheckStartup1, .occlusionCheckStartup2, .occlusionCheckTimeouts1, .occlusionCheckTimeouts2, .occlusionCheckTimeouts3, .occlusionCheckPulseIssue, .occlusionCheckBolusProblem, .occlusionCheckAboveThreshold, .occlusionCheckValueTooHigh:
                 return LocalizedString("Pod Occlusion", comment: "Error message for reservoir view when pod occlusion checks failed")
             default:
-                return LocalizedString("Pod Error", comment: "Error message for reservoir view during general pod fault")
+                return String(format: LocalizedString("Pod Fault %1$03d", comment: "Error message for reservoir view during general pod fault: (1: fault code value)"), status.faultEventCode.rawValue)
             }
         case .active:
             if isPodDataStale {
@@ -594,3 +616,8 @@ extension OmnipodPumpManager {
 
 }
 
+extension OmnipodPumpManager: DiagnosticCommands {
+    func pumpManagerDetails() -> String {
+        return debugDescription
+    }
+}

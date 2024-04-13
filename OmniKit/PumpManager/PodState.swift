@@ -59,8 +59,11 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
     fileprivate var nonceState: NonceState
 
     public var activatedAt: Date?
-    public var expiresAt: Date?  // set based on StatusResponse timeActive and can change with Pod clock drift and/or system time change
+    public var expiresAt: Date? // set based on timeActive and can change with Pod clock drift and/or system time change
     public var activeTime: TimeInterval? // Useful after pod deactivated or faulted.
+
+    public var podTime: TimeInterval // pod time from the last response, always whole minute values
+    public var podTimeUpdated: Date? // time that the podTime value was last updated
 
     public var setupUnitsDelivered: Double?
 
@@ -68,7 +71,7 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
     public let piVersion: String
     public let lot: UInt32
     public let tid: UInt32
-    var activeAlertSlots: AlertSet
+    public var activeAlertSlots: AlertSet
     public var lastInsulinMeasurements: PodInsulinMeasurements?
 
     public var unacknowledgedCommand: PendingCommand?
@@ -100,16 +103,6 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
     public var configuredAlerts: [AlertSlot: PodAlert]
     public var insulinType: InsulinType
 
-    public var activeAlerts: [AlertSlot: PodAlert] {
-        var active = [AlertSlot: PodAlert]()
-        for slot in activeAlertSlots {
-            if let alert = configuredAlerts[slot] {
-                active[slot] = alert
-            }
-        }
-        return active
-    }
-
     // Allow a grace period while the unacknowledged command is first being sent.
     public var needsCommsRecovery: Bool {
         if let unacknowledgedCommand = unacknowledgedCommand, !unacknowledgedCommand.isInFlight {
@@ -136,8 +129,9 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
         self.messageTransportState = MessageTransportState(packetNumber: packetNumber, messageNumber: messageNumber)
         self.primeFinishTime = nil
         self.setupProgress = .addressAssigned
-        self.configuredAlerts = [.slot7: .waitingForPairingReminder]
+        self.configuredAlerts = [.slot7Expired: .waitingForPairingReminder]
         self.insulinType = insulinType
+        self.podTime = 0
         self.lastDeliveryStatusReceived = initialDeliveryStatus // can be non-nil when testing
     }
     
@@ -178,9 +172,21 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
         let seed = UInt16(sum & 0xffff) ^ syncWord
         nonceState = NonceState(lot: lot, tid: tid, seed: seed)
     }
-    
+
+    // Saves the current pod timeActive and will initialize the activatedAtComputed at
+    // pod startup and updates the expiresAt value to account for pod clock differences.
     private mutating func updatePodTimes(timeActive: TimeInterval) -> Date {
         let now = Date()
+
+        guard timeActive >= self.podTime else {
+            // The pod active time went backwards and thus we have an apparent reset fault.
+            // Don't update any times or displayed expiresAt time will expectedly jump.
+            return now
+        }
+
+        self.podTime = timeActive
+        self.podTimeUpdated = now
+
         let activatedAtComputed = now - timeActive
         if activatedAt == nil {
             self.activatedAt = activatedAtComputed
@@ -284,7 +290,7 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
         // save the current pod delivery state for verification before any insulin delivery command
         self.lastDeliveryStatusReceived = deliveryStatus
 
-        // See if the pod's deliveryStatus indicates some insulin delivery that podState isn't tracking 
+        // See if the pod's deliveryStatus indicates some insulin delivery that podState isn't tracking
         if deliveryStatus.bolusing && unfinalizedBolus == nil { // active bolus that we aren't tracking
             if podProgressStatus.readyForDelivery {
                 // Create an unfinalizedBolus with the remaining bolus amount to capture what we can.
@@ -432,6 +438,16 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
             self.activeAlertSlots = .none
         }
         
+        if let podTime = rawValue["podTime"] as? TimeInterval,
+            let podTimeUpdated = rawValue["podTimeUpdated"] as? Date
+        {
+            self.podTime = podTime
+            self.podTimeUpdated = podTimeUpdated
+        } else {
+            self.podTime = 0
+            self.podTimeUpdated = nil
+        }
+
         if let setupProgressRaw = rawValue["setupProgress"] as? Int,
             let setupProgress = SetupProgress(rawValue: setupProgressRaw)
         {
@@ -460,12 +476,12 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
         } else {
             // Assume migration, and set up with alerts that are normally configured
             self.configuredAlerts = [
-                .slot2: .shutdownImminent(0),
-                .slot3: .expirationReminder(0),
-                .slot4: .lowReservoir(0),
-                .slot5: .podSuspendedReminder(active: false, suspendTime: 0),
-                .slot6: .suspendTimeExpired(suspendTime: 0),
-                .slot7: .expired(alertTime: 0, duration: 0)
+                .slot2ShutdownImminent: .shutdownImminent(offset: 0, absAlertTime: 0),
+                .slot3ExpirationReminder: .expirationReminder(offset: 0, absAlertTime: 0),
+                .slot4LowReservoir: .lowReservoir(units: 0),
+                .slot5SuspendedReminder: .podSuspendedReminder(active: false, offset: 0, suspendTime: 0),
+                .slot6SuspendTimeExpired: .suspendTimeExpired(offset: 0, suspendTime: 0),
+                .slot7Expired: .expired(offset: 0, absAlertTime: 0, duration: 0)
             ]
         }
         
@@ -474,7 +490,7 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
         if let rawInsulinType = rawValue["insulinType"] as? InsulinType.RawValue, let insulinType = InsulinType(rawValue: rawInsulinType) {
             self.insulinType = insulinType
         } else {
-            insulinType = .novolog
+            self.insulinType = .novolog
         }
 
         self.lastDeliveryStatusReceived = nil
@@ -515,6 +531,8 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
         rawValue["activeTime"] = activeTime
         rawValue["activatedAt"] = activatedAt
         rawValue["expiresAt"] = expiresAt
+        rawValue["podTime"] = podTime
+        rawValue["podTimeUpdated"] = podTimeUpdated
 
         rawValue["setupUnitsDelivered"] = setupUnitsDelivered
 
@@ -535,6 +553,8 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
             "* address: \(String(format: "%04X", address))",
             "* activatedAt: \(String(reflecting: activatedAt))",
             "* expiresAt: \(String(reflecting: expiresAt))",
+            "* podTime: \(podTime.timeIntervalStr)",
+            "* podTimeUpdated: \(String(reflecting: podTimeUpdated))",
             "* setupUnitsDelivered: \(String(reflecting: setupUnitsDelivered))",
             "* piVersion: \(piVersion)",
             "* pmVersion: \(pmVersion)",
@@ -547,16 +567,14 @@ public struct PodState: RawRepresentable, Equatable, CustomDebugStringConvertibl
             "* unfinalizedSuspend: \(String(describing: unfinalizedSuspend))",
             "* unfinalizedResume: \(String(describing: unfinalizedResume))",
             "* finalizedDoses: \(String(describing: finalizedDoses))",
-            "* activeAlerts: \(String(describing: activeAlerts))",
+            "* activeAlertsSlots: \(alertSetString(alertSet: activeAlertSlots))",
             "* messageTransportState: \(String(describing: messageTransportState))",
             "* setupProgress: \(setupProgress)",
             "* primeFinishTime: \(String(describing: primeFinishTime))",
-            "* configuredAlerts: \(String(describing: configuredAlerts))",
+            "* configuredAlerts: \(configuredAlertsString(configuredAlerts: configuredAlerts))",
             "* insulinType: \(String(describing: insulinType))",
-            "* pdmRef: \(String(describing: fault?.pdmRef))",
-            "",
-            fault != nil ? String(reflecting: fault!) : "fault: nil",
-            "",
+            "* pdmRef: " + (fault?.pdmRef == nil ? "nil" : String(describing: fault!.pdmRef!)),
+            "* Fault: " + (fault == nil ? "nil" : String(describing: fault!)),
         ].joined(separator: "\n")
     }
 }

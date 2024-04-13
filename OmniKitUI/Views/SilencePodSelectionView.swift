@@ -1,9 +1,9 @@
 //
-//  BeepPreferenceSelectionView.swift
+//  SilencePodSelectionView.swift
 //  OmniKit
 //
-//  Created by Pete Schwamb on 2/14/22.
-//  Copyright © 2022 LoopKit Authors. All rights reserved.
+//  Created by Joe Moran 8/30/23.
+//  Copyright © 2023 LoopKit Authors. All rights reserved.
 //
 
 import SwiftUI
@@ -11,21 +11,21 @@ import LoopKit
 import LoopKitUI
 import OmniKit
 
-struct BeepPreferenceSelectionView: View {
+struct SilencePodSelectionView: View {
 
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
-    private var initialValue: BeepPreference
-    @State private var preference: BeepPreference
-    private var onSave: ((_ selectedValue: BeepPreference, _ completion: @escaping (_ error: LocalizedError?) -> Void) -> Void)?
+    private var initialValue: SilencePodPreference
+    @State private var preference: SilencePodPreference
+    private var onSave: ((_ selectedValue: SilencePodPreference, _ completion: @escaping (_ error: LocalizedError?) -> Void) -> Void)?
 
     @State private var alertIsPresented: Bool = false
     @State private var error: LocalizedError?
     @State private var saving: Bool = false
 
 
-    init(initialValue: BeepPreference, onSave: @escaping (_ selectedValue: BeepPreference, _ completion: @escaping (_ error: LocalizedError?) -> Void) -> Void) {
+    init(initialValue: SilencePodPreference, onSave: @escaping (_ selectedValue: SilencePodPreference, _ completion: @escaping (_ error: LocalizedError?) -> Void) -> Void) {
         self.initialValue = initialValue
         self._preference = State(initialValue: initialValue)
         self.onSave = onSave
@@ -39,12 +39,11 @@ struct BeepPreferenceSelectionView: View {
         VStack {
             List {
                 Section {
-                    Text(LocalizedString("Confidence reminders are beeps from the Pod which can be used to acknowledge selected commands when the Pod is not silenced.", comment: "Help text for BeepPreferenceSelectionView")).fixedSize(horizontal: false, vertical: true)
+                    Text(LocalizedString("Silence Pod mode suppresses all Pod alert and confirmation reminder beeping.", comment: "Help text for Silence Pod view")).fixedSize(horizontal: false, vertical: true)
                         .padding(.vertical, 10)
                 }
-
                 Section {
-                    ForEach(BeepPreference.allCases, id: \.self) { preference in
+                    ForEach(SilencePodPreference.allCases, id: \.self) { preference in
                         HStack {
                             CheckmarkListItem(
                                 title: Text(preference.title),
@@ -85,10 +84,9 @@ struct BeepPreferenceSelectionView: View {
             }
             .padding(self.horizontalSizeClass == .regular ? .bottom : [])
             .background(Color(UIColor.secondarySystemGroupedBackground).shadow(radius: 5))
-
         }
         .insetGroupedListStyle()
-        .navigationTitle(LocalizedString("Confidence Reminders", comment: "navigation title for confidence reminders"))
+        .navigationTitle(LocalizedString("Silence Pod", comment: "navigation title for Silnce Pod"))
         .navigationBarTitleDisplayMode(.inline)
         .alert(isPresented: $alertIsPresented, content: { alert(error: error) })
     }
@@ -110,15 +108,15 @@ struct BeepPreferenceSelectionView: View {
 
     private var cancelButton: some View {
         Button(action: { self.presentationMode.wrappedValue.dismiss() } ) {
-            Text(LocalizedString("Cancel", comment: "Button title for cancelling confidence reminders edit"))
+            Text(LocalizedString("Cancel", comment: "Button title for cancelling silence pod edit"))
         }
     }
 
     var saveButtonText: String {
         if saving {
-            return LocalizedString("Saving...", comment: "button title for saving confidence reminder while saving")
+            return LocalizedString("Saving...", comment: "button title for saving silence pod preference while saving")
         } else {
-            return LocalizedString("Save", comment: "button title for saving confidence reminder")
+            return LocalizedString("Save", comment: "button title for saving silence pod preference")
         }
     }
 
@@ -128,17 +126,16 @@ struct BeepPreferenceSelectionView: View {
 
     private func alert(error: Error?) -> SwiftUI.Alert {
         return SwiftUI.Alert(
-            title: Text(LocalizedString("Failed to update confidence reminder preference.", comment: "Alert title for error when updating confidence reminder preference")),
+            title: Text(LocalizedString("Failed to update silence pod preference.", comment: "Alert title for error when updating silence pod preference")),
             message: Text(error?.localizedDescription ?? "No Error")
         )
     }
-
 }
 
-struct BeepPreferenceSelectionView_Previews: PreviewProvider {
+struct SilencePodSelectionView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            BeepPreferenceSelectionView(initialValue: .extended) { selectedValue, completion in
+            SilencePodSelectionView(initialValue: .disabled) { selectedValue, completion in
                 print("Selected: \(selectedValue)")
                 completion(nil)
             }
