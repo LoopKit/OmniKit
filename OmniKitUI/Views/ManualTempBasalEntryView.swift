@@ -19,8 +19,6 @@ struct ManualTempBasalEntryView: View {
     var enactBasal: ((Double,TimeInterval,@escaping (PumpManagerError?)->Void) -> Void)?
     var didCancel: (() -> Void)?
 
-    @Environment(\.appName) private var appName
-
     @State private var rateEntered: Double = 0.0
     @State private var durationEntered: TimeInterval = .hours(0.5)
     @State private var showPicker: Bool = false
@@ -93,7 +91,7 @@ struct ManualTempBasalEntryView: View {
                     .frame(maxHeight: 162.0)
                     .alert(isPresented: $showingMissingConfigAlert, content: { missingConfigAlert })
                     Section {
-                        Text(String(format: LocalizedString("%1$@ will not automatically adjust your insulin delivery until the temporary basal rate finishes or is canceled.", comment: "Description text on manual temp basal action sheet (1: appName)"), self.appName))
+                        Text(LocalizedString("Loop will not automatically adjust your insulin delivery until the temporary basal rate finishes or is canceled.", comment: "Description text on manual temp basal action sheet"))
                             .font(.footnote)
                             .foregroundColor(.secondary)
                             .fixedSize(horizontal: false, vertical: true)
