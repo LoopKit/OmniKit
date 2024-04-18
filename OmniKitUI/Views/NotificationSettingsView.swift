@@ -35,14 +35,14 @@ struct NotificationSettingsView: View {
         RoundedCardScrollView {
             RoundedCard(
                 title: LocalizedString("Omnipod Reminders", comment: "Title for omnipod reminders section"),
-                footer: LocalizedString("The app configures a reminder on the pod to notify you in advance of Pod expiration. Set the number of hours advance notice you would like to configure when pairing a new Pod.", comment: "Footer text for omnipod reminders section")
+                footer: LocalizedString("A reminder is configured during Pod setup to notify you in advance of its expiration. Set the number of hours advance notice you would like to configure by default when pairing a new Pod.", comment: "Footer text for omnipod reminders section")
             ) {
                 ExpirationReminderPickerView(expirationReminderDefault: $expirationReminderDefault)
             }
 
             if let allowedDates = allowedScheduledReminderDates {
                 RoundedCard(
-                    footer: LocalizedString("This is a reminder that you scheduled for your current Pod.", comment: "Footer text for scheduled reminder area"))
+                    footer: LocalizedString("Expiration reminder time for the current Pod.", comment: "Footer text for scheduled reminder area"))
                 {
                     Text(LocalizedString("Scheduled Reminder", comment: "Scheduled reminder card title on NotificationSettingsView"))
                     Divider()
@@ -50,13 +50,13 @@ struct NotificationSettingsView: View {
                 }
             }
 
-            RoundedCard(footer: LocalizedString("The App notifies you when the amount of insulin in the Pod reaches this level.", comment: "Footer text for low reservoir value row")) {
+            RoundedCard(footer: LocalizedString("You will be notified when the amount of insulin in the Pod reaches this level.", comment: "Footer text for low reservoir value row")) {
                 lowReservoirValueRow
             }
 
             RoundedCard<EmptyView>(
                 title: LocalizedString("Critical Alerts", comment: "Title for critical alerts description"),
-                footer: LocalizedString("The reminders above will not sound if your device is in Silent or Do Not Disturb mode.\n\nThere are other critical Pod alerts and alarms that will sound even if your device is set to Silent or Do Not Disturb mode.", comment: "Description text for critical alerts")
+                footer: LocalizedString("The reminders above will not sound on your device when it is in Silent or Do Not Disturb mode. There are other critical Pod alerts that will sound on your device even when set to Silent or Do Not Disturb mode.\n\nThe Pod will also use audible beeps for all Pod reminders and alerts except when the Pod is Silenced.", comment: "Description text for critical alerts")
             )
         }
         .navigationBarTitle(LocalizedString("Notification Settings", comment: "navigation title for notification settings"))
@@ -66,16 +66,21 @@ struct NotificationSettingsView: View {
     
     private func scheduledReminderRow(scheduledDate: Date?, allowedDates: [Date]) -> some View {
         Group {
-            NavigationLink(
-                destination: ScheduledExpirationReminderEditView(
-                    scheduledExpirationReminderDate: scheduledDate,
-                    allowedDates: allowedDates,
-                    dateFormatter: dateFormatter,
-                    onSave: onSaveScheduledExpirationReminder,
-                    onFinish: { scheduleReminderDateEditViewIsShown = false }),
-                isActive: $scheduleReminderDateEditViewIsShown)
-            {
-                scheduledReminderRowContents(disclosure: true)
+            // Make the expiration reminder time read-only if there aren't any more available times.
+            if allowedDates.isEmpty {
+                scheduledReminderRowContents(disclosure: false)
+            } else {
+                NavigationLink(
+                    destination: ScheduledExpirationReminderEditView(
+                        scheduledExpirationReminderDate: scheduledDate,
+                        allowedDates: allowedDates,
+                        dateFormatter: dateFormatter,
+                        onSave: onSaveScheduledExpirationReminder,
+                        onFinish: { scheduleReminderDateEditViewIsShown = false }),
+                    isActive: $scheduleReminderDateEditViewIsShown)
+                {
+                    scheduledReminderRowContents(disclosure: true)
+                }
             }
         }
     }
@@ -120,14 +125,15 @@ struct NotificationSettingsView: View {
 struct NotificationSettingsView_Previews: PreviewProvider {
     static var previews: some View {
         return Group {
+            let now = Date()
             NavigationView {
-                NotificationSettingsView(dateFormatter: DateFormatter(), expirationReminderDefault: .constant(2), scheduledReminderDate: Date(), allowedScheduledReminderDates: [Date()], lowReservoirReminderValue: 20)
+                NotificationSettingsView(dateFormatter: DateFormatter(), expirationReminderDefault: .constant(2), scheduledReminderDate: now + TimeInterval(hours: 1), allowedScheduledReminderDates: [now, now - TimeInterval(hours: 2), now - TimeInterval(hours: 3)], lowReservoirReminderValue: 20)
                     .previewDevice(PreviewDevice(rawValue:"iPod touch (7th generation)"))
                     .previewDisplayName("iPod touch (7th generation)")
             }
 
             NavigationView {
-                NotificationSettingsView(dateFormatter: DateFormatter(), expirationReminderDefault: .constant(2), scheduledReminderDate: Date(), allowedScheduledReminderDates: [Date()], lowReservoirReminderValue: 20)
+                NotificationSettingsView(dateFormatter: DateFormatter(), expirationReminderDefault: .constant(2), scheduledReminderDate: now + TimeInterval(hours: 1), allowedScheduledReminderDates: [now, now - TimeInterval(hours: 2), now - TimeInterval(hours: 3)], lowReservoirReminderValue: 20)
                     .colorScheme(.dark)
                     .previewDevice(PreviewDevice(rawValue: "iPhone XS Max"))
                     .previewDisplayName("iPhone XS Max - Dark")

@@ -19,7 +19,7 @@ struct ExpirationReminderSetupView: View {
     var body: some View {
         GuidePage(content: {
             VStack(alignment: .leading, spacing: 15) {
-                Text(LocalizedString("The App notifies you in advance of Pod expiration.\n\nScroll to set the number of hours advance notice you would like to have.", comment: "Description text on ExpirationReminderSetupView")).fixedSize(horizontal: false, vertical: true)
+                Text(LocalizedString("You will be notified in advance of Pod expiration.\n\nScroll to set the number of hours advance notice you would like to have.", comment: "Description text on ExpirationReminderSetupView")).fixedSize(horizontal: false, vertical: true)
                 Divider()
                 ExpirationReminderPickerView(expirationReminderDefault: $expirationReminderDefault, collapsible: false, showingHourPicker: true)
                     .onChange(of: expirationReminderDefault) { value in

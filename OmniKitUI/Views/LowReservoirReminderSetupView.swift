@@ -29,7 +29,7 @@ struct LowReservoirReminderSetupView: View {
     var body: some View {
         GuidePage(content: {
             VStack(alignment: .leading, spacing: 15) {
-                Text(LocalizedString("The App notifies you when the amount of insulin in the Pod reaches this level (50-10 U).\n\nScroll to set the number of units at which you would like to be reminded.", comment: "Description text on LowReservoirReminderSetupView"))
+                Text(LocalizedString("You will be notified when the amount of insulin in the Pod reaches a selected level.\n\nScroll to set the number of units (1 to 50) at which you would like to be reminded.", comment: "Description text on LowReservoirReminderSetupView"))
                 Divider()
                 HStack {
                     Text(LocalizedString("Low Reservoir", comment: "Label text for low reservoir value row"))
