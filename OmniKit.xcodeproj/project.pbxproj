@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		275A98C02AE456EA0097F476 /* SlideButton in Frameworks */ = {isa = PBXBuildFile; productRef = 275A98BF2AE456EA0097F476 /* SlideButton */; };
+		B60BB2EC2BC757A700D2BB39 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60BB2EA2BC7579E00D2BB39 /* Bundle.swift */; };
 		C1229C1A29C7E5BC0066A89C /* RileyLinkBLEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */; };
 		C1229C1B29C7E5BC0066A89C /* RileyLinkBLEKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1229C1C29C7E5BC0066A89C /* RileyLinkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1829C7E5BC0066A89C /* RileyLinkKit.framework */; };
@@ -254,6 +255,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B60BB2EA2BC7579E00D2BB39 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		C10E1EE62AE59EDC00B4E993 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkBLEKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1229C1829C7E5BC0066A89C /* RileyLinkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -693,6 +695,7 @@
 		C124022129C7DA9700B32844 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B60BB2EA2BC7579E00D2BB39 /* Bundle.swift */,
 				C124022229C7DA9700B32844 /* Image.swift */,
 				C12EDA0D29C7DEFD00435701 /* NumberFormatter.swift */,
 				C12EDA0F29C7DF1900435701 /* NibLoadable.swift */,
@@ -1253,6 +1256,7 @@
 				C124028E29C7DA9700B32844 /* ScheduledExpirationReminderEditView.swift in Sources */,
 				C124026B29C7DA9700B32844 /* OmnipodHUDProvider.swift in Sources */,
 				C124027B29C7DA9700B32844 /* ErrorView.swift in Sources */,
+				B60BB2EC2BC757A700D2BB39 /* Bundle.swift in Sources */,
 				C124028829C7DA9700B32844 /* PodSetupView.swift in Sources */,
 				C124027F29C7DA9700B32844 /* SetupCompleteView.swift in Sources */,
 				D85AEACA2B1403CB00081044 /* ReadPodInfoView.swift in Sources */,
