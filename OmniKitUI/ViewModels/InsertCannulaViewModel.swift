@@ -189,7 +189,7 @@ class InsertCannulaViewModel: ObservableObject, Identifiable {
                     }
                 case .failure(let error):
                     if case .podAlreadyPaired = error {
-                        print("### insertCannula treating podAlreadyPaired as success to avoid looping!")
+                        print("### insertCannula treating podAlreadyPaired as success")
                         self.state = .finished
                     } else if self.autoRetryAttempted {
                         self.autoRetryAttempted = false // allow for an auto retry on the next user attempt
