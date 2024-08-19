@@ -130,6 +130,7 @@ class InsertCannulaViewModel: ObservableObject, Identifiable {
     }
 
     @Published var state: InsertCannulaViewModelState = .ready
+
     public var stateNeedsDeliberateUserAcceptance : Bool {
         switch state {
         case .ready:
@@ -187,7 +188,10 @@ class InsertCannulaViewModel: ObservableObject, Identifiable {
                         self.state = .finished
                     }
                 case .failure(let error):
-                    if self.autoRetryAttempted {
+                    if case .podAlreadyPaired = error {
+                        print("### insertCannula treating podAlreadyPaired as success")
+                        self.state = .finished
+                    } else if self.autoRetryAttempted {
                         self.autoRetryAttempted = false // allow for an auto retry on the next user attempt
                         self.state = .error(error)
                     } else {

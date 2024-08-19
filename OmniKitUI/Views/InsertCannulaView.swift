@@ -69,12 +69,14 @@ struct InsertCannulaView: View {
                 if (self.viewModel.error == nil || self.viewModel.error?.recoverable == true) {
                     actionButton
                     .disabled(self.viewModel.state.isProcessing)
+                    .animation(nil)
                     .zIndex(1)
                 }
             }
             .transition(AnyTransition.opacity.combined(with: .move(edge: .bottom)))
             .padding()
         }
+        .animation(.default)
         .alert(isPresented: $cancelModalIsPresented) { cancelPairingModal }
         .navigationBarTitle(LocalizedString("Insert Cannula", comment: "navigation bar title for insert cannula"), displayMode: .automatic)
         .navigationBarBackButtonHidden(true)
@@ -107,8 +109,6 @@ struct InsertCannulaView: View {
             }
 
         }
-
-
     }
 
     
@@ -131,9 +131,23 @@ struct InsertCannulaView: View {
 }
 
 class MockCannulaInserter: CannulaInserter {
+    let mockError: Bool = false
+    let mockPodAlreadyPairedError: Bool = false
+
     func insertCannula(completion: @escaping (Result<TimeInterval,OmnipodPumpManagerError>) -> Void) {
-        let mockDelay = TimeInterval(seconds: 3)
-        let result :Result<TimeInterval, OmnipodPumpManagerError> = .success(mockDelay)
+        let result :Result<TimeInterval, OmnipodPumpManagerError>
+        if mockError {
+            if mockPodAlreadyPairedError {
+                // A podAlreadyPaired "error" should be treated as an immediate success
+                result = .failure(OmnipodPumpManagerError.podAlreadyPaired)
+            } else {
+                // Others should display the error text and show Deactivate Pod & Retry options
+                result = .failure(OmnipodPumpManagerError.noPodPaired)
+            }
+        } else {
+            let mockDelay = TimeInterval(seconds: 3)
+            result = .success(mockDelay)
+        }
         completion(result)
     }
 
