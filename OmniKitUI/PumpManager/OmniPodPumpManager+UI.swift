@@ -47,6 +47,24 @@ extension OmnipodPumpManager: PumpManagerUI {
 
 }
 
+public enum OmniKitStatusBadge: DeviceStatusBadge {
+    case timeSyncNeeded
+
+    public var image: UIImage? {
+        switch self {
+        case .timeSyncNeeded:
+            return UIImage(systemName: "clock.fill")
+        }
+    }
+
+    public var state: DeviceStatusBadgeState {
+        switch self {
+        case .timeSyncNeeded:
+            return .warning
+        }
+    }
+}
+
 // MARK: - PumpStatusIndicator
 extension OmnipodPumpManager {
     public var pumpStatusHighlight: DeviceStatusHighlight? {
@@ -58,7 +76,10 @@ extension OmnipodPumpManager {
     }
     
     public var pumpStatusBadge: DeviceStatusBadge? {
-        return nil
+        if isClockOffset {
+            return OmniKitStatusBadge.timeSyncNeeded
+        } else {
+            return nil
+        }
     }
-
 }
