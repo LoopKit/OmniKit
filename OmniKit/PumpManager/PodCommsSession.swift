@@ -357,8 +357,7 @@ public class PodCommsSession {
             try configureAlerts([finishSetupReminder])
         } else {
             // Not the first time through, check to see if prime bolus was successfully started
-            let status: StatusResponse = try send([GetStatusCommand()])
-            podState.updateFromStatusResponse(status, at: currentDate)
+            let status = try getStatus()
             if status.podProgressStatus == .priming || status.podProgressStatus == .primingCompleted {
                 podState.setupProgress = .priming
                 return podState.primeFinishTime?.timeIntervalSinceNow ?? primeDuration
@@ -383,8 +382,7 @@ public class PodCommsSession {
     public func programInitialBasalSchedule(_ basalSchedule: BasalSchedule, scheduleOffset: TimeInterval) throws {
         if podState.setupProgress == .settingInitialBasalSchedule {
             // We started basal schedule programming, but didn't get confirmation somehow, so check status
-            let status: StatusResponse = try send([GetStatusCommand()])
-            podState.updateFromStatusResponse(status, at: currentDate)
+            let status = try getStatus()
             if status.podProgressStatus == .basalInitialized {
                 podState.setupProgress = .initialBasalScheduleSet
                 podState.finalizedDoses.append(UnfinalizedDose(resumeStartTime: currentDate, scheduledCertainty: .certain, insulinType: podState.insulinType))
@@ -400,36 +398,30 @@ public class PodCommsSession {
     }
 
     //
-    // Attempts to resolve any unacknowledged command by using a GetStatusCommand.
+    // Attempts to resolve any unacknowledged command by calling getStatus().
     // podState.unacknowledgeCommand is guaranteed to be nil upon successful return.
     // Throws PodCommsError.unacknowledgedCommandPending if unsuccessful for any reason.
     //
-    private func resolveUnacknowledgedCommand(function: String = #function) throws {
+    private func resolveUnacknowledgedCommand() throws {
 
         guard podState.unacknowledgedCommand != nil else {
             return // no unacknowledged command to resolve
         }
 
-        let statusResponse: StatusResponse
         do {
-            // Send a GetStatusCommand to try to resolve the unacknowleged command.
-            statusResponse = try send([GetStatusCommand()])
+            _ = try getStatus() // should resolve the unacknowledged command if successful
         } catch let error {
-            log.info("GetStatus failed with %{public}@ trying to resolve unacknowledged command in %{public}@", String(describing: error), function)
+            log.error("GetStatus failed trying to resolve unacknowledged command: %{public}@", String(describing: error))
             throw PodCommsError.unacknowledgedCommandPending
         }
 
-        // Success -- now use the statusResponse to resolve the unacknowledged command & update the podState
-        recoverUnacknowledgedCommand(using: statusResponse)
-        podState.updateFromStatusResponse(statusResponse, at: currentDate)
-
-        // recoverUnacknowledgedCommand() should have resolved the unacknowledged command, but check to be sure.
+        // Verify that getStatus successfully resolved the unacknowledged command.
         guard podState.unacknowledgedCommand == nil else {
-            log.error("failed to resolve the unacknowledged command with GetStatus in %{public}@!", function)
+            log.error("Successful getStatus didn't resolve the unacknowledged command!")
             throw PodCommsError.unacknowledgedCommandPending
         }
 
-        log.info("resolved the unacknowledged command in %{public}@", function)
+        log.info("Successfully resolved pending unacknowledged command")
     }
 
     // Configures the given pod alert(s) and registers the newly configured alert slot(s).
@@ -502,19 +494,16 @@ public class PodCommsSession {
 
         if podState.setupProgress == .startingInsertCannula || podState.setupProgress == .cannulaInserting {
             // We started cannula insertion, but didn't get confirmation somehow, so check status
-            let status: StatusResponse = try send([GetStatusCommand()])
+            let status = try getStatus()
             if status.podProgressStatus == .insertingCannula {
                 podState.setupProgress = .cannulaInserting
-                podState.updateFromStatusResponse(status, at: currentDate)
                 // return a non-zero wait time based on the bolus not yet delivered
                 return (status.bolusNotDelivered / Pod.primeDeliveryRate) + 1
             }
             if status.podProgressStatus.readyForDelivery {
                 markSetupProgressCompleted(statusResponse: status)
-                podState.updateFromStatusResponse(status, at: currentDate)
                 return TimeInterval(0) // Already done; no need to wait
             }
-            podState.updateFromStatusResponse(status, at: currentDate)
         } else {
             let elapsed: TimeInterval = -(podState.podTimeUpdated?.timeIntervalSinceNow ?? 0)
             let podTime = podState.podTime + elapsed
@@ -541,11 +530,10 @@ public class PodCommsSession {
 
     public func checkInsertionCompleted() throws {
         if podState.setupProgress == .cannulaInserting {
-            let response: StatusResponse = try send([GetStatusCommand()])
+            let response = try getStatus()
             if response.podProgressStatus.readyForDelivery {
                 markSetupProgressCompleted(statusResponse: response)
             }
-            podState.updateFromStatusResponse(response, at: currentDate)
         }
     }
 
@@ -1068,13 +1056,14 @@ public class PodCommsSession {
         }
 
         do {
-            let deactivatePod = DeactivatePodCommand(nonce: podState.currentNonce)
-            let status: StatusResponse = try send([deactivatePod])
-
             if podState.unacknowledgedCommand != nil {
-                recoverUnacknowledgedCommand(using: status)
+                // Try to resolve the unacknowledged command now as DeactivatePodCommand
+                // destroys any chance of correctly handling the unacknowledged command.
+                try? resolveUnacknowledgedCommand()
             }
 
+            let deactivatePod = DeactivatePodCommand(nonce: podState.currentNonce)
+            let status: StatusResponse = try send([deactivatePod])
             podState.updateFromStatusResponse(status, at: currentDate)
 
             if podState.activeTime == nil, let activatedAt = podState.activatedAt {
