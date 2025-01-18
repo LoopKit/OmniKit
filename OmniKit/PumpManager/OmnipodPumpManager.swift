@@ -1870,7 +1870,7 @@ extension OmnipodPumpManager: PumpManager {
                 state.bolusEngageState = .engaging
             })
 
-            if let podState = self.state.podState, podState.isSuspended || podState.lastDeliveryStatusReceived?.suspended == true {
+            guard let podState = self.state.podState, !podState.isSuspended && podState.lastDeliveryStatusReceived?.suspended == false else {
                 self.log.info("Not enacting bolus because podState or last status received indicates pod is suspended")
                 completion(.deviceState(PodCommsError.podSuspended))
                 return
@@ -1968,7 +1968,7 @@ extension OmnipodPumpManager: PumpManager {
 
     public func runTemporaryBasalProgram(unitsPerHour: Double, for duration: TimeInterval, automatic: Bool, completion: @escaping (PumpManagerError?) -> Void) {
 
-        guard self.hasActivePod, let podState = self.state.podState else {
+        guard self.hasActivePod else {
             completion(.configuration(OmnipodPumpManagerError.noPodPaired))
             return
         }
@@ -2009,7 +2009,7 @@ extension OmnipodPumpManager: PumpManager {
                 return
             }
 
-            if let podState = self.state.podState, podState.isSuspended || podState.lastDeliveryStatusReceived?.suspended == true {
+            guard let podState = self.state.podState, !podState.isSuspended && podState.lastDeliveryStatusReceived?.suspended == false else {
                 self.log.info("Not enacting temp basal because podState or last status received indicates pod is suspended")
                 completion(.deviceState(PodCommsError.podSuspended))
                 return
