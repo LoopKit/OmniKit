@@ -1141,7 +1141,7 @@ extension OmnipodPumpManager {
             case .success(let session):
                 do {
                     if let error = self.tryToValidateComms(session: session) {
-                        completion(.state(error))
+                        completion(.communication(error))
                         return
                     }
 
@@ -1503,7 +1503,7 @@ extension OmnipodPumpManager {
             }
 
             if let error = self.tryToValidateComms(session: session) {
-                completion(.state(error))
+                completion(.communication(error))
                 return
             }
 
@@ -1922,7 +1922,7 @@ extension OmnipodPumpManager: PumpManager {
             })
 
             if let error = self.tryToValidateComms(session: session) {
-                completion(.deviceState(error))
+                completion(.communication(error))
                 return
             }
 
@@ -2068,7 +2068,7 @@ extension OmnipodPumpManager: PumpManager {
             }
 
             if let error = self.tryToValidateComms(session: session) {
-                completion(.deviceState(PumpManagerError.deviceState(error)))
+                completion(.communication(error))
                 return
             }
 
