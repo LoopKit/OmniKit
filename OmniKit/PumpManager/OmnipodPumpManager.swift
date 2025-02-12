@@ -1003,6 +1003,27 @@ extension OmnipodPumpManager {
         }
     }
 
+    // If the last delivery status received is invalid or there is an unacknowledged command, execute a getStatus command
+    // for the current PodCommsSession. If the getStatus fails, return its error to be passed on to the higher level.
+    // Return nil if comms looks OK or the getStatus was successful.
+    private func tryToValidateComms(session: PodCommsSession) -> LocalizedError? {
+
+        // Since we're already connected for this session, if we have a delivery status and no unacknowledged command, return nil
+        if self.state.podState?.lastDeliveryStatusReceived != nil && self.state.podState?.unacknowledgedCommand == nil {
+            return nil
+        }
+
+        // Attempt to do a getStatus to try to resolve any outstanding comms issues
+        do {
+            let _ = try session.getStatus()
+            self.log.debug("### tryToValidateComms getStatus resolved all pending comms issues")
+            return nil
+        } catch let error {
+            self.log.debug("### tryToValidateComms getStatus failed, returning: %@", error.localizedDescription)
+            return error as? LocalizedError
+        }
+    }
+
     // MARK: - Pump Commands
 
     public func getPodStatus(completion: ((_ result: PumpManagerResult<StatusResponse>) -> Void)? = nil) {
@@ -1119,6 +1140,11 @@ extension OmnipodPumpManager {
             switch result {
             case .success(let session):
                 do {
+                    if let error = self.tryToValidateComms(session: session) {
+                        completion(.communication(error))
+                        return
+                    }
+
                     let beep = self.silencePod ? false : self.beepPreference.shouldBeepForManualCommand
                     let _ = try session.setTime(timeZone: timeZone, basalSchedule: self.state.basalSchedule, date: Date(), acknowledgementBeep: beep)
                     self.setState { (state) in
@@ -1171,6 +1197,11 @@ extension OmnipodPumpManager {
             do {
                 switch result {
                 case .success(let session):
+                    if let error = self.tryToValidateComms(session: session) {
+                        completion(error)
+                        return
+                    }
+
                     let scheduleOffset = timeZone.scheduleOffset(forDate: Date())
                     let result = session.cancelDelivery(deliveryType: .all)
                     switch result {
@@ -1415,6 +1446,11 @@ extension OmnipodPumpManager {
         self.podComms.runSession(withName: name, using: rileyLinkSelector) { (result) in
             switch result {
             case .success(let session):
+                if let error = self.tryToValidateComms(session: session) {
+                    completion(.communication(error))
+                    return
+                }
+
                 // enable/disable Pod completion beep state for any unfinalized manual insulin delivery
                 let enabled = newPreference.shouldBeepForManualCommand
                 let beepType: BeepType = enabled ? .bipBip : .noBeepNonCancel
@@ -1462,6 +1498,11 @@ extension OmnipodPumpManager {
             case .success(let s):
                 session = s
             case .failure(let error):
+                completion(.communication(error))
+                return
+            }
+
+            if let error = self.tryToValidateComms(session: session) {
                 completion(.communication(error))
                 return
             }
@@ -1716,6 +1757,11 @@ extension OmnipodPumpManager: PumpManager {
                 state.suspendEngageState = .engaging
             })
 
+            if let error = self.tryToValidateComms(session: session) {
+                completion(error)
+                return
+            }
+
             // Use a beepBlock for the confirmation beep to avoid getting 3 beeps using cancel command beeps!
             let beepBlock = self.beepMessageBlock(beepType: .beeeeeep)
             let result = session.suspendDelivery(suspendReminder: suspendReminder, silent: self.silencePod, beepBlock: beepBlock)
@@ -1761,6 +1807,11 @@ extension OmnipodPumpManager: PumpManager {
             self.setState({ (state) in
                 state.suspendEngageState = .disengaging
             })
+
+            if let error = self.tryToValidateComms(session: session) {
+                completion(error)
+                return
+            }
 
             do {
                 let scheduleOffset = self.state.timeZone.scheduleOffset(forDate: Date())
@@ -1870,7 +1921,14 @@ extension OmnipodPumpManager: PumpManager {
                 state.bolusEngageState = .engaging
             })
 
-            guard let podState = self.state.podState, !podState.isSuspended && podState.lastDeliveryStatusReceived?.suspended == false else {
+            if let error = self.tryToValidateComms(session: session) {
+                completion(.communication(error))
+                return
+            }
+
+            // Use a lastDeliveryStatusReceived?.suspended != true test here to not return a pod suspended failure if
+            // there is not a valid last delivery status (which shouldn't even happen now with tryToValidateComms()).
+            guard let podState = self.state.podState, !podState.isSuspended && podState.lastDeliveryStatusReceived?.suspended != true else {
                 self.log.info("Not enacting bolus because podState or last status received indicates pod is suspended")
                 completion(.deviceState(PodCommsError.podSuspended))
                 return
@@ -2009,7 +2067,14 @@ extension OmnipodPumpManager: PumpManager {
                 return
             }
 
-            guard let podState = self.state.podState, !podState.isSuspended && podState.lastDeliveryStatusReceived?.suspended == false else {
+            if let error = self.tryToValidateComms(session: session) {
+                completion(.communication(error))
+                return
+            }
+
+            // Use a lastDeliveryStatusReceived?.suspended != true test here to not return a pod suspended failure if
+            // there is not a valid last delivery status (which shouldn't even happen now with tryToValidateComms()).
+            guard let podState = self.state.podState, !podState.isSuspended && podState.lastDeliveryStatusReceived?.suspended != true else {
                 self.log.info("Not enacting temp basal because podState or last status received indicates pod is suspended")
                 completion(.deviceState(PodCommsError.podSuspended))
                 return
