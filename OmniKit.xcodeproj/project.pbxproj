@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		275A98C02AE456EA0097F476 /* SlideButton in Frameworks */ = {isa = PBXBuildFile; productRef = 275A98BF2AE456EA0097F476 /* SlideButton */; };
+		3B0FD2A12D803BB000E5E921 /* RileyLinkBLEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0FD2A02D803BB000E5E921 /* RileyLinkBLEKit.framework */; };
+		3B0FD2A32D803BB800E5E921 /* RileyLinkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0FD2A22D803BB800E5E921 /* RileyLinkKit.framework */; };
+		3B0FD2A62D803C2000E5E921 /* OmniKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C124016C29C7D87A00B32844 /* OmniKit.framework */; };
+		3B0FD2A82D803C2C00E5E921 /* RileyLinkKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0FD2A72D803C2C00E5E921 /* RileyLinkKitUI.framework */; };
 		B60BB2EC2BC757A700D2BB39 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60BB2EA2BC7579E00D2BB39 /* Bundle.swift */; };
 		C1229C1A29C7E5BC0066A89C /* RileyLinkBLEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */; };
 		C1229C1B29C7E5BC0066A89C /* RileyLinkBLEKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -192,6 +196,7 @@
 		D80339982A50085C004FF953 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA0329C7DDC800435701 /* TimeInterval.swift */; };
 		D803399A2A500D3D004FF953 /* CRC8.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401B229C7D8E900B32844 /* CRC8.swift */; };
 		D803399B2A50122F004FF953 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12401B329C7D8E900B32844 /* Packet.swift */; };
+		D803399C2A50128D004FF953 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA0129C7DD4700435701 /* LocalizedString.swift */; };
 		D845A1352AF89DEC00EA0853 /* SilencePodPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A1342AF89DEC00EA0853 /* SilencePodPreference.swift */; };
 		D845A1462AF8A4DA00EA0853 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A1452AF8A4DA00EA0853 /* ActivityView.swift */; };
 		D845A14A2AF8A4EF00EA0853 /* PlayTestBeepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A1492AF8A4EF00EA0853 /* PlayTestBeepsView.swift */; };
@@ -200,7 +205,6 @@
 		D845A1522AF8A51000EA0853 /* SilencePodSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D845A1512AF8A51000EA0853 /* SilencePodSelectionView.swift */; };
 		D85AEAC82B1403C000081044 /* PodDiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85AEAC72B1403C000081044 /* PodDiagnosticsView.swift */; };
 		D85AEACA2B1403CB00081044 /* ReadPodInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85AEAC92B1403CB00081044 /* ReadPodInfoView.swift */; };
-		D803399C2A50128D004FF953 /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12EDA0129C7DD4700435701 /* LocalizedString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,6 +259,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B0FD2A02D803BB000E5E921 /* RileyLinkBLEKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkBLEKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0FD2A22D803BB800E5E921 /* RileyLinkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0FD2A72D803C2C00E5E921 /* RileyLinkKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60BB2EA2BC7579E00D2BB39 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		C10E1EE62AE59EDC00B4E993 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkBLEKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -467,6 +474,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0FD2A32D803BB800E5E921 /* RileyLinkKit.framework in Frameworks */,
+				3B0FD2A12D803BB000E5E921 /* RileyLinkBLEKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +483,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0FD2A82D803C2C00E5E921 /* RileyLinkKitUI.framework in Frameworks */,
+				3B0FD2A62D803C2000E5E921 /* OmniKit.framework in Frameworks */,
 				275A98C02AE456EA0097F476 /* SlideButton in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -822,6 +833,9 @@
 		C12ED9F329C7DCE100435701 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B0FD2A72D803C2C00E5E921 /* RileyLinkKitUI.framework */,
+				3B0FD2A22D803BB800E5E921 /* RileyLinkKit.framework */,
+				3B0FD2A02D803BB000E5E921 /* RileyLinkBLEKit.framework */,
 				C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */,
 				C1229C1829C7E5BC0066A89C /* RileyLinkKit.framework */,
 				C1229C1929C7E5BC0066A89C /* RileyLinkKitUI.framework */,
