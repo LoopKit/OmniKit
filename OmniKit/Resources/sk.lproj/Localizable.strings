@@ -8,10 +8,10 @@
 "%1$@ insulin or less remaining in Pod. Change Pod soon." = "V podu zostáva %1$@ inzulínu alebo menej. Čoskoro vymeňte pod.";
 
 /* Format string for activation time exceeded
-   Pod state when activation not completed in the time allowed */
+Pod state when activation not completed in the time allowed */
 "Activation time exceeded" = "Čas aktivácie bol prekročený";
 
-/* Description for auto-off */
+/* Description for auto-off alert */
 "Auto-off" = "Automatické vypnutie";
 
 /* Pod state when basal initialized */
@@ -50,12 +50,6 @@
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "Problém s komunikáciou: Čaká sa na potvrdenie príkazu.";
 
-/* Description for BeepPreference.manualCommands */
-"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When Loop automatically adjusts delivery, no confidence reminders are used." = "Pripomienky spoľahlivosti zaznejú pri príkazoch, ktoré spustíte, ako je bolus, zrušenie bolusu, pozastavenie, obnovenie, uloženie upozornení atď. Keď Loop automaticky upraví podanie, nepoužijú sa žiadne pripomenutia spoľahlivosti.";
-
-/* Description for BeepPreference.extended */
-"Confidence reminders will sound when Loop automatically adjusts delivery as well as for commands you initiate." = "Keď Loop automaticky upraví podávanie, ako aj prevedie príkazy, ktoré iniciujete, zaznejú pripomenutia spoľahlivosti.";
-
 /* Recovery suggestion when unexpected address received */
 "Crosstalk possible. Please move to a new location" = "Možné presluchy. Presuňte sa na iné miesto";
 
@@ -70,9 +64,6 @@
 
 /* Pod state error event logged shutting down */
 "Error event logged, shutting down" = "Zaprotokolovaná udalosť chyby, vypína sa";
-
-/* Description for expiration advisory */
-"Expiration advisory" = "Upozornenie na vypršanie platnosti";
 
 /* Description for expiration alert */
 "Expiration alert" = "Varovanie o expirácii";
@@ -89,7 +80,7 @@
 /* Description for finish setup */
 "Finish setup " = "Dokončiť nastavenie";
 
-/* Description for finish setup reminder */
+/* Description for finish setup reminder alert */
 "Finish setup reminder" = "Dokončiť nastavenie pripomienky";
 
 /* Pod inititialized */
@@ -101,7 +92,7 @@
 /* The default notification body for AlarmCodes */
 "Insulin delivery stopped. Change Pod now." = "Podávanie inzulínu sa zastavilo. Vymeňte modul teraz.";
 
-/* Error description for OmniBLEPumpManagerError.insulinTypeNotConfigured */
+/* Error description for insulin type not configured */
 "Insulin type not configured" = "Typ inzulínu nie je nakonfigurovaný";
 
 /* The format string for Internal pod fault (1: The fault code value) */
@@ -119,17 +110,15 @@
 /* Description for MessageError invalidCrc */
 "Invalid CRC" = "Neplatný kód CRC";
 
-/* Error description for OmniBLEPumpManagerError.invalidSetting */
+/* Error description for invalid setting */
 "Invalid Setting" = "Neplatné nastavenie";
 
-/* Pod state when running with fifty or less units */
+/* Format string for description for low reservoir alert
+Pod state when running with fifty or less units */
 "Low reservoir" = "Nízka hladina v rezervoári";
 
 /* Alert content title for lowReservoir pod alert */
 "Low Reservoir" = "Nízka hladina v rezervoári";
-
-/* Format string for description for low reservoir advisory (1: reminder units) */
-"Low reservoir advisory (%1$gU)" = "Nízka hladina v rezervoári  (%1$gU)";
 
 /* Description for low reservoir alarm */
 "Low reservoir advisory alarm" = "Nízka hladina v rezervoári";
@@ -152,10 +141,6 @@
 /* Recovery suggestion for PodCommsError.tooManyPodsFound */
 "Move to a new area away from any other pods and try again." = "Presuňte sa ďalej od ostatných modulov a skúste znova.";
 
-/* Alert content body for multiCommand pod alert
-   Alert content title for multiCommand pod alert */
-"Multiple Command Alert" = "Upozornenie na viacero príkazov";
-
 /* Pod alert state when no alerts are active */
 "No alerts" = "Žiadne upozornenia";
 
@@ -166,7 +151,7 @@
 "No faults" = "Žiadne chyby";
 
 /* Status highlight message for emptyReservoir alarm.
-   Status highlight that a pump is out of insulin. */
+Status highlight that a pump is out of insulin. */
 "No Insulin" = "Žiadny inzulín";
 
 /* Status highlight that when no pod is paired. */
@@ -198,7 +183,7 @@
 "Occlusion Detected" = "Zistená oklúzia";
 
 /* Acknowledge button label for RileyLink low battery alert
-   Alert acknowledgment OK button */
+Alert acknowledgment OK button */
 "OK" = "OK";
 
 /* Generic title of the omnipod pump manager */
@@ -253,9 +238,9 @@
 "Pod expired" = "Pod vypršal";
 
 /* Alert content title for podExpireImminent pod alert
-   Alert content title for podExpiring pod alert
-   Status highlight message for podExpired alarm.
-   The title for Pod Expired alarm notification */
+Alert content title for podExpiring pod alert
+Status highlight message for podExpired alarm.
+The title for Pod Expired alarm notification */
 "Pod Expired" = "Pod expiroval";
 
 /* Format string for pod fault code */
@@ -282,7 +267,7 @@
 /* Pod state when prime or cannula insertion has not completed in the time allotted */
 "Pod setup window expired" = "Okno nastavenia podov vypršalo";
 
-/* Description for pod suspended reminder */
+/* Description for pod suspended reminder alert */
 "Pod suspended reminder" = "Pripomenutie pozastaveného podu";
 
 /* Format string for poor pod signal strength */
@@ -316,7 +301,7 @@
 /* Delivery status when basal is running */
 "Scheduled Basal" = "Naplánovaný bazál";
 
-/* Description for shutdown imminent */
+/* Description for shutdown imminent alert */
 "Shutdown imminent" = "Vypnutie každú chvilu";
 
 /* Description for shutdown imminent alarm */
@@ -332,10 +317,10 @@
 "Suspend" = "Pozastavenie";
 
 /* Alert content body for suspendInProgress pod alert
-   Alert content title for suspendInProgress pod alert */
+Alert content title for suspendInProgress pod alert */
 "Suspend In Progress Reminder" = "Pripomienka prebiehajúceho pozastavenia";
 
-/* Description for suspend time expired */
+/* Description for suspend time expired alert */
 "Suspend time expired" = "Čas pozastavenia vypršal";
 
 /* The format string describing a suspend. (1: Time)(2: Scheduled certainty */

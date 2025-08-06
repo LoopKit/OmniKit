@@ -1,0 +1,92 @@
+/* Description for an inactive alert modifier */
+" (inactive)" = " (inaktiv)";
+
+/* Pod state when activation not completed in the time allowed */
+"Activation time exceeded" = "Aktivierungszeit erreicht";
+
+/* Description for auto-off alert */
+"Auto-off" = "Auto-Abschaltung";
+
+/* Pod state when basal initialized */
+"Basal initialized" = "Basal initialisiert";
+
+/* Delivery status when bolusing */
+"Bolusing" = "Bolus";
+
+/* Delivery status when bolusing and temp basal is running */
+"Bolusing with temp basal" = "Bolus mit temp Basal";
+
+/* Pod state when deactivated */
+"Deactivated" = "Abgeschaltet";
+
+/* Description for Empty reservoir pod fault */
+"Empty reservoir" = "Leeres Reservoir";
+
+/* Delivery status when extended bolus is running */
+"Extended bolus running" = "Erweiterter Bolus läuft";
+
+/* Delivery status when extended bolus and temp basal is running */
+"Extended bolus running with temp basal" = "Erweiterter Bolus läuft mit temp Basal";
+
+/* Pod state when fault event has occurred */
+"Fault event occurred" = "Fehlerereignis aufgetreten";
+
+/* Pod initialized */
+"Initialized" = "Initialisiert";
+
+/* Pod state when inserting cannula */
+"Inserting cannula" = "Kanüle einführen";
+
+/* The format string for Internal pod fault (1: The fault code value) */
+"Internal pod fault %1$03d" = "Interner Podfehler %1$03d";
+
+/* Description for MessageError invalidCrc */
+"Invalid CRC" = "Ungültige CRC";
+
+/* Pod status when pairing completed */
+"Pairing completed" = "Kopplung fertig";
+
+/* Description for MessageError parsingError. (1: decription of error), (2: hexadecimal data starting at offset) */
+"Parsing Error: %1$@ in (%2$@)" = "Parsing-Fehler: %1$@ in ( %2$@ )";
+
+/* Description for Pod expired pod fault
+Description for pod expired alert */
+"Pod expired" = "Pod abgelaufen";
+
+/* Delivery status when pod is priming
+Pod status when priming */
+"Priming" = "Vorbereiten";
+
+/* Pod state when priming completed */
+"Priming completed" = "Vorbereitung fertig";
+
+/* Delivery status when scheduled basal is running */
+"Scheduled basal" = "Geplante Basalrate";
+
+/* Description for shutdown imminent alert */
+"Shutdown imminent" = "Direkt herunter fahren";
+
+/* Description for suspend time expired alert */
+"Suspend time expired" = "Unterbrechungszeit abgelaufen";
+
+/* Delivery status when insulin delivery is suspended */
+"Suspended" = "Angehalten";
+
+/* Delivery status when temp basal is running */
+"Temp basal running" = "Temporäres Basal läuft";
+
+/* Description for MessageError invalidSequence */
+"Unexpected message sequence number" = "Unerwartete Nachrichtensequenznummer";
+
+/* The format string for Unknown pod fault (1: The fault code value) */
+"Unknown pod fault %1$03d" = "Unbekannter Pod-Fehler %1$03d";
+
+/* Format string for description of MessageError unknownValue. (1: value) (2: Type) */
+"Unknown Value (%1$@) for type %2$@" = "Unbekannter Wert ( %1$@ ) für Typ %2$@";
+
+/* Format string for description of MessageError validationFailed. (1: description of validation failure) */
+"Validation failed: %1$@" = "Überprüfung fehlgeschlagen: %1$@";
+
+/* Description waiting for pairing reminder alert */
+"Waiting for pairing reminder" = "Warten auf Kopplungserinnerung";
+

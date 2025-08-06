@@ -1,0 +1,135 @@
+/* Description for an inactive alert modifier */
+" (inactive)" = " (inaktiv)";
+
+/* Pod state when activation not completed in the time allowed */
+"Activation time exceeded" = "Aktiveringstid overskredet";
+
+/* Description for auto-off alert */
+"Auto-off" = "Auto-sluk";
+
+/* Pod state when basal initialized */
+"Basal initialized" = "Basal initialiseret";
+
+/* Delivery status when bolusing */
+"Bolusing" = "Indgiver bolus";
+
+/* Delivery status when bolusing and temp basal is running */
+"Bolusing with temp basal" = "Indgiver bolus med midlertidig basal";
+
+/* Pod state when deactivated */
+"Deactivated" = "Deaktiveret";
+
+/* Description for Empty reservoir pod fault */
+"Empty reservoir" = "Tomt reservoir";
+
+/* Delivery status when extended bolus is running */
+"Extended bolus running" = "Forlænget bolus kører";
+
+/* Delivery status when extended bolus and temp basal is running */
+"Extended bolus running with temp basal" = "Forlænget bolus med midlertidig basal";
+
+/* Pod state when fault event has occurred */
+"Fault event occurred" = "Fejlhændelse indtraf";
+
+/* Description for finish setup reminder alert */
+"Finish setup reminder" = "Påmindelse om færdiggørelse af opsætning";
+
+/* Pod initialized */
+"Initialized" = "Initialiseret";
+
+/* Pod state when inserting cannula */
+"Inserting cannula" = "Indsætter kanyle";
+
+/* The format string for Internal pod fault (1: The fault code value) */
+"Internal pod fault %1$03d" = "Intern Pod-fejl %1$03d";
+
+/* Description for MessageError invalidAddress */
+"Invalid address: (%1$@)" = "Ugyldig adresse: %1$@";
+
+/* Description for MessageError invalidCrc */
+"Invalid CRC" = "Ugyldig CRC";
+
+/* Format string for description for low reservoir alert
+Pod state when running with fifty or less units */
+"Low reservoir" = "Lavt reservoir";
+
+/* Pod memory initialized */
+"Memory initialized" = "Hukommelse initialiseret";
+
+/* Pod alert state when no alerts are active */
+"No alerts" = "Ingen alarmer";
+
+/* Description for Fault Event Code .noFaults */
+"No faults" = "Ingen fejl";
+
+/* Pod state when running above fifty units */
+"Normal" = "Normal";
+
+/* Description for MessageError notEnoughData */
+"Not enough data" = "Ikke nok data";
+
+/* Description for Occlusion detected pod fault */
+"Occlusion detected" = "Pod er blokeret";
+
+/* Pod state oneNotUsed */
+"oneNotUsed" = "oneNotUsed";
+
+/* Pod status when pairing completed */
+"Pairing completed" = "Parring afsluttet";
+
+/* Description for MessageError parsingError. (1: decription of error), (2: hexadecimal data starting at offset) */
+"Parsing Error: %1$@ in (%2$@)" = "Indlæsningfejl: %1$@ i %2$@";
+
+/* Description for Pod expired pod fault
+Description for pod expired alert */
+"Pod expired" = "Pod udløbet";
+
+/* Description for pod suspended reminder alert */
+"Pod suspended reminder" = "Påmindelse om suspenderet pod";
+
+/* Delivery status when pod is priming
+Pod status when priming */
+"Priming" = "Klargør";
+
+/* Pod state when priming completed */
+"Priming completed" = "Klargøring afsluttet";
+
+/* Pod pairing reminder initialized */
+"Reminder initialized" = "Påmindelse startet";
+
+/* Delivery status when scheduled basal is running */
+"Scheduled basal" = "Planlagt basal";
+
+/* Description for shutdown imminent alert */
+"Shutdown imminent" = "Nedlukning forestående";
+
+/* Description for suspend time expired alert */
+"Suspend time expired" = "Suspenderingstid udløbet";
+
+/* Delivery status when insulin delivery is suspended */
+"Suspended" = "Suspenderet";
+
+/* Delivery status when temp basal is running */
+"Temp basal running" = "Midlertidig basal i gang";
+
+/* Pod state threeNotUsed */
+"threeNotUsed" = "threeNotUsed";
+
+/* Pod state twoNotUsed */
+"twoNotUsed" = "twoNotUsed";
+
+/* Description for MessageError invalidSequence */
+"Unexpected message sequence number" = "Uventet beskedsekvensnummer";
+
+/* The format string for Unknown pod fault (1: The fault code value) */
+"Unknown pod fault %1$03d" = "Ukendt Podfejl %1$03d";
+
+/* Format string for description of MessageError unknownValue. (1: value) (2: Type) */
+"Unknown Value (%1$@) for type %2$@" = "Ukendt værdi (%1$@) for typen %2$@";
+
+/* Format string for description of MessageError validationFailed. (1: description of validation failure) */
+"Validation failed: %1$@" = "Validering mislykkedes: %1$@";
+
+/* Description waiting for pairing reminder alert */
+"Waiting for pairing reminder" = "Venter på parringspåmindelse";
+

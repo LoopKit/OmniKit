@@ -1,0 +1,85 @@
+/* Description for an inactive alert modifier */
+" (inactive)" = " (inactif)";
+
+/* Pod state when basal initialized */
+"Basal initialized" = "Basal initialisé";
+
+/* Delivery status when bolusing */
+"Bolusing" = "Bolus en cours";
+
+/* Delivery status when bolusing and temp basal is running */
+"Bolusing with temp basal" = "Bolus en cours avec débit basal temporaire";
+
+/* Pod state when deactivated */
+"Deactivated" = "Désactivé";
+
+/* Description for Empty reservoir pod fault */
+"Empty reservoir" = "Réservoir vide";
+
+/* Delivery status when extended bolus is running */
+"Extended bolus running" = "Bolus prolongé en cours";
+
+/* Delivery status when extended bolus and temp basal is running */
+"Extended bolus running with temp basal" = "Bolus prolongé en cours avec debit basal temporaire";
+
+/* Pod state when inserting cannula */
+"Inserting cannula" = "Insertion de la canule";
+
+/* Description for MessageError invalidCrc */
+"Invalid CRC" = "CRC invalide";
+
+/* Pod alert state when no alerts are active */
+"No alerts" = "Pas d’alertes";
+
+/* Description for Fault Event Code .noFaults */
+"No faults" = "Pas de défauts";
+
+/* Pod state when running above fifty units */
+"Normal" = "Normal";
+
+/* Description for MessageError notEnoughData */
+"Not enough data" = "Pas assez de données";
+
+/* Pod state oneNotUsed */
+"oneNotUsed" = "oneNotUsed";
+
+/* Pod status when pairing completed */
+"Pairing completed" = "Association terminée";
+
+/* Delivery status when pod is priming
+Pod status when priming */
+"Priming" = "Amorçage";
+
+/* Pod state when priming completed */
+"Priming completed" = "Amorçage terminé";
+
+/* Delivery status when scheduled basal is running */
+"Scheduled basal" = "Débit basal programmé";
+
+/* Description for shutdown imminent alert */
+"Shutdown imminent" = "Arrêt imminent";
+
+/* Description for suspend time expired alert */
+"Suspend time expired" = "Délai de suspension expiré";
+
+/* Delivery status when insulin delivery is suspended */
+"Suspended" = "Suspendu";
+
+/* Pod state threeNotUsed */
+"threeNotUsed" = "threeNotUsed";
+
+/* Pod state twoNotUsed */
+"twoNotUsed" = "twoNotUsed";
+
+/* The format string for Unknown pod fault (1: The fault code value) */
+"Unknown pod fault %1$03d" = "Erreur de Pod inconnue %1$03d";
+
+/* Format string for description of MessageError unknownValue. (1: value) (2: Type) */
+"Unknown Value (%1$@) for type %2$@" = "Valeur inconnue (%1$@) pour le type %2$@";
+
+/* Format string for description of MessageError validationFailed. (1: description of validation failure) */
+"Validation failed: %1$@" = "Échec de la validation : %1$@";
+
+/* Description waiting for pairing reminder alert */
+"Waiting for pairing reminder" = "En attente d'association";
+

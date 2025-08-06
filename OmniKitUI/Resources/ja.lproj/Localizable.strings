@@ -215,8 +215,8 @@
 "Reservoir" = "Reservoir";
 
 /* Action button description for deactivate after failed attempt
-   Cannula insertion button text while showing error
-   Pod pairing action button text while showing error */
+Cannula insertion button text while showing error
+Pod pairing action button text while showing error */
 "Retry" = "やり直す";
 
 /* Button title for retrying pod deactivation */
@@ -235,7 +235,8 @@
 /* Title of insulin delivery section */
 "Scheduled Basal" = "定期基礎";
 
-/* Title for setup complete screen */
+/* Title for setup complete screen
+Title of SetupCompleteView */
 "Setup Complete" = "設定完了";
 
 /* The title of the status section in settings */

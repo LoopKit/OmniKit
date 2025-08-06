@@ -13,6 +13,7 @@
 		3B0FD2A62D803C2000E5E921 /* OmniKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C124016C29C7D87A00B32844 /* OmniKit.framework */; };
 		3B0FD2A82D803C2C00E5E921 /* RileyLinkKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B0FD2A72D803C2C00E5E921 /* RileyLinkKitUI.framework */; };
 		B60BB2EC2BC757A700D2BB39 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60BB2EA2BC7579E00D2BB39 /* Bundle.swift */; };
+		B6CAD8CB2E439C340088BAAB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CAD8C92E439C340088BAAB /* Localizable.strings */; };
 		C1229C1A29C7E5BC0066A89C /* RileyLinkBLEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */; };
 		C1229C1B29C7E5BC0066A89C /* RileyLinkBLEKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C1229C1C29C7E5BC0066A89C /* RileyLinkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1229C1829C7E5BC0066A89C /* RileyLinkKit.framework */; };
@@ -263,6 +264,14 @@
 		3B0FD2A22D803BB800E5E921 /* RileyLinkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0FD2A72D803C2C00E5E921 /* RileyLinkKitUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkKitUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60BB2EA2BC7579E00D2BB39 /* Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		B6166CF82E439D2B00F8EC15 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B636145B2E439D17005D2CB0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B63FD1E22E439D00008A9129 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B65E14E82E439C9700E30FCF /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B682598F2E439D67006128C8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B693423E2E439C4700899F81 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B6B7479A2E439CD60096071B /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B6CAD8CA2E439C340088BAAB /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C10E1EE62AE59EDC00B4E993 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C1229C1729C7E5BC0066A89C /* RileyLinkBLEKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkBLEKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1229C1829C7E5BC0066A89C /* RileyLinkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RileyLinkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -523,6 +532,7 @@
 		C124016229C7D87A00B32844 = {
 			isa = PBXGroup;
 			children = (
+				B6CAD8C92E439C340088BAAB /* Localizable.strings */,
 				C124016E29C7D87A00B32844 /* OmniKit */,
 				C124020C29C7D92700B32844 /* OmniKitUI */,
 				C124021829C7D93D00B32844 /* OmniKitPlugin */,
@@ -1092,6 +1102,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CAD8CB2E439C340088BAAB /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1328,6 +1339,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B6CAD8C92E439C340088BAAB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6CAD8CA2E439C340088BAAB /* da */,
+				B693423E2E439C4700899F81 /* de */,
+				B65E14E82E439C9700E30FCF /* fr */,
+				B6B7479A2E439CD60096071B /* it */,
+				B63FD1E22E439D00008A9129 /* nb */,
+				B636145B2E439D17005D2CB0 /* nl */,
+				B6166CF82E439D2B00F8EC15 /* pl */,
+				B682598F2E439D67006128C8 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = SOURCE_ROOT;
+		};
 		C12401EE29C7D90B00B32844 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
