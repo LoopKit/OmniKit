@@ -5,7 +5,7 @@
 "%@ dB" = "%@ dB";
 
 /* Format string for activation time exceeded
-   Pod state when activation not completed in the time allowed */
+Pod state when activation not completed in the time allowed */
 "Activation time exceeded" = "Tid för aktivering överskriden";
 
 /* Description for auto-off alarm */
@@ -92,7 +92,8 @@
 /* Description for MessageError invalidCrc */
 "Invalid CRC" = "Ogiltigt CRC";
 
-/* Pod state when running with fifty or less units */
+/* Format string for description for low reservoir alert
+Pod state when running with fifty or less units */
 "Low reservoir" = "Låg reservoarvolym";
 
 /* Description for low reservoir alarm */
@@ -111,7 +112,7 @@
 "No faults" = "Inga fel";
 
 /* Status highlight message for emptyReservoir alarm.
-   Status highlight that a pump is out of insulin. */
+Status highlight that a pump is out of insulin. */
 "No Insulin" = "Inget insulin";
 
 /* Status highlight that when no pod is paired. */
@@ -137,7 +138,7 @@
 "Occlusion detected" = "Ocklusion upptäckt";
 
 /* Acknowledge button label for RileyLink low battery alert
-   Alert acknowledgment OK button */
+Alert acknowledgment OK button */
 "OK" = "OK";
 
 /* Generic title of the omnipod pump manager */
@@ -183,9 +184,9 @@
 "Pod expired" = "Pod har utgått";
 
 /* Alert content title for podExpireImminent pod alert
-   Alert content title for podExpiring pod alert
-   Status highlight message for podExpired alarm.
-   The title for Pod Expired alarm notification */
+Alert content title for podExpiring pod alert
+Status highlight message for podExpired alarm.
+The title for Pod Expired alarm notification */
 "Pod Expired" = "Poddens utgångsdatum passerat";
 
 /* Format string for pod fault code */

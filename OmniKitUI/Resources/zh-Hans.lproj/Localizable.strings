@@ -197,8 +197,8 @@
 "Reservoir" = "胰岛素容量";
 
 /* Action button description for deactivate after failed attempt
-   Cannula insertion button text while showing error
-   Pod pairing action button text while showing error */
+Cannula insertion button text while showing error
+Pod pairing action button text while showing error */
 "Retry" = "重试";
 
 /* Button title for retrying pod deactivation */
@@ -217,7 +217,8 @@
 /* Title of insulin delivery section */
 "Scheduled Basal" = "预设基础率";
 
-/* Title for setup complete screen */
+/* Title for setup complete screen
+Title of SetupCompleteView */
 "Setup Complete" = "设置完成";
 
 /* The title of the status section in settings */
