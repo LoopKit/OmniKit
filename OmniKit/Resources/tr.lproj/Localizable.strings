@@ -62,6 +62,12 @@ Pod state when activation not completed in the time allowed */
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "İletişim sorunu: Onaylanmamış komut beklemede.";
 
+/* Description for BeepPreference.manualCommands (1: appName) */
+"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used." = "Emniyet hatırlatıcıları, bolus, bolus iptali, askıya alma, devam ettirme, bildirim hatırlatıcılarını kaydetme gibi başlattığınız komutlar için çalacaktır. %1$@ iletimi otomatik olarak ayarladığında emniyet hatırlatıcıları kullanılmaz.";
+
+/* Description for BeepPreference.extended (1: appName) */
+"Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate." = "Emniyet hatırlatıcıları, Başlattığınız komutların yanı sıra %1$@ iletimi otomatik olarak ayarladığında çalacaktır.";
+
 /* Recovery suggestion when unexpected address received */
 "Crosstalk possible. Please move to a new location" = "Karışma mevcut. Lütfen yer değiştririn.";
 

@@ -62,6 +62,12 @@ Pod state when activation not completed in the time allowed */
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "Kommunikationsproblem: Uerkendt kommando afventer.";
 
+/* Description for BeepPreference.manualCommands (1: appName) */
+"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used." = "Påmindelser om succesfulde handlinger vil lyde for de kommandoer du sætter igang, annulleret, suspenderet, genoptaget bolus, gemme notifikationspåmindelser etc. Når %1$@ automatisk justerer tilførslen, bliver påmindelser om succesfulde handlinger ikke benyttet.";
+
+/* Description for BeepPreference.extended (1: appName) */
+"Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate." = "Påmindelser om succesfulde handlinger vil lyde, når %1$@ automatisk justerer tilførslen og de kommandoer, du sætter igang.";
+
 /* Recovery suggestion when unexpected address received */
 "Crosstalk possible. Please move to a new location" = "Kommunikationsfejl. Flyt til et nyt område";
 

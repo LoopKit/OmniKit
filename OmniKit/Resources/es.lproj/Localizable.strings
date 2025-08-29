@@ -62,6 +62,12 @@ Pod state when activation not completed in the time allowed */
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "Problema de comunicación: Pendiente de confirmar comando.";
 
+/* Description for BeepPreference.manualCommands (1: appName) */
+"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used." = "Los recordatorios de confianza sonarán para los comandos que seleccione, como bolo, cancelar bolo, suspender, reanudar, guardar recordatorios de notificación, etc. Cuando %1$@ ajusta automáticamente la administración de insulina, no se utilizan recordatorios de confianza.";
+
+/* Description for BeepPreference.extended (1: appName) */
+"Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate." = "Recordatorios de confianza sonarán cuando %1$@ automáticamente ajuste la administración de insulina, así como para los comandos que selecciones.";
+
 /* Recovery suggestion when unexpected address received */
 "Crosstalk possible. Please move to a new location" = "Interferencia posible. Muévase a una nueva ubicación";
 

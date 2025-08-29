@@ -50,6 +50,12 @@ Pod state when activation not completed in the time allowed */
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "Problém s komunikáciou: Čaká sa na potvrdenie príkazu.";
 
+/* Description for BeepPreference.manualCommands (1: appName) */
+"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used." = "Pripomienky spoľahlivosti zaznejú pri príkazoch, ktoré spustíte, ako je bolus, zrušenie bolusu, pozastavenie, obnovenie, uloženie upozornení atď. Keď %1$@ automaticky upraví podanie, nepoužijú sa žiadne pripomenutia spoľahlivosti.";
+
+/* Description for BeepPreference.extended (1: appName) */
+"Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate." = "Keď %1$@ automaticky upraví podávanie, ako aj prevedie príkazy, ktoré iniciujete, zaznejú pripomenutia spoľahlivosti.";
+
 /* Recovery suggestion when unexpected address received */
 "Crosstalk possible. Please move to a new location" = "Možné presluchy. Presuňte sa na iné miesto";
 

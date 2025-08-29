@@ -62,6 +62,12 @@ Pod state when activation not completed in the time allowed */
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "Communicatieprobleem: niet-bevestigde opdracht in behandeling";
 
+/* Description for BeepPreference.manualCommands (1: appName) */
+"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used." = "Bevestigingsherinneringen zijn hoorbaar voor opdrachten die je start, zoals bolussen, bolus annuleren, onderbreken, hervatten, meldingsherinneringen opslaan, enz. Wanneer %1$@ de toediening automatisch aanpast, zijn er geen bevestigingsherinneringen hoorbaar.";
+
+/* Description for BeepPreference.extended (1: appName) */
+"Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate." = "Bevestigingsherinneringen zijn hoorbaar wanneer %1$@ de toediening automatisch aanpast, evenals voor opdrachten die je geeft.";
+
 /* Recovery suggestion when unexpected address received */
 "Crosstalk possible. Please move to a new location" = "Overspraak mogelijk. Probeer een andere locatie";
 

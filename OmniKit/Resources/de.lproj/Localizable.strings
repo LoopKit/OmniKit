@@ -62,6 +62,12 @@ Pod state when activation not completed in the time allowed */
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "Kommunikationsproblem: Unbestätigter Befehl steht noch aus.";
 
+/* Description for BeepPreference.manualCommands (1: appName) */
+"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used." = "Vertrauenserinnerungen ertönen für von Ihnen initiierte Befehle, wie Bolus, Bolus abbrechen, Unterbrechen, Fortsetzen, Benachrichtigungserinnerungen speichern usw. Wenn %1$@ die Abgabe automatisch anpasst, werden keine Vertrauenserinnerungen verwendet.";
+
+/* Description for BeepPreference.extended (1: appName) */
+"Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate." = "Vertrauenserinnerungen ertönen, wenn %1$@ die Lieferung automatisch anpasst, sowie für von Ihnen initiierte Befehle.";
+
 /* Recovery suggestion when unexpected address received */
 "Crosstalk possible. Please move to a new location" = "Überlagerungen möglich. Bitte wechseln Sie an einen neuen Standort.";
 

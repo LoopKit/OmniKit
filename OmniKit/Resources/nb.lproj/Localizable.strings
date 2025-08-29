@@ -65,6 +65,12 @@ Pod state when activation not completed in the time allowed */
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "Kommunikasjonsproblem: Ukjent kommando venter.";
 
+/* Description for BeepPreference.manualCommands (1: appName) */
+"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used." = "Tillitspåminnelser høres for kommandoer du starter, for eksempel bolus, avbryt bolus, suspendere, gjenoppta, lagre varslingspåminnelser osv. Når %1$@ automatisk justerer leveringen, brukes mistillitspåminnelser.";
+
+/* Description for BeepPreference.extended (1: appName) */
+"Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate." = "Tillitspåminnelser vil høres når %1$@ automatisk justerer leveringen så vel som for kommandoer du starter.";
+
 /* The title for AlarmCode.other notification: (1: fault code value) */
 "Critical Pod Fault %1$03d" = "Kritisk pod-feil %1$03d";
 
