@@ -331,6 +331,12 @@ Title for insulin type selection screen */
 /* description label for last status date pod details row */
 "Last Status" = "Последнее состояние";
 
+/* Text body for page showing insulin uncertainty has been recovered (1: appName) (2: appName)  */	
+"%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now." = "%1$@ восстановил связь с подом на вашем теле.\n\nЗаписи о поданном инсулине были обновлены и должны соответствовать тому, что было доставлено на самом деле.\n\nТеперь вы можете продолжать использовать %2$@ в обычном режиме.";	
+
+/* Description text on manual temp basal action sheet */	
+"Your insulin delivery will not be automatically adjusted until the temporary basal rate finishes or is canceled." = "Loop не будет автоматически регулировать подачу инсулина, пока временная базальная скорость не закончится или не будет отменена.";
+
 /* The title of the cell showing the pod lot id */
 "Lot" = "Lot";
 
