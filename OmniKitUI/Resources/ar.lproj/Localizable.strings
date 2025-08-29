@@ -26,21 +26,19 @@
 /* Title of insulin delivery section */
 "Insulin Delivery" = "توصيل الأنسولين";
 
-/* Text body for page showing insulin uncertainty has been recovered. */
-"Loop has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use Loop normally now." = "نجح تطبيق لووب في إسترجاع التواصل مع المضخة المتصلة بك ";
-
 /* The title of the cell showing reservoir status */
 "Reservoir" = "الخزان";
 
 /* Action button description for deactivate after failed attempt
-   Cannula insertion button text while showing error
-   Pod pairing action button text while showing error */
+Cannula insertion button text while showing error
+Pod pairing action button text while showing error */
 "Retry" = "أعد المحاولة";
 
 /* Navigation title for RileyLinkSetupView */
 "RileyLink Setup" = "RileyLink Setup";
 
-/* Title for setup complete screen */
+/* Title for setup complete screen
+Title of SetupCompleteView */
 "Setup Complete" = "Setup Complete";
 
 /* The title of the status section in settings */

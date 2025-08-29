@@ -168,8 +168,8 @@
 /* Title of insulin delivery section */
 "Insulin Delivery" = "Insulin Delivery";
 
-/* Text for confidence reminders navigation link
-   Title for insulin type selection screen */
+/* Text for insulin type navigation link
+Title for insulin type selection screen */
 "Insulin Type" = "Insulintyp";
 
 /* The error message shown when Loop's basal schedule has an unsupported rate */
@@ -182,7 +182,7 @@
 "No Insulin" = "Inget insulin";
 
 /* Label for pod life state when no pod paired
-   Text shown in insulin remaining space when no pod is paired */
+Text shown in insulin remaining space when no pod is paired */
 "No Pod" = "Ingen Podd";
 
 /* The detail text for bolus delivery when no bolus is being delivered */
@@ -219,7 +219,7 @@
 "Pod expired" = "Pod har utgått";
 
 /* Error message for reservoir view when pod expired
-   Label for pod expiration row, past tense */
+Label for pod expiration row, past tense */
 "Pod Expired" = "Poddens utgångsdatum passerat";
 
 /* Title of the pod settings view controller */
@@ -245,8 +245,8 @@
 "Reservoir" = "Reservoar";
 
 /* Action button description for deactivate after failed attempt
-   Cannula insertion button text while showing error
-   Pod pairing action button text while showing error */
+Cannula insertion button text while showing error
+Pod pairing action button text while showing error */
 "Retry" = "Försök igen";
 
 /* Button title for retrying pod deactivation */
@@ -268,7 +268,8 @@
 /* Title text for insulin type confirmation page */
 "Select the type of insulin that you will be using in this pod." = "Välj vilken typ av insulin du kommer att använda.";
 
-/* Title for setup complete screen */
+/* Title for setup complete screen
+Title of SetupCompleteView */
 "Setup Complete" = "Inställning klar";
 
 /* The title of the status section in settings */
@@ -296,8 +297,8 @@
 "Testing Commands…" = "Testar att skicka kommandon…";
 
 /* Label for expiration reminder row
-   Label for scheduled expiration reminder row
-   Label for scheduled reminder value row */
+Label for scheduled expiration reminder row
+Label for scheduled reminder value row */
 "Time" = "Tid";
 
 /* The error message shown when Loop's basal schedule has more entries than the pod can support */

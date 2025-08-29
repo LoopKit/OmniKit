@@ -11,10 +11,10 @@
 "%1$@ insulin or less remaining in Pod. Change Pod soon." = "%1$@ insülin veya daha az kaldı. Yakında Pod'u değiştirin.";
 
 /* Format string for activation time exceeded
-   Pod state when activation not completed in the time allowed */
+Pod state when activation not completed in the time allowed */
 "Activation time exceeded" = "Aktivasyon süresi aşıldı";
 
-/* Description for auto-off */
+/* Description for auto-off alert */
 "Auto-off" = "Otomatik kapanma";
 
 /* Description for auto-off alarm */
@@ -62,14 +62,11 @@
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "İletişim sorunu: Onaylanmamış komut beklemede.";
 
-/* Description for BeepPreference.manualCommands */
-"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When Loop automatically adjusts delivery, no confidence reminders are used." = "Emniyet hatırlatıcıları, bolus, bolus iptali, askıya alma, devam ettirme, bildirim hatırlatıcılarını kaydetme gibi başlattığınız komutlar için çalacaktır. Loop iletimi otomatik olarak ayarladığında emniyet hatırlatıcıları kullanılmaz.";
+/* Description for BeepPreference.manualCommands (1: appName) */
+"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used." = "Emniyet hatırlatıcıları, bolus, bolus iptali, askıya alma, devam ettirme, bildirim hatırlatıcılarını kaydetme gibi başlattığınız komutlar için çalacaktır. %1$@ iletimi otomatik olarak ayarladığında emniyet hatırlatıcıları kullanılmaz.";
 
-/* Description for BeepPreference.extended */
-"Confidence reminders will sound when Loop automatically adjusts delivery as well as for commands you initiate." = "Emniyet hatırlatıcıları, Başlattığınız komutların yanı sıra Loop iletimi otomatik olarak ayarladığında çalacaktır.";
-
-/* The title for AlarmCode.other notification */
-"Critical Pod Error" = "Kritik Pod Hatası";
+/* Description for BeepPreference.extended (1: appName) */
+"Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate." = "Emniyet hatırlatıcıları, Başlattığınız komutların yanı sıra %1$@ iletimi otomatik olarak ayarladığında çalacaktır.";
 
 /* Recovery suggestion when unexpected address received */
 "Crosstalk possible. Please move to a new location" = "Karışma mevcut. Lütfen yer değiştririn.";
@@ -77,7 +74,8 @@
 /* Pod state when pod has been deactivated */
 "Deactivated" = "Devre dışı";
 
-/* Title string for BeepPreference.silent */
+/* Title string for BeepPreference.silent
+Title string for SilencePodPreference.disabled */
 "Disabled" = "Devre Dışı";
 
 /* Description for Empty reservoir pod fault */
@@ -94,9 +92,6 @@
 
 /* Pod state error event logged shutting down */
 "Error event logged, shutting down" = "Hata olayı kaydedildi, kapatılıyor";
-
-/* Description for expiration advisory */
-"Expiration advisory" = "Süre sonu tavsiyesi";
 
 /* Description for expiration alert */
 "Expiration alert" = "Süre sonu uyarısı";
@@ -116,13 +111,10 @@
 /* Status highlight that when pod is deactivating. */
 "Finish Deactivation" = "Devre Dışı Bırakmayı Bitir";
 
-/* Status highlight that when pod is activating. */
-"Finish Pairing" = "Eşleştirmeyi Bitir";
-
 /* Description for finish setup */
 "Finish setup " = "Kurulumu bitir";
 
-/* Description for finish setup reminder */
+/* Description for finish setup reminder alert */
 "Finish setup reminder" = "Hatırlatıcı kurulumunu bitir";
 
 /* Pod inititialized */
@@ -137,7 +129,7 @@
 /* Status highlight that insulin delivery was suspended. */
 "Insulin Suspended" = "İnsülin Askıya Alındı";
 
-/* Error description for OmniBLEPumpManagerError.insulinTypeNotConfigured */
+/* Error description for insulin type not configured */
 "Insulin type not configured" = "İnsülin tipi yapılandırılmamış";
 
 /* The format string for Internal pod fault (1: The fault code value) */
@@ -155,17 +147,15 @@
 /* Description for MessageError invalidCrc */
 "Invalid CRC" = "Geçersiz CRC";
 
-/* Error description for OmniBLEPumpManagerError.invalidSetting */
+/* Error description for invalid setting */
 "Invalid Setting" = "Geçersiz Ayar";
 
-/* Pod state when running with fifty or less units */
+/* Format string for description for low reservoir alert
+Pod state when running with fifty or less units */
 "Low reservoir" = "Düşük rezervuar";
 
 /* Alert content title for lowReservoir pod alert */
 "Low Reservoir" = "Düşük Rezervuar";
-
-/* Format string for description for low reservoir advisory (1: reminder units) */
-"Low reservoir advisory (%1$gU)" = "Düşük rezervuar tavsiyesi (%1$gU)";
 
 /* Description for low reservoir alarm */
 "Low reservoir advisory alarm" = "Düşük rezervuar uyarı alarmı";
@@ -188,10 +178,6 @@
 /* Recovery suggestion for PodCommsError.tooManyPodsFound */
 "Move to a new area away from any other pods and try again." = "Diğer podlardan uzakta yeni bir alana gidin ve tekrar deneyin.";
 
-/* Alert content body for multiCommand pod alert
-   Alert content title for multiCommand pod alert */
-"Multiple Command Alert" = "Çoklu Komut Uyarısı";
-
 /* Pod alert state when no alerts are active */
 "No alerts" = "Uyarı yok";
 
@@ -202,7 +188,7 @@
 "No faults" = "Hata yok";
 
 /* Status highlight message for emptyReservoir alarm.
-   Status highlight that a pump is out of insulin. */
+Status highlight that a pump is out of insulin. */
 "No Insulin" = "İnsülin yok";
 
 /* Status highlight that when no pod is paired. */
@@ -237,7 +223,7 @@
 "Ok" = "Tamam";
 
 /* Acknowledge button label for RileyLink low battery alert
-   Alert acknowledgment OK button */
+Alert acknowledgment OK button */
 "OK" = "Tamam";
 
 /* Generic title of the omnipod pump manager */
@@ -298,9 +284,9 @@
 "Pod expired" = "Pod'un süresi doldu";
 
 /* Alert content title for podExpireImminent pod alert
-   Alert content title for podExpiring pod alert
-   Status highlight message for podExpired alarm.
-   The title for Pod Expired alarm notification */
+Alert content title for podExpiring pod alert
+Status highlight message for podExpired alarm.
+The title for Pod Expired alarm notification */
 "Pod Expired" = "Pod Süresi Doldu";
 
 /* Format string for alert content body for userPodExpiration pod alert. (1: time until expiration) */
@@ -330,7 +316,7 @@
 /* Pod state when prime or cannula insertion has not completed in the time allotted */
 "Pod setup window expired" = "Pod kurulum penceresinin süresi doldu";
 
-/* Description for pod suspended reminder */
+/* Description for pod suspended reminder alert */
 "Pod suspended reminder" = "Pod askıya alındı hatırlatıcısı";
 
 /* Format string for poor pod signal strength */
@@ -370,7 +356,7 @@
 /* Delivery status when basal is running */
 "Scheduled Basal" = "Programlanan Bazal";
 
-/* Description for shutdown imminent */
+/* Description for shutdown imminent alert */
 "Shutdown imminent" = "Yakında Kapanma";
 
 /* Description for shutdown imminent alarm */
@@ -386,10 +372,10 @@
 "Suspend" = "Askıya al";
 
 /* Alert content body for suspendInProgress pod alert
-   Alert content title for suspendInProgress pod alert */
+Alert content title for suspendInProgress pod alert */
 "Suspend In Progress Reminder" = "Devam Eden Hatırlatıcıyı Askıya Al";
 
-/* Description for suspend time expired */
+/* Description for suspend time expired alert */
 "Suspend time expired" = "Askıya alma süresi doldu";
 
 /* The format string describing a suspend. (1: Time)(2: Scheduled certainty */

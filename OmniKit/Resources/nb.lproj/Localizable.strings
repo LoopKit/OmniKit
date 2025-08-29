@@ -11,10 +11,13 @@
 "%1$@ insulin or less remaining in Pod. Change Pod soon." = "%1$@ insulin eller mindre gjenstår i Pod. Bytt Pod snart.";
 
 /* Format string for activation time exceeded
-   Pod state when activation not completed in the time allowed */
+Pod state when activation not completed in the time allowed */
 "Activation time exceeded" = "Aktiveringstiden er overskredet";
 
-/* Description for auto-off */
+/* Description for SilencePodPreference.enabled */
+"All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you." = "Alle pod-varsler bruker ingen pipelyder, og bekreftelsespipelyder undertrykkes. Pod piper bare ved fatale pod-feil og når testpipelyder spilles av. \n \n⚠️Advarsel – Hvis telefonen din er utenfor rekkevidde for pod mens denne funksjonen er aktivert, vil du ikke motta noen varsler i appen, og pod vil ikke pipe for å varsle deg.";
+
+/* Description for auto-off alert */
 "Auto-off" = "Auto-av";
 
 /* Description for auto-off alarm */
@@ -62,14 +65,14 @@
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "Kommunikasjonsproblem: Ukjent kommando venter.";
 
-/* Description for BeepPreference.manualCommands */
-"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When Loop automatically adjusts delivery, no confidence reminders are used." = "Tillitspåminnelser høres for kommandoer du starter, for eksempel bolus, avbryt bolus, suspendere, gjenoppta, lagre varslingspåminnelser osv. Når Loop automatisk justerer leveringen, brukes mistillitspåminnelser.";
+/* Description for BeepPreference.manualCommands (1: appName) */
+"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used." = "Tillitspåminnelser høres for kommandoer du starter, for eksempel bolus, avbryt bolus, suspendere, gjenoppta, lagre varslingspåminnelser osv. Når %1$@ automatisk justerer leveringen, brukes mistillitspåminnelser.";
 
-/* Description for BeepPreference.extended */
-"Confidence reminders will sound when Loop automatically adjusts delivery as well as for commands you initiate." = "Tillitspåminnelser vil høres når Loop automatisk justerer leveringen så vel som for kommandoer du starter.";
+/* Description for BeepPreference.extended (1: appName) */
+"Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate." = "Tillitspåminnelser vil høres når %1$@ automatisk justerer leveringen så vel som for kommandoer du starter.";
 
-/* The title for AlarmCode.other notification */
-"Critical Pod Error" = "Pod-feil";
+/* The title for AlarmCode.other notification: (1: fault code value) */
+"Critical Pod Fault %1$03d" = "Kritisk pod-feil %1$03d";
 
 /* Recovery suggestion when unexpected address received */
 "Crosstalk possible. Please move to a new location" = "Crosstalk mulig. Vennligst flytt til et nytt sted";
@@ -77,7 +80,8 @@
 /* Pod state when pod has been deactivated */
 "Deactivated" = "Deaktivert";
 
-/* Title string for BeepPreference.silent */
+/* Title string for BeepPreference.silent
+Title string for SilencePodPreference.disabled */
 "Disabled" = "Deaktivert";
 
 /* Description for Empty reservoir pod fault */
@@ -95,17 +99,20 @@
 /* Pod state error event logged shutting down */
 "Error event logged, shutting down" = "Feil logget, avslutter";
 
-/* Description for expiration advisory */
-"Expiration advisory" = "Veiledning for utløp";
-
 /* Description for expiration alert */
 "Expiration alert" = "Utløpsalarm";
+
+/* Description for expiration reminder alert */
+"Expiration reminder" = "Utløpspåminnelse";
 
 /* Title string for BeepPreference.extended */
 "Extended" = "Forlenget";
 
 /* Delivery status when extended bolus is running */
 "Extended bolus running" = "Forlenget boluskjøring";
+
+/* Delivery status when extended bolus is running while suspended */
+"Extended bolus running while suspended" = "Forlenget bolus kjører mens den er suspendert";
 
 /* Delivery status when extended bolus and temp basal is running */
 "Extended bolus running with temp basal" = "Forlenget boluskjøring med temp basal";
@@ -117,12 +124,12 @@
 "Finish Deactivation" = "Fullfør deaktivering";
 
 /* Status highlight that when pod is activating. */
-"Finish Pairing" = "Fullfør sammenkoblingen";
+"Finish Setup" = "Fullfør oppsettet";
 
 /* Description for finish setup */
 "Finish setup " = "Ferdigstill oppsett";
 
-/* Description for finish setup reminder */
+/* Description for finish setup reminder alert */
 "Finish setup reminder" = "Fullfør varselinnstilling";
 
 /* Pod inititialized */
@@ -137,7 +144,7 @@
 /* Status highlight that insulin delivery was suspended. */
 "Insulin Suspended" = "Insulintilførsel utsatt";
 
-/* Error description for OmniBLEPumpManagerError.insulinTypeNotConfigured */
+/* Error description for insulin type not configured */
 "Insulin type not configured" = "Insulintype ikke konfigurert";
 
 /* The format string for Internal pod fault (1: The fault code value) */
@@ -155,17 +162,15 @@
 /* Description for MessageError invalidCrc */
 "Invalid CRC" = "Ugyldig CRC";
 
-/* Error description for OmniBLEPumpManagerError.invalidSetting */
+/* Error description for invalid setting */
 "Invalid Setting" = "Ugyldig konfigurasjon";
 
-/* Pod state when running with fifty or less units */
+/* Format string for description for low reservoir alert
+Pod state when running with fifty or less units */
 "Low reservoir" = "Lavt reservoar";
 
 /* Alert content title for lowReservoir pod alert */
 "Low Reservoir" = "Lavt reservoar";
-
-/* Format string for description for low reservoir advisory (1: reminder units) */
-"Low reservoir advisory (%1$gU)" = "Varsel om lavt reservoar (%1$gU)";
 
 /* Description for low reservoir alarm */
 "Low reservoir advisory alarm" = "Anbefalt alarm for lavt reservoar";
@@ -188,10 +193,6 @@
 /* Recovery suggestion for PodCommsError.tooManyPodsFound */
 "Move to a new area away from any other pods and try again." = "Flytt til et nytt område borte fra andre pods og prøv igjen.";
 
-/* Alert content body for multiCommand pod alert
-   Alert content title for multiCommand pod alert */
-"Multiple Command Alert" = "Alarm for fler-kommandoer";
-
 /* Pod alert state when no alerts are active */
 "No alerts" = "Ingen alarmer";
 
@@ -202,7 +203,7 @@
 "No faults" = "Ingen feil";
 
 /* Status highlight message for emptyReservoir alarm.
-   Status highlight that a pump is out of insulin. */
+Status highlight that a pump is out of insulin. */
 "No Insulin" = "Ingen insulin";
 
 /* Status highlight that when no pod is paired. */
@@ -227,6 +228,9 @@
 /* Description for MessageError notEnoughData */
 "Not enough data" = "Ikke nok data";
 
+/* Description for not used slot alert */
+"Not used" = "Ikke brukt";
+
 /* Description for Occlusion detected pod fault */
 "Occlusion detected" = "Tilstoppelse oppdaget";
 
@@ -237,7 +241,7 @@
 "Ok" = "Ok";
 
 /* Acknowledge button label for RileyLink low battery alert
-   Alert acknowledgment OK button */
+Alert acknowledgment OK button */
 "OK" = "Ok";
 
 /* Generic title of the omnipod pump manager */
@@ -298,9 +302,9 @@
 "Pod expired" = "Pod utløpt";
 
 /* Alert content title for podExpireImminent pod alert
-   Alert content title for podExpiring pod alert
-   Status highlight message for podExpired alarm.
-   The title for Pod Expired alarm notification */
+Alert content title for podExpiring pod alert
+Status highlight message for podExpired alarm.
+The title for Pod Expired alarm notification */
 "Pod Expired" = "Pod Utløpt";
 
 /* Format string for alert content body for userPodExpiration pod alert. (1: time until expiration) */
@@ -327,10 +331,13 @@
 /* Error message shown when pod sends ack instead of response */
 "Pod sent ack instead of response" = "Pod sendte ack i stedet for svar";
 
+/* Error description when pod setup is not complete */
+"Pod setup is not complete" = "Pod-oppsettet er ikke fullført";
+
 /* Pod state when prime or cannula insertion has not completed in the time allotted */
 "Pod setup window expired" = "Tidsvindu for oppsett av pod er utløpt";
 
-/* Description for pod suspended reminder */
+/* Description for pod suspended reminder alert */
 "Pod suspended reminder" = "Pod påminnelse er suspendert";
 
 /* Format string for poor pod signal strength */
@@ -370,7 +377,7 @@
 /* Delivery status when basal is running */
 "Scheduled Basal" = "Planlagt basal";
 
-/* Description for shutdown imminent */
+/* Description for shutdown imminent alert */
 "Shutdown imminent" = "Avslutning nært forestående";
 
 /* Description for shutdown imminent alarm */
@@ -382,14 +389,17 @@
 /* Format string for pod signal strength too high */
 "Signal strength too high" = "Signalstyrken er for høy";
 
+/* Title string for SilencePodPreference.enabled */
+"Silenced" = "Stillemodus";
+
 /* Pump Event title for UnfinalizedDose with doseType of .suspend */
 "Suspend" = "Utsette";
 
 /* Alert content body for suspendInProgress pod alert
-   Alert content title for suspendInProgress pod alert */
+Alert content title for suspendInProgress pod alert */
 "Suspend In Progress Reminder" = "Varsel om aktivert Utsettelse";
 
-/* Description for suspend time expired */
+/* Description for suspend time expired alert */
 "Suspend time expired" = "Utsettelse utløpt";
 
 /* The format string describing a suspend. (1: Time)(2: Scheduled certainty */
@@ -445,6 +455,9 @@
 
 /* String describing a dose that was possibly scheduled */
 "Uncertain" = "Usikker";
+
+/* Alert content title for unexpected pod alert */
+"Unexpected Alert" = "Uventet varsel";
 
 /* Description for MessageError invalidSequence */
 "Unexpected message sequence number" = "Uventet meldings sekvensnummer";

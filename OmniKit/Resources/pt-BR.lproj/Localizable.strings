@@ -81,7 +81,7 @@
 "Occlusion detected" = "Oclusão detectada";
 
 /* Acknowledge button label for RileyLink low battery alert
-   Alert acknowledgment OK button */
+Alert acknowledgment OK button */
 "OK" = "OK";
 
 /* Generic title of the omnipod pump manager */

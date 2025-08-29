@@ -58,9 +58,6 @@
 /* Status highlight that when pod is deactivating. */
 "Finish Deactivation" = "סיום תהליך השתבתת פוד";
 
-/* Status highlight that when pod is activating. */
-"Finish Pairing" = "סיום תהליך הכנת הפוד";
-
 /* Description for finish setup */
 "Finish setup " = "Finish setup ";
 
@@ -73,7 +70,7 @@
 /* The default notification body for AlarmCodes */
 "Insulin delivery stopped. Change Pod now." = "מתן אינסולין הופסק. החלף פוד כעת.";
 
-/* Error description for OmniBLEPumpManagerError.insulinTypeNotConfigured */
+/* Error description for insulin type not configured */
 "Insulin type not configured" = "סוג אינסולין טרם הוגדר";
 
 /* The format string for Internal pod fault (1: The fault code value) */
@@ -82,7 +79,8 @@
 /* The format string describing a bolus that was interrupted. (1: The amount delivered)(2: The amount scheduled)(3: Start time of the dose)(4: duration)(5: scheduled certainty) */
 "InterruptedBolus: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@" = "InterruptedBolus: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@";
 
-/* Pod state when running with fifty or less units */
+/* Format string for description for low reservoir alert
+Pod state when running with fifty or less units */
 "Low reservoir" = "רמת מאגר אינסולין נמוכה";
 
 /* Alert content title for lowReservoir pod alert */
@@ -101,7 +99,7 @@
 "No alerts" = "No alerts";
 
 /* Status highlight message for emptyReservoir alarm.
-   Status highlight that a pump is out of insulin. */
+Status highlight that a pump is out of insulin. */
 "No Insulin" = "חסר אינסולין";
 
 /* Status highlight that when no pod is paired. */
@@ -130,7 +128,7 @@
 "Occlusion Detected" = "חסימה בפוד";
 
 /* Acknowledge button label for RileyLink low battery alert
-   Alert acknowledgment OK button */
+Alert acknowledgment OK button */
 "OK" = "OK";
 
 /* Generic title of the omnipod pump manager */

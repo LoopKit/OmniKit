@@ -11,10 +11,10 @@
 "%1$@ insulin or less remaining in Pod. Change Pod soon." = "%1$@ de insulină sau mai puțin rămase în Pod. Schimbați Pod-ul în curând.";
 
 /* Format string for activation time exceeded
-   Pod state when activation not completed in the time allowed */
+Pod state when activation not completed in the time allowed */
 "Activation time exceeded" = "Timpul de activare a fost depășit";
 
-/* Description for auto-off */
+/* Description for auto-off alert */
 "Auto-off" = "Oprire automată";
 
 /* Description for auto-off alarm */
@@ -62,14 +62,11 @@
 /* Error message when command is rejected because an unacknowledged command is pending. */
 "Communication issue: Unacknowledged command pending." = "Problemă de comunicare: comandă nerecunoscută în așteptare.";
 
-/* Description for BeepPreference.manualCommands */
-"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When Loop automatically adjusts delivery, no confidence reminders are used." = "Mementourile de confirmare vor suna pentru comenzile pe care le inițiați, precum bolus, anualarea bolusului, suspendare, reluare, salvarea mementourilor de confirmare etc. Când Loop ajustează automat administrarea, nu sunt folosite mementouri de confirmare.";
+/* Description for BeepPreference.manualCommands (1: appName) */
+"Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used." = "Mementourile de confirmare vor suna pentru comenzile pe care le inițiați, precum bolus, anualarea bolusului, suspendare, reluare, salvarea mementourilor de confirmare etc. Când %1$@ ajustează automat administrarea, nu sunt folosite mementouri de confirmare.";
 
-/* Description for BeepPreference.extended */
-"Confidence reminders will sound when Loop automatically adjusts delivery as well as for commands you initiate." = "Mementourile de confirmare vor suna atunci când Loop ajustează automat administrare, precum și pentru comenzile pe care le inițiați.";
-
-/* The title for AlarmCode.other notification */
-"Critical Pod Error" = "Eroare critică Pod";
+/* Description for BeepPreference.extended (1: appName) */
+"Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate." = "Mementourile de confirmare vor suna atunci când %1$@ ajustează automat administrare, precum și pentru comenzile pe care le inițiați.";
 
 /* Recovery suggestion when unexpected address received */
 "Crosstalk possible. Please move to a new location" = "Interferență posibilă. Vă rugăm să vă mutați într-o zonă nouă";
@@ -77,7 +74,8 @@
 /* Pod state when pod has been deactivated */
 "Deactivated" = "Dezactivat";
 
-/* Title string for BeepPreference.silent */
+/* Title string for BeepPreference.silent
+Title string for SilencePodPreference.disabled */
 "Disabled" = "Dezactivat";
 
 /* Description for Empty reservoir pod fault */
@@ -94,9 +92,6 @@
 
 /* Pod state error event logged shutting down */
 "Error event logged, shutting down" = "Eroare înregistrată în jurnal, se oprește";
-
-/* Description for expiration advisory */
-"Expiration advisory" = "Aviz de expirare";
 
 /* Description for expiration alert */
 "Expiration alert" = "Alertă expirare";
@@ -116,13 +111,10 @@
 /* Status highlight that when pod is deactivating. */
 "Finish Deactivation" = "Finalizați deactivarea";
 
-/* Status highlight that when pod is activating. */
-"Finish Pairing" = "Finalizați asocierea";
-
 /* Description for finish setup */
 "Finish setup " = "Finalizare setare";
 
-/* Description for finish setup reminder */
+/* Description for finish setup reminder alert */
 "Finish setup reminder" = "Memento pentru finalizarea configurării";
 
 /* Pod inititialized */
@@ -137,7 +129,7 @@
 /* Status highlight that insulin delivery was suspended. */
 "Insulin Suspended" = "Administrarea insulinei suspendată";
 
-/* Error description for OmniBLEPumpManagerError.insulinTypeNotConfigured */
+/* Error description for insulin type not configured */
 "Insulin type not configured" = "Tipul de insulină nu este configurat";
 
 /* The format string for Internal pod fault (1: The fault code value) */
@@ -155,17 +147,15 @@
 /* Description for MessageError invalidCrc */
 "Invalid CRC" = "CRC invalid";
 
-/* Error description for OmniBLEPumpManagerError.invalidSetting */
+/* Error description for invalid setting */
 "Invalid Setting" = "Setare invalidă";
 
-/* Pod state when running with fifty or less units */
+/* Format string for description for low reservoir alert
+Pod state when running with fifty or less units */
 "Low reservoir" = "Rezervor scăzut";
 
 /* Alert content title for lowReservoir pod alert */
 "Low Reservoir" = "Rezervor scăzut";
-
-/* Format string for description for low reservoir advisory (1: reminder units) */
-"Low reservoir advisory (%1$gU)" = "Avertizare de rezervor scăzut (%1$gU)";
 
 /* Description for low reservoir alarm */
 "Low reservoir advisory alarm" = "Alarmă nivel scăzut rezervor";
@@ -188,10 +178,6 @@
 /* Recovery suggestion for PodCommsError.tooManyPodsFound */
 "Move to a new area away from any other pods and try again." = "Mutați-vă într-o zonă nouă, departe de orice alte Pod-uri și încercați din nou.";
 
-/* Alert content body for multiCommand pod alert
-   Alert content title for multiCommand pod alert */
-"Multiple Command Alert" = "Alertă de comandă multiplă";
-
 /* Pod alert state when no alerts are active */
 "No alerts" = "Nicio alertă";
 
@@ -202,7 +188,7 @@
 "No faults" = "Nicio defecțiune";
 
 /* Status highlight message for emptyReservoir alarm.
-   Status highlight that a pump is out of insulin. */
+Status highlight that a pump is out of insulin. */
 "No Insulin" = "Fără insulină";
 
 /* Status highlight that when no pod is paired. */
@@ -237,7 +223,7 @@
 "Ok" = "Ok";
 
 /* Acknowledge button label for RileyLink low battery alert
-   Alert acknowledgment OK button */
+Alert acknowledgment OK button */
 "OK" = "OK";
 
 /* Generic title of the omnipod pump manager */
@@ -298,9 +284,9 @@
 "Pod expired" = "Pod-ul a expirat.";
 
 /* Alert content title for podExpireImminent pod alert
-   Alert content title for podExpiring pod alert
-   Status highlight message for podExpired alarm.
-   The title for Pod Expired alarm notification */
+Alert content title for podExpiring pod alert
+Status highlight message for podExpired alarm.
+The title for Pod Expired alarm notification */
 "Pod Expired" = "Pod Expirat";
 
 /* Format string for alert content body for userPodExpiration pod alert. (1: time until expiration) */
@@ -330,7 +316,7 @@
 /* Pod state when prime or cannula insertion has not completed in the time allotted */
 "Pod setup window expired" = "Intervalul de timp în care se poate seta Pod-ul a expirat";
 
-/* Description for pod suspended reminder */
+/* Description for pod suspended reminder alert */
 "Pod suspended reminder" = "Memento pentru Pod-ul suspendat";
 
 /* Format string for poor pod signal strength */
@@ -370,7 +356,7 @@
 /* Delivery status when basal is running */
 "Scheduled Basal" = "Bazală programată";
 
-/* Description for shutdown imminent */
+/* Description for shutdown imminent alert */
 "Shutdown imminent" = "Oprirea iminentă";
 
 /* Description for shutdown imminent alarm */
@@ -386,10 +372,10 @@
 "Suspend" = "Suspendați";
 
 /* Alert content body for suspendInProgress pod alert
-   Alert content title for suspendInProgress pod alert */
+Alert content title for suspendInProgress pod alert */
 "Suspend In Progress Reminder" = "Memento pentru suspendarea în curs";
 
-/* Description for suspend time expired */
+/* Description for suspend time expired alert */
 "Suspend time expired" = "Timpul de suspendare a expirat";
 
 /* The format string describing a suspend. (1: Time)(2: Scheduled certainty */
