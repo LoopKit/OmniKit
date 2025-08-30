@@ -35,6 +35,9 @@
 /* Summary string for temporary basal rate configuration page */
 "%1$@ for %2$@" = "%1$@ pentru %2$@";
 
+/* Text body for page showing insulin uncertainty has been recovered (1: appName) (2: appName) */
+"%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now." = "%1$@ a restabilit comunicarea cu Pod-ul de pe corpul tău.\n\nÎnregistrările legate de administrarea insulinei au fost actualizate și ar trebui să corespundă cu ceea ce a fost administrat de fapt.\n\nPuteți continua acum să utilizați %2$@ în mod normal.";
+
 /* Accessibility format string for (1: localized volume)(2: time) */
 "%1$@ units remaining at %2$@" = "%1$@ unități rămase la %2$@";
 
@@ -330,12 +333,6 @@ Title for insulin type selection screen */
 
 /* description label for last status date pod details row */
 "Last Status" = "Ultima stare";
-
-/* Text body for page showing insulin uncertainty has been recovered (1: appName) (2: appName) */	
-"%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now." = "%1$@ a restabilit comunicarea cu Pod-ul de pe corpul tău.\n\nÎnregistrările legate de administrarea insulinei au fost actualizate și ar trebui să corespundă cu ceea ce a fost administrat de fapt.\n\nPuteți continua acum să utilizați %2$@ în mod normal.";	
-
-/* Description text on manual temp basal action sheet */	
-"Your insulin delivery will not be automatically adjusted until the temporary basal rate finishes or is canceled." = "Loop nu va ajusta automat administrarea de insulină până când rata bazală temporară nu se termină sau nu este anulată.";
 
 /* The title of the cell showing the pod lot id */
 "Lot" = "Lot";
@@ -719,6 +716,9 @@ title for time change detected notice */
 
 /* bodyText for PodSetupView */
 "You will now begin the process of configuring your reminders, filling your Pod with insulin, pairing to your device and placing it on your body." = "Veți începe acum procesul de configurare a memento-urilor, umplerea Pod-ului cu insulină, asocierea cu dispozitivul dumneavoastră și amplasarea acestuia pe corp.";
+
+/* Description text on manual temp basal action sheet */
+"Your insulin delivery will not be automatically adjusted until the temporary basal rate finishes or is canceled." = "Loop nu va ajusta automat administrarea de insulină până când rata bazală temporară nu se termină sau nu este anulată.";
 
 /* Alert message body for confirm pod attachment */
 "Your Pod may still be delivering Insulin.\nRemove it from your body, then tap “Continue.“" = "Este posibil ca Podul dvs. să administreze în continuare insulină.\nScoateți-l din corpul dumneavoastră, apoi atingeți \"Continuați\".";

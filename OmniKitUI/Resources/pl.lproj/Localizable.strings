@@ -35,6 +35,9 @@
 /* Summary string for temporary basal rate configuration page */
 "%1$@ for %2$@" = "%1$@ za %2$@";
 
+/* Text body for page showing insulin uncertainty has been recovered (1: appName) (2: appName) */
+"%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now." = "%1$@ odzyskał łączność z POD'em na twoim ciele. \n\nPodane dawki insuliny zostały zaktualizowane i powinny być zgodne z faktycznie dostarczonymi. \n\nMożesz teraz normalnie korzystać z %2$@.";
+
 /* Accessibility format string for (1: localized volume)(2: time) */
 "%1$@ units remaining at %2$@" = "%1$@ jednostek pozostaje w %2$@";
 
@@ -333,12 +336,6 @@ Title for insulin type selection screen */
 
 /* description label for last status date pod details row */
 "Last Status" = "Ostatni status";
-
-/* Text body for page showing insulin uncertainty has been recovered (1: appName) (2: appName) */	
-"%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now." = "%1$@ odzyskał łączność z POD'em na twoim ciele. \n\nPodane dawki insuliny zostały zaktualizowane i powinny być zgodne z faktycznie dostarczonymi. \n\nMożesz teraz normalnie korzystać z %2$@.";	
-
-/* Description text on manual temp basal action sheet */	
-"Your insulin delivery will not be automatically adjusted until the temporary basal rate finishes or is canceled." = "Pętla nie będzie automatycznie dostosowywać dawki insuliny, dopóki tymczasowa dawka podstawowa nie zakończy się lub nie zostanie anulowana.";
 
 /* The title of the cell showing the pod lot id */
 "Lot" = "Partia";
@@ -722,6 +719,9 @@ title for time change detected notice */
 
 /* bodyText for PodSetupView */
 "You will now begin the process of configuring your reminders, filling your Pod with insulin, pairing to your device and placing it on your body." = "Rozpoczynasz proces konfigurowania przypomnień (dźwięków emitowanych przez POD'a), napełniania POD'a insuliną, parowania z telefonem i umieszczania go na ciele.";
+
+/* Description text on manual temp basal action sheet */
+"Your insulin delivery will not be automatically adjusted until the temporary basal rate finishes or is canceled." = "Pętla nie będzie automatycznie dostosowywać dawki insuliny, dopóki tymczasowa dawka podstawowa nie zakończy się lub nie zostanie anulowana.";
 
 /* Alert message body for confirm pod attachment */
 "Your Pod may still be delivering Insulin.\nRemove it from your body, then tap “Continue.“" = "Twój POD może nadal dostarczać insulinę.\nUsuń go z ciała, a następnie wybierz \"Kontynuuj\".";

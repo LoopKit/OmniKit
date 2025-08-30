@@ -35,6 +35,9 @@
 /* Summary string for temporary basal rate configuration page */
 "%1$@ for %2$@" = "%1$@ за %2$@";
 
+/* Text body for page showing insulin uncertainty has been recovered (1: appName) (2: appName) */
+"%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now." = "%1$@ восстановил связь с подом на вашем теле.\n\nЗаписи о поданном инсулине были обновлены и должны соответствовать тому, что было доставлено на самом деле.\n\nТеперь вы можете продолжать использовать %2$@ в обычном режиме.";
+
 /* Accessibility format string for (1: localized volume)(2: time) */
 "%1$@ units remaining at %2$@" = "%1$@ ед остается в %2$@";
 
@@ -330,12 +333,6 @@ Title for insulin type selection screen */
 
 /* description label for last status date pod details row */
 "Last Status" = "Последнее состояние";
-
-/* Text body for page showing insulin uncertainty has been recovered (1: appName) (2: appName)  */	
-"%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now." = "%1$@ восстановил связь с подом на вашем теле.\n\nЗаписи о поданном инсулине были обновлены и должны соответствовать тому, что было доставлено на самом деле.\n\nТеперь вы можете продолжать использовать %2$@ в обычном режиме.";	
-
-/* Description text on manual temp basal action sheet */	
-"Your insulin delivery will not be automatically adjusted until the temporary basal rate finishes or is canceled." = "Loop не будет автоматически регулировать подачу инсулина, пока временная базальная скорость не закончится или не будет отменена.";
 
 /* The title of the cell showing the pod lot id */
 "Lot" = "Lot";
@@ -719,6 +716,9 @@ title for time change detected notice */
 
 /* bodyText for PodSetupView */
 "You will now begin the process of configuring your reminders, filling your Pod with insulin, pairing to your device and placing it on your body." = "Сейчас Вы начнете процесс конфигурирования напоминаний, заправки пода инсулином, сопряжения с телефоном и установкой пода на тело.";
+
+/* Description text on manual temp basal action sheet */
+"Your insulin delivery will not be automatically adjusted until the temporary basal rate finishes or is canceled." = "Loop не будет автоматически регулировать подачу инсулина, пока временная базальная скорость не закончится или не будет отменена.";
 
 /* Alert message body for confirm pod attachment */
 "Your Pod may still be delivering Insulin.\nRemove it from your body, then tap “Continue.“" = "Ваш под может по-прежнему доставлять инсулин.\n Удалите его с тела, затем нажмите «Продолжить».";
