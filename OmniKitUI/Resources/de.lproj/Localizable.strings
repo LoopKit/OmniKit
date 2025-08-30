@@ -35,6 +35,9 @@
 /* Summary string for temporary basal rate configuration page */
 "%1$@ for %2$@" = "%1$@ für %2$@";
 
+/* Text body for page showing insulin uncertainty has been recovered (1: appName) (2: appName) */
+"%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now." = "%1$@ hat die Verbindung zu Deinem Pod wiederhergestellt.\n\nDie Insulingaben wurden aktualisiert und sollten zu der abgegebenen Menge passen.\n\nDu kannst den %2$@ nun wieder normal weiterbenutzen.";
+
 /* Accessibility format string for (1: localized volume)(2: time) */
 "%1$@ units remaining at %2$@" = "%1$@ IE verbleibend bei %2$@";
 
@@ -330,9 +333,6 @@ Title for insulin type selection screen */
 
 /* description label for last status date pod details row */
 "Last Status" = "Letzter Status";
-
-/* Text body for page showing insulin uncertainty has been recovered (1: appName) (2: appName) */
-"%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now." = "%1$@ hat die Verbindung zu Deinem Pod wiederhergestellt.\n\nDie Insulingaben wurden aktualisiert und sollten zu der abgegebenen Menge passen.\n\nDu kannst den %2$@ nun wieder normal weiterbenutzen.";
 
 /* The title of the cell showing the pod lot id */
 "Lot" = "Lot";

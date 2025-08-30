@@ -7,6 +7,9 @@
 /* Format string for bolus percent progress. (1: Percent progress) */
 "%@%%" = "%@ %%";
 
+/* Text body for page showing insulin uncertainty has been recovered (1: appName) (2: appName) */
+"%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now." = "%1$@ obnovil komunikaci s Vaším podem.\n\nZáznamy o dávkách inzulínu byly aktualizovány a měly by souhlasit s tím, co bylo ve skutečnosti dodáno.\n\nNyní můžete pokračovat v běžném používání %2$@.";
+
 /* Back button text on DeliveryUncertaintyRecoveryView */
 "Back" = "Zpět";
 
@@ -114,9 +117,6 @@ Title for insulin type selection screen */
 
 /* description label for last status date pod details row */
 "Last Status" = "Poslední stav";
-
-/* Text body for page showing insulin uncertainty has been recovered (1: appName) (2: appName) */
-"%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now." = "%1$@ obnovil komunikaci s Vaším podem.\n\nZáznamy o dávkách inzulínu byly aktualizovány a měly by souhlasit s tím, co bylo ve skutečnosti dodáno.\n\nNyní můžete pokračovat v běžném používání %2$@.";
 
 /* The title of the cell showing the pod lot id */
 "Lot" = "Šarže";

@@ -102,16 +102,16 @@
 "Alarms" = "Alarmes";
 
 /* Alert title for cancel pairing modal */
-"Are you sure you want to cancel Pod setup?" = "Voulez-vous vraiment annuler la configuration du Pod ?";
+"Are you sure you want to cancel Pod setup?" = "Voulez-vous vraiment annuler la configuration du Pod?";
 
 /* Confirmation message for shutting down a pod */
-"Are you sure you want to shutdown this pod?" = "Voulez-vous vraiment désactiver ce Pod ?";
+"Are you sure you want to shutdown this pod?" = "Voulez-vous vraiment désactiver ce Pod?";
 
 /* No comment provided by engineer. */
-"Are you sure you want to skip Omnipod Onboarding?" = "Voulez-vous vraiment sauter l'intégration Omnipod ?";
+"Are you sure you want to skip Omnipod Onboarding?" = "Voulez-vous vraiment sauter l'intégration Omnipod?";
 
 /* Confirmation message for removing Omnipod PumpManager */
-"Are you sure you want to stop using Omnipod?" = "Voulez-vous vraiment arrêter d’utiliser Omnipod ?";
+"Are you sure you want to stop using Omnipod?" = "Voulez-vous vraiment arrêter d’utiliser Omnipod?";
 
 /* The title text for the address assigned to the pod */
 "Assigned Address" = "Adresse assignée";
@@ -362,7 +362,7 @@ Title for insulin type selection screen */
 "Invalid entry" = "Saisie invalide";
 
 /* Question to confirm the cannula is inserted properly */
-"Is the cannula inserted properly?" = "La canule est-elle insérée correctement ?";
+"Is the cannula inserted properly?" = "La canule est-elle insérée correctement?";
 
 /* Label text for step 2 of pair pod instructions */
 "Keep the RileyLink about 6 inches from the pod during pairing." = "Gardez le RileyLink à environ 15 cm (6 pouces) du Pod pendant l'association.";
@@ -693,7 +693,7 @@ navigation title for Silnce Pod */
 "Silence Pod mode suppresses all Pod alert and confirmation reminder beeping." = "Le mode Silence Pod supprime tous les bips d'alerte du Pod ainsi que les rappels de confirmation.";
 
 /* No comment provided by engineer. */
-"Skip Omnipod Onboarding?" = "Ignorer la phase d'intégration d'Omnipod ?";
+"Skip Omnipod Onboarding?" = "Ignorer la phase d'intégration d'Omnipod?";
 
 /* Insert cannula slider button accessibility label while ready to pair */
 "Slide Button to insert Cannula" = "Faites glisser pour insérer la canule";
@@ -756,7 +756,7 @@ navigation title for Silnce Pod */
 "The reminders above will not sound on your device when it is in Silent or Do Not Disturb mode. There are other critical Pod alerts that will sound on your device even when set to Silent or Do Not Disturb mode.\n\nThe Pod will also use audible beeps for all Pod reminders and alerts except when the Pod is Silenced." = "Les rappels ci-dessus ne retentiront pas sur votre appareil lorsqu'il est en mode Silencieux ou Ne pas déranger. D'autres alertes critiques du Pod retentiront sur votre appareil même lorsqu'il est réglé sur Silencieux ou Ne pas déranger.\n\nLe Pod émettra également des bips sonores pour tous les rappels et alertes du Pod, sauf lorsque le Pod est en mode silencieux.";
 
 /* Message for pod sync time action sheet */
-"The time on your pump is different from the current time. Do you want to update the time on your pump to the current time?" = "L'heure de votre pompe est différente de l'heure actuelle. Voulez vous mettre à jour l'heure de votre pompe avec l'heure actuelle ?";
+"The time on your pump is different from the current time. Do you want to update the time on your pump to the current time?" = "L'heure de votre pompe est différente de l'heure actuelle. Voulez vous mettre à jour l'heure de votre pompe avec l'heure actuelle?";
 
 /* description for time change detected notice */
 "The time on your pump is different from the current time. Your pump’s time controls your scheduled therapy settings. Scroll down to Pump Time row to review the time difference and configure your pump." = "L'heure de votre pompe est différente de l'heure actuelle. L'heure de votre pompe contrôle les paramètres de votre traitement. Faites défiler jusqu'à la ligne Heure de Pompe pour vérifier le décalage de l'heure et configurer votre pompe.";
