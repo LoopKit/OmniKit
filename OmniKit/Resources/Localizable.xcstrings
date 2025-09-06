@@ -3089,6 +3089,12 @@
             "state" : "translated",
             "value" : "Được cấp quyền"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已启用"
+          }
         }
       }
     },
@@ -3814,6 +3820,30 @@
     "Finish Setup" : {
       "comment" : "Status highlight that when pod is activating.",
       "localizations" : {
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afslut setup"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einrichtung abschließen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finalizar la Configuración"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terminer l'installation"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3824,6 +3854,42 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fullfør oppsettet"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voltooi Installatie"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zakończ konfigurację"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finalizați configurarea"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Завершить настройку"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dokončiť nastavenie"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurulumu Bitir"
           }
         }
       }
@@ -14046,6 +14112,12 @@
     "Time Change Detected" : {
       "comment" : "Alert content title for timeOffsetChangeDetected pod alert",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zjištěna změna času"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14068,6 +14140,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Changement d'heure détecté"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "זוהה שינוי בשעה"
           }
         },
         "it" : {

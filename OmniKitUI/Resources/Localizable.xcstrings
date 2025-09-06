@@ -431,6 +431,12 @@
             "state" : "translated",
             "value" : "%@ trước đó"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "之前%@"
+          }
         }
       }
     },
@@ -2807,6 +2813,12 @@
             "state" : "translated",
             "value" : "Hoạt động"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "活动"
+          }
         }
       }
     },
@@ -2835,6 +2847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajustement de l'horloge de la pompe..."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מתאם את שעת המשאבה..."
           }
         },
         "it" : {
@@ -5189,6 +5207,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vérification en cours..."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בודק..."
           }
         },
         "it" : {
@@ -7690,6 +7714,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lỗi"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误"
           }
         }
       }
@@ -16880,6 +16910,12 @@
     "Pump Time" : {
       "comment" : "The title of the command to change pump time zone",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Čas pumpy"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16902,6 +16938,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Heure de la pompe"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שעה במשאבה"
           }
         },
         "it" : {
@@ -20244,6 +20286,12 @@
             "state" : "translated",
             "value" : "Tạm ngưng liều insulin"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂停输注"
+          }
         }
       }
     },
@@ -20822,6 +20870,12 @@
     "Sync to Current Time" : {
       "comment" : "The title of the command to change pump time zone",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronizovat na aktuální čas"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -20844,6 +20898,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Synchroniser avec l'heure actuelle"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "בצע עדכון לשעה הנוכחית"
           }
         },
         "it" : {
@@ -21910,6 +21970,12 @@
     "Time Change Detected" : {
       "comment" : "Title for pod sync time action sheet.\ntitle for time change detected notice",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zjištěna změna času"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -21932,6 +21998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Changement d'heure détecté"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "זוהה שינוי בשעה"
           }
         },
         "it" : {
