@@ -29,6 +29,12 @@
             "state" : "translated",
             "value" : "\n  Bolo immediato in corso: %1$@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\n  Umiddelbar bolus pågår: %1$@"
+          }
         }
       }
     },
@@ -39,6 +45,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\n  Tabella di stato dell'insulina corrotta: %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\n  Insulinstatustabell ødelagt: %@"
           }
         }
       }
@@ -57,6 +69,12 @@
             "state" : "translated",
             "value" : "\n  Tipo di occlusione: %1$@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\n  Okklusjonstype: %1$@"
+          }
         }
       }
     },
@@ -67,6 +85,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\n Avanzamento precedente del Pod: %1$@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\n  Forrige pod-fremdrift: %1$@"
           }
         }
       }
@@ -85,6 +109,12 @@
             "state" : "translated",
             "value" : "\nAvvisi: %1$@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\n  Varsler: %1$@"
+          }
         }
       }
     },
@@ -95,6 +125,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nBolo non erogato: %1$@ U"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\n  Bolus ikke levert: %1$@ E"
           }
         }
       }
@@ -107,6 +143,12 @@
             "state" : "translated",
             "value" : "\nStato di erogazione: %1$@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\n  Leveringsstatus: %1$@"
+          }
         }
       }
     },
@@ -117,6 +159,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nInformazioni sull'evento di guasto: %1$03d (0x%2$02X),"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\nInformasjon om feilhendelse: %1$03d (0x %2$02X),"
           }
         }
       }
@@ -129,6 +177,12 @@
             "state" : "translated",
             "value" : "\nOrario del guasto: %1$@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\nFeiltid: %1$@"
+          }
         }
       }
     },
@@ -139,6 +193,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nUltimo numero sequenziale di programmazione: %1$@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\nSiste programmeringssekvensnummer: %1$@"
           }
         }
       }
@@ -151,6 +211,12 @@
             "state" : "translated",
             "value" : "\nAvanzamento Pod: %1$@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\nPod-fremdrift: %1$@"
+          }
         }
       }
     },
@@ -161,6 +227,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nConteggio impulsi: %1$d"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\nPulsantall: %1$d"
           }
         }
       }
@@ -190,6 +262,12 @@
             "state" : "translated",
             "value" : "\nRif.: %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\n Ref: %@"
+          }
         }
       }
     },
@@ -207,6 +285,12 @@
             "state" : "translated",
             "value" : "\nLivello del serbatoio: %1$@ U"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\nReservoarnivå: %1$@ E"
+          }
         }
       }
     },
@@ -223,6 +307,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nRSSI: %1$@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↩\nRSSI: %1$@"
           }
         }
       }
@@ -1731,6 +1821,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ minuti"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ minutter"
           }
         }
       }
@@ -5439,6 +5535,12 @@
             "state" : "translated",
             "value" : "I promemoria di sicurezza sono segnali acustici emessi dal Pod che possono essere utilizzati per confermare i comandi selezionati quando il Pod non è silenziato."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tillitspåminnelser er pip fra pod som kan brukes til å bekrefte valgte kommandoer når pod ikke er satt til lydløs."
+          }
         }
       }
     },
@@ -8438,6 +8540,12 @@
             "state" : "translated",
             "value" : "Orario di promemoria di scadenza per il Pod attuale."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utløpspåminnelse for nåværende pod."
+          }
         }
       }
     },
@@ -8784,6 +8892,12 @@
             "state" : "translated",
             "value" : "Impossibile riprodurre i segnali acustici di prova."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke spille testpip."
+          }
         }
       }
     },
@@ -8795,16 +8909,34 @@
             "state" : "translated",
             "value" : "Impossibile leggere l'orario di attivazione."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke lese aktiveringstid."
+          }
         }
       }
     },
     "Failed to read pod status." : {
       "comment" : "Alert title for error when reading pod status",
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Échec de la lecture de l'état du pod."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impossibile leggere lo stato del Pod."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke lese pod-status."
           }
         }
       }
@@ -8817,6 +8949,12 @@
             "state" : "translated",
             "value" : "Impossibile leggere il Pulse Log Plus."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke lese pulslogg pluss."
+          }
         }
       }
     },
@@ -8828,6 +8966,12 @@
             "state" : "translated",
             "value" : "Impossibile leggere il Pulse Log."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke lese pulslogg."
+          }
         }
       }
     },
@@ -8838,6 +8982,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impossibile leggere gli avvisi attivati."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke lese utløste varsler."
           }
         }
       }
@@ -9319,10 +9469,22 @@
     "Failed to update silence pod preference." : {
       "comment" : "Alert title for error when updating silence pod preference",
       "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Échec de la mise à jour du mode Silencieux du Pod."
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impossibile aggiornare l'opzione Silenzia Pod."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke oppdatere innstillingen for stille pod."
           }
         }
       }
@@ -11026,6 +11188,12 @@
             "state" : "translated",
             "value" : "L'erogazione d'insulina verrà sospesa fino a quando non la riprenderai manualmente. Seleziona quando desideri ricevere un promemoria per riprendere l'erogazione."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulintilførselen stoppes inntil du gjenopptar manuelt. Velg når du vil bli minnet på å gjenoppta tilførselen?"
+          }
         }
       }
     },
@@ -11208,6 +11376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Codice di guasto interno Pod %1$03d\n%2$@\nRif.: %3$@\n"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intern pod-feilkode %1$03d\n%2$@\nRef: %3$@↩\n↪"
           }
         }
       }
@@ -11518,6 +11692,12 @@
             "state" : "translated",
             "value" : "Continua ad attendere"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsett å vente"
+          }
         }
       }
     },
@@ -11552,6 +11732,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dernier statut"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מצב אחרון"
           }
         },
         "it" : {
@@ -14637,6 +14823,12 @@
             "state" : "translated",
             "value" : "Comando di test dei segnali acustici inviato con successo.\n\nSe non hai sentito alcun segnale acustico dal tuo Pod, lo speaker piezoelettrico del tuo Pod potrebbe essere guasto o disattivato."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommandoen Spill av testpip sendt vellykket.\n\nHvis du ikke hørte noen pip fra pod, kan piezohøyttaleren i pod være ødelagt eller deaktivert."
+          }
         }
       }
     },
@@ -14779,6 +14971,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Riproduzione dei segnali acustici di test in corso..."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spiller av testpip..."
           }
         }
       }
@@ -15236,6 +15434,12 @@
             "state" : "translated",
             "value" : "Pod attivo: %1$@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod aktiv: %1$@"
+          }
         }
       }
     },
@@ -15462,6 +15666,12 @@
             "state" : "translated",
             "value" : "Dettagli del Pod"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod-detaljer"
+          }
         }
       }
     },
@@ -15478,6 +15688,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Diagnostica del Pod"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod-diagnostikk"
           }
         }
       }
@@ -15851,6 +16067,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Guasto Pod %1$03d"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod-feil %1$03d"
           }
         }
       }
@@ -16469,6 +16691,12 @@
             "state" : "translated",
             "value" : "Dettagli del Pod precedente"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informasjon om forrige pod"
+          }
         }
       }
     },
@@ -16904,6 +17132,12 @@
             "state" : "translated",
             "value" : "Dettagli del Pump Manager"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detaljer om pumpeadministrator"
+          }
         }
       }
     },
@@ -17075,6 +17309,12 @@
             "state" : "translated",
             "value" : "Leggi orario attivazione"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les aktiveringstid"
+          }
         }
       }
     },
@@ -17092,6 +17332,12 @@
             "state" : "translated",
             "value" : "Leggi stato Pod"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les podstatus"
+          }
         }
       }
     },
@@ -17102,6 +17348,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Leggi Pulse Log"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les pulslogg"
           }
         }
       }
@@ -17114,6 +17366,12 @@
             "state" : "translated",
             "value" : "Leggi Pulse Log Plus"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les pulslogg pluss"
+          }
         }
       }
     },
@@ -17125,6 +17383,12 @@
             "state" : "translated",
             "value" : "Leggi avvisi attivati"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les utløste varsler"
+          }
         }
       }
     },
@@ -17135,6 +17399,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lettura dell'orario di attivazione in corso..."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leser aktiveringstid..."
           }
         }
       }
@@ -17153,6 +17423,12 @@
             "state" : "translated",
             "value" : "Lettura dello stato del Pod in corso..."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leser podstatus…"
+          }
         }
       }
     },
@@ -17163,6 +17439,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lettura del Pulse Log Plus in corso..."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leser pulslogg pluss..."
           }
         }
       }
@@ -23673,6 +23955,18 @@
     "Your insulin delivery will not be automatically adjusted until the temporary basal rate finishes or is canceled." : {
       "comment" : "Description text on manual temp basal action sheet",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loop automaticky neupraví výdej inzulínu, dokud nastavení dočasné bazální dávky neskončí nebo nebude zrušeno."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loop justerer ikke automatisk din insulindosering, før den midlertidige basalrate er afsluttet eller annulleret."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
@@ -23707,6 +24001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Loop не будет автоматически регулировать подачу инсулина, пока временная базальная скорость не закончится или не будет отменена."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loop nebude automaticky upravovať podávanie inzulínu, kým dočasná bazálna dávka nebude ukončená alebo zrušená."
           }
         },
         "tr" : {
