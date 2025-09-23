@@ -132,6 +132,12 @@
             "state" : "translated",
             "value" : "↩\n  Bolus ikke levert: %1$@ E"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "追加胰岛素未注射：%1$@ 单位"
+          }
         }
       }
     },
@@ -244,6 +250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nGuadagno basso ricevitore: %1$@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mottaker lav forsterkning: %1$@"
           }
         }
       }
@@ -1734,6 +1746,12 @@
             "state" : "translated",
             "value" : "%1$@ non è riuscito a comunicare con il Pod sul tuo corpo da %2$@.\n\nNon scartare il Pod senza aver letto completamente questa schermata.\n\nLa comunicazione è stata interrotta in un momento critico. Le informazioni sull'insulina attiva / tasso basale temporaneo del Pod sono incerte.\n\nPuoi attivare/disattivare la connessione RileyLink (qui sotto), disattivare e riattivare il Bluetooth del telefono; spegnere e riaccendere il dispositivo RileyLink; oppure provare un altro RileyLink. (Attendi fino a 30 secondi per il ripristino.)\n\nSe decidi di rinunciare perché la comunicazione non può essere ripristinata, tocca il pulsante \"Scarta Pod\", segui i passaggi e avvia un nuovo Pod.\nMonitora attentamente la glicemia per le prossime 6 ore, poiché potrebbe esserci o meno insulina attiva nel tuo corpo che %3$@ non può mostrare."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ har ikke vært i stand til å kommunisere med pod på kroppen din siden %2$@.\n\nIkke kast pod uten å bla for å lese hele beskjeden.\n\nKommunikasjonen ble avbrutt på et kritisk tidspunkt. Informasjon om aktivt insulin / podens midlertidige basalhastighet er usikker.\n\nDu kan slå av og på Rileylink-tilkoblingen (under), slå mobilens Bluetooth av og på; slå Rileylink-enheten av og på; eller prøve en annen Rileylink. (Vent i opptil 30 sekunder på gjenoppretting.)\n\nHvis du bestemmer deg for å gi opp fordi kommunikasjonen ikke kan gjenopprettes, trykk på Kast pod-knappen, følg trinnene og start en ny pod.\nOvervåk blodsukkeret dit nøye de neste 6 timene, da det kan være insulin som aktivt virker i kroppen din som %3$@ ikke kan vise."
+          }
         }
       }
     },
@@ -2382,6 +2400,12 @@
             "state" : "translated",
             "value" : "Podawanie insuliny zostało zatrzymane. Wymień POD'a."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠️ 胰岛素输注已停止，请立即更换 Pod。"
+          }
         }
       }
     },
@@ -2676,6 +2700,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Un promemoria viene configurato durante l’installazione del Pod per avvisarti in anticipo della sua scadenza. Imposta il numero di ore di preavviso che desideri impostare come predefinito quando abbini un nuovo Pod."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En påminnelse konfigureres under Pod-oppsettet for å varsle deg på forhånd når den utløper. Angi antall timers forhåndsvarsel du vil konfigurere som standard når du kobler en ny Pod."
           }
         }
       }
@@ -2991,6 +3021,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pompa Zamanı Ayarlanıyor..."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "调整泵时间..."
           }
         }
       }
@@ -5364,6 +5400,12 @@
             "state" : "translated",
             "value" : "Kontrol ediliyor..."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "检查中..."
+          }
         }
       }
     },
@@ -6193,6 +6235,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "gün"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "天"
           }
         }
       }
@@ -7261,6 +7309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thiết bị"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设备"
           }
         }
       }
@@ -9629,6 +9683,12 @@
             "state" : "translated",
             "value" : "Riempi un nuovo Pod con insulina U-100 (lascia il cappuccio trasparente dell'ago del Pod inserito). Attendi i 2 segnali acustici."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 U-100 胰岛素填充一个新的 Pod（保持透明针帽盖着）。注意听会有两声提示音。"
+          }
         }
       }
     },
@@ -9908,6 +9968,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kurulumu Bitir"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成设置"
           }
         }
       }
@@ -11674,6 +11740,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eşleştirme sırasında RileyLink'i pod'dan yaklaşık 15cm uzakta tutun."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在配对过程中，请将 RileyLink 保持在距离 Pod 约 6 英寸（15 厘米）以内的位置。"
           }
         }
       }
@@ -17221,6 +17293,12 @@
             "state" : "translated",
             "value" : "Pompa Zamanı"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "泵时间"
+          }
         }
       }
     },
@@ -17429,6 +17507,12 @@
             "state" : "translated",
             "value" : "Leser podstatus…"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在读取 Pod 状态..."
+          }
         }
       }
     },
@@ -17446,6 +17530,12 @@
             "state" : "translated",
             "value" : "Leser pulslogg pluss..."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在读取 Pulse Log Plus 扩展日志…"
+          }
         }
       }
     },
@@ -17462,6 +17552,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Leser pulslogg..."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在读取脉冲日志..."
           }
         }
       }
@@ -17485,6 +17581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Leser utløste varsler..."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在读取触发的警报..."
           }
         }
       }
@@ -17722,6 +17824,12 @@
             "state" : "translated",
             "value" : "Podu Vücuttan Çıkarın"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "从身体上取下 Pod"
+          }
         }
       }
     },
@@ -17815,6 +17923,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fjern den kanylehetten til pod og sjekk at kanylen ikke stikker ut. Fjern deretter plasterbeskyttelsen."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取下胰岛素注射器透明针帽并检查针管，然后撕掉纸质保护膜。"
           }
         }
       }
@@ -19994,6 +20108,12 @@
             "state" : "translated",
             "value" : "Stillemodus pod"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "静音 Pod"
+          }
         }
       }
     },
@@ -20016,6 +20136,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stillemodus for pod undertrykker all varsling og bekreftelsespip fra pod."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "静音 Pod 模式会关闭所有 Pod 警报和确认提醒的蜂鸣声。"
           }
         }
       }
@@ -20099,6 +20225,12 @@
             "state" : "translated",
             "value" : "Omnipod Katılımı Atlansın mı?"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跳过 Omnipod 入门引导"
+          }
         }
       }
     },
@@ -20121,6 +20253,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skyveknapp for å sette inn kanylen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "滑动按钮开始插入针管"
           }
         }
       }
@@ -20145,6 +20283,12 @@
             "state" : "translated",
             "value" : "Skyv bryteren nedenfor for å starte innskyting av kanylen."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "滑动下方开关以开始插入针管。"
+          }
         }
       }
     },
@@ -20168,6 +20312,12 @@
             "state" : "translated",
             "value" : "Skyv for å deaktivere pod"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "滑动以停用 Pod"
+          }
         }
       }
     },
@@ -20190,6 +20340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skyv for å sette inn kanyle"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "滑动插入针管"
           }
         }
       }
@@ -20657,6 +20813,12 @@
             "state" : "translated",
             "value" : "İnsülin İletimini Askıya Al"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂停胰岛素输送"
+          }
         }
       }
     },
@@ -20943,6 +21105,12 @@
             "state" : "translated",
             "value" : "İnsülin iletimi askıya alınıyor..."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂停胰岛素输送..."
+          }
         }
       }
     },
@@ -21146,6 +21314,12 @@
             "state" : "translated",
             "value" : "Diğer insülin iletim cihazına geçin"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更换其他胰岛素输送装置"
+          }
         }
       }
     },
@@ -21228,6 +21402,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geçerli Saate Senkronize Et"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同步到当前时间"
           }
         }
       }
@@ -21444,6 +21624,12 @@
             "state" : "translated",
             "value" : "Geçici Bazal"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "临时基础率"
+          }
         }
       }
     },
@@ -21526,6 +21712,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geçici Bazal Başarısız"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "临时基础率设置失败"
           }
         }
       }
@@ -22145,6 +22337,12 @@
             "state" : "translated",
             "value" : "Denne pumpen er ikke konfigurert med maksimal basaldose fordi den ble lagt til før manuell midlertidig basaldose var en tilgjengelig funksjon.\nGå til Behandlingsinnstillinger -> Leveringsgrenser og sett en ny maksimal basaldose."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "由于在手动临时基础率功能推出之前添加了此胰岛素泵，因此尚未配置最大基础率。请设置一个新的最大基础率。"
+          }
         }
       }
     },
@@ -22246,6 +22444,12 @@
             "state" : "translated",
             "value" : "Zaman"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "时间"
+          }
         }
       }
     },
@@ -22334,6 +22538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zaman Değişikliği Algılandı"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "检测到时间变化"
           }
         }
       }
@@ -22942,6 +23152,12 @@
             "state" : "translated",
             "value" : "Pod'a Ulaşılamıyor"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法连接到 Pod"
+          }
         }
       }
     },
@@ -23024,6 +23240,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod'a Ulaşılamıyor"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法连接到 Pod"
           }
         }
       }
@@ -23108,6 +23330,12 @@
             "state" : "translated",
             "value" : "Geçici bir bazal oran ayarlanamıyor: %1$@"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法设置临时基础率： %1$@"
+          }
         }
       }
     },
@@ -23190,6 +23418,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geçici bir bazal oran ayarlanamıyor: %1$@ \n\n %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法设置临时基础率： %1$@\n\n%2$@"
           }
         }
       }
@@ -23572,6 +23806,12 @@
             "state" : "translated",
             "value" : "Yerleştirme işlemi tamamlanana kadar bekleyin."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "等待插入完成。"
+          }
         }
       }
     },
@@ -23655,6 +23895,12 @@
             "state" : "translated",
             "value" : "Evet"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是"
+          }
         }
       }
     },
@@ -23726,6 +23972,12 @@
             "state" : "translated",
             "value" : "Evet, Pod'u Devre Dışı Bırak"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是的，停用 Pod"
+          }
         }
       }
     },
@@ -23796,6 +24048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Evet, Geçerli Saatle Senkronize Et"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是的，同步到当前时间"
           }
         }
       }

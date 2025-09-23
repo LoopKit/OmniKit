@@ -3897,6 +3897,12 @@
             "state" : "translated",
             "value" : "Kurulumu Bitir"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成设置"
+          }
         }
       }
     },
@@ -7474,6 +7480,12 @@
             "state" : "translated",
             "value" : "Tıkanma tespit edildi"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发现输注堵塞"
+          }
         }
       }
     },
@@ -7669,6 +7681,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好的"
           }
         }
       }
@@ -12541,6 +12559,12 @@
             "state" : "translated",
             "value" : "Stillemodus"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已静音"
+          }
         }
       }
     },
@@ -13116,6 +13140,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Askıya alma süresi doldu. Uygulamayı açın ve devam edin."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂停时间已到。请打开应用程序并恢复。"
           }
         }
       }
@@ -14219,6 +14249,12 @@
             "state" : "translated",
             "value" : "Zaman Değişikliği Algılandı"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "检测到时间变化"
+          }
         }
       }
     },
@@ -14523,6 +14559,12 @@
             "state" : "translated",
             "value" : "Tekrar deneyin"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再试一次"
+          }
         }
       }
     },
@@ -14759,6 +14801,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uventet varsel"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "意外警报"
           }
         }
       }
