@@ -376,8 +376,8 @@
         },
         "sv" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Auto-off"
+            "state" : "translated",
+            "value" : "Auto-Av"
           }
         },
         "tr" : {
@@ -394,8 +394,8 @@
         },
         "vi" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Auto-off"
+            "state" : "translated",
+            "value" : "Tự động tắt"
           }
         },
         "yy-YY" : {
@@ -1162,8 +1162,8 @@
         },
         "nl" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Expiration reminder"
+            "state" : "translated",
+            "value" : "Waarschuwing dat je Pod vervalt"
           }
         },
         "pl" : {
@@ -1198,8 +1198,8 @@
         },
         "sv" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Expiration reminder"
+            "state" : "translated",
+            "value" : "Påminnelse om utgångsdatum"
           }
         },
         "tr" : {
@@ -1216,8 +1216,8 @@
         },
         "vi" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Expiration reminder"
+            "state" : "translated",
+            "value" : "Nhắc nhở hết hạn"
           }
         },
         "yy-YY" : {
@@ -1436,8 +1436,8 @@
         },
         "nl" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Extended bolus running while suspended"
+            "state" : "translated",
+            "value" : "Vertraagde bolus uitvoeren tijdens pauzeren"
           }
         },
         "pl" : {
@@ -1472,8 +1472,8 @@
         },
         "sv" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Extended bolus running while suspended"
+            "state" : "translated",
+            "value" : "Utökad bolus körs när pausad"
           }
         },
         "tr" : {
@@ -1490,8 +1490,8 @@
         },
         "vi" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Extended bolus running while suspended"
+            "state" : "translated",
+            "value" : "Liều bolus mở rộng đang chạy khi bơm bị tạm dừng"
           }
         },
         "yy-YY" : {
@@ -2723,8 +2723,8 @@
         },
         "vi" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Low reservoir"
+            "state" : "translated",
+            "value" : "Sắp hết insulin"
           }
         },
         "yy-YY" : {
@@ -3491,8 +3491,8 @@
         },
         "nl" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Not used"
+            "state" : "translated",
+            "value" : "Niet in gebruik"
           }
         },
         "pl" : {
@@ -3527,8 +3527,8 @@
         },
         "sv" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Not used"
+            "state" : "translated",
+            "value" : "Inte använd"
           }
         },
         "tr" : {
@@ -3545,8 +3545,8 @@
         },
         "vi" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Not used"
+            "state" : "translated",
+            "value" : "Không sử dụng"
           }
         },
         "yy-YY" : {
@@ -3801,7 +3801,7 @@
         },
         "sv" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "oneNotUsed"
           }
         },
@@ -3819,7 +3819,7 @@
         },
         "vi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "oneNotUsed"
           }
         },
@@ -4915,8 +4915,8 @@
         },
         "vi" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Scheduled basal"
+            "state" : "translated",
+            "value" : "Basal theo lịch trình"
           }
         },
         "yy-YY" : {
@@ -5582,7 +5582,7 @@
         },
         "sv" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "threeNotUsed"
           }
         },
@@ -5600,7 +5600,7 @@
         },
         "vi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "threeNotUsed"
           }
         },
@@ -5719,7 +5719,7 @@
         },
         "sv" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "twoNotUsed"
           }
         },
@@ -5737,7 +5737,7 @@
         },
         "vi" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "twoNotUsed"
           }
         },
