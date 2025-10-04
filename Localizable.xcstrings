@@ -58,6 +58,12 @@
             "value" : "(inattivo)"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(inaktiv)"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -73,7 +79,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : " (nieaktywny)"
+            "value" : " (inactive)"
           }
         },
         "pt" : {
@@ -193,6 +199,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo di attivazione superato"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktiveringstiden er overskredet"
           }
         },
         "nb-NO" : {
@@ -329,7 +341,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Spegnimento automatico"
+            "value" : "Auto spegnimento"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto-av"
           }
         },
         "nb-NO" : {
@@ -469,6 +487,12 @@
             "value" : "Basale inizializzata"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basal initialisert"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -606,6 +630,12 @@
             "value" : "Bolo in corso"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gir bolus"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -620,8 +650,8 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Bolusing"
+            "state" : "translated",
+            "value" : "Podawanie bolusa"
           }
         },
         "pt" : {
@@ -681,7 +711,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "注射中"
+            "value" : "大剂量推注中"
           }
         }
       }
@@ -740,7 +770,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bolo con basale temp"
+            "value" : "Bolo con basale temporanea"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gir bolus med temp-basal"
           }
         },
         "nb-NO" : {
@@ -818,7 +854,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "正在运行临时基础并输注大剂量"
+            "value" : "使用临时基础率进行大剂量输注"
           }
         }
       }
@@ -830,6 +866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "تم إلغاء التنشيط"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deaktivováno"
           }
         },
         "da" : {
@@ -847,13 +889,13 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Desactivado"
+            "value" : "Pod desactivado"
           }
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Deactivated"
+            "state" : "translated",
+            "value" : "Deaktivoitu"
           }
         },
         "fr" : {
@@ -864,7 +906,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Deactivated"
           }
         },
@@ -880,6 +922,18 @@
             "value" : "Disattivato"
           }
         },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止されました"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deaktivert"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -889,13 +943,13 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Uitgeschakeld"
+            "value" : "Gedeactiveerd"
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Deactivated"
+            "state" : "translated",
+            "value" : "Deaktywowany"
           }
         },
         "pt" : {
@@ -906,14 +960,20 @@
         },
         "pt-BR" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Deactivated"
+            "state" : "translated",
+            "value" : "Desativado"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dezactivat"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Деактивирован"
+            "value" : "Не активен"
           }
         },
         "sk" : {
@@ -955,7 +1015,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "已停用"
+            "value" : "已解除"
           }
         }
       }
@@ -1154,6 +1214,12 @@
             "value" : "Promemoria di scadenza"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utløpspåminnelse"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1291,6 +1357,12 @@
             "value" : "Bolo prolungato in esecuzione"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forlenget boluskjøring"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1324,7 +1396,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Вводится растянутый болюс"
+            "value" : "Вводится квадратный или болюс двойной волны"
           }
         },
         "sk" : {
@@ -1426,6 +1498,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Esecuzione prolungata del bolo in sospensione"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forlenget bolus kjører mens den er suspendert"
           }
         },
         "nb-NO" : {
@@ -1562,7 +1640,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bolo prolungato in esecuzione con Basale Temporanea"
+            "value" : "Bolo prolungato in esecuzione con basale temporanea"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forlenget bolus kjører med midlertidig basaldose"
           }
         },
         "nb-NO" : {
@@ -1598,7 +1682,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Продленный болюс с временной базальной скоростью"
+            "value" : "Вводится болюс или ВБС"
           }
         },
         "sk" : {
@@ -1702,6 +1786,12 @@
             "value" : "Si è verificato un errore"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det oppstod en feilhendelse"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1711,7 +1801,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fout is opgetreden"
+            "value" : "Fout opgetreden"
           }
         },
         "pl" : {
@@ -1735,7 +1825,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Произошло событие неисправности"
+            "value" : "Произошел сбой"
           }
         },
         "sk" : {
@@ -1800,7 +1890,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Einrichtungserinnerung abgeschlossen"
+            "value" : "Erinnerung zum Abschluss der Einrichtung"
           }
         },
         "es" : {
@@ -1839,6 +1929,12 @@
             "value" : "Promemoria configurazione completa"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fullføre konfigurasjonspåminnelsen"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1848,7 +1944,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Voltooi instelling van melding"
+            "value" : "Herinnering voor voltooien installatie"
           }
         },
         "pl" : {
@@ -1976,6 +2072,12 @@
             "value" : "Inizializzato"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Initialisert"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1991,7 +2093,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zainicjalizowany"
+            "value" : "Zainicjowany"
           }
         },
         "pt" : {
@@ -2110,7 +2212,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Inserimento Cannula"
+            "value" : "Inserendo canula"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Innsetting av kanyle"
           }
         },
         "nb-NO" : {
@@ -2122,7 +2230,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Canule inbrengen"
+            "value" : "Canule aan het inbrengen"
           }
         },
         "pl" : {
@@ -2250,6 +2358,12 @@
             "value" : "Errore interno Pod %1$03d"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intern pod-feil %1$03d"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2259,7 +2373,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Interne Pod fout %1$03d"
+            "value" : "Interne podfout %1$03d"
           }
         },
         "pl" : {
@@ -2348,7 +2462,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ungültige Adresse (%1$@)"
+            "value" : "Ungültige Adresse: (%1$@)"
           }
         },
         "es" : {
@@ -2384,7 +2498,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Indirizzo non valido: ( %1$@ )"
+            "value" : "Indirizzo invalido"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ugyldig adresse: ( %1$@ )"
           }
         },
         "nb-NO" : {
@@ -2485,7 +2605,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ungültiger CRC"
+            "value" : "Ungültige CRC"
           }
         },
         "es" : {
@@ -2521,7 +2641,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "CRC non valido"
+            "value" : "CRC invalido"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ugyldig CRC"
           }
         },
         "nb-NO" : {
@@ -2557,7 +2683,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Неверный CRC"
+            "value" : "Неверная контрольная сумма"
           }
         },
         "sk" : {
@@ -2658,7 +2784,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Serbatoio scarico"
+            "value" : "Livello Serbatoio basso"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lavt reservoar"
           }
         },
         "nb-NO" : {
@@ -2798,6 +2930,12 @@
             "value" : "Memoria inizializzata"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minne initialisert"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2933,6 +3071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nessun avviso"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen alarmer"
           }
         },
         "nb-NO" : {
@@ -3072,6 +3216,12 @@
             "value" : "Nessun errore"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen feil"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3170,7 +3320,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "im Zielbereich"
+            "value" : "Normal"
           }
         },
         "es" : {
@@ -3209,6 +3359,12 @@
             "value" : "Normale"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3218,13 +3374,13 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "TIR "
+            "value" : "Normaal"
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Normal"
+            "state" : "translated",
+            "value" : "Normalny"
           }
         },
         "pt" : {
@@ -3343,7 +3499,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dati non sufficienti"
+            "value" : "Non abbastanza dati"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke nok data"
           }
         },
         "nb-NO" : {
@@ -3483,6 +3645,12 @@
             "value" : "Non utilizzato"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ikke brukt"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3620,6 +3788,12 @@
             "value" : "Occlusione rilevata"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Okklusjon oppdaget"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3753,7 +3927,13 @@
         },
         "it" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
+            "value" : "unoNonUsato"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
             "value" : "oneNotUsed"
           }
         },
@@ -3771,7 +3951,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "oneNotUsed"
           }
         },
@@ -3789,8 +3969,8 @@
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "oneNotUsed"
+            "state" : "translated",
+            "value" : "один не используется"
           }
         },
         "sk" : {
@@ -3891,7 +4071,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abbinamento completato"
+            "value" : "Accoppiamento completato"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paring fullført"
           }
         },
         "nb-NO" : {
@@ -4031,6 +4217,12 @@
             "value" : "Errore di analisi: %1$@ in ( %2$@ )"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Analysefeil: %1$@ in (%2$@)"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4129,7 +4321,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "POD abgelaufen"
+            "value" : "Pod abgelaufen"
           }
         },
         "es" : {
@@ -4168,6 +4360,12 @@
             "value" : "Pod scaduto"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod utløpt"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4182,8 +4380,8 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod expired"
+            "state" : "translated",
+            "value" : "Termin ważności POD'a upłynął"
           }
         },
         "pt" : {
@@ -4201,7 +4399,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Срок действия пода истек"
+            "value" : "Срок работы Omnipod истек"
           }
         },
         "sk" : {
@@ -4303,6 +4501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Promemoria sospensione Pod"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod suspendert påminnelse"
           }
         },
         "nb-NO" : {
@@ -4439,7 +4643,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Caricamento in corso"
+            "value" : "Accoppiando "
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fyller"
           }
         },
         "nb-NO" : {
@@ -4540,7 +4750,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Befüllen des Pods abgeschlossen"
+            "value" : "Befüllen abgeschlossen"
           }
         },
         "es" : {
@@ -4576,7 +4786,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Caricamento completato"
+            "value" : "Accoppiamento completato "
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fylling fullført"
           }
         },
         "nb-NO" : {
@@ -4588,7 +4804,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Voorbereiden voltooid"
+            "value" : "Voorbereiding voltooid"
           }
         },
         "pl" : {
@@ -4716,6 +4932,12 @@
             "value" : "Promemoria inizializzato"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påminnelse initialisert"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4725,7 +4947,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Melding geïnitialiseerd"
+            "value" : "Herinnering geïnitialiseerd"
           }
         },
         "pl" : {
@@ -4850,7 +5072,13 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Basale programmata"
+            "value" : "Basale Programmata"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planlagt basal"
           }
         },
         "nb-NO" : {
@@ -4886,7 +5114,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Запланированный базал"
+            "value" : "Запланированная база"
           }
         },
         "sk" : {
@@ -4951,7 +5179,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pod-Abschaltung steht bevor"
+            "value" : "Direkt herunterfahren"
           }
         },
         "es" : {
@@ -4990,6 +5218,12 @@
             "value" : "Chiusura imminente"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avslutning nært forestående"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5005,7 +5239,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Informacja o zbliżającym się wyłączeniu"
+            "value" : "Zbliża się zamknięcie"
           }
         },
         "pt" : {
@@ -5088,7 +5322,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unterbrechungszeit abgelaufen"
+            "value" : "Anhaltezeit abgelaufen"
           }
         },
         "es" : {
@@ -5127,6 +5361,12 @@
             "value" : "il tempo della sospensione e' scaduto"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspensjonstiden er utløpt"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5160,7 +5400,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Время приостановки подачи истекло"
+            "value" : "Время приостановки истекло"
           }
         },
         "sk" : {
@@ -5216,6 +5456,12 @@
             "value" : "Suspended"
           }
         },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pozastaveno"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5248,7 +5494,7 @@
         },
         "he" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "Suspended"
           }
         },
@@ -5262,6 +5508,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sospeso"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一時停止"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspendert"
           }
         },
         "nb-NO" : {
@@ -5292,6 +5550,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suspenso"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspendat"
           }
         },
         "ru" : {
@@ -5362,7 +5626,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Temporäre Basalrate läuft"
+            "value" : "Temp Basal läuft"
           }
         },
         "es" : {
@@ -5401,6 +5665,12 @@
             "value" : "Velocità basale temporanea in esecuzione"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Midlertidig basal kjører"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5416,7 +5686,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tymczasowa dawka podstawowa działa"
+            "value" : "Tymczasowa dawka podstawowa uruchomiona"
           }
         },
         "pt" : {
@@ -5434,7 +5704,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Подается временный базал"
+            "value" : "Подается ВБС"
           }
         },
         "sk" : {
@@ -5534,8 +5804,14 @@
         },
         "it" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "threeNotUsed"
+            "state" : "translated",
+            "value" : "treNonUsato"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "treNotUsed"
           }
         },
         "nb-NO" : {
@@ -5552,7 +5828,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "threeNotUsed"
           }
         },
@@ -5570,8 +5846,8 @@
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "threeNotUsed"
+            "state" : "translated",
+            "value" : "три не используется"
           }
         },
         "sk" : {
@@ -5671,8 +5947,14 @@
         },
         "it" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "twoNotUsed"
+            "state" : "translated",
+            "value" : "dueNonUsato"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "toNotUsed"
           }
         },
         "nb-NO" : {
@@ -5689,7 +5971,7 @@
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "new",
+            "state" : "translated",
             "value" : "twoNotUsed"
           }
         },
@@ -5707,8 +5989,8 @@
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "twoNotUsed"
+            "state" : "translated",
+            "value" : "два не используется"
           }
         },
         "sk" : {
@@ -5773,7 +6055,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unerwartete Sequenznummer der Nachricht"
+            "value" : "Unerwartete Nachrichtensequenznummer"
           }
         },
         "es" : {
@@ -5812,6 +6094,12 @@
             "value" : "Notifica inaspettata di sequenza numerica "
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uventet meldings sekvensnummer"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5827,7 +6115,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nieoczekiwany numer kolejnego komunikatu"
+            "value" : "Nieoczekiwany numer kolejny komunikatu"
           }
         },
         "pt" : {
@@ -5910,7 +6198,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unbekannter Podfehler %1$03d"
+            "value" : "Unbekannter Podfehler: %1$03d"
           }
         },
         "es" : {
@@ -5949,6 +6237,12 @@
             "value" : "Errore Pod sconosciuto %1$03d"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukjent pod-feil %1$03d"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5958,7 +6252,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Onbekende Pod fout %1$03d"
+            "value" : "Onbekende podfout %1$03d"
           }
         },
         "pl" : {
@@ -5982,7 +6276,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Неизвестная неисправность Omnipod %1$03d"
+            "value" : "Неизвестная ошибка пода %1$03d"
           }
         },
         "sk" : {
@@ -6047,7 +6341,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unbekannter Wert ( %1$@ ) für Typ %2$@"
+            "value" : "Unbekannter Wert (%1$@) für den Typ %2$@"
           }
         },
         "es" : {
@@ -6084,6 +6378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valore sconosciuto%1$@per tipo%2$@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ukjent verdi ( %1$@ ) for typen %2$@"
           }
         },
         "nb-NO" : {
@@ -6223,6 +6523,12 @@
             "value" : "Convalida fallita: %1$@"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Validering mislyktes: %1$@"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6360,6 +6666,12 @@
             "value" : "In attesa del promemoria di abbinamento"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Venter på påminnelse om sammenkobling"
+          }
+        },
         "nb-NO" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6369,7 +6681,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wacht op melding om te verbinden"
+            "value" : "Wacht op herinnering om te verbinden"
           }
         },
         "pl" : {

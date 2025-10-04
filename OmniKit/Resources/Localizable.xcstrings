@@ -158,6 +158,12 @@
             "state" : "translated",
             "value" : "\" %1$@ \" pili zayıf"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ 电量低"
+          }
         }
       }
     },
@@ -2375,6 +2381,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kritisk pod-feil %1$03d"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "严重 Pod 故障 %1$03d"
           }
         }
       }
@@ -5622,6 +5634,12 @@
             "state" : "translated",
             "value" : "Düşük RileyLink Pili"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RileyLink 电量低"
+          }
         }
       }
     },
@@ -7557,6 +7575,12 @@
             "state" : "translated",
             "value" : "Tamam"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好"
+          }
         }
       }
     },
@@ -8712,6 +8736,12 @@
             "state" : "translated",
             "value" : "Lütfen RileyLink'i pod'dan daha uzağa yerleştirin"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请将 RileyLink 稍微远离 Pod。"
+          }
         }
       }
     },
@@ -8800,6 +8830,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lütfen RileyLink'i pod'a göre yeniden konumlandırın"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请调整 RileyLink 与 Pod 之间的位置。"
           }
         }
       }
@@ -8895,6 +8931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lütfen pod'un veya RileyLink'in konumunu değiştirip tekrar deneyin"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请调整 Pod 或 RileyLink 的位置后重试。"
           }
         }
       }
@@ -11619,6 +11661,12 @@
             "state" : "translated",
             "value" : "Devam et"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恢复"
+          }
         }
       }
     },
@@ -12641,6 +12689,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Askıya al"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂停"
           }
         }
       }
@@ -14071,6 +14125,12 @@
             "state" : "translated",
             "value" : "Pompanızdaki saat, geçerli saatten farklı. Pompa süresini gözden geçirebilir ve ayarlarda geçerli saate eşitleyebilirsiniz."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您的胰岛素泵时间与当前时间不一致。你可以在设置中查看泵的时间，并同步为当前时间。"
+          }
         }
       }
     },
@@ -14469,6 +14529,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Çok fazla pod bulundu"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发现的 Pod 过多"
           }
         }
       }
@@ -14919,6 +14985,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uventet pod-varsel #%1@!"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "意外的 Pod 告警%1@"
           }
         }
       }
