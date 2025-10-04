@@ -1,0 +1,7 @@
+files:
+  - source: /OmniKitUI/Resources/Localizable.xcstrings
+    translation: /OmniKitUI/Resources/Localizable.xcstrings
+    multilingual: 1
+  - source: /Localizable.xcstrings
+    translation: /Localizable.xcstrings
+    multilingual: 1
