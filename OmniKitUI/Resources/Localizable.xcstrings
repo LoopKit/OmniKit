@@ -123,12 +123,6 @@
             "value" : ""
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : ""
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -264,12 +258,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\n\nLỗi nghiêm trọng của Pod %1$03d (0x%2$02X)"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\n\n⚠️ Critical Pod Fault %1$03d (0x%2$02X)"
           }
         },
         "zh-Hans" : {
@@ -409,12 +397,6 @@
             "value" : "\nĐang tiêm bolus ngay: %1$@"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\n  Immediate Bolus In Progress: %1$@"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -550,12 +532,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nBảng trạng thái insulin bị hỏng: %@"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\n  Insulin State Table Corrupted: %@"
           }
         },
         "zh-Hans" : {
@@ -695,12 +671,6 @@
             "value" : "\nLoại tắc nghẽn: %1$@"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\n  Occlusion Type: %1$@"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -836,12 +806,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nTiến trình Pod trước: %1$@"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\n  Previous Pod Progress: %1$@"
           }
         },
         "zh-Hans" : {
@@ -981,12 +945,6 @@
             "value" : "\nCảnh báo: %1$@"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\nAlerts: %1$@"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -1122,12 +1080,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nLiều Bolus chưa được tiêm: %1$@ U"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\nBolus Not Delivered: %1$@ U"
           }
         },
         "zh-Hans" : {
@@ -1267,12 +1219,6 @@
             "value" : "\nTrạng thái tiêm: %1$@"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\nDelivery Status: %1$@"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -1408,12 +1354,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nThông tin sự cố: %1$03d (0x%2$02X),"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\nFault Event Info: %1$03d (0x%2$02X),"
           }
         },
         "zh-Hans" : {
@@ -1553,12 +1493,6 @@
             "value" : "\nThời gian sự cố: %1$@"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\nFault Time: %1$@"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -1694,12 +1628,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nSố thứ tự lập trình cuối cùng: %1$@"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\nLast Programming Seq Num: %1$@"
           }
         },
         "zh-Hans" : {
@@ -1839,12 +1767,6 @@
             "value" : "\nTiến trình Pod: %1$@"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\nPod Progress: %1$@"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -1980,12 +1902,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "\nSố xung: %1$d"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\nPulse Count: %1$d"
           }
         },
         "zh-Hans" : {
@@ -2125,12 +2041,6 @@
             "value" : "\nBộ thu có độ lợi thấp:%1$@"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\nReceiver Low Gain: %1$@"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -2265,12 +2175,6 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\nRef: %@"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
             "value" : "\nRef: %@"
           }
         },
@@ -2411,12 +2315,6 @@
             "value" : "\nBình chứa Insulin: %1$@ U"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "\nReservoir Level: %1$@ U"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -2551,12 +2449,6 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\nRSSI: %1$@"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
             "value" : "\nRSSI: %1$@"
           }
         },
@@ -2703,12 +2595,6 @@
           }
         },
         "vi" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "—"
-          }
-        },
-        "yy-YY" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "—"
@@ -2863,12 +2749,6 @@
             "value" : "%@ trước đó"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%@ ago"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3015,12 +2895,6 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@ dB"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
             "value" : "%@ dB"
           }
         },
@@ -3180,12 +3054,6 @@
             "value" : "%@ U"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%@ U"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3342,12 +3210,6 @@
             "value" : "%@ U (Đã hoàn tất)"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%@ U (Finished)"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3501,12 +3363,6 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$@ U of %2$@ U (%3$@)"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
             "value" : "%1$@ U of %2$@ U (%3$@)"
           }
         },
@@ -3666,12 +3522,6 @@
             "value" : "%@ U/giờ"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%@ U/hour"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3825,12 +3675,6 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
             "value" : "%@."
           }
         },
@@ -3996,12 +3840,6 @@
             "value" : "%@%%"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%@%%"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4151,12 +3989,6 @@
             "value" : "%@+ U"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%@+ U"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4285,12 +4117,6 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%@U"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
             "value" : "%@U"
           }
         },
@@ -4437,12 +4263,6 @@
             "value" : "%1$@ cho %2$@"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ for %2$@"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -4578,12 +4398,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ không thể liên lạc với pod trên cơ thể bạn kể từ %2$@.\n\nĐừng vứt bỏ Pod mà chưa kéo xuống đọc hết màn hình này.\n\nLiên lạc đã bị gián đoạn vào thời điểm quan trọng. Thông tin về insulin đang hoạt động / tỷ lệ basal tạm thời của pod hiện không chắc chắn.\n\nBạn có thể:\n\nBật/tắt kết nối RileyLink (dưới đây),\n\nBật/tắt Bluetooth của điện thoại,\n\nTắt và bật lại thiết bị RileyLink,\n\nHoặc thử một RileyLink khác.\n\n(Đợi tối đa 30 giây để khôi phục kết nối.)\n\nNếu bạn quyết định từ bỏ vì không thể khôi phục liên lạc, hãy nhấn nút Vứt Pod (Discard Pod), làm theo các bước và bắt đầu một pod mới.\n\nTheo dõi sát đường huyết trong 6 giờ tới, vì có thể hoặc không có insulin đang hoạt động trong cơ thể mà %3$@ không thể hiển thị."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ has been unable to communicate with the pod on your body since %2$@.\n\nDo not Discard the Pod without scrolling to read this entire screen.\n\nCommunication was interrupted at a critical time. Information about active insulin / pod temp basal rate is uncertain.\n\nYou can toggle RileyLink connection (below), toggle phone Bluetooth off and on; power the RileyLink device off and on; or try a different RileyLink. (Wait up to 30 seconds for recovery.)\n\nIf you decide to give up because communication cannot be restored, tap the Discard Pod button, follow the steps and start a new pod.\nMonitor your glucose closely for the next 6 hours, as there may or may not be insulin actively working in your body that %3$@ cannot display."
           }
         },
         "zh-Hans" : {
@@ -4735,12 +4549,6 @@
             "value" : "%1$@ đã khôi phục liên lạc với pod trên cơ thể bạn.\n\nCác bản ghi về việc tiêm insulin đã được cập nhật và hiện khớp với lượng insulin thực tế đã được tiêm.\n\nBạn có thể tiếp tục sử dụng %2$@ như bình thường."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ has recovered communication with the pod on your body.\n\nInsulin delivery records have been updated and should match what has actually been delivered.\n\nYou may continue to use %2$@ normally now."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -4878,12 +4686,6 @@
             "value" : "%1$@ phút"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ minutes"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -5013,12 +4815,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ units vẫn đang còn lúc %2$@"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@ units remaining at %2$@"
           }
         },
         "zh-Hans" : {
@@ -5177,12 +4973,6 @@
             "value" : "%1$@. Việc tiêm Insulin đã dừng. Hủy kích hoạt và thay pod."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@. Insulin delivery has stopped. Please deactivate and remove pod."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5339,12 +5129,6 @@
             "value" : "%1$@%2$@%3$@"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@%2$@%3$@"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5486,12 +5270,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ %2$@"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%1$@+ %2$@"
           }
         },
         "zh-Hans" : {
@@ -5637,12 +5415,6 @@
             "value" : "%g U"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "%g U"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -5778,12 +5550,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠️ Việc tiêm insulin đã dừng. Hãy thay Pod ngay."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "⚠️ Insulin delivery stopped. Change Pod now."
           }
         },
         "zh-Hans" : {
@@ -5929,12 +5695,6 @@
             "value" : "1 giờ"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "1 hour"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -6076,12 +5836,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "1 giờ 30 phút"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "1 hour 30 minutes"
           }
         },
         "zh-Hans" : {
@@ -6227,12 +5981,6 @@
             "value" : "2 giờ"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "2 hours"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6376,12 +6124,6 @@
             "value" : "30 phút"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "30 minutes"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -6517,12 +6259,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Một lời nhắc được thiết lập khi cài đặt Pod để thông báo trước khi Pod hết hạn. Hãy đặt số giờ thông báo trước mà bạn muốn sử dụng làm mặc định khi ghép nối Pod mới."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "A reminder is configured during Pod setup to notify you in advance of its expiration. Set the number of hours advance notice you would like to configure by default when pairing a new Pod."
           }
         },
         "zh-Hans" : {
@@ -6674,12 +6410,6 @@
             "value" : "Thời gian Hoạt động"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Active Time"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6829,12 +6559,6 @@
             "value" : "Hoạt động"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Activity"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6976,12 +6700,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang điều chỉnh thời gian của bơm..."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Adjusting Pump Time..."
           }
         },
         "zh-Hans" : {
@@ -7140,12 +6858,6 @@
             "value" : "Cảnh báo"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Alarms"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7287,12 +6999,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bạn có chắc chắn muốn hủy cấu hình pod?"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Are you sure you want to cancel Pod setup?"
           }
         },
         "zh-Hans" : {
@@ -7451,12 +7157,6 @@
             "value" : "Bạn có chắc muốn tắt pod này?"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Are you sure you want to shutdown this pod?"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7597,12 +7297,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bạn có chắc muốn bỏ qua?"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Are you sure you want to skip Omnipod Onboarding?"
           }
         },
         "zh-Hans" : {
@@ -7752,12 +7446,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bạn có chắc muốn dừng sử dụng Omnipod?"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Are you sure you want to stop using Omnipod?"
           }
         },
         "zh-Hans" : {
@@ -7916,12 +7604,6 @@
             "value" : "Địa chỉ được chỉ định"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Assigned Address"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8065,12 +7747,6 @@
             "value" : "Gắn Pod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Attach Pod"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -8212,12 +7888,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang cố gắng thiết lập lại giao tiếp"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Attemping to re-establish communication"
           }
         },
         "zh-Hans" : {
@@ -8367,12 +8037,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quay Lại"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Back"
           }
         },
         "zh-Hans" : {
@@ -8537,12 +8201,6 @@
             "value" : "Liều tiêm basal"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Basal Delivery"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8703,12 +8361,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lịch biểu tiêm liều nền"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Basal Rates"
           }
         },
         "zh-Hans" : {
@@ -8873,12 +8525,6 @@
             "value" : "Liều tiêm bolus"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Bolus Delivery"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9040,12 +8686,6 @@
             "value" : "Hủy bỏ"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Cancel"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9187,12 +8827,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hủy bỏ liều basal thủ công"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Cancel Manual Basal"
           }
         },
         "zh-Hans" : {
@@ -9344,12 +8978,6 @@
             "value" : "Cannula gắn thành công. Tiếp tục."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Cannula inserted successfully. Continue."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -9499,12 +9127,6 @@
             "value" : "Thay pod ngay. Insulin sẽ ngưng khi pod hết hạn 8 giờ tới hoặc khi không còn insulin."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Change Pod now. Insulin delivery will stop 8 hours after the Pod has expired or when no more insulin remains."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9652,12 +9274,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thay pod ngay. Insulin sẽ ngưng tiêm trong %1$@ hoặc khi không còn insulin."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Change Pod now. Insulin delivery will stop in %1$@ or when no more insulin remains."
           }
         },
         "zh-Hans" : {
@@ -9822,12 +9438,6 @@
             "value" : "Thay đổi múi giờ"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Change Time Zone"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9990,12 +9600,6 @@
             "value" : "Đang thay đổi giờ…"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Changing time…"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10143,12 +9747,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kiểm tra Cannula"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Check Cannula"
           }
         },
         "zh-Hans" : {
@@ -10300,12 +9898,6 @@
             "value" : "Kiểm tra pod, gắn vào vị trí sau đó xác nhận pod đã được gắn chặt."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Check Pod, apply to site, then confirm pod attachment."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10453,12 +10045,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kiểm tra việc gắn"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Checking Insertion"
           }
         },
         "zh-Hans" : {
@@ -10610,12 +10196,6 @@
             "value" : "Đang kiểm tra..."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Checking..."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10765,12 +10345,6 @@
             "value" : "Đã khôi phục được"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Comms Recovered"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -10914,12 +10488,6 @@
             "value" : "Lời nhắc độ tin cậy"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Confidence Reminders"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -11057,12 +10625,6 @@
             "value" : "Lời nhắc là những tiếng bíp từ Pod có thể được sử dụng để xác nhận các lệnh đã chọn khi Pod không ở chế độ im lặng."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Confidence reminders are beeps from the Pod which can be used to acknowledge selected commands when the Pod is not silenced."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -11192,12 +10754,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cấu hình"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Configuration"
           }
         },
         "zh-Hans" : {
@@ -11343,12 +10899,6 @@
             "value" : "Xác nhận"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Confirm"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11492,12 +11042,6 @@
             "value" : "Xác nhận pod đã gắn chặt"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Confirm Pod Attachment"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11627,12 +11171,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tiếp tục"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Continue"
           }
         },
         "zh-Hans" : {
@@ -11784,12 +11322,6 @@
             "value" : "Cảnh báo nghiêm trọng"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Critical Alerts"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11933,12 +11465,6 @@
             "value" : "ngày"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "day"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12079,12 +11605,6 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "days"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
             "value" : "days"
           }
         },
@@ -12250,12 +11770,6 @@
             "value" : "Hủy kích hoạt"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Deactivate"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12409,12 +11923,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hủy kích hoạt Pod"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Deactivate Pod"
           }
         },
         "zh-Hans" : {
@@ -12572,12 +12080,6 @@
             "value" : "Đã hủy kích hoạt"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Deactivated"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12727,12 +12229,6 @@
             "value" : "Đang hủy kích hoạt."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Deactivating."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12880,12 +12376,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang hủy kích hoạt..."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Deactivating..."
           }
         },
         "zh-Hans" : {
@@ -13041,12 +12531,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xóa Omnipod"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Delete Omnipod"
           }
         },
         "zh-Hans" : {
@@ -13211,12 +12695,6 @@
             "value" : "Giới hạn liều tiêm"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Delivery Limits"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13379,12 +12857,6 @@
             "value" : "Thông tin thiết bị"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Device Information"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13532,12 +13004,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thiết bị"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Devices"
           }
         },
         "zh-Hans" : {
@@ -13702,12 +13168,6 @@
             "value" : "Vô hiệu tiếng Beep liều bolus"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Disable Bolus Beeps"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13857,12 +13317,6 @@
             "value" : "Loại bỏ pod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Discard Pod"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13992,12 +13446,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Xong"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Done"
           }
         },
         "zh-Hans" : {
@@ -14162,12 +13610,6 @@
             "value" : "Bật tiếng Beep liều bolus"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Enable Bolus Beeps"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14315,12 +13757,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lỗi"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Error"
           }
         },
         "zh-Hans" : {
@@ -14479,12 +13915,6 @@
             "value" : "Lỗi trong việc vô hiệu tiếng beep liều bolus"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Error disabling bolus beeps"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14639,12 +14069,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lỗi trong việc bật tiếng beep liều bolus"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Error enabling bolus beeps"
           }
         },
         "zh-Hans" : {
@@ -14803,12 +14227,6 @@
             "value" : "Lỗi khi đang tái thực hiện"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Error Resuming"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14965,12 +14383,6 @@
             "value" : "Lỗi khi đang tạm ngưng"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Error Suspending"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15120,12 +14532,6 @@
             "value" : "Nhắc nhở Hết hạn"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Expiration Reminder"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15269,12 +14675,6 @@
             "value" : "Mặc định nhắc nhở hết hạn"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Expiration Reminder Default"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -15410,12 +14810,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thời gian nhắc nhở hết hạn cho Pod hiện tại."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Expiration reminder time for the current Pod."
           }
         },
         "zh-Hans" : {
@@ -15574,12 +14968,6 @@
             "value" : "Đã hết hạn"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Expired"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15736,12 +15124,6 @@
             "value" : "Hết hạn"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Expires"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15885,12 +15267,6 @@
             "value" : "Không thể hủy liều basal thủ công"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to Cancel Manual Basal"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16026,12 +15402,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không thể phát tiếng bíp kiểm tra."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to play test beeps."
           }
         },
         "zh-Hans" : {
@@ -16171,12 +15541,6 @@
             "value" : "Không thể đọc thời gian kích hoạt."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to read activation time."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -16312,12 +15676,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không thể đọc trạng thái Pod."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to read pod status."
           }
         },
         "zh-Hans" : {
@@ -16457,12 +15815,6 @@
             "value" : "Đọc nhật ký xung thất bại."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to read pulse log plus."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -16600,12 +15952,6 @@
             "value" : "Không thể đọc nhật ký xung."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to read pulse log."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -16741,12 +16087,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không thể đọc các cảnh báo đã kích hoạt."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to read triggered alerts."
           }
         },
         "zh-Hans" : {
@@ -16892,12 +16232,6 @@
             "value" : "Không thể tiếp tục tiêm insulin trở lại"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to Resume Insulin Delivery"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17039,12 +16373,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không thể cài đặt thời gian cho bơm"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to Set Pump Time"
           }
         },
         "zh-Hans" : {
@@ -17190,12 +16518,6 @@
             "value" : "Thất bại khi tạm dừng liều insulin"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to Suspend Insulin Delivery"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -17337,12 +16659,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không cập nhật được tùy chọn lời nhắc về độ tin cậy."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to update confidence reminder preference."
           }
         },
         "zh-Hans" : {
@@ -17488,12 +16804,6 @@
             "value" : "Không thể cập nhật lời nhắc hết hạn"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to Update Expiration Reminder"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -17637,12 +16947,6 @@
             "value" : "Thất bại cập nhật lời nhắc gần hết thuốc"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to Update Low Reservoir Reminder"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -17778,12 +17082,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không thể cập nhật im lặng cho pod."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Failed to update silence pod preference."
           }
         },
         "zh-Hans" : {
@@ -17942,12 +17240,6 @@
             "value" : "Lỗi"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Fault"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18077,12 +17369,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dùng loại insulin U-100 cho pod (để nguyên nắp kim trong của Pod). Lắng nghe 2 tiếng bíp."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Fill a new pod with U-100 Insulin (leave clear Pod needle cap on). Listen for 2 beeps."
           }
         },
         "zh-Hans" : {
@@ -18226,12 +17512,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hoàn tất việc ngưng kích hoạt"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Finish deactivation"
           }
         },
         "zh-Hans" : {
@@ -18390,12 +17670,6 @@
             "value" : "Hoàn tất thiết lập pod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Finish pod setup"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18537,12 +17811,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hoàn thành cài đặt"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Finish Setup"
           }
         },
         "zh-Hans" : {
@@ -18694,12 +17962,6 @@
             "value" : "Nhiều hơn %1$@ units vẫn còn lúc %2$@"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Greater than %1$@ units remaining at %2$@"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -18841,12 +18103,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "hours"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "hour"
           }
         },
         "zh-Hans" : {
@@ -18992,12 +18248,6 @@
             "value" : "hours"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "hours"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19139,12 +18389,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nếu bạn hủy cấu hình pod, pod hiện tại sẽ bị hủy kích hoạt và sẽ không sử dụng được nữa."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "If you cancel Pod setup, the current Pod will be deactivated and will be unusable."
           }
         },
         "zh-Hans" : {
@@ -19303,12 +18547,6 @@
             "value" : "Thiết lập pod không hoàn thành phải được hủy rước khi tiến hành ghép đôi pod mới. Đề nghị hủy và loại pod."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Incompletely set up pod must be deactivated before pairing with a new one. Please deactivate and discard pod."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19465,12 +18703,6 @@
             "value" : "Thiết lập pod không hoàn thành phải được hủy rước khi tiến hành ghép đôi pod mới. Đề nghị hủy và thay thế pod."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Incompletely set up pod must be deactivated before pairing with a new one. Please deactivate and remove pod."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19620,12 +18852,6 @@
             "value" : "Lắp Cannula"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Insert Cannula"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -19767,12 +18993,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đã gắn"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Inserted"
           }
         },
         "zh-Hans" : {
@@ -19918,12 +19138,6 @@
             "value" : "Đang gắn. Chờ chút."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Inserting. Please wait."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -20067,12 +19281,6 @@
             "value" : "Đang gắn..."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Inserting..."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -20214,12 +19422,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Insulin\n Đã tạm ngưng"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Insulin\nSuspended"
           }
         },
         "zh-Hans" : {
@@ -20378,12 +19580,6 @@
             "value" : "Insulin đã được tiêm"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Insulin Delivered"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -20513,12 +19709,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Khối lượng tiêm insulin"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Insulin Delivery"
           }
         },
         "zh-Hans" : {
@@ -20658,12 +19848,6 @@
             "value" : "Việc tiêm insulin sẽ bị dừng cho đến khi bạn tiếp tục thủ công. Chọn thời gian bạn muốn nhận nhắc nhở để tiếp tục tiêm?"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Insulin delivery will be stopped until you resume manually. Select when you want to be reminded to resume delivery?"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -20795,12 +19979,6 @@
             "value" : "Insulin còn lại"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Insulin Remaining"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -20930,12 +20108,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Loại Insulin"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Insulin Type"
           }
         },
         "zh-Hans" : {
@@ -21073,12 +20245,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mã lỗi nội bộ của Pod: %1$03d\n%2$@\nTham chiếu: %3$@\n"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Internal Pod fault code %1$03d\n%2$@\nRef: %3$@\n"
           }
         },
         "zh-Hans" : {
@@ -21243,12 +20409,6 @@
             "value" : "Lỗi nhập không hợp lệ"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Invalid entry"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -21390,12 +20550,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Việc gắn cannual chuẩn chưa?"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Is the cannula inserted properly?"
           }
         },
         "zh-Hans" : {
@@ -21547,12 +20701,6 @@
             "value" : "Để Rileylink cách pod 6 inches khi ghép đôi."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Keep the RileyLink about 6 inches from the pod during pairing."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -21688,12 +20836,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tiếp tục chờ"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Keep Waiting"
           }
         },
         "zh-Hans" : {
@@ -21843,12 +20985,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trạng thái gần nhất"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Last Status"
           }
         },
         "zh-Hans" : {
@@ -22013,12 +21149,6 @@
             "value" : "Lot"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Lot"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -22166,12 +21296,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Số Lô"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Lot Number"
           }
         },
         "zh-Hans" : {
@@ -22323,12 +21447,6 @@
             "value" : "Sắp hết insulin"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Low Reservoir"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -22476,12 +21594,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Báo nhắc gần hết insulin"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Low Reservoir Reminder"
           }
         },
         "zh-Hans" : {
@@ -22633,12 +21745,6 @@
             "value" : "Đảm bảo điện thoại và pod được đặt gần nhau. Nếu kết nối vẫn gặp trở ngại, đặt lại chổ khác."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Make sure your phone and pod are close to each other. If communication issues persist, move to a new area."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -22779,12 +21885,6 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "minute"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
             "value" : "minute"
           }
         },
@@ -22929,12 +22029,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "phút"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "minutes"
           }
         },
         "zh-Hans" : {
@@ -23086,12 +22180,6 @@
             "value" : "Thiếu cấu hình"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Missing Config"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -23238,12 +22326,6 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "NA"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
             "value" : "NA"
           }
         },
@@ -23396,12 +22478,6 @@
             "value" : "Kế tiếp"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Next"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -23531,12 +22607,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "No"
           }
         },
         "zh-Hans" : {
@@ -23680,12 +22750,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không\n Tiêm"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "No\nDelivery"
           }
         },
         "zh-Hans" : {
@@ -23837,12 +22901,6 @@
             "value" : "Hết Insulin"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "No Insulin"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -23990,12 +23048,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không có pod"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "No Pod"
           }
         },
         "zh-Hans" : {
@@ -24147,12 +23199,6 @@
             "value" : "Không có lời nhắc"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "No Reminder"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -24296,12 +23342,6 @@
             "value" : "Không, tiếp tục"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "No, Continue With Pod"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -24431,12 +23471,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không, Giữ nguyên"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "No, Keep Pump As Is"
           }
         },
         "zh-Hans" : {
@@ -24601,12 +23635,6 @@
             "value" : "None"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "None"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -24754,12 +23782,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cài đặt thông báo"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Notification Settings"
           }
         },
         "zh-Hans" : {
@@ -24910,12 +23932,6 @@
             "value" : "Số"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Numbers"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -25063,12 +24079,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lời nhắc của Omnipod"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Omnipod Reminders"
           }
         },
         "zh-Hans" : {
@@ -25233,12 +24243,6 @@
             "value" : "Ghép đôi"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pair"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -25401,12 +24405,6 @@
             "value" : "Ghép đôi pod mới"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pair New Pod"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -25554,12 +24552,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kết nối Pod"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pair Pod"
           }
         },
         "zh-Hans" : {
@@ -25711,12 +24703,6 @@
             "value" : "Kết nối Pod."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pair pod."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -25864,12 +24850,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đã được ghép đôi"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Paired"
           }
         },
         "zh-Hans" : {
@@ -26021,12 +25001,6 @@
             "value" : "Đang ghép đôi."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pairing."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26168,12 +25142,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang ghép đôi..."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pairing..."
           }
         },
         "zh-Hans" : {
@@ -26332,12 +25300,6 @@
             "value" : "Đang ghép đôi…"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pairing…"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26478,12 +25440,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Phần trăm = %lf"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Percent = %lf"
           }
         },
         "zh-Hans" : {
@@ -26641,12 +25597,6 @@
             "value" : "PI Version"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "PI Version"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26796,12 +25746,6 @@
             "value" : "Kiểm tra tiếng Beep"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Play Test Beeps"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26937,12 +25881,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lệnh phát tiếng bíp kiểm tra đã được gửi thành công.\n\nNếu bạn không nghe thấy bất kỳ tiếng bíp nào từ Pod, loa piezo trong Pod có thể bị hỏng hoặc bị tắt."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Play test beeps command sent successfully.\n\nIf you did not hear any beeps from your Pod, the piezo speaker in your Pod may be broken or disabled."
           }
         },
         "zh-Hans" : {
@@ -27101,12 +26039,6 @@
             "value" : "Kiểm tra tiếng Beep…"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Play Test Beeps…"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -27242,12 +26174,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang kiểm tra tiếng Bíp..."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Playing Test Beeps..."
           }
         },
         "zh-Hans" : {
@@ -27393,12 +26319,6 @@
             "value" : "Vui lòng xác nhận rằng Pod đã được gắn chắc chắn vào cơ thể bạn.\n\nKim tiêm chỉ có thể được chèn một lần cho mỗi Pod. Nhấn “Xác nhận” khi Pod đã được gắn."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Please confirm that the Pod is securely attached to your body.\n\nThe cannula can be inserted only once with each Pod. Tap “Confirm” when Pod is attached."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -27542,12 +26462,6 @@
             "value" : "Hủy kích hoạt pod. Khi việc hủy kích hoạt hoàn tất, bạn có thể ghép nối pod mới."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Please deactivate the pod. When deactivation is complete, you may pair a new pod."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -27689,12 +26603,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hủy kích hoạt pod. Khi việc hủy kích hoạt hoàn tất, gỡ bỏ pod ra khỏi cơ thể và ghép nối pod mới."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Please deactivate the pod. When deactivation is complete, you may remove it and pair a new pod."
           }
         },
         "zh-Hans" : {
@@ -27852,12 +26760,6 @@
             "value" : "PM Version"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "PM Version"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -28001,12 +26903,6 @@
             "value" : "Pod đã kích hoạt"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Activated"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -28142,12 +27038,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod hoạt động: %1$@"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Active: %1$@"
           }
         },
         "zh-Hans" : {
@@ -28306,12 +27196,6 @@
             "value" : "Pod Age"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Age"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -28455,12 +27339,6 @@
             "value" : "Pod hủy kích hoạt thành công. Tiếp tục."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod deactivated successfully. Continue."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -28598,12 +27476,6 @@
             "value" : "Các thông tin của Pod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Details"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -28739,12 +27611,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chẩn đoán Pod"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Diagnostics"
           }
         },
         "zh-Hans" : {
@@ -28896,12 +27762,6 @@
             "value" : "Pod đã hết hạn"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod expired"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29043,12 +27903,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod đã hết hạn"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Expired"
           }
         },
         "zh-Hans" : {
@@ -29194,12 +28048,6 @@
             "value" : "Pod hết hạn"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Expires"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29343,12 +28191,6 @@
             "value" : "Pod sẽ hết hạn trong"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod expires in"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -29484,12 +28326,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod lỗi: %1$03d"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Fault %1$03d"
           }
         },
         "zh-Hans" : {
@@ -29635,12 +28471,6 @@
             "value" : "Thông tin lỗi Pod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Fault Details"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -29784,12 +28614,6 @@
             "value" : "Pod bị tắc nghẽn"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Occlusion"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -29931,12 +28755,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod ghép đôi thành công. Tiếp tục."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod paired successfully. Continue."
           }
         },
         "zh-Hans" : {
@@ -30095,12 +28913,6 @@
             "value" : "Các thiết lập cho pod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Settings"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -30242,12 +29054,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cấu hình Pod"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod Setup"
           }
         },
         "zh-Hans" : {
@@ -30393,12 +29199,6 @@
             "value" : "Chuẩn bị vị trí."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Prepare site."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -30542,12 +29342,6 @@
             "value" : "Pod trước"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Previous Pod"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -30683,12 +29477,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thông tin của Pod trước đó"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Previous Pod Details"
           }
         },
         "zh-Hans" : {
@@ -30847,12 +29635,6 @@
             "value" : "Đã được mồi"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Primed"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -30994,12 +29776,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang priming. Xin chờ."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Priming. Please wait."
           }
         },
         "zh-Hans" : {
@@ -31149,12 +29925,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang chuẩn bị..."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Priming..."
           }
         },
         "zh-Hans" : {
@@ -31307,12 +30077,6 @@
             "value" : "Đang mồi…"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Priming…"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -31448,12 +30212,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chi tiết về Trình quản lý Bơm"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pump Manager Details"
           }
         },
         "zh-Hans" : {
@@ -31605,12 +30363,6 @@
             "value" : "Thời gian của Bơm"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Pump Time"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -31754,12 +30506,6 @@
             "value" : "Tỷ lệ"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Rate"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -31895,12 +30641,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đọc thời gian kích hoạt"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Read Activation Time"
           }
         },
         "zh-Hans" : {
@@ -32040,12 +30780,6 @@
             "value" : "Đọc tình trạng pod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Read Pod Status"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -32183,12 +30917,6 @@
             "value" : "Đọc nhật ký do xung"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Read Pulse Log"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -32323,12 +31051,6 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Read Pulse Log Plus"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
             "value" : "Read Pulse Log Plus"
           }
         },
@@ -32469,12 +31191,6 @@
             "value" : "Đọc cảnh báo được kích hoạt"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Read Triggered Alerts"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -32610,12 +31326,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang đọc thời gian kích hoạt..."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Reading Activation Time..."
           }
         },
         "zh-Hans" : {
@@ -32755,12 +31465,6 @@
             "value" : "Đang đọc tình trạng pod..."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Reading Pod Status..."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -32896,12 +31600,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang đọc nhật ký xung Plus..."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Reading Pulse Log Plus..."
           }
         },
         "zh-Hans" : {
@@ -33041,12 +31739,6 @@
             "value" : "Đang đọc nhật ký xung..."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Reading Pulse Log..."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -33182,12 +31874,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang đọc các cảnh báo đã kích hoạt..."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Reading Triggered Alerts..."
           }
         },
         "zh-Hans" : {
@@ -33327,12 +32013,6 @@
             "value" : "Ref: "
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Ref: "
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -33468,12 +32148,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Làm mới Chi tiết về Trình quản lý Bơm"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Refresh Pump Manager Details"
           }
         },
         "zh-Hans" : {
@@ -33625,12 +32299,6 @@
             "value" : "Đang còn lại"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Remaining"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -33774,12 +32442,6 @@
             "value" : "Gỡ pod khỏi cơ thể"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Remove Pod from Body"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -33909,12 +32571,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thay bơm"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Remove Pump"
           }
         },
         "zh-Hans" : {
@@ -34052,12 +32708,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tháo nắp kim màu xanh và kiểm tra cannula. Sau đó gỡ bỏ lớp giấy phía sau."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Remove the Pod's clear needle cap and check cannula. Then remove paper backing."
           }
         },
         "zh-Hans" : {
@@ -34207,12 +32857,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thay thế Pod"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Replace Pod"
           }
         },
         "zh-Hans" : {
@@ -34371,12 +33015,6 @@
             "value" : "Thay thế pod ngay"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Replace Pod Now"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -34533,12 +33171,6 @@
             "value" : "Reservoir"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Reservoir"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -34686,12 +33318,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Phục hồi liều insulin"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Resume Insulin Delivery"
           }
         },
         "zh-Hans" : {
@@ -34843,12 +33469,6 @@
             "value" : "Đang phục hồi liều insulin..."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Resuming insulin delivery..."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -34984,12 +33604,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang truy xuất thông tin Trình quản lý Bơm..."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Retrieving Pump Manager Details..."
           }
         },
         "zh-Hans" : {
@@ -35145,12 +33759,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thử lại"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Retry"
           }
         },
         "zh-Hans" : {
@@ -35315,12 +33923,6 @@
             "value" : "Hủy kích hoạt pod lại"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Retry Pod Deactivation"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -35468,12 +34070,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "RileyLink cho phép giao tiếp với bơm thông qua kết nối bluetooth"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "RileyLink allows for communication with the pump over Bluetooth"
           }
         },
         "zh-Hans" : {
@@ -35631,12 +34227,6 @@
             "value" : "Cài đặt RileyLink"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "RileyLink Setup"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -35766,12 +34356,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lưu"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Save"
           }
         },
         "zh-Hans" : {
@@ -35923,12 +34507,6 @@
             "value" : "Đang lưu..."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Saving..."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -36067,12 +34645,6 @@
             "value" : "Lịch trình"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Schedule"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -36202,12 +34774,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đã lên chương trình cho liều Basal"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Scheduled Basal"
           }
         },
         "zh-Hans" : {
@@ -36359,12 +34925,6 @@
             "value" : "Lịch biểu lời nhắc"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Scheduled Reminder"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -36512,12 +35072,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chọn loại insulin bạn sẽ sử dụng cho pod."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Select the type of insulin that you will be using in this pod."
           }
         },
         "zh-Hans" : {
@@ -36669,12 +35223,6 @@
             "value" : "Số thứ tự"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Sequence Number"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -36824,12 +35372,6 @@
             "value" : "Thiết lập liều nền tạm thời"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Set Temporary Basal"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -36973,12 +35515,6 @@
             "value" : "Cài đặt liều nền tạm thời"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Set Temporary Basal Rate"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -37108,12 +35644,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cài đặt hoàn thành"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Setup Complete"
           }
         },
         "zh-Hans" : {
@@ -37265,12 +35795,6 @@
             "value" : "Mất tín hiệu"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Signal Loss"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -37408,12 +35932,6 @@
             "value" : "Pod im lặng"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Silence Pod"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37549,12 +36067,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chế độ Silence Pod sẽ chặn tất cả tiếng bíp và lời nhắc nhở."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Silence Pod mode suppresses all Pod alert and confirmation reminder beeping."
           }
         },
         "zh-Hans" : {
@@ -37705,12 +36217,6 @@
             "value" : "Bỏ qua giới thiệu Omnipod không?"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Skip Omnipod Onboarding?"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37846,12 +36352,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trượt nút để chèn kim tiêm"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Slide Button to insert Cannula"
           }
         },
         "zh-Hans" : {
@@ -37991,12 +36491,6 @@
             "value" : "Trượt bên dưới để bắt đầu chèn Cannula."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Slide the switch below to start cannula insertion."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -38134,12 +36628,6 @@
             "value" : "Trượt để vô hiệu hóa Pod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Slide to Deactivate Pod"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -38275,12 +36763,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trượt để chèn Cannula"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Slide to Insert Cannula"
           }
         },
         "zh-Hans" : {
@@ -38445,12 +36927,6 @@
             "value" : "Tình trạng"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Status"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -38613,12 +37089,6 @@
             "value" : "Đã thành công"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Succeeded"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -38768,12 +37238,6 @@
             "value" : "Tạm ngưng liều insulin"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Suspend Delivery"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -38921,12 +37385,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tạm dừng insulin"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Suspend Insulin Delivery"
           }
         },
         "zh-Hans" : {
@@ -39091,12 +37549,6 @@
             "value" : "Đã tạm ngưng"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Suspended"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -39238,12 +37690,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tạm ngưng tại"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Suspended At"
           }
         },
         "zh-Hans" : {
@@ -39393,12 +37839,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đang tạm dừng liều insulin..."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Suspending insulin delivery..."
           }
         },
         "zh-Hans" : {
@@ -39563,12 +38003,6 @@
             "value" : "Chuyển đổ từ bơm Omnipod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Switch from Omnipod Pumps"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -39710,12 +38144,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chuyển đổi sang bơm khác"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Switch to other insulin delivery device"
           }
         },
         "zh-Hans" : {
@@ -39865,12 +38293,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Đồng bộ thời gian hiện tại"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Sync to Current Time"
           }
         },
         "zh-Hans" : {
@@ -40035,12 +38457,6 @@
             "value" : "Sync với Pod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Sync With Pod"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -40190,12 +38606,6 @@
             "value" : "Liều nền tạm thời"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Temporary Basal"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -40343,12 +38753,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Liều nền tạm thời thất bại"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Temporary Basal Failed"
           }
         },
         "zh-Hans" : {
@@ -40513,12 +38917,6 @@
             "value" : "Thử nghiệm câu lệnh"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Test Command"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -40681,12 +39079,6 @@
             "value" : "Thử nghiệm câu lệnh…"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Testing Commands…"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -40822,12 +39214,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Các nhắc nhở trên sẽ không phát tiếng trên thiết bị của bạn khi ở chế độ Im lặng hoặc Không làm phiền. Tuy nhiên, còn có các cảnh báo Pod quan trọng sẽ vẫn phát tiếng ngay cả khi thiết bị ở chế độ Im lặng hoặc Không làm phiền.\n\nPod cũng sẽ phát tiếng bíp cho tất cả các nhắc nhở và cảnh báo, trừ khi Pod đang ở chế độ im lặng."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "The reminders above will not sound on your device when it is in Silent or Do Not Disturb mode. There are other critical Pod alerts that will sound on your device even when set to Silent or Do Not Disturb mode.\n\nThe Pod will also use audible beeps for all Pod reminders and alerts except when the Pod is Silenced."
           }
         },
         "zh-Hans" : {
@@ -40973,12 +39359,6 @@
             "value" : "Thời gian trên máy bơm của bạn khác với thời gian hiện tại. Bạn có muốn cập nhật thời gian trên máy bơm của mình đến thời điểm hiện tại không?"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "The time on your pump is different from the current time. Do you want to update the time on your pump to the current time?"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -41108,12 +39488,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Thời gian trên máy bơm của bạn khác với thời gian hiện tại. Thời gian của máy bơm sẽ kiểm soát cài đặt trị liệu theo lịch trình của bạn. Cuộn xuống đến Pump Time để xem lại chênh lệch thời gian và cấu hình bơm của bạn."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "The time on your pump is different from the current time. Your pump’s time controls your scheduled therapy settings. Scroll down to Pump Time row to review the time difference and configure your pump."
           }
         },
         "zh-Hans" : {
@@ -41259,12 +39633,6 @@
             "value" : "Ô vuông trên đầu của pod sẽ nháy đỏ khi cannual được gắn chuẩn vào trong cơ thể."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "The window on the top of the Pod should be colored pink when the cannula is properly inserted into the skin."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -41408,12 +39776,6 @@
             "value" : "Đã xảy ra sự cố khi giao tiếp với Pod. Nếu sự cố này vẫn tiếp diễn, hãy nhấn vào Loại bỏ pod. Sau đó, bạn có thể kích hoạt Pod mới."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "There was a problem communicating with the pod. If this problem persists, tap Discard Pod. You can then activate a new Pod."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -41549,12 +39911,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bơm này chưa được thiết lập mức basal tối đa vì nó được thêm vào trước khi tính năng basal tạm thời thủ công có sẵn. Vui lòng đặt Mức Basal Tối Đa mới."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "This Pump has not been configured with a maximum basal rate because it was added before manual temp basal was a feature. Please set a new Maximum Basal Rate."
           }
         },
         "zh-Hans" : {
@@ -41706,12 +40062,6 @@
             "value" : "Thời gian"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Time"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -41861,12 +40211,6 @@
             "value" : "Đã phát hiện thay đổi thời gian"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Time Change Detected"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -42007,12 +40351,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chuyển đổi tín hiệu"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Toggle sign"
           }
         },
         "zh-Hans" : {
@@ -42171,12 +40509,6 @@
             "value" : "Quá nhiều mục"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Too many entries"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -42320,12 +40652,6 @@
             "value" : "Tổng liều"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Total Delivery"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -42454,12 +40780,6 @@
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "U/hr"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
             "value" : "U/hr"
           }
         },
@@ -42619,12 +40939,6 @@
             "value" : "Không thể hủy kích hoạt pod. Đề nghị tiếp tục và ghép đôi pod mới."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Unable to deactivate pod. Please continue and pair a new one."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -42766,12 +41080,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không thể thấy pod"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Unable to Reach Pod"
           }
         },
         "zh-Hans" : {
@@ -42917,12 +41225,6 @@
             "value" : "Không thể kết nối với Pod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Unable To Reach Pod"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -43064,12 +41366,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không thể cài đặt mức tỷ lệ liều cơ bản tạm thời: %1$@"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Unable to set a temporary basal rate: %1$@"
           }
         },
         "zh-Hans" : {
@@ -43215,12 +41511,6 @@
             "value" : "Không thể đặt mức basal tạm thời: %1$@\n\n%2$@"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Unable to set a temporary basal rate: %1$@\n\n%2$@"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -43362,12 +41652,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kích hoạt chưa hoàn thành"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Unfinished Activation"
           }
         },
         "zh-Hans" : {
@@ -43513,12 +41797,6 @@
             "value" : "Vô hiệu hóa chưa hoàn tất"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Unfinished deactivation"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -43655,12 +41933,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Không xác định"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Unknown"
           }
         },
         "zh-Hans" : {
@@ -43806,12 +42078,6 @@
             "value" : "Đợi đến khi việc gắn hoàn tất."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Wait until insertion is completed."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -43953,12 +42219,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Có"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Yes"
           }
         },
         "zh-Hans" : {
@@ -44104,12 +42364,6 @@
             "value" : "Có, hủy kích hoạt pod"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Yes, Deactivate Pod"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -44253,12 +42507,6 @@
             "value" : "Có, đồng bộ với thời gian hiện tại"
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Yes, Sync to Current Time"
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -44394,12 +42642,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bạn sẽ được thông báo trước khi Pod hết hạn.\n\nKéo xuống để đặt số giờ thông báo trước mà bạn muốn nhận."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "You will be notified in advance of Pod expiration.\n\nScroll to set the number of hours advance notice you would like to have."
           }
         },
         "zh-Hans" : {
@@ -44539,12 +42781,6 @@
             "value" : "Bạn sẽ được thông báo khi lượng insulin trong Pod đạt đến mức đã chọn.\n\nKéo xuống để đặt số đơn vị (từ 1 đến 50) mà bạn muốn nhận nhắc nhở."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "You will be notified when the amount of insulin in the Pod reaches a selected level.\n\nScroll to set the number of units (1 to 50) at which you would like to be reminded."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "new",
@@ -44680,12 +42916,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bạn sẽ được thông báo khi lượng insulin trong Pod đạt đến mức này."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "You will be notified when the amount of insulin in the Pod reaches this level."
           }
         },
         "zh-Hans" : {
@@ -44829,12 +43059,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bạn bắt đầu quá trình cài đặt các lời nhắc, đổ đầy thuốc vào pod, ghép đôi thiết bị và gắn pod lên người."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "You will now begin the process of configuring your reminders, filling your Pod with insulin, pairing to your device and placing it on your body."
           }
         },
         "zh-Hans" : {
@@ -44986,12 +43210,6 @@
             "value" : "Việc cung cấp insulin của bạn sẽ không được điều chỉnh tự động cho đến khi mức cơ bản tạm thời kết thúc hoặc bị hủy bỏ."
           }
         },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Your insulin delivery will not be automatically adjusted until the temporary basal rate finishes or is canceled."
-          }
-        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -45127,12 +43345,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod của bạn đã sẵn sàng để sử dụng.\n\nLời nhắc mặc định đã được đặt cho Pod này khi thiết lập. Bạn có thể thay đổi lời nhắc sang thời gian thuận tiện hơn trong phần Cài đặt thông báo Pod."
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Your Pod is ready for use.\n\nThe default reminder was scheduled for this Pod at setup. You can change the reminder to a more convenient time in Pod Notification Settings."
           }
         },
         "zh-Hans" : {
@@ -45276,12 +43488,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod của bạn có thể vẫn đang bơm insulin.\nHãy tháo Pod ra khỏi cơ thể, sau đó nhấn “Tiếp tục“"
-          }
-        },
-        "yy-YY" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Your Pod may still be delivering Insulin.\nRemove it from your body, then tap “Continue.“"
           }
         },
         "zh-Hans" : {
