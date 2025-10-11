@@ -93,6 +93,12 @@
     "\"%1$@\" has a low battery" : {
       "comment" : "Format string for low battery alert body for RileyLink. (1: device name)",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@\" بطارية منخفضة"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -111,10 +117,22 @@
             "value" : "\"%1$@\" tiene batería baja"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"%1$@\" has a low battery"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "\"%1$@\" a un niveau de batterie bas"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"%1$@\" has a low battery"
           }
         },
         "it" : {
@@ -141,6 +159,12 @@
             "value" : "„ %1$@ ” ma słabą baterię"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"%1$@\" has a low battery"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -153,10 +177,28 @@
             "value" : "\"%1$@\" имеет низкий заряд батареи"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"%1$@\" má slabú batériu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"%1$@\" har låg batterinivå"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "\" %1$@ \" pili zayıf"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"%1$@\" gần hết pin"
           }
         },
         "zh-Hans" : {
@@ -170,6 +212,12 @@
     "%@ dB" : {
       "comment" : "Unit format string for an RSSI value in decibles",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ديسيبل"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -236,6 +284,12 @@
             "value" : "%@ dB"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ dB"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -265,12 +319,30 @@
             "state" : "translated",
             "value" : "%@ dB"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ dB"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ dB"
+          }
         }
       }
     },
     "%1$@ insulin or less remaining in Pod. Change Pod soon." : {
       "comment" : "Format string for alert content body for lowReservoir pod alert. (1: reminder value)",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ انسولين أو اقل متبقيا في البود. قم بتغيير البود بأسرع وقت."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -287,6 +359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Queda %1$@ de insulina o menos en el Pod. Cambie el Pod pronto."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ insulin or less remaining in Pod. Change Pod soon."
           }
         },
         "fr" : {
@@ -325,6 +403,12 @@
             "value" : "Pozostało mniej niż 1$@ insuliny w POD. Zmień wkrótce POD'a."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ insulin or less remaining in Pod. Change Pod soon."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -343,10 +427,28 @@
             "value" : "V podu zostáva %1$@ inzulínu alebo menej. Čoskoro vymeňte pod."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ insulin eller mindre kvar i podd. Överväg att byta podd snart."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ insülin veya daha az kaldı. Yakında Pod'u değiştirin."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ insulin hoặc ít hơn còn lại trong Pod. Thay Pod ngay."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ 或更少胰岛素剩余，请即刻更换Pod"
           }
         }
       }
@@ -443,10 +545,46 @@
     "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you." : {
       "comment" : "Description for SilencePodPreference.enabled",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toutes les alertes du Pod n'utilisent aucun bip et les bips de rappel de confirmation sont désactivés. Le Pod émettra un bip uniquement en cas de défaut fatal du Pod et lors des bips de test.\n\n⚠️Avertissement - Si votre téléphone est hors de portée du Pod pendant que cette fonctionnalité est activée, vous ne recevrez aucune notification dans l'application ; et le Pod ne bipera pas pour vous alerter."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
           }
         },
         "it" : {
@@ -459,6 +597,66 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle pod-varsler bruker ingen pipelyder, og bekreftelsespipelyder undertrykkes. Pod piper bare ved fatale pod-feil og når testpipelyder spilles av. \n \n⚠️Advarsel – Hvis telefonen din er utenfor rekkevidde for pod mens denne funksjonen er aktivert, vil du ikke motta noen varsler i appen, og pod vil ikke pipe for å varsle deg."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Pod alarmen gebruiken geen biepen en bevestigingspunten worden onderdrukt. De Pod zal alleen piepen bij fatale Pod gebreken en bij het spelen van testpiepen.\n\n⚠️Waarschuwing - Als je telefoon buiten bereik is als deze functie is ingeschakeld, krijg je geen in-app meldingen; en de pod zal niet piepen om je te waarschuwen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toate alertele pompei sunt fără semnale sonore, iar notificările de confirmare sunt suprimate. Pompa va emite semnale sonore doar în cazul erorilor grave de pompă și atunci când se redau semnale sonore de test. \n \n ⚠️Atenție - Dacă telefonul dvs. este în afara razei de acțiune a pompei în timp ce această funcție este activată, nu veți primi nicio notificare în aplicație; iar pompa nu va emite semnale sonore pentru a vă alerta."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alla Pod varningar använder inga pip och bekräftelse påminnelsen pip undertrycks. Pod kommer endast att pipa för dödliga Pod fel och när du spelar testpip.\n\n⚠️Varning - Om din telefon är utom räckhåll för poden medan denna funktion är aktiverad, kommer du inte att få några meddelanden i appen; och poden kommer inte att pipa för att varna dig."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tất cả cảnh báo của Pod không phát tiếng bíp, và tiếng bíp nhắc xác nhận cũng bị tắt. Pod chỉ phát tiếng bíp khi xảy ra lỗi nghiêm trọng hoặc khi thực hiện bài kiểm tra tiếng bíp.\n\n⚠️ Cảnh báo – Nếu điện thoại của bạn ngoài phạm vi kết nối với Pod khi tính năng này được bật, bạn sẽ không nhận được bất kỳ thông báo nào trong ứng dụng, và Pod cũng sẽ không bíp để cảnh báo bạn."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Pod alerts use no beeps and confirmation reminder beeps are suppressed. The Pod will only beep for fatal Pod faults and when playing test beeps.\n\n⚠️Warning - If your phone is out of range of the pod while this feature is enabled, you will not receive any in-app notifications; and the pod will not beep to alert you."
           }
         }
       }
@@ -544,6 +742,12 @@
       "comment" : "Description for auto-off alarm",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إيقاف تلقائي للمنبه"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -638,6 +842,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Авто отключение сигнала"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alarm auto-vypnutý"
           }
         },
         "sv" : {
@@ -765,6 +975,12 @@
       "comment" : "Pod state when running below fifty units",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أقل من 50 وحدة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1021,6 +1237,12 @@
     "Bolus in progress" : {
       "comment" : "Error message shown when operation could not be completed due to existing bolus in progress",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جرعة قيد التنفيذ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1152,6 +1374,12 @@
     "Bolus: %1$@U %2$@ %3$@ %4$@" : {
       "comment" : "The format string describing a bolus. (1: The amount delivered)(2: Start time of the dose)(3: duration)(4: scheduled certainty)",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جرعة: %1$@U %2$@ %3$@ %4$@"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1531,7 +1759,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "正在运行临时基础并输注大剂量"
+            "value" : "使用临时基础率推注"
           }
         }
       }
@@ -1540,6 +1768,12 @@
       "comment" : "Pod state when inserting cannula",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إدخال القنية قيد التنفيذ"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1677,6 +1911,12 @@
     "Certain" : {
       "comment" : "String describing a dose that was certainly scheduled",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "معتمد"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1808,6 +2048,12 @@
     "Change Pod now. Insulin delivery will stop in 1 hour." : {
       "comment" : "Alert content body for podExpireImminent pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قم بتغيير البود الآن. سيتم إيقاف تسليم الإنسولين خلال ساعة واحدة."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1824,6 +2070,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cambie el Pod ahora. La administración de insulina se detendrá en una hora."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change Pod now. Insulin delivery will stop in 1 hour."
           }
         },
         "fr" : {
@@ -1862,6 +2114,12 @@
             "value" : "Zmień POD'a teraz. Podawanie insuliny zostanie wstrzymane za 1 godzinę."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change Pod now. Insulin delivery will stop in 1 hour."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1880,10 +2138,28 @@
             "value" : "Treba vymeniť pod. Podávanie inzulínu sa zastaví o 1 hodinu."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Byt podd nu. Insulintillförseln stoppas om 1 timme."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod'u şimdi değiştirin. İnsülin iletimi 1 saat içinde duracaktır."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thay pod ngay. Insulin sẽ ngừng trong 1 giờ tới."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请立刻更改Pod ，胰岛素输注将在 1 小时后停止"
           }
         }
       }
@@ -1891,6 +2167,12 @@
     "Change Pod now. Pod has been active for 72 hours." : {
       "comment" : "Alert content body for podExpiring pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قم بتغيير البود الآن. البود أُستخدم لمدة 72 ساعة."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1907,6 +2189,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cambie el Pod ahora. El Pod ha estado activo durante 72 horas."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change Pod now. Pod has been active for 72 hours."
           }
         },
         "fr" : {
@@ -1945,6 +2233,12 @@
             "value" : "Zmień teraz POD'a. POD jest aktywny od 72 godzin."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change Pod now. Pod has been active for 72 hours."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1963,10 +2257,28 @@
             "value" : "Vymeniť pod teraz. Pod bol aktívny 72 hodín."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Byt podd nu. Podden har använts i 72 timmar."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod'u şimdi değiştirin. Pod 72 saattir aktif."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thay pod ngay. Pod đã hoạt động 72 giờ qua."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "立即更换 Pod ，Pod 已使用72小时"
           }
         }
       }
@@ -1974,6 +2286,12 @@
     "Command error %1$u" : {
       "comment" : "Format string for invalid message error code (1: error code number)",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطأ في الأمر %1$u"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2004,6 +2322,12 @@
             "value" : "Erreur de commande %1$u"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Command error %1$u"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2028,6 +2352,12 @@
             "value" : "Błąd polecenia %1$u"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Command error %1$u"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2038,6 +2368,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ошибка команды %1$u"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chyba príkazu %1$u"
           }
         },
         "sv" : {
@@ -2051,12 +2387,30 @@
             "state" : "translated",
             "value" : "Komut hatası %1$u"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Câu lệnh lỗi %1$u"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Command error %1$u"
+          }
         }
       }
     },
     "Comms Issue" : {
       "comment" : "Status highlight that delivery is uncertain.",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مشكلة في الاتصالات"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2087,6 +2441,12 @@
             "value" : "Problème de com."
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comms Issue"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2111,6 +2471,12 @@
             "value" : "Problem z komunikacją"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comms Issue"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2121,6 +2487,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Проблемы со связью"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Problém s komunikáciou"
           }
         },
         "sv" : {
@@ -2134,12 +2506,30 @@
             "state" : "translated",
             "value" : "İletişim Sorunu"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Câu lệnh có vấn đề"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comms Issue"
+          }
         }
       }
     },
     "Communication issue: Unacknowledged command pending." : {
       "comment" : "Error message when command is rejected because an unacknowledged command is pending.",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مشكلة إتصال: أمر غير معترف به معلق."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2158,10 +2548,22 @@
             "value" : "Problema de comunicación: Pendiente de confirmar comando."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Communication issue: Unacknowledged command pending."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Problème de communication : Commande en attente sans accusé de réception."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Communication issue: Unacknowledged command pending."
           }
         },
         "it" : {
@@ -2188,6 +2590,12 @@
             "value" : "Problem z komunikacją: Niepotwierdzone polecenie w toku."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Communication issue: Unacknowledged command pending."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2206,10 +2614,28 @@
             "value" : "Problém s komunikáciou: Čaká sa na potvrdenie príkazu."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kommunikationsproblem: Obekräftat kommando väntar."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "İletişim sorunu: Onaylanmamış komut beklemede."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sự cố giao tiếp: Lệnh chưa được xác nhận đang chờ xử lý."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Communication issue: Unacknowledged command pending."
           }
         }
       }
@@ -2217,6 +2643,12 @@
     "Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used." : {
       "comment" : "Description for BeepPreference.manualCommands (1: appName)",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2235,10 +2667,22 @@
             "value" : "Los recordatorios de confianza sonarán para los comandos que seleccione, como bolo, cancelar bolo, suspender, reanudar, guardar recordatorios de notificación, etc. Cuando %1$@ ajusta automáticamente la administración de insulina, no se utilizan recordatorios de confianza."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Les rappels de confirmation retentiront pour les commandes que vous initiez, comme administrer ou annuler un bolus, suspendre, reprendre, enregistrer les rappels de notification, etc. Lorsque %1$@ ajuste automatiquement l'administration, aucun rappel de confirmation n’est utilisé."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used."
           }
         },
         "it" : {
@@ -2265,6 +2709,12 @@
             "value" : "Przypomnienia (sygnały dźwiękowe) będą emitowane w przypadku poleceń, które zainicjujesz, takich jak bolus, anulowanie bolusa, wstrzymanie, wznowienie, zapisanie przypomnień o powiadomieniach itp. Kiedy %1$@ automatycznie dostosowuje podawanie, nie są używane żadne sygnały dźwiękowe."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2283,10 +2733,28 @@
             "value" : "Pripomienky spoľahlivosti zaznejú pri príkazoch, ktoré spustíte, ako je bolus, zrušenie bolusu, pozastavenie, obnovenie, uloženie upozornení atď. Keď %1$@ automaticky upraví podanie, nepoužijú sa žiadne pripomenutia spoľahlivosti."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bekräftelseljud kommer att pipa för för alla pumpkommandon du ger, som bolus, avbryt bolus, pausa pump, återuppta insulintillförsel, spara påminnelser etc. När %1$@ automatiskt justerar insulintillförsel kommer inga pip att ljuda."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emniyet hatırlatıcıları, bolus, bolus iptali, askıya alma, devam ettirme, bildirim hatırlatıcılarını kaydetme gibi başlattığınız komutlar için çalacaktır. %1$@ iletimi otomatik olarak ayarladığında emniyet hatırlatıcıları kullanılmaz."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo xác nhận sẽ phát tiếng bíp khi bạn thực hiện các lệnh, chẳng hạn như tiêm bolus, hủy bolus, tạm dừng, tiếp tục, lưu thông báo nhắc, v.v. Khi %1$@ tự động điều chỉnh việc tiêm, các thông báo xác nhận sẽ không được sử dụng."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidence reminders will sound for commands you initiate, like bolus, cancel bolus, suspend, resume, save notification reminders, etc. When %1$@ automatically adjusts delivery, no confidence reminders are used."
           }
         }
       }
@@ -2294,6 +2762,12 @@
     "Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate." : {
       "comment" : "Description for BeepPreference.extended (1: appName)",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2312,10 +2786,22 @@
             "value" : "Recordatorios de confianza sonarán cuando %1$@ automáticamente ajuste la administración de insulina, así como para los comandos que selecciones."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Des rappels de confirmation retentiront lorsque %1$@ ajustera automatiquement l'administration ainsi que pour les commandes que vous lancez."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate."
           }
         },
         "it" : {
@@ -2342,6 +2828,12 @@
             "value" : "Przypomnienia potwierdzające są emitowane, gdy %1$@ automatycznie dostosowuje podawanie insuliny, a także w przypadku poleceń inicjowanych przez użytkownika."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2360,10 +2852,28 @@
             "value" : "Keď %1$@ automaticky upraví podávanie, ako aj prevedie príkazy, ktoré iniciujete, zaznejú pripomenutia spoľahlivosti."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bekräftelsepip kommer att ljuda även vid %1$@s automatiska pumpkommandon såväl som vid manuella."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emniyet hatırlatıcıları, Başlattığınız komutların yanı sıra %1$@ iletimi otomatik olarak ayarladığında çalacaktır."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông báo xác nhận sẽ phát tiếng bíp khi %1$@ tự động điều chỉnh việc tiêm cũng như khi bạn thực hiện các lệnh."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confidence reminders will sound when %1$@ automatically adjusts delivery as well as for commands you initiate."
           }
         }
       }
@@ -2371,6 +2881,48 @@
     "Critical Pod Fault %1$03d" : {
       "comment" : "The title for AlarmCode.other notification: (1: fault code value)",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2381,6 +2933,60 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kritisk pod-feil %1$03d"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kritieke Pod fout %1$03d"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eroare critică a pompei %1$03d"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kritiskt poddfel %1$03d"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical Pod Fault %1$03d"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lỗi nghiêm trọng của Pod %1$03d"
           }
         },
         "zh-Hans" : {
@@ -2394,6 +3000,12 @@
     "Crosstalk possible. Please move to a new location" : {
       "comment" : "Recovery suggestion when unexpected address received",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هناك احتمال لتداخل الإشارات. يرجى الانتقال إلى موقع جديد"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2412,10 +3024,22 @@
             "value" : "Interferencia posible. Muévase a una nueva ubicación"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crosstalk possible. Please move to a new location"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Interférences possibles. Veuillez vous déplacer vers un nouvel emplacement"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crosstalk possible. Please move to a new location"
           }
         },
         "it" : {
@@ -2442,6 +3066,12 @@
             "value" : "Możliwe zakłócenia. Proszę teleportuj się do innego pomieszczenia"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crosstalk possible. Please move to a new location"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2460,10 +3090,28 @@
             "value" : "Možné presluchy. Presuňte sa na iné miesto"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Möjlig överhörning. Pröva att flytta dig till ett annat rum/annan plats"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Karışma mevcut. Lütfen yer değiştririn."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có nhiễu xuyên âm. Vui lòng di chuyển đến địa điểm mới"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crosstalk possible. Please move to a new location"
           }
         }
       }
@@ -2471,6 +3119,12 @@
     "Deactivated" : {
       "comment" : "Pod state when deactivated",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم إلغاء التنشيط"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2602,6 +3256,12 @@
     "Disabled" : {
       "comment" : "Title string for BeepPreference.silent\nTitle string for SilencePodPreference.disabled",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabled"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2620,10 +3280,22 @@
             "value" : "Desactivado"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabled"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Désactivé"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabled"
           }
         },
         "it" : {
@@ -2650,6 +3322,12 @@
             "value" : "Wyłączony"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabled"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2662,10 +3340,34 @@
             "value" : "Выключено"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vypnuté"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Av"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Devre Dışı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vô hiệu hóa"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disabled"
           }
         }
       }
@@ -2804,6 +3506,12 @@
     "Empty Reservoir" : {
       "comment" : "The title for Empty Reservoir alarm notification",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الخزان فارغ"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2822,10 +3530,22 @@
             "value" : "Depósito vacío"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empty Reservoir"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réservoir vide"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empty Reservoir"
           }
         },
         "it" : {
@@ -2852,6 +3572,12 @@
             "value" : "Pusty zbiorniczek"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empty Reservoir"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2864,10 +3590,34 @@
             "value" : "Резервуар пуст"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prázdny zásobník"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tom insulinreservoar"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Boş Rezervuar"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hết thuốc"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empty Reservoir"
           }
         }
       }
@@ -2875,6 +3625,12 @@
     "Empty response from pod" : {
       "comment" : "Error message shown when empty response from pod was received",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إجابة فارغة من المضخة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3006,6 +3762,12 @@
     "Enabled" : {
       "comment" : "Title string for BeepPreference.manualCommands",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enabled"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3090,6 +3852,12 @@
             "value" : "Активировано"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapnuté"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3120,6 +3888,12 @@
       "comment" : "Pod state error event logged shutting down",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم تسجيل خطأ ، جاري إيقاف التشغيل"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3258,6 +4032,12 @@
       "comment" : "Description for expiration alert",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إنذار انتهاء الصلاحية"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3395,6 +4175,12 @@
     "Expiration reminder" : {
       "comment" : "Description for expiration reminder alert",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod-Ablauferinnerung"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3406,12 +4192,24 @@
             "state" : "translated",
             "value" : "Utløpspåminnelse"
           }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notificare de expirare"
+          }
         }
       }
     },
     "Extended" : {
       "comment" : "Title string for BeepPreference.extended",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extended"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3430,10 +4228,22 @@
             "value" : "Extendido"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extended"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Étendu"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extended"
           }
         },
         "it" : {
@@ -3460,6 +4270,12 @@
             "value" : "Rozszerzony"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extended"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3472,10 +4288,34 @@
             "value" : "Растянутый"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozšírený"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utökad"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yayma"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở rộng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extended"
           }
         }
       }
@@ -3566,6 +4406,12 @@
     "Extended bolus running while suspended" : {
       "comment" : "Delivery status when extended bolus is running while suspended",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verzögerter Bolus läuft während der Unterbrechung"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3576,6 +4422,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Forlenget bolus kjører mens den er suspendert"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Execuție bolus prelungit în timpul suspendării"
           }
         }
       }
@@ -3761,6 +4613,12 @@
     "Finish Deactivation" : {
       "comment" : "Status highlight that when pod is deactivating.",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أكمل إلغاء التفعيل"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3777,6 +4635,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Finalizar la desactivación"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finish Deactivation"
           }
         },
         "fr" : {
@@ -3815,6 +4679,12 @@
             "value" : "Zakończ dezaktywację"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finish Deactivation"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3827,10 +4697,34 @@
             "value" : "Завершение деактивации"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dokončiť deaktiváciu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avsluta inaktivering"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Devre Dışı Bırakmayı Bitir"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoàn tất việc ngưng kích hoạt"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finish Deactivation"
           }
         }
       }
@@ -3838,6 +4732,12 @@
     "Finish Setup" : {
       "comment" : "Status highlight that when pod is activating.",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إتمام الإعداد"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3856,10 +4756,22 @@
             "value" : "Finalizar la Configuración"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finish Setup"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Terminer l'installation"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finish Setup"
           }
         },
         "it" : {
@@ -3886,6 +4798,12 @@
             "value" : "Zakończ konfigurację"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finish Setup"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3904,10 +4822,22 @@
             "value" : "Dokončiť nastavenie"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gär färdigt inställning"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kurulumu Bitir"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoàn thành cài đặt"
           }
         },
         "zh-Hans" : {
@@ -3922,6 +4852,12 @@
       "comment" : "Description for finish setup",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الانتهاء من الإعداد "
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4374,6 +5310,12 @@
     "Insulin delivery stopped. Change Pod now." : {
       "comment" : "The default notification body for AlarmCodes",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم إيقاف توصيل الأنسولين. يجب تغيير الكبسولة الآن."
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4396,6 +5338,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "El suministro de insulina se detuvo. Cambiar Pod ahora."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin delivery stopped. Change Pod now."
           }
         },
         "fr" : {
@@ -4434,6 +5382,12 @@
             "value" : "Podawanie insuliny zostało zatrzymane. Wymień POD'a."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin delivery stopped. Change Pod now."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4452,10 +5406,28 @@
             "value" : "Podávanie inzulínu sa zastavilo. Vymeňte modul teraz."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulintilförsel stoppad. Byt podd nu."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "İnsülin iletimi durdu. Pod'u şimdi değiştirin."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin ngừng. Thay Pod ngay."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin delivery stopped. Change Pod now."
           }
         }
       }
@@ -4546,6 +5518,12 @@
     "Insulin type not configured" : {
       "comment" : "Error description for insulin type not configured",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم يتم تكوين نوع الإنسولين"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4562,6 +5540,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tipo de insulina no configurada"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin type not configured"
           }
         },
         "fr" : {
@@ -4600,6 +5584,12 @@
             "value" : "Nie skonfigurowano rodzaju insuliny"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin type not configured"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4618,10 +5608,28 @@
             "value" : "Typ inzulínu nie je nakonfigurovaný"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du måste välja typ av insulin"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "İnsülin tipi yapılandırılmamış"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loại insulin chưa được khai báo"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insulin type not configured"
           }
         }
       }
@@ -4766,6 +5774,12 @@
     "InterruptedBolus: %1$@ U (%2$@ U scheduled) %3$@ %4$@ %5$@" : {
       "comment" : "The format string describing a bolus that was interrupted. (1: The amount delivered)(2: The amount scheduled)(3: Start time of the dose)(4: duration)(5: scheduled certainty)",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البولوس المتعرقل: تم توصيل %1$@ U (من أصل%2$@ U مقرر) %3$@ %4$@ %5$@"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4897,6 +5911,12 @@
     "Invalid address 0x%x. Expected 0x%x" : {
       "comment" : "Error message for when unexpected address is received (1: received address) (2: expected address)",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid address 0x%x. Expected 0x%x"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4927,6 +5947,12 @@
             "value" : "Adresse invalide 0x%1$x. Attendu 0x%2$x"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid address 0x%x. Expected 0x%x"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4949,6 +5975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nieprawidłowy adres 0x %1$x . Oczekiwano 0x %2$x"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid address 0x%x. Expected 0x%x"
           }
         },
         "ro" : {
@@ -4979,6 +6011,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geçersiz adres 0x %1$x . Beklenen 0x %2$x"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Địa chỉ không tồn tại 0x%x. Dự kiến 0x%x"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid address 0x%x. Expected 0x%x"
           }
         }
       }
@@ -5164,6 +6208,12 @@
     "Invalid Setting" : {
       "comment" : "Error description for invalid setting",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعدادات غير صالحة"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5182,10 +6232,22 @@
             "value" : "Configuración no válida"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid Setting"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paramètre invalide"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid Setting"
           }
         },
         "it" : {
@@ -5212,6 +6274,12 @@
             "value" : "Nieprawidłowe ustawienie"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid Setting"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5230,10 +6298,28 @@
             "value" : "Neplatné nastavenie"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogiltig inställning"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geçersiz Ayar"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt không tồn tại"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid Setting"
           }
         }
       }
@@ -5336,6 +6422,12 @@
     "Low Reservoir" : {
       "comment" : "Alert content title for lowReservoir pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low Reservoir"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5358,6 +6450,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reserva baja"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low Reservoir"
           }
         },
         "fr" : {
@@ -5396,6 +6494,12 @@
             "value" : "Niski poziom w zbiorniczku"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low Reservoir"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5414,10 +6518,28 @@
             "value" : "Nízka hladina v rezervoári"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Låg reservoarvolym"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Düşük Rezervuar"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sắp hết insulin"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low Reservoir"
           }
         }
       }
@@ -5426,6 +6548,12 @@
       "comment" : "Description for low reservoir alarm",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنبيه بأن الخزان منخفض"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5557,6 +6685,12 @@
     "Low RileyLink Battery" : {
       "comment" : "Title for RileyLink low battery alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بطارية RileyLink منخفضة"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5573,6 +6707,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Batería baja de RileyLink"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low RileyLink Battery"
           }
         },
         "fr" : {
@@ -5611,6 +6751,12 @@
             "value" : "Niski poziom baterii RileyLink"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Low RileyLink Battery"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5629,10 +6775,22 @@
             "value" : "Nízky stav batérie RileyLinku"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lågt batteri i RileyLink"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Düşük RileyLink Pili"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Báo động pin RileyLink thấp"
           }
         },
         "zh-Hans" : {
@@ -5646,6 +6804,12 @@
     "Make sure your pod is filled and nearby." : {
       "comment" : "Recovery suggestion for PodCommsError.noPodsFound",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تأكد من أن البود ممتلئ وقريب منك."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5664,10 +6828,22 @@
             "value" : "Asegúrese de que su pod esté lleno y cerca."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make sure your pod is filled and nearby."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Assurez-vous que votre Pod est rempli et à proximité."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make sure your pod is filled and nearby."
           }
         },
         "it" : {
@@ -5694,6 +6870,12 @@
             "value" : "Upewnij się, że POD jest wypełniony i znajduje się w pobliżu."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make sure your pod is filled and nearby."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5712,10 +6894,28 @@
             "value" : "Uistite sa, že je váš pod naplnený a v blízkosti."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Säkerställ att din podd är nära och fylld med insulin."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Podunuzun dolu ve yakında olduğundan emin olun."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đảm bảo pod đã chứa đầy thuốc và gần bên."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make sure your pod is filled and nearby."
           }
         }
       }
@@ -5723,6 +6923,12 @@
     "Make sure your RileyLink is nearby and powered on" : {
       "comment" : "Recovery suggestion when no RileyLink is available",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تأكد من أن RileyLink الخاص بك قريب ويعمل"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5848,6 +7054,12 @@
     "Manual Basal" : {
       "comment" : "Status highlight when manual temp basal is running.",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual Basal"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5866,10 +7078,22 @@
             "value" : "Basal Manual"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual Basal"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Débit basal manuel"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual Basal"
           }
         },
         "it" : {
@@ -5896,6 +7120,12 @@
             "value" : "Baza podstawowa"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual Basal"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5914,10 +7144,28 @@
             "value" : "Manuálny bazál"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manuell temporär basal"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Manuel Bazal"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liều Basal thủ công"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual Basal"
           }
         }
       }
@@ -6014,6 +7262,12 @@
     "Move to a new area away from any other pods and try again." : {
       "comment" : "Recovery suggestion for PodCommsError.tooManyPodsFound",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انتقل إلى منطقة جديدة بعيدًا عن أي بودات أخرى ثم حاول مرة أخرى."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6032,10 +7286,22 @@
             "value" : "Muévete a una nueva área lejos de cualquier otro Pod e inténtalo de nuevo."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move to a new area away from any other pods and try again."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Déplacez-vous vers un nouvel endroit éloigné de tout autre Pod et réessayez."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move to a new area away from any other pods and try again."
           }
         },
         "it" : {
@@ -6062,6 +7328,12 @@
             "value" : "Przenieś się w nowe miejsce z dala od innych POD'ów i spróbuj ponownie."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move to a new area away from any other pods and try again."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6080,10 +7352,28 @@
             "value" : "Presuňte sa ďalej od ostatných modulov a skúste znova."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pröva att gå till ett annat rum och försök igen."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Diğer podlardan uzakta yeni bir alana gidin ve tekrar deneyin."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chuyển pod đến vị trí mới và thử lại."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move to a new area away from any other pods and try again."
           }
         }
       }
@@ -6216,6 +7506,12 @@
     "No confidence reminders are used." : {
       "comment" : "Description for BeepPreference.silent",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No confidence reminders are used."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6234,10 +7530,22 @@
             "value" : "No se utilizan recordatorios de confianza."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No confidence reminders are used."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucun rappel de confirmation n'est utilisé."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No confidence reminders are used."
           }
         },
         "it" : {
@@ -6264,6 +7572,12 @@
             "value" : "Nie są używane żadne przypomnienia."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No confidence reminders are used."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6282,10 +7596,28 @@
             "value" : "Nepoužívajú sa žiadne pripomenutia spoľahlivosti."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inga ljud på."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emniyet hatırlatıcıları kullanılmaz."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có lời nhắc nào được sử dụng."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No confidence reminders are used."
           }
         }
       }
@@ -6382,6 +7714,12 @@
     "No Insulin" : {
       "comment" : "Status highlight message for emptyReservoir alarm.\nStatus highlight that a pump is out of insulin.",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا يوجد إنسولين"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6448,6 +7786,12 @@
             "value" : "Brak insuliny"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Insulin"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6477,12 +7821,30 @@
             "state" : "translated",
             "value" : "İnsülin yok"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hết Insulin"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Insulin"
+          }
         }
       }
     },
     "No Pod" : {
       "comment" : "Status highlight that when no pod is paired.",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا يوجد بود"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6549,6 +7911,12 @@
             "value" : "Brak POD'a"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Pod"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6578,12 +7946,30 @@
             "state" : "translated",
             "value" : "Pod Yok"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có pod"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无Pod"
+          }
         }
       }
     },
     "No pod paired" : {
       "comment" : "Error message shown when no pod is paired",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا يوجد بود مقترن"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6709,6 +8095,12 @@
     "No pods found" : {
       "comment" : "Error message for PodCommsError.noPodsFound",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم يتم العثور على أي بود"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6725,6 +8117,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se encontraron Pods"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No pods found"
           }
         },
         "fr" : {
@@ -6763,6 +8161,12 @@
             "value" : "Nie znaleziono POD'a"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No pods found"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6781,10 +8185,28 @@
             "value" : "Nenašiel sa žiadny pod"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hittade ingen podd"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod bulunamadı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không tìm thấy Pod"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No pods found"
           }
         }
       }
@@ -6792,6 +8214,12 @@
     "No response from pod" : {
       "comment" : "Error message shown when no response from pod was received",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لايوجد رد من الحجيرة"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6917,6 +8345,12 @@
     "No RileyLink available" : {
       "comment" : "Error message shown when no response from pod was received",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا يوجد RileyLink متاح"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7167,10 +8601,46 @@
     "Normal operation mode where audible Pod beeps are used for all Pod alerts and when confidence reminders are enabled." : {
       "comment" : "Description for SilencePodPreference.disabled",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وضع التشغيل العادي حيث تُستخدم صفارات البود المسموعة لجميع تنبيهات البود وعند تفعيل تذكيرات التأكيد."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal driftstilstand, hvor hørbar Pod bip bruges til alle Pod advarsler, og når tillidspåmindelser er aktiveret."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normaler Operationsmodus, in dem hörbare Pod Signale für alle Pod Alarme verwendet werden und wenn Vertrauenserinnerungen aktiviert sind."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo de operación normal, donde se utilizan pitidos audibles para todas las alertas del Pod y cuando los recordatorios de confianza están habilitados."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal operation mode where audible Pod beeps are used for all Pod alerts and when confidence reminders are enabled."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "En mode normal, le Pod émet des bips sonores pour chaque alerte et lorsque les Bip de confirmation sont activés."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal operation mode where audible Pod beeps are used for all Pod alerts and when confidence reminders are enabled."
           }
         },
         "it" : {
@@ -7183,6 +8653,66 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Normal driftsmodus der hørbare pod-pip brukes for alle pod-varsler og når tillitspåminnelser er aktivert."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normale modus waarbij hoorbare piepjes worden gebruikt voor alle Podwaarschuwingen en wanneer bevestigingsmeldingen zijn ingeschakeld."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal operation mode where audible Pod beeps are used for all Pod alerts and when confidence reminders are enabled."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal operation mode where audible Pod beeps are used for all Pod alerts and when confidence reminders are enabled."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modul normal de funcționare, în care semnalele acustice ale pompei sunt utilizate pentru toate alertele podului și atunci când sunt activate notificările de confirmare."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обычный режим работы, при котором звуковые сигналы используются для всех оповещений Пода и при включенных доверенных напоминаниях."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normálny prevádzkový režim, v ktorom sa zvukové signály Pod používajú pre všetky upozornenia Pod a keď sú povolené pripomenutia dôvery."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normalt läge när ljud är på för både varningar och för bekräftelser."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal operation mode where audible Pod beeps are used for all Pod alerts and when confidence reminders are enabled."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chế độ hoạt động bình thường trong đó tiếng bíp của Pod được dùng cho mọi cảnh báo của Pod và khi lời nhắc được bật."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Normal operation mode where audible Pod beeps are used for all Pod alerts and when confidence reminders are enabled."
           }
         }
       }
@@ -7421,6 +8951,12 @@
     "Occlusion Detected" : {
       "comment" : "The title for Occlusion alarm notification",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم الكشف عن انسداد"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7437,6 +8973,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oclusión detectada"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Occlusion Detected"
           }
         },
         "fr" : {
@@ -7475,6 +9017,12 @@
             "value" : "Wykryto niedrożność"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Occlusion Detected"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7493,10 +9041,22 @@
             "value" : "Zistená oklúzia"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ocklusion upptäckt"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tıkanma tespit edildi"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phát hiện tắc nghẽn"
           }
         },
         "zh-Hans" : {
@@ -7510,6 +9070,12 @@
     "Ok" : {
       "comment" : "Action button default text for PodAlerts",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حسناً"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7528,7 +9094,19 @@
             "value" : "OK"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ok"
+          }
+        },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ok"
+          }
+        },
+        "he" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ok"
@@ -7558,6 +9136,12 @@
             "value" : "Ok"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ok"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7570,10 +9154,28 @@
             "value" : "Ок"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tamam"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ok"
           }
         },
         "zh-Hans" : {
@@ -7718,6 +9320,12 @@
     "Omnipod" : {
       "comment" : "Generic title of the omnipod pump manager",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أومنيبود"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7933,6 +9541,12 @@
       "comment" : "Pod status after pairing",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم الاقتران"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8218,6 +9832,12 @@
     "Please bring only original pod in range or deactivate original pod" : {
       "comment" : "Recovery suggestion on unexpected pod change",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يرجى إحضار البود الأصلي فقط إلى النطاق، أو قم بإلغاء تفعيل البود الأصلي"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8248,6 +9868,12 @@
             "value" : "Veuillez rapprocher le Pod original ou désactiver le Pod d'origine"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please bring only original pod in range or deactivate original pod"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8270,6 +9896,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Używaj tylko oryginalny POD w zasięgu sygnału albo dezaktywuj oryginalny POD"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please bring only original pod in range or deactivate original pod"
           }
         },
         "ro" : {
@@ -8301,6 +9933,18 @@
             "state" : "translated",
             "value" : "Lütfen menzile yalnızca orijinal podu getirin veya orijinal podu devre dışı bırakın"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chỉ mang pod gốc trong phạm vi hoạt động hoặc hủy kích hoạt pod gốc"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please bring only original pod in range or deactivate original pod"
+          }
         }
       }
     },
@@ -8308,6 +9952,12 @@
       "comment" : "Recovery suggestion when no response is received from pod",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "من فضلك قم بجعل المضخة أقرب إلى RileyLink ثم حاول مرة أخرى"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8439,6 +10089,12 @@
     "Please finish pairing your pod." : {
       "comment" : "Alert content body for finishSetupReminder pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يرجى إكمال إقران البود."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8455,6 +10111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Por favor, termine de emparejar su Pod."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please finish pairing your pod."
           }
         },
         "fr" : {
@@ -8493,6 +10155,12 @@
             "value" : "Dokończ parowanie POD'a."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please finish pairing your pod."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8511,10 +10179,28 @@
             "value" : "Dokončite párovanie podu."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du behöver göra färdigt parkopplingen av din podd."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lütfen podunuzu eşleştirmeyi bitirin."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đề nghị hoàn thành ghép đôi pod."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请完成配对您的pod"
           }
         }
       }
@@ -8522,6 +10208,12 @@
     "Please pair a new pod" : {
       "comment" : "Recovery suggestion shown when no pod is paired",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الرجاء إقران بود جديد"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8944,6 +10636,12 @@
     "Pod already paired" : {
       "comment" : "Error message shown when user cannot pair because pod is already paired",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم إقران البود مسبقاً"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9070,6 +10768,12 @@
       "comment" : "Error message shown when prime is attempted, but pod is already primed",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمت تهيأت المضخة مسبقاً"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9201,6 +10905,12 @@
     "Pod Error" : {
       "comment" : "Status highlight message for other alarm.",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطأ في البود"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9219,10 +10929,22 @@
             "value" : "Error del Pod"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Error"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erreur du Pod"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Error"
           }
         },
         "it" : {
@@ -9249,6 +10971,12 @@
             "value" : "Błąd POD'a"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Error"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9267,10 +10995,28 @@
             "value" : "Chyba podu"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poddfel"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod Hatası"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lỗi Pod"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Error"
           }
         }
       }
@@ -9279,6 +11025,12 @@
       "comment" : "Description for expiration advisory alarm",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انذار اقتراب وقت انتهاء صلاحية المضخة"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9411,6 +11163,12 @@
       "comment" : "The title for pod expiration notification",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إشعار انتهاء صلاحية المضخة"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9542,6 +11300,12 @@
     "Pod Expiration Reminder" : {
       "comment" : "Alert content title for userPodExpiration pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إشعار انتهاء صلاحية المضخة"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9560,10 +11324,22 @@
             "value" : "Recordatorio de expiración del Pod"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Expiration Reminder"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rappel d'expiration du Pod"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Expiration Reminder"
           }
         },
         "it" : {
@@ -9590,6 +11366,12 @@
             "value" : "Przypomnienie o terminie ważności POD'a"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Expiration Reminder"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9602,10 +11384,34 @@
             "value" : "Напоминание об истечении срока"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pripomienka o expirácii"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påminnelse om utgångsdatum"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod Süre Sonu Hatırlatıcısı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lời Nhắc Pod Hết hạn"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod到期提醒"
           }
         }
       }
@@ -9738,6 +11544,12 @@
     "Pod Expired" : {
       "comment" : "Alert content title for podExpireImminent pod alert\nAlert content title for podExpiring pod alert\nStatus highlight message for podExpired alarm.\nThe title for Pod Expired alarm notification",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انتهت صلاحية البود"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9768,6 +11580,12 @@
             "value" : "Pod expiré"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Expired"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9790,6 +11608,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Termin ważności POD'a upłynął"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Expired"
           }
         },
         "ro" : {
@@ -9821,12 +11645,30 @@
             "state" : "translated",
             "value" : "Pod Süresi Doldu"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod đã hết hạn"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod已到期"
+          }
         }
       }
     },
     "Pod expires in %1$@." : {
       "comment" : "Format string for alert content body for userPodExpiration pod alert. (1: time until expiration)",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنتهي صلاحية البدي في %1$@."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9845,10 +11687,22 @@
             "value" : "El Pod expira en %1$@."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod expires in %1$@."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Péremption du Pod dans %1$@."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod expires in %1$@."
           }
         },
         "it" : {
@@ -9875,6 +11729,12 @@
             "value" : "Pod wygasa za %1$@ ."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod expires in %1$@."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9887,10 +11747,34 @@
             "value" : "Под истекает в %1$@"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Platnosť Podu skončí o %1$@."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Podden går ut om %1$@."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod'un süresi %1$@ içinde doluyor."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod sẽ hết hạn trong: %1$@."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod 将于 %1$@到期"
           }
         }
       }
@@ -9898,6 +11782,12 @@
     "Pod Fault: %1$@" : {
       "comment" : "Format string for pod fault code",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خطأ مضخة:%1$@"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10023,6 +11913,12 @@
     "Pod is not in a state ready for cannula insertion." : {
       "comment" : "Error message when cannula insertion fails because the pod is in an unexpected state",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البود ليس في حالة جاهزة لإدخال الإبرة."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10149,6 +12045,12 @@
       "comment" : "Error message when prime fails because the pod is in an unexpected state",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المضخة ليست في حالة جاهزة للتهيئة."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10280,6 +12182,12 @@
     "Pod is suspended" : {
       "comment" : "Error message action could not be performed because pod is suspended",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم تعليق المضخة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10411,6 +12319,12 @@
     "Pod Occlusion" : {
       "comment" : "Status highlight message for occlusion alarm.",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انسداد البود"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10427,6 +12341,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oclusión del Pod"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Occlusion"
           }
         },
         "fr" : {
@@ -10465,6 +12385,12 @@
             "value" : "Niedrożność POD'a"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Occlusion"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10483,10 +12409,28 @@
             "value" : "Oklúzia podu"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ocklusion i podd"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod Tıkanıklığı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod bị tắc nghẽn"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Occlusion"
           }
         }
       }
@@ -10494,6 +12438,12 @@
     "Pod Pairing Incomplete" : {
       "comment" : "Alert content title for finishSetupReminder pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إقران البود غير مكتمل"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10512,10 +12462,22 @@
             "value" : "Emparejamiento del Pod incompleto"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Pairing Incomplete"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Association du pod incomplète"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Pairing Incomplete"
           }
         },
         "it" : {
@@ -10542,6 +12504,12 @@
             "value" : "Parowanie POD'a nie zostało zakończone"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod Pairing Incomplete"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10560,10 +12528,28 @@
             "value" : "Párovanie podu nebolo dokončené"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parkoppling inte klar"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pod Eşleştirme Tamamlanmadı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod ghép nối không thành công"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod 配对未完成"
           }
         }
       }
@@ -10571,6 +12557,12 @@
     "Pod sent ack instead of response" : {
       "comment" : "Error message shown when pod sends ack instead of response",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod sent ack instead of response"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10601,6 +12593,12 @@
             "value" : "Le Pod a envoyé un ack au lieu d'une réponse"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod sent ack instead of response"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10623,6 +12621,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "POD odtworzył sygnał zamiast odpowiedzi zwrotnej"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod sent ack instead of response"
           }
         },
         "ro" : {
@@ -10654,16 +12658,64 @@
             "state" : "translated",
             "value" : "Pod yanıt yerine ack gönderdi"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod gửi xác nhận thay vì phản hồi"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod sent ack instead of response"
+          }
         }
       }
     },
     "Pod setup is not complete" : {
       "comment" : "Error description when pod setup is not complete",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "La configuration du pod n'est pas terminée"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
           }
         },
         "it" : {
@@ -10677,6 +12729,66 @@
             "state" : "translated",
             "value" : "Pod-oppsettet er ikke fullført"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is niet voltooid"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurarea pompei nu este finalizată"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poddkonfiguration är inte klar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod chưa được cài đặt xong"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pod setup is not complete"
+          }
         }
       }
     },
@@ -10684,6 +12796,12 @@
       "comment" : "Pod state when prime or cannula insertion has not completed in the time allotted",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم تجاوز الوقت المسموح لإعداد المضخة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10904,6 +13022,12 @@
     "Poor signal strength" : {
       "comment" : "Format string for poor pod signal strength",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قوة الإشارة ضعيفة"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10934,6 +13058,12 @@
             "value" : "Faible intensité du signal"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poor signal strength"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10956,6 +13086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Słaba siła sygnału"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poor signal strength"
           }
         },
         "ro" : {
@@ -10986,6 +13122,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zayıf sinyal gücü"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tín hiệu yếu"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poor signal strength"
           }
         }
       }
@@ -11226,6 +13374,12 @@
       "comment" : "Pod state when ready for basal programming",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جاهز لبرمجة الانسولين القاعدي"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11355,7 +13509,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "基础率同步已就绪"
+            "value" : "准备设置基础率"
           }
         }
       }
@@ -11364,6 +13518,12 @@
       "comment" : "Pod state when ready for cannula insertion",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ready to insert cannula"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11596,6 +13756,12 @@
     "Resume" : {
       "comment" : "Pump Event title for UnfinalizedDose with doseType of .resume",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resume"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11614,10 +13780,22 @@
             "value" : "Reanudar"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resume"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reprendre"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resume"
           }
         },
         "it" : {
@@ -11644,6 +13822,12 @@
             "value" : "Wznowiono"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resume"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11656,10 +13840,28 @@
             "value" : "Возобновление"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokračovať"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återuppta"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Devam et"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếp tục"
           }
         },
         "zh-Hans" : {
@@ -11750,6 +13952,12 @@
     "Resume Insulin" : {
       "comment" : "Alert content title for suspendEnded pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استئناف الأنسولين"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11768,10 +13976,22 @@
             "value" : "Reanudar insulina"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resume Insulin"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reprendre l'insuline"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resume Insulin"
           }
         },
         "it" : {
@@ -11798,6 +14018,12 @@
             "value" : "Wznów insulinę"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resume Insulin"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11816,10 +14042,28 @@
             "value" : "Obnoviť podávanie inzulínu"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återuppta insulintillförsel"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "İnsüline Devam Et"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếp tục lại việc tiêm insulin"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恢复输注"
           }
         }
       }
@@ -11827,6 +14071,12 @@
     "Resume: %1$@ %2$@" : {
       "comment" : "The format string describing a resume. (1: Time)(2: Scheduled certainty",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resume: %1$@ %2$@"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11921,6 +14171,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Возобновление: %1$@ %2$@"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obnoviť: %1$@ %2$@"
           }
         },
         "sv" : {
@@ -12269,6 +14525,12 @@
       "comment" : "Description for shutdown imminent alarm",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shutdown imminent alarm"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12406,6 +14668,12 @@
     "Signal Loss" : {
       "comment" : "Status highlight when communications with the pod haven't happened recently.",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "فقدان الإشارة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12428,6 +14696,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pérdida de señal"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signal Loss"
           }
         },
         "fr" : {
@@ -12466,6 +14740,12 @@
             "value" : "Utrata sygnału"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signal Loss"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12484,10 +14764,28 @@
             "value" : "Strata signálu"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signalförlust"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sinyal Kaybı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mất tín hiệu"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signal Loss"
           }
         }
       }
@@ -12495,6 +14793,12 @@
     "Signal strength too high" : {
       "comment" : "Format string for pod signal strength too high",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signal strength too high"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12555,6 +14859,12 @@
             "value" : "Zbyt wysoka siła sygnału"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signal strength too high"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12584,16 +14894,64 @@
             "state" : "translated",
             "value" : "Sinyal gücü çok yüksek"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sóng tín hiệu quá cao"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signal strength too high"
+          }
         }
       }
     },
     "Silenced" : {
       "comment" : "Title string for SilencePodPreference.enabled",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم كتم الصوت"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjort tavs"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stille"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silenciado"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silenced"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Silencieux"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silenced"
           }
         },
         "it" : {
@@ -12608,6 +14966,60 @@
             "value" : "Stillemodus"
           }
         },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gedempt"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silenced"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silenced"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redus la tăcere"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Беззвучно"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stíšené"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tystad"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silenced"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Im lặng"
+          }
+        },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12619,6 +15031,12 @@
     "Suspend" : {
       "comment" : "Pump Event title for UnfinalizedDose with doseType of .suspend",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspend"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12637,10 +15055,22 @@
             "value" : "Suspender"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspend"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suspendre"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspend"
           }
         },
         "it" : {
@@ -12667,6 +15097,12 @@
             "value" : "Wstrzymano"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspend"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12685,10 +15121,22 @@
             "value" : "Pozastavenie"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausa"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Askıya al"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã tạm dừng"
           }
         },
         "zh-Hans" : {
@@ -12702,6 +15150,12 @@
     "Suspend In Progress Reminder" : {
       "comment" : "Alert content body for suspendInProgress pod alert\nAlert content title for suspendInProgress pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تذكير بإيقاف التشغيل قيد التقدم"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12720,10 +15174,22 @@
             "value" : "Recordatorio de Suspensión en curso"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspend In Progress Reminder"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rappel de suspension en cours"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspend In Progress Reminder"
           }
         },
         "it" : {
@@ -12750,6 +15216,12 @@
             "value" : "Przypomnienie o  trwającym zawieszeniu"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspend In Progress Reminder"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12768,10 +15240,28 @@
             "value" : "Pripomienka prebiehajúceho pozastavenia"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påminnelse om pausad pump"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Devam Eden Hatırlatıcıyı Askıya Al"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang tiến hành tạm dừng lời nhắc"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "泵暂停中 的提醒"
           }
         }
       }
@@ -12862,6 +15352,12 @@
     "Suspend: %1$@ %2$@" : {
       "comment" : "The format string describing a suspend. (1: Time)(2: Scheduled certainty",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspend: %1$@ %2$@"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12993,6 +15489,12 @@
     "Suspended" : {
       "comment" : "Delivery status when insulin delivery is suspended",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspended"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13124,6 +15626,12 @@
     "Suspension time is up. Open the app and resume." : {
       "comment" : "Alert notification body for suspendEnded pod alert user notification",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انتهت فترة التعليق. افتح التطبيق واستأنف."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13142,10 +15650,22 @@
             "value" : "El tiempo de suspensión ha terminado. Abra la aplicación y reanúdela."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspension time is up. Open the app and resume."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "La période de suspension est terminée. Ouvrez l'application et reprenez."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspension time is up. Open the app and resume."
           }
         },
         "it" : {
@@ -13172,6 +15692,12 @@
             "value" : "Czas zawieszenie dobiegł końca. Otwórz Loop i wznów podawanie"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspension time is up. Open the app and resume."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13190,10 +15716,22 @@
             "value" : "Čas pozastavenia vypršal. Otvorte aplikáciu a pokračujte."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planerad paus är över. Öppna app och återuppta insulintillförsel."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Askıya alma süresi doldu. Uygulamayı açın ve devam edin."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã hết thời gian tạm dừng. Mở ứng dụng và tiếp tục."
           }
         },
         "zh-Hans" : {
@@ -13208,6 +15746,12 @@
       "comment" : "Pod tank fill completed",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tank fill completed"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13346,6 +15890,12 @@
       "comment" : "Pod power to motor activated",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tank power activated"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13578,6 +16128,12 @@
     "Temp basal in progress" : {
       "comment" : "Error message shown when temp basal could not be set due to existing temp basal in progress",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temp basal in progress"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13840,6 +16396,12 @@
     "TempBasal: %1$@ U/hour %2$@ %3$@ %4$@ U %5$@" : {
       "comment" : "The format string describing a temp basal. (1: The rate)(2: Start time)(3: duration)(4: volume)(5: scheduled certainty",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TempBasal: %1$@ U/hour %2$@ %3$@ %4$@ U %5$@"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13971,6 +16533,12 @@
     "The insulin suspension period has ended.\n\nYou can resume delivery from the banner on the home screen or from your pump settings screen. You will be reminded again in 15 minutes." : {
       "comment" : "Alert content body for suspendEnded pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The insulin suspension period has ended.\n\nYou can resume delivery from the banner on the home screen or from your pump settings screen. You will be reminded again in 15 minutes."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13989,10 +16557,22 @@
             "value" : "El periodo de suspensión de la insulina ha finalizado.\n\nPuedes reanudar la administración desde el banner de la pantalla de inicio o desde la pantalla de ajustes de tu bomba. Se le recordará de nuevo en 15 minutos."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The insulin suspension period has ended.\n\nYou can resume delivery from the banner on the home screen or from your pump settings screen. You will be reminded again in 15 minutes."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "La période de suspension de l'insuline est terminée. \n\nVous pouvez relancer l'administration à partir de la bannière sur l'écran d'accueil ou à partir de l'écran des paramètres de votre pompe. Vous recevrez un nouveau rappel dans 15 minutes."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The insulin suspension period has ended.\n\nYou can resume delivery from the banner on the home screen or from your pump settings screen. You will be reminded again in 15 minutes."
           }
         },
         "it" : {
@@ -14019,6 +16599,12 @@
             "value" : "Okres zawieszenia podawania insuliny dobiegł końca. \n\nPodawanie można wznowić za pomocą banera na ekranie głównym lub na ekranie ustawień pompy. Ponowne przypomnienie pojawi się za 15 minut."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The insulin suspension period has ended.\n\nYou can resume delivery from the banner on the home screen or from your pump settings screen. You will be reminded again in 15 minutes."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14037,10 +16623,28 @@
             "value" : "Obdobie pozastavenia inzulínu sa skončilo.\n\nPodávanie inzulínu môžete obnoviť z bannera na domovskej obrazovke alebo z obrazovky nastavení pumpy. Pripomienka sa vám znova zobrazí o 15 minút."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planerad period av paus av pump är slut.\n\nDu kan återuppta insulintillförsel i pumpinställningar. Du kommer bli påmind igen om 15 minuter."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "İnsülin askıya alma süresi sona ermiştir.\n\nAna ekran üzerinden veya pompa ayarları ekranınızdan iletime devam edebilirsiniz. 15 dakika içinde tekrar hatırlatılacaktır."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian tạm dừng tiêm insulin đã kết thúc.\n\nBạn có thể tiếp tục tiêm từ thanh thông báo trên màn hình chính hoặc từ cài đặt bơm. Bạn sẽ nhận nhắc nhở lần nữa sau 15 phút."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The insulin suspension period has ended.\n\nYou can resume delivery from the banner on the home screen or from your pump settings screen. You will be reminded again in 15 minutes."
           }
         }
       }
@@ -14048,6 +16652,12 @@
     "The time on your pump is different from the current time. You can review the pump time and and sync to current time in settings." : {
       "comment" : "Alert content body for timeOffsetChangeDetected pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوقت على مضختك يختلف عن الوقت الحالي. يمكنك مراجعة وقت المضخة ومزامنته مع الوقت الحالي في الإعدادات."
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14064,6 +16674,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La hora de la bomba es diferente de la hora actual. Puedes revisar la hora de la bomba y sincronizarla con la hora actual en los ajustes."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The time on your pump is different from the current time. You can review the pump time and and sync to current time in settings."
           }
         },
         "fr" : {
@@ -14102,6 +16718,12 @@
             "value" : "Czas na pompie różni się od aktualnego. W ustawieniach można sprawdzić czas pompy i zsynchronizować go z aktualnym czasem."
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The time on your pump is different from the current time. You can review the pump time and and sync to current time in settings."
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14120,10 +16742,22 @@
             "value" : "Čas na pumpe sa líši od aktuálneho času. V nastaveniach môžete skontrolovať čas pumpy a synchronizovať sa s aktuálnym časom."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiden på din pump skiljer sig från den aktuella tiden. Du kan granska pumpens tid och synkronisera till aktuell tid i pumpinställningar."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pompanızdaki saat, geçerli saatten farklı. Pompa süresini gözden geçirebilir ve ayarlarda geçerli saate eşitleyebilirsiniz."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thời gian trên bơm khác so với thời gian thực tế. Bạn có thể xem thời gian trên bơm và sync thời gian hiện hành trong cài đặt."
           }
         },
         "zh-Hans" : {
@@ -14226,6 +16860,12 @@
     "Time Change Detected" : {
       "comment" : "Alert content title for timeOffsetChangeDetected pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم اكتشاف تغيير في الوقت"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14248,6 +16888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cambio de hora detectado"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time Change Detected"
           }
         },
         "fr" : {
@@ -14286,6 +16932,12 @@
             "value" : "Wykryto zmianę czasu"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time Change Detected"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14304,10 +16956,22 @@
             "value" : "Zistila sa zmena času"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidsjustering upptäckt"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zaman Değişikliği Algılandı"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã phát hiện thay đổi thời gian"
           }
         },
         "zh-Hans" : {
@@ -14322,6 +16986,12 @@
       "comment" : "The format string for pod expiration notification body (1: time until expiration)",
       "extractionState" : "manual",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time to replace your pod! Your pod will expire in %1$@"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14459,6 +17129,12 @@
     "Too many pods found" : {
       "comment" : "Error message for PodCommsError.tooManyPodsFound",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم العثور على عدد كبير من البودات"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14477,10 +17153,22 @@
             "value" : "Se encontraron demasiados Pods"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Too many pods found"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Trop de Pods trouvés"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Too many pods found"
           }
         },
         "it" : {
@@ -14507,6 +17195,12 @@
             "value" : "Znaleziono zbyt wiele POD'ów"
           }
         },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Too many pods found"
+          }
+        },
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14525,10 +17219,22 @@
             "value" : "Našlo sa príliš veľa podov"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "För många poddar hittades"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Çok fazla pod bulundu"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phát hiện quá nhiều pod"
           }
         },
         "zh-Hans" : {
@@ -14542,6 +17248,12 @@
     "Try again" : {
       "comment" : "Recovery suggestion when ack received instead of response",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حاول مرة أخرى"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14572,6 +17284,12 @@
             "value" : "Réessayer"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try again"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14594,6 +17312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spróbuj ponownie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try again"
           }
         },
         "ro" : {
@@ -14624,6 +17348,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tekrar deneyin"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thử lại"
           }
         },
         "zh-Hans" : {
@@ -14726,6 +17456,12 @@
     "Uncertain" : {
       "comment" : "String describing a dose that was possibly scheduled",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uncertain"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14857,6 +17593,48 @@
     "Unexpected Alert" : {
       "comment" : "Alert content title for unexpected pod alert",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14867,6 +17645,60 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uventet varsel"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onverwachte waarschuwing"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alertă neașteptată"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oväntad varning"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Alert"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cảnh báo bất ngờ"
           }
         },
         "zh-Hans" : {
@@ -14975,6 +17807,48 @@
     "Unexpected Pod Alert #%1@!" : {
       "comment" : "Alert content body for unexpected pod alert (1: slotNumberString)",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14985,6 +17859,60 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uventet pod-varsel #%1@!"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onverwachte Pod waarschuwing #%1@!"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alertă de pompă neașteptată #%1@!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oväntad poddvarning #%1@!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected Pod Alert #%1@!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cảnh báo Pod bất ngờ #%1@!"
           }
         },
         "zh-Hans" : {
@@ -14998,6 +17926,12 @@
     "Unexpected pod change" : {
       "comment" : "Format string for unexpected pod change",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected pod change"
+          }
+        },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15028,6 +17962,12 @@
             "value" : "Changement inattendu du pod"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected pod change"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15050,6 +17990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nieoczekiwana zmiana POD'a"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected pod change"
           }
         },
         "ro" : {
@@ -15081,12 +18027,30 @@
             "state" : "translated",
             "value" : "Beklenmeyen pod değişikliği"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không mong đợi thay thế pod"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected pod change"
+          }
         }
       }
     },
     "Unexpected response from pod" : {
       "comment" : "Error message shown when empty response from pod was received",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unexpected response from pod"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15539,6 +18503,12 @@
     "Wait for existing bolus to finish, or cancel bolus" : {
       "comment" : "Recovery suggestion when operation could not be completed due to existing bolus in progress",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انتظر حتى انتهاء البلعة الحالية، أو قم بإلغاء البلعة"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15664,6 +18634,12 @@
     "Wait for existing temp basal to finish, or suspend to cancel" : {
       "comment" : "Recovery suggestion when operation could not be completed due to existing temp basal in progress",
       "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "انتظر حتى انتهاء الجرعة القاعدية المؤقتة الحالية، أو أوقفها مؤقتًا لإلغائها"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
