@@ -3564,8 +3564,8 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Not enough data"
+            "state" : "translated",
+            "value" : "没有足够数据"
           }
         }
       }
@@ -3845,7 +3845,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "堵管"
+            "value" : "检测到堵塞"
           }
         }
       }
@@ -4124,8 +4124,8 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Pairing completed"
+            "state" : "translated",
+            "value" : "配对完成"
           }
         }
       }
@@ -4405,7 +4405,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pod已到期"
+            "value" : "Pod 已到期"
           }
         }
       }
@@ -4547,8 +4547,8 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Pod suspended reminder"
+            "state" : "translated",
+            "value" : "Pod 暂停提醒"
           }
         }
       }
@@ -4691,7 +4691,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "充盈中"
+            "value" : "灌注中"
           }
         }
       }
@@ -4833,8 +4833,8 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Priming completed"
+            "state" : "translated",
+            "value" : "灌注完成"
           }
         }
       }
@@ -4976,8 +4976,8 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Reminder initialized"
+            "state" : "translated",
+            "value" : "提醒功能已启动"
           }
         }
       }
@@ -5119,8 +5119,8 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Scheduled basal"
+            "state" : "translated",
+            "value" : "计划基础率"
           }
         }
       }
@@ -5262,8 +5262,8 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Shutdown imminent"
+            "state" : "translated",
+            "value" : "即将关闭"
           }
         }
       }
@@ -5405,8 +5405,8 @@
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "new",
-            "value" : "Suspend time expired"
+            "state" : "translated",
+            "value" : "暂停时间已到期"
           }
         }
       }
@@ -5704,7 +5704,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "临时基础率正在运行"
+            "value" : "临时基础率运行中"
           }
         }
       }
