@@ -4446,7 +4446,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rappel de la suspension du Pod"
+            "value" : "Rappel de Pod suspendu"
           }
         },
         "he" : {
@@ -5018,7 +5018,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Basal programmé"
+            "value" : "Débit basal programmé"
           }
         },
         "he" : {
@@ -5304,7 +5304,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Délai de suspension expiré"
+            "value" : "Durée de suspension écoulée"
           }
         },
         "he" : {
@@ -5602,7 +5602,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Basal temporaire active"
+            "value" : "Débit basal temporaire actif"
           }
         },
         "he" : {
@@ -6579,7 +6579,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "En attente d'appairage"
+            "value" : "En attente du rappel d'appairage"
           }
         },
         "he" : {
