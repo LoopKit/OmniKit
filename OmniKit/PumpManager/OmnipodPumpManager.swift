@@ -708,7 +708,9 @@ extension OmnipodPumpManager {
             state.updatePodStateFromPodComms(nil)
         }
 
-        podComms.forgetPod()
+        self.podComms.handleDiscardedPodDosing(podTime: podTime, reservoirLevel: reservoirLevel?.rawValue)
+
+        self.podComms.forgetPod()
 
         self.resetPerPodPumpManagerState()
 
