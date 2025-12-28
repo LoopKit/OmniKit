@@ -388,7 +388,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%1$@ insulin eller mindre gjenstår i Pod. Bytt Pod snart."
+            "value" : "%1$@ insulin eller mindre i Pod. Bytt Pod snart."
           }
         },
         "nl" : {
@@ -6416,6 +6416,12 @@
             "state" : "translated",
             "value" : "Düşük rezervuar"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "低药量"
+          }
         }
       }
     },
@@ -8889,7 +8895,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tilstoppelse oppdaget"
+            "value" : "Blokkering oppdaget"
           }
         },
         "nl" : {
@@ -9008,7 +9014,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Okklusjon oppdaget"
+            "value" : "Blokkering oppdaget"
           }
         },
         "nl" : {
@@ -11607,7 +11613,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pod Utløpt"
+            "value" : "Pod utløpt"
           }
         },
         "nl" : {
@@ -12382,7 +12388,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pod Okklusjon"
+            "value" : "Pod blokkering"
           }
         },
         "nl" : {
@@ -14767,7 +14773,7 @@
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Signal Tap"
+            "value" : "Signaltap"
           }
         },
         "nl" : {
@@ -14827,7 +14833,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Signal Loss"
+            "value" : "信号丢失"
           }
         }
       }
