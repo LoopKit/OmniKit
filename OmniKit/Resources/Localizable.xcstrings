@@ -9324,7 +9324,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "好的"
+            "value" : "OK"
           }
         }
       }
@@ -11815,7 +11815,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Podfehler: %1$@"
+            "value" : "Pod-Fehler: %1$@"
           }
         },
         "es" : {
@@ -12352,7 +12352,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pod Verstopfung"
+            "value" : "Pod-Verstopfung"
           }
         },
         "es" : {
@@ -12709,7 +12709,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pod setup is not complete"
+            "value" : "Pod-Einrichtung ist nicht abgeschlossen"
           }
         },
         "es" : {
@@ -16176,6 +16176,12 @@
             "state" : "translated",
             "value" : "Geçici Bazal"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "临时基础率"
+          }
         }
       }
     },
@@ -17662,7 +17668,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unexpected Alert"
+            "value" : "Unerwarteter Alarm"
           }
         },
         "es" : {
@@ -17876,7 +17882,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Unexpected Pod Alert #%1@!"
+            "value" : "Unerwarteter Pod-Alarm #%1@!"
           }
         },
         "es" : {
