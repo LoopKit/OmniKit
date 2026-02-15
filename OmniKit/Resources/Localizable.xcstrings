@@ -4181,6 +4181,12 @@
             "value" : "Pod-Ablauferinnerung"
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rappel d'expiration"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4410,6 +4416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Verzögerter Bolus läuft während der Unterbrechung"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bolus étendu en cours lors de la suspension"
           }
         },
         "it" : {
@@ -5391,7 +5403,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Administrarea de insulină s-a oprit. Schimbați Pod-ul acum."
+            "value" : "Administrarea de insulină s-a oprit. Schimbați pompa acum."
           }
         },
         "ru" : {
@@ -7016,7 +7028,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Asigurați-vă că RileyLink este pornit și situat în apropriere"
+            "value" : "Asigurați-vă că dispozitivul RileyLink este pornit și situat în apropriere"
           }
         },
         "ru" : {
@@ -7926,7 +7938,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Niciun Pod"
+            "value" : "Nicio pompă"
           }
         },
         "ru" : {
@@ -10063,7 +10075,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apropiați pompa de RileyLink și încercați din nou"
+            "value" : "Apropiați pompa de dispozitivul RileyLink și încercați din nou"
           }
         },
         "ru" : {
@@ -10420,7 +10432,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vă rugăm să poziționați RileyLink mai departe de pompă"
+            "value" : "Vă rugăm să poziționați dispozitivul RileyLink mai departe de pompă"
           }
         },
         "ru" : {
@@ -10515,7 +10527,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Va rugăm să poziționați RileyLink mai aproape de pompă"
+            "value" : "Va rugăm să poziționați dispozitivul RileyLink mai aproape de pompă"
           }
         },
         "ru" : {
@@ -10616,7 +10628,7 @@
         "ro" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vă rugăm să încercați să repoziționați pod-ul sau RileyLink și să încercați din nou"
+            "value" : "Vă rugăm să încercați să repoziționați pompa sau dispozitivul RileyLink și să încercați din nou"
           }
         },
         "ru" : {
