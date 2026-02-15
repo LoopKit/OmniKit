@@ -1095,6 +1095,12 @@
             "value" : "Reservatório vazio"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rezervor gol"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
